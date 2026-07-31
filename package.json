@@ -1,0 +1,22 @@
+{
+  "name": "benvelazquez-com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "benvelazquez.com — static bilingual site for Ben Velazquez, Performance Rehabilitation, NYC.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "clean": "node -e \"import('node:fs').then(fs=>fs.rmSync('dist',{recursive:true,force:true}))\"",
+    "serve": "node scripts/serve.mjs",
+    "dev": "node build.mjs && node scripts/serve.mjs",
+    "audit": "node scripts/audit.mjs",
+    "og": "node scripts/make-og.mjs",
+    "check": "node build.mjs && node scripts/audit.mjs",
+    "deploy": "node build.mjs && wrangler deploy"
+  },
+  "devDependencies": {},
+  "license": "UNLICENSED"
+}
