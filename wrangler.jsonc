@@ -5,6 +5,11 @@
   //
   // The build writes dist/, which is served by the static assets binding.
   // The Worker script only handles /api/apply and the apex → www redirect.
+  //
+  // REQUIRES WRANGLER 4.x. This file is .jsonc, which wrangler only parses
+  // from 3.91.0 onward — older versions silently ignore it and fail with
+  // "Missing entry-point". The `run_worker_first` glob syntax below needs
+  // 4.20+. CI pins this via `wranglerVersion` in .github/workflows/deploy.yml.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "benvelazquez",
   "main": "worker/index.js",

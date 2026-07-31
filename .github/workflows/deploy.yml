@@ -59,10 +59,27 @@ jobs:
       - name: Build
         run: node build.mjs
 
+      # Fail loudly and early rather than surfacing an opaque wrangler auth
+      # error several minutes into the job.
+      - name: Check Cloudflare credentials
+        run: |
+          missing=""
+          [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ] && missing="$missing CLOUDFLARE_API_TOKEN"
+          [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ] && missing="$missing CLOUDFLARE_ACCOUNT_ID"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing repository secret(s):$missing — add them under Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # Must be 4.x. The action defaults to wrangler 3.90.0, which predates
+          # wrangler.jsonc support (added in 3.91.0) and would ignore our config
+          # entirely, failing with "Missing entry-point". 4.x is also required
+          # for the `run_worker_first` glob syntax in the assets config.
+          wranglerVersion: "4"
           # wrangler.jsonc points at ./dist and worker/index.js
           command: deploy
