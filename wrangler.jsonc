@@ -1,0 +1,47 @@
+{
+  // Cloudflare Workers configuration for benvelazquez.com.
+  //
+  //   npm run build && npx wrangler deploy
+  //
+  // The build writes dist/, which is served by the static assets binding.
+  // The Worker script only handles /api/apply and the apex → www redirect.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "benvelazquez",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-07-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // Serve /about/ from dist/about/index.html and keep the trailing slash,
+    // which is what every canonical URL on the site uses.
+    "html_handling": "auto-trailing-slash",
+    // Unmatched paths fall through to the Worker, which returns the 404 page
+    // via ASSETS. "single-page-application" would be wrong here.
+    "not_found_handling": "404-page",
+    // Let the Worker see /api/* even though it is not an asset.
+    "run_worker_first": ["/api/*"]
+  },
+
+  "observability": {
+    "enabled": true
+  },
+
+  // Attach custom domains once the zone is on this account.
+  // "routes": [
+  //   { "pattern": "www.benvelazquez.com", "custom_domain": true },
+  //   { "pattern": "benvelazquez.com", "custom_domain": true }
+  // ],
+
+  // Fallback storage for applications until APPLY_WEBHOOK is set.
+  // Create with: npx wrangler kv namespace create APPLICATIONS
+  // then paste the id below and uncomment.
+  // "kv_namespaces": [
+  //   { "binding": "APPLICATIONS", "id": "<namespace-id>" }
+  // ],
+
+  "vars": {
+    "SITE_ORIGIN": "https://www.benvelazquez.com"
+  }
+}
