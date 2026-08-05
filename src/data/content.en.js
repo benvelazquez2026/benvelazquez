@@ -461,7 +461,7 @@ export const content = {
       { k: 'Approach', v: 'Exercise-based, from onset' },
       { k: 'Model', v: 'Holistic, multi-disciplinary team' },
       { k: 'Populations', v: 'Athletes · military · general' },
-      { k: 'Contact', v: site.email },
+      { k: 'Contact', v: `<a href="mailto:${site.emailConcussion}">${site.emailConcussion}</a>` },
       { k: 'Languages', v: 'English · Spanish' },
     ],
     medical: {
@@ -495,7 +495,7 @@ export const content = {
       },
       {
         q: 'What is Grey Matters Sports Group?',
-        a: `<p>Grey Matters Sports Group is the vehicle through which the concussion work is delivered: a holistic, multi-disciplinary team focused on exercise-based concussion solutions from the onset of injury. You can reach the team at <a href="mailto:${site.email}">${site.email}</a>.</p>`,
+        a: `<p>Grey Matters Sports Group is the vehicle through which the concussion work is delivered: a holistic, multi-disciplinary team focused on exercise-based concussion solutions from the onset of injury. You can reach the team at <a href="mailto:${site.emailConcussion}">${site.emailConcussion}</a>.</p>`,
       },
       {
         q: 'What does “not just return — but keeping you there” mean?',

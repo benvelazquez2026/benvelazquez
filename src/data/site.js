@@ -18,6 +18,9 @@ export const site = {
 
   // Contact + social. Used by schema.org, the footer and the contact page.
   email: 'contactGMSG@gmail.com',
+  // The concussion program publishes Ben's direct address rather than the
+  // shared Grey Matters inbox.
+  emailConcussion: 'ben@benvelazquez.com',
   social: [
     'https://www.instagram.com/benvelazqueznyc/',
     'https://www.linkedin.com/in/benvelazqueznyc/',
