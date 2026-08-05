@@ -691,6 +691,25 @@ p {
   color: var(--bone);
   margin: 0;
 }
+/* Some facts are contact links (email, apply). Without this they fall back to
+   the browser's default link colour, which is unreadable on the dark card. */
+.key-facts a {
+  color: var(--signal);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 157, 118, 0.4);
+  transition: border-color 0.2s var(--ease);
+  overflow-wrap: anywhere;
+}
+.key-facts a:hover {
+  border-bottom-color: var(--signal);
+}
+.on-bone .key-facts a {
+  color: var(--signal-deep);
+  border-bottom-color: rgba(15, 92, 68, 0.4);
+}
+.on-bone .key-facts a:hover {
+  border-bottom-color: var(--signal-deep);
+}
 .on-bone .key-facts {
   background: var(--line-light);
   border-color: var(--line-light);

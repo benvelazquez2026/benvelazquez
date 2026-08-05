@@ -463,7 +463,7 @@ export const content = {
       { k: 'Enfoque', v: 'Basado en ejercicio, desde el inicio' },
       { k: 'Modelo', v: 'Equipo integral multidisciplinar' },
       { k: 'Poblaciones', v: 'Atletas · militares · público general' },
-      { k: 'Contacto', v: site.email },
+      { k: 'Contacto', v: `<a href="mailto:${site.emailConcussion}">${site.emailConcussion}</a>` },
       { k: 'Idiomas', v: 'Inglés · Español' },
     ],
     medical: {
@@ -497,7 +497,7 @@ export const content = {
       },
       {
         q: '¿Qué es Grey Matters Sports Group?',
-        a: `<p>Grey Matters Sports Group es el vehículo a través del cual se entrega el trabajo de conmociones: un equipo integral y multidisciplinar centrado en soluciones de ejercicio desde el inicio de la lesión. Puedes contactar al equipo en <a href="mailto:${site.email}">${site.email}</a>.</p>`,
+        a: `<p>Grey Matters Sports Group es el vehículo a través del cual se entrega el trabajo de conmociones: un equipo integral y multidisciplinar centrado en soluciones de ejercicio desde el inicio de la lesión. Puedes contactar al equipo en <a href="mailto:${site.emailConcussion}">${site.emailConcussion}</a>.</p>`,
       },
       {
         q: '¿Qué significa «no solo el regreso, sino mantenerte ahí»?',
