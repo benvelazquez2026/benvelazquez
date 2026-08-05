@@ -15,14 +15,50 @@ the application form, and a Spanish page. CLS is 0 on every page tested.
 ## Quick start
 
 ```bash
-npm run dev      # build + serve at http://localhost:8788
-npm run build    # write dist/
-npm run check    # build, then audit dist/ (this is what CI runs)
-npm run deploy   # build + wrangler deploy
+npm run dev              # build + serve at http://localhost:8788
+npm run build            # write dist/ for production
+npm run check            # build, then audit dist/ (this is what CI runs)
+npm run deploy           # build + wrangler deploy
+
+npm run build:staging    # build for the workers.dev sandbox
+npm run check:staging    # …and audit it
+npm run deploy:staging   # …and ship it
 ```
 
-Node 20+. There is nothing to `npm install` — `devDependencies` is empty on
-purpose.
+Node 20+. Nothing to `npm install` to build the site — `devDependencies` is
+empty on purpose. (Wrangler is only needed to deploy, and CI installs it
+itself.)
+
+## Staging vs production
+
+The site is currently being reviewed on a sandbox Worker before the real
+domain is cut over:
+
+| | URL |
+|---|---|
+| Sandbox (current) | `https://benvelazquez.blue-recipe-dcdd.workers.dev` |
+| Production (later) | `https://www.benvelazquez.com` |
+
+`SITE_ORIGIN` controls which one a build targets. **Any origin other than
+production is automatically treated as staging**, which means:
+
+- `noindex, nofollow` on every page, plus a `googlebot` directive
+- `robots.txt` becomes `Disallow: /`
+- Canonicals self-reference the sandbox instead of pointing at the
+  production domain — critical, because `www.benvelazquez.com` currently
+  serves the old Squarespace site, and canonicalising there would hand the
+  sandbox's signals to unrelated pages
+- Open Graph images resolve on the sandbox origin, so link previews work
+- `llms.txt` carries a "do not cite this" banner
+- `<link rel="alternate" hreflang>` is dropped (the visible EN/ES switcher
+  keeps its `hreflang` attributes — those are UI hints, not index signals)
+
+The audit inverts its checks to match, so `npm run check:staging` verifies
+the sandbox *is* un-indexable rather than complaining that it isn't.
+
+**To go live:** unset `SITE_ORIGIN` (or set it to the production URL), point
+DNS at Cloudflare, and uncomment the `routes` block in `wrangler.jsonc`.
+Everything flips to indexable on the next build with no other edits.
 
 ---
 
@@ -167,7 +203,13 @@ A typical page is ~60 KB uncompressed, **~18 KB over the wire** with brotli.
 Pushes to `main` run `.github/workflows/deploy.yml`: build → audit →
 `wrangler deploy`. Pull requests build and audit but do not deploy.
 
-**Required repository secrets:**
+If `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` are not set, the deploy
+step is **skipped with a notice rather than failing** — deploying from
+Cloudflare's own Git integration is a valid setup, and a working deploy
+elsewhere shouldn't leave `main` permanently red. Set both secrets if you
+want GitHub Actions to do the deploying instead.
+
+**Repository secrets (only needed to deploy from Actions):**
 
 | Secret | Where to get it |
 |---|---|

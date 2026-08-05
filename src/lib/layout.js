@@ -163,6 +163,11 @@ export function renderPage(page) {
   const alts = alternates(key, locale, page.alternates);
   const desc = clamp(description, 158);
 
+  // A staging deploy must never be indexed, and must never canonicalise at
+  // the production domain — that would hand its signals to whatever is
+  // currently served there.
+  const blockIndexing = noindex || site.isStaging;
+
   const hreflangTags = each(
     alts,
     (a) => `<link rel="alternate" hreflang="${a.locale === 'en' ? 'en' : a.locale}" href="${esc(a.url)}">`,
@@ -180,12 +185,14 @@ export function renderPage(page) {
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${esc(url)}">
 ${
-  noindex
-    ? '<meta name="robots" content="noindex, follow">'
-    : '<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">'
+  site.isStaging
+    ? '<meta name="robots" content="noindex, nofollow">\n<meta name="googlebot" content="noindex, nofollow">'
+    : noindex
+      ? '<meta name="robots" content="noindex, follow">'
+      : '<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">'
 }
-${noindex ? '' : hreflangTags}
-${noindex || !xDefault ? '' : `<link rel="alternate" hreflang="x-default" href="${esc(xDefault.url)}">`}
+${blockIndexing ? '' : hreflangTags}
+${blockIndexing || !xDefault ? '' : `<link rel="alternate" hreflang="x-default" href="${esc(xDefault.url)}">`}
 <meta name="author" content="${esc(site.name)}">
 <meta name="theme-color" content="#14161a">
 <meta name="color-scheme" content="dark light">

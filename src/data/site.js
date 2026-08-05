@@ -7,8 +7,25 @@
  * structured data and llms.txt on the next `npm run build`.
  */
 
+/**
+ * The live domain. Everything canonical hangs off this.
+ *
+ * Override it with SITE_ORIGIN to build for anywhere else — a workers.dev
+ * sandbox, a preview alias, localhost. Any origin other than production is
+ * treated as staging, which forces `noindex, nofollow` on every page and a
+ * `Disallow: /` robots.txt, so a review deploy can never be indexed or
+ * canonicalised at the real site. Unset SITE_ORIGIN and it flips back.
+ *
+ *   SITE_ORIGIN=https://benvelazquez.blue-recipe-dcdd.workers.dev npm run build
+ *   npm run build:staging     # same thing, shorter
+ */
+const PRODUCTION_ORIGIN = 'https://www.benvelazquez.com';
+const ORIGIN = (process.env.SITE_ORIGIN || PRODUCTION_ORIGIN).replace(/\/+$/, '');
+
 export const site = {
-  origin: 'https://www.benvelazquez.com',
+  origin: ORIGIN,
+  productionOrigin: PRODUCTION_ORIGIN,
+  isStaging: ORIGIN !== PRODUCTION_ORIGIN,
   defaultLocale: 'en',
   locales: ['en', 'es'],
 

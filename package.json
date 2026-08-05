@@ -9,12 +9,15 @@
   },
   "scripts": {
     "build": "node build.mjs",
+    "build:staging": "SITE_ORIGIN=https://benvelazquez.blue-recipe-dcdd.workers.dev node build.mjs",
+    "deploy:staging": "npm run build:staging && wrangler deploy",
     "clean": "node -e \"import('node:fs').then(fs=>fs.rmSync('dist',{recursive:true,force:true}))\"",
     "serve": "node scripts/serve.mjs",
     "dev": "node build.mjs && node scripts/serve.mjs",
     "audit": "node scripts/audit.mjs",
     "og": "node scripts/make-og.mjs",
     "check": "node build.mjs && node scripts/audit.mjs",
+    "check:staging": "npm run build:staging && node scripts/audit.mjs",
     "deploy": "node build.mjs && wrangler deploy"
   },
   "devDependencies": {},
