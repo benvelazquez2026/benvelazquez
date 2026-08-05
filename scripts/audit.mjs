@@ -39,6 +39,15 @@ function walk(dir, out = []) {
 
 const allFiles = walk(DIST);
 const htmlFiles = allFiles.filter((f) => f.endsWith('.html'));
+
+/**
+ * Staging builds deliberately drop hreflang and force noindex, so those
+ * checks have to invert rather than fire. Detected from the robots.txt the
+ * build emits, so the audit needs no environment of its own.
+ */
+const robotsTxt = existsSync(join(DIST, 'robots.txt')) ? readFileSync(join(DIST, 'robots.txt'), 'utf8') : '';
+const isStaging = /STAGING \/ REVIEW DEPLOY/.test(robotsTxt);
+if (isStaging) console.log('\n(staging build — indexing checks inverted)');
 const assetPaths = new Set(allFiles.map((f) => `/${relative(DIST, f).split('\\').join('/')}`));
 
 /** URL paths that resolve: every directory index plus every raw asset. */
@@ -87,7 +96,16 @@ for (const file of htmlFiles) {
 
   /* --- Canonical + hreflang --- */
   if (!/<link rel="canonical"/.test(html)) fail(rel, 'missing canonical');
-  if (!is404) {
+
+  if (isStaging) {
+    // A review deploy must be un-indexable, and must not point search
+    // engines at the production domain.
+    if (!/<meta name="robots" content="noindex, nofollow">/.test(html))
+      fail(rel, 'staging page is not noindex');
+    const canonical = attr(html, /<link rel="canonical" href="([^"]*)"/);
+    if (canonical && /www\.benvelazquez\.com/.test(canonical))
+      fail(rel, `staging page canonicalises at production: ${canonical}`);
+  } else if (!is404) {
     if (!/hreflang="en"/.test(html)) fail(rel, 'missing hreflang=en');
     if (!/hreflang="es"/.test(html)) fail(rel, 'missing hreflang=es');
     if (!/hreflang="x-default"/.test(html)) fail(rel, 'missing hreflang=x-default');

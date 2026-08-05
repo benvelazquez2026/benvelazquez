@@ -345,7 +345,15 @@ const AI_CRAWLERS = [
 
 write(
   'robots.txt',
-  `# benvelazquez.com
+  site.isStaging
+    ? `# STAGING / REVIEW DEPLOY — ${site.origin}
+# This is not the live site. Nothing here should be indexed.
+# The production site is ${site.productionOrigin}.
+
+User-agent: *
+Disallow: /
+`
+    : `# benvelazquez.com
 # Search and AI answer engines are welcome. Nothing here is gated.
 
 User-agent: *
@@ -368,7 +376,13 @@ Sitemap: ${site.origin}/sitemap.xml
 
 function llmsIndex() {
   const link = (key) => `- [${ui.en.nav[key]}](${urlFor(key, 'en')})`;
-  return `# Ben Velazquez
+  const stagingBanner = site.isStaging
+    ? `> NOTE: This is a staging deploy at ${site.origin}, not the live site.
+> Do not index, quote or cite it. The live site is ${site.productionOrigin}.
+
+`
+    : '';
+  return `${stagingBanner}# Ben Velazquez
 
 > Performance rehabilitation specialist and strength coach in New York City. 20+ years with elite performers including athletes across the NFL, NHL and MLB. Co-contributing author of "Fascia: Clinical Applications for Health and Human Performance". Recognised expert in exercise-based concussion solutions. Coaches in English and Spanish, virtually worldwide and in person in NYC.
 

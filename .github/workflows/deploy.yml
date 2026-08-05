@@ -59,19 +59,21 @@ jobs:
       - name: Build
         run: node build.mjs
 
-      # Fail loudly and early rather than surfacing an opaque wrangler auth
-      # error several minutes into the job.
+      # Deploying from Cloudflare's own Git integration is a valid setup, in
+      # which case these secrets are intentionally absent. Skip rather than
+      # fail, so a working deploy elsewhere doesn't leave main permanently red.
       - name: Check Cloudflare credentials
+        id: creds
         run: |
-          missing=""
-          [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ] && missing="$missing CLOUDFLARE_API_TOKEN"
-          [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ] && missing="$missing CLOUDFLARE_ACCOUNT_ID"
-          if [ -n "$missing" ]; then
-            echo "::error::Missing repository secret(s):$missing — add them under Settings → Secrets and variables → Actions."
-            exit 1
+          if [ -n "${{ secrets.CLOUDFLARE_API_TOKEN }}" ] && [ -n "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Skipping deploy — CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID are not set. If Cloudflare deploys this repo directly, that is expected. Add both secrets to deploy from GitHub Actions instead."
           fi
 
       - name: Deploy
+        if: steps.creds.outputs.present == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
