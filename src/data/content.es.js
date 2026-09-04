@@ -1340,6 +1340,7 @@ export const content = {
         { route: 'insights', label: 'Leer los insights', ghost: true },
       ],
     },
+    note: 'Mantente atento — los episodios están en camino.',
     answer: [
       'El Podcast de Ben Velazquez presenta conversaciones sobre rendimiento, recuperación y longevidad con atletas, profesionales y ejecutivos que operan al más alto nivel.',
       'Lo presenta Ben Velazquez, especialista en rehabilitación de alto rendimiento en Nueva York con más de 20 años trabajando con atletas de la NFL, la NHL y la MLB.',

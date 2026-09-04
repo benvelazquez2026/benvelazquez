@@ -804,6 +804,7 @@ ${answerSection(page, locale)}
 </div>
 <a href="${esc(site.links.podcast)}" class="btn btn-ghost">${esc(page.hero.ctas[0].label)}</a>
 </div>
+<p class="reveal" style="text-align:center;margin-top:26px"><span class="signal">${esc(page.note)}</span></p>
 </div>
 </section>
 ${pageTail(page, locale)}`;

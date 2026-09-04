@@ -1332,6 +1332,7 @@ export const content = {
       lede: 'Conversations on performance, recovery, and longevity with the people who live at the top.',
       ctas: [{ href: site.links.podcast, label: 'Listen now' }, { route: 'insights', label: 'Read the insights', ghost: true }],
     },
+    note: 'Stay tuned — episodes are on the way.',
     answer: [
       'The Ben Velazquez Podcast features conversations on performance, recovery and longevity with athletes, practitioners and executives operating at the highest level.',
       'It is hosted by Ben Velazquez, a New York City performance rehabilitation specialist with more than 20 years working with athletes across the NFL, NHL and MLB.',
