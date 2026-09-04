@@ -83,7 +83,7 @@ src/
   styles/main.css      The entire design system (inlined at build time).
   assets/js/site.js    ~4 KB of progressive enhancement (inlined).
 public/                Copied verbatim into dist/ (fonts, icons, OG images).
-worker/index.js        Cloudflare Worker: /api/apply + apex→www redirect.
+worker/index.js        Cloudflare Worker: apex→www canonical redirect.
 scripts/
   audit.mjs            Pre-flight checks on dist/. CI fails on any error.
   serve.mjs            Local preview with production-like headers + brotli.
@@ -217,26 +217,40 @@ want GitHub Actions to do the deploying instead.
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare dashboard → Workers & Pages (right sidebar) |
 
 `wrangler.jsonc` serves `./dist` through the assets binding and routes
-`/api/*` to the Worker. To attach the domain, uncomment the `routes` block
-once the zone is on the account.
+To attach the domain, uncomment the `routes` block once the zone is on the
+account.
 
-### Wiring up the application form
+### The application form
 
-The form posts JSON to `/api/apply`. The Worker validates it, drops
-honeypot submissions, and then delivers it one of two ways:
+The form posts directly to **Formspree** — no server-side handler, nothing
+to configure, and it works on any deploy including the sandbox.
 
-```bash
-# Preferred — forward to a CRM, Formspree, Zapier, or an email API:
-npx wrangler secret put APPLY_WEBHOOK
+The endpoint is declared once, in `src/data/site.js`:
 
-# Or, as a fallback, store submissions in KV for 90 days:
-npx wrangler kv namespace create APPLICATIONS
-# then paste the id into wrangler.jsonc and uncomment kv_namespaces
+```js
+formEndpoint: 'https://formspree.io/f/xzebvjgz',
+formHost: 'https://formspree.io',
 ```
 
-Until one of those is configured the endpoint returns `502` and the form
-shows its error message, which tells the visitor to email instead — so a
-lead is never silently dropped.
+It submits two ways, both to that same URL:
+
+- **With JavaScript** — `fetch` with `Accept: application/json`, so the
+  visitor stays on the page and gets the inline success message.
+- **Without JavaScript** — a native form POST via the `action` attribute,
+  landing on Formspree's own confirmation page.
+
+If the request fails, the inline error tells the visitor to email instead,
+so a lead is never silently dropped.
+
+Submissions carry `_subject` (localised), `language`, and the `page` they
+came from. Spam is filtered by a hidden `_gotcha` field, which is
+Formspree's own honeypot convention.
+
+> [!IMPORTANT]
+> `formHost` must also appear in **`connect-src`** and **`form-action`** in
+> the Content-Security-Policy in `build.mjs`. The CSP defaults to `'self'`,
+> which blocks both submission paths silently — no error, no network
+> request. Changing the form host means changing the CSP.
 
 ---
 

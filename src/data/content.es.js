@@ -1222,6 +1222,8 @@ export const content = {
     ],
     form: {
       heading: 'Haz tu prueba',
+      // Asunto del correo que entrega Formspree.
+      subject: 'Nueva solicitud — Análisis de Necesidades de Rendimiento',
       name: 'Nombre',
       namePh: 'Tu nombre',
       email: 'Correo',

@@ -75,8 +75,10 @@
   });
 
   /* ---- Application form -------------------------------------------------
-     Posts to the Worker at /api/apply. Falls back to a mailto: prompt if
-     the endpoint is unreachable, so a lead is never silently lost. */
+     Posts to the form's own `action` (Formspree), so there is one source of
+     truth and the no-JS native submit goes to exactly the same place. On
+     failure the inline error tells the visitor to email instead, so a lead
+     is never silently lost. */
   var form = document.getElementById('applyForm');
   if (form) {
     form.addEventListener('submit', function (e) {
@@ -92,38 +94,30 @@
         button.textContent = button.getAttribute('data-sending') || 'Sending…';
       }
 
-      var payload = {};
-      new FormData(form).forEach(function (value, key) {
-        payload[key] = value;
-      });
-      payload.page = location.pathname;
-      payload.lang = document.documentElement.lang;
+      function restore() {
+        if (button) {
+          button.textContent = button.dataset.label;
+          button.disabled = false;
+        }
+      }
 
-      fetch('/api/apply', {
+      var data = new FormData(form);
+      data.append('page', location.pathname);
+
+      fetch(form.action, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
+        headers: { Accept: 'application/json' },
+        body: data
       })
         .then(function (res) {
           if (!res.ok) throw new Error('bad status ' + res.status);
-          return res.json().catch(function () {
-            return {};
-          });
-        })
-        .then(function () {
           if (ok) ok.classList.add('show');
           form.reset();
-          if (button) {
-            button.textContent = button.dataset.label;
-            button.disabled = false;
-          }
+          restore();
         })
         .catch(function () {
           if (err) err.classList.add('show');
-          if (button) {
-            button.textContent = button.dataset.label;
-            button.disabled = false;
-          }
+          restore();
         });
     });
   }

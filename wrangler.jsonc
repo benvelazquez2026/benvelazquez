@@ -4,12 +4,13 @@
   //   npm run build && npx wrangler deploy
   //
   // The build writes dist/, which is served by the static assets binding.
-  // The Worker script only handles /api/apply and the apex → www redirect.
+  // The Worker script only handles the apex → www redirect; the application
+  // form posts directly to Formspree.
   //
   // REQUIRES WRANGLER 4.x. This file is .jsonc, which wrangler only parses
   // from 3.91.0 onward — older versions silently ignore it and fail with
-  // "Missing entry-point". The `run_worker_first` glob syntax below needs
-  // 4.20+. CI pins this via `wranglerVersion` in .github/workflows/deploy.yml.
+  // "Missing entry-point". CI pins this via `wranglerVersion` in
+  // .github/workflows/deploy.yml.
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "benvelazquez",
   "main": "worker/index.js",
@@ -24,9 +25,7 @@
     "html_handling": "auto-trailing-slash",
     // Unmatched paths fall through to the Worker, which returns the 404 page
     // via ASSETS. "single-page-application" would be wrong here.
-    "not_found_handling": "404-page",
-    // Let the Worker see /api/* even though it is not an asset.
-    "run_worker_first": ["/api/*"]
+    "not_found_handling": "404-page"
   },
 
   "observability": {
