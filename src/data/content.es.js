@@ -389,7 +389,7 @@ export const content = {
         {
           idx: '05',
           heading: 'Extensión de carrera',
-          body: 'Las decisiones de entrenamiento que determinan si los últimos cuatro años de una carrera son productivos o se pierden en gestión de molestias.',
+          body: 'La atención dedicada al entrenamiento, la recuperación y el descanso suele determinar si el atleta profesional puede alargar su carrera más allá de lo normal, aportar valor y conseguir un nuevo contrato.',
         },
         {
           idx: '06',

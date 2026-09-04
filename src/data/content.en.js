@@ -390,7 +390,7 @@ export const content = {
         {
           idx: '05',
           heading: 'Career extension',
-          body: 'The training decisions that determine whether the last four years of a career are productive or lost to management.',
+          body: 'The attention paid to training, recovery and recuperation will often determine whether the professional athlete can extend their career beyond the norm, add value and receive a new contract.',
         },
         {
           idx: '06',
