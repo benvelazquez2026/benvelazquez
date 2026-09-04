@@ -739,7 +739,22 @@ p {
   align-items: center;
   gap: 34px;
   flex-wrap: wrap;
-  padding: 22px 0;
+  /* Longhand on purpose. A `padding` shorthand here also resets the
+     horizontal padding .wrap provides, which pushed the names flush against
+     the viewport edge at every width. */
+  padding-block: 22px;
+}
+@media (max-width: 640px) {
+  .proof-inner {
+    gap: 16px 24px;
+    padding-block: 20px;
+  }
+  .proof ul {
+    gap: 16px 22px;
+  }
+  .proof li {
+    font-size: 0.98rem;
+  }
 }
 .proof .mono {
   color: var(--stone);
