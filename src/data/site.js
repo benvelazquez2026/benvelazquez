@@ -35,6 +35,12 @@ export const site = {
 
   // Contact + social. Used by schema.org, the footer and the contact page.
   email: 'ben@benvelazquez.com',
+
+  // Form handler. The application form posts here directly — both via fetch
+  // and, with JavaScript off, as a native form submit. Changing this needs a
+  // matching change to connect-src and form-action in the CSP (build.mjs).
+  formEndpoint: 'https://formspree.io/f/xzebvjgz',
+  formHost: 'https://formspree.io',
   social: [
     'https://www.instagram.com/benvelazqueznyc/',
     'https://www.linkedin.com/in/benvelazqueznyc/',

@@ -1217,6 +1217,8 @@ export const content = {
     ],
     form: {
       heading: 'Apply for your tryout',
+      // Subject line on the email Formspree delivers.
+      subject: 'New application — Performance Needs Analysis',
       name: 'Name',
       namePh: 'Your name',
       email: 'Email',

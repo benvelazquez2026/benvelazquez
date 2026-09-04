@@ -721,7 +721,9 @@ ${each(
 </div>
 <div class="reveal">
 <h2 class="h3" style="margin-bottom:20px">${esc(f.heading)}</h2>
-<form class="apply-form" id="applyForm" method="post" action="/api/apply" novalidate>
+<form class="apply-form" id="applyForm" method="post" action="${esc(site.formEndpoint)}" novalidate>
+<input type="hidden" name="_subject" value="${esc(f.subject)}">
+<input type="hidden" name="language" value="${esc(locale)}">
 <div class="field">
 <label for="f-name">${esc(f.name)}</label>
 <input type="text" id="f-name" name="name" required autocomplete="name" placeholder="${esc(f.namePh)}">
@@ -741,8 +743,8 @@ ${each(f.options, (o) => `<option value="${esc(o)}">${esc(o)}</option>`)}
 <textarea id="f-msg" name="message" rows="4" placeholder="${esc(f.messagePh)}"></textarea>
 </div>
 <div class="hp" aria-hidden="true">
-<label for="f-company">Company</label>
-<input type="text" id="f-company" name="company" tabindex="-1" autocomplete="off">
+<label for="f-gotcha">Company</label>
+<input type="text" id="f-gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
 </div>
 <button type="submit" class="btn btn-primary" data-sending="${esc(f.sending)}">${esc(f.submit)}</button>
 <p class="form-msg ok" id="formOk" role="status">${esc(f.ok)}</p>

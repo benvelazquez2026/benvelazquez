@@ -137,6 +137,8 @@ for (const file of htmlFiles) {
 
   /* --- Form controls --- */
   for (const input of html.match(/<(input|select|textarea)[^>]*>/g) || []) {
+    // Hidden inputs carry no user-facing affordance, so they need no label.
+    if (/type="hidden"/.test(input)) continue;
     const id = attr(input, /\sid="([^"]+)"/);
     const hasAria = /aria-label(ledby)?=/.test(input);
     if (!id && !hasAria) {

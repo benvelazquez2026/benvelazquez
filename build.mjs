@@ -584,7 +584,7 @@ write(
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), interest-cohort=()
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://i.ytimg.com https://i9.ytimg.com; font-src 'self'; frame-src https://www.youtube-nocookie.com https://www.youtube.com; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://i.ytimg.com https://i9.ytimg.com; font-src 'self'; frame-src https://www.youtube-nocookie.com https://www.youtube.com; connect-src 'self' ${site.formHost}; form-action 'self' ${site.formHost}; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; upgrade-insecure-requests
 
 # Fingerprint-free assets that never change content under the same name.
 /fonts/*
