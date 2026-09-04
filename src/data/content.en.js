@@ -86,7 +86,7 @@ export const content = {
         {
           idx: 'C',
           heading: 'Concussion recovery',
-          body: 'Grey Matters Sports Group: exercise-based concussion solutions from the onset of injury. A holistic team focused not just on return — but on keeping you there.',
+          body: 'Exercise-based concussion solutions from the onset of injury. A holistic, team-based approach focused not just on return — but on keeping you there.',
           route: 'concussion',
           link: 'The concussion program →',
         },
@@ -155,7 +155,7 @@ export const content = {
       },
       {
         q: 'Who does Ben work with?',
-        a: '<p>Three groups: professional and developing athletes, executives with demanding travel and desk schedules, and people recovering from concussion through Grey Matters Sports Group. The assessment-first method is the same for all three; only the programming changes.</p>',
+        a: '<p>Three groups: professional and developing athletes, executives with demanding travel and desk schedules, and people recovering from concussion. The assessment-first method is the same for all three; only the programming changes.</p>',
       },
       {
         q: 'Does Ben work with clients remotely?',
@@ -395,7 +395,7 @@ export const content = {
         {
           idx: '06',
           heading: 'Concussion protocols',
-          body: 'Exercise-based concussion solutions from the onset of injury, through Grey Matters Sports Group.',
+          body: 'Exercise-based concussion solutions from the onset of injury, coordinated with your medical team.',
         },
       ],
     },
@@ -444,24 +444,24 @@ export const content = {
     seo: {
       title: 'Exercise-Based Concussion Recovery | Ben Velazquez',
       description:
-        'Exercise-based concussion solutions from the onset of injury, through Grey Matters Sports Group. A team focused not just on return, but on keeping you there.',
+        'Exercise-based concussion solutions from the onset of injury with Ben Velazquez, NYC. A team focused not just on return, but on keeping you there.',
     },
     hero: {
-      kicker: 'Grey Matters Sports Group',
+      kicker: 'Concussion recovery · NYC',
       h1: 'Exercise-based concussion solutions, from the onset of injury.',
       lede: 'A holistic, team-based approach to concussion recovery — focused not just on getting you back, but on keeping you there.',
       ctas: [{ route: 'apply', label: 'Learn about the program' }, { route: 'contact', label: 'Get in touch', ghost: true }],
     },
     answer: [
       'Exercise-based concussion recovery uses carefully progressed, sub-symptom-threshold physical activity as an active part of recovery, rather than treating extended complete rest as the default. It is delivered as part of a coordinated team that includes medical oversight.',
-      'Ben Velazquez is a recognised expert in concussion exercise solutions and works through Grey Matters Sports Group. Tim Fleiszer, Executive Director of Concussion Legacy Foundation Canada, has worked with Ben for more than 15 years, including with military personnel through the Operation Brain Health program.',
+      'Ben Velazquez is a recognised expert in concussion exercise solutions and leads the program himself. Tim Fleiszer, Executive Director of Concussion Legacy Foundation Canada, has worked with Ben for more than 15 years, including with military personnel through the Operation Brain Health program.',
     ],
     facts: [
-      { k: 'Delivered by', v: 'Grey Matters Sports Group' },
+      { k: 'Delivered by', v: 'Ben Velazquez' },
       { k: 'Approach', v: 'Exercise-based, from onset' },
       { k: 'Model', v: 'Holistic, multi-disciplinary team' },
       { k: 'Populations', v: 'Athletes · military · general' },
-      { k: 'Contact', v: `<a href="mailto:${site.emailConcussion}">${site.emailConcussion}</a>` },
+      { k: 'Contact', v: `<a href="mailto:${site.email}">${site.email}</a>` },
       { k: 'Languages', v: 'English · Spanish' },
     ],
     medical: {
@@ -494,8 +494,8 @@ export const content = {
         a: '<p>Athletes at every level, military personnel — Ben has worked with military personnel through Operation Brain Health with Concussion Legacy Foundation Canada — and anyone recovering from a concussion who wants a structured, supervised return.</p>',
       },
       {
-        q: 'What is Grey Matters Sports Group?',
-        a: `<p>Grey Matters Sports Group is the vehicle through which the concussion work is delivered: a holistic, multi-disciplinary team focused on exercise-based concussion solutions from the onset of injury. You can reach the team at <a href="mailto:${site.emailConcussion}">${site.emailConcussion}</a>.</p>`,
+        q: 'Who delivers the concussion program?',
+        a: `<p>Ben Velazquez leads the program directly. He is a recognised expert in exercise-based concussion solutions and coordinates a multi-disciplinary team around each case — working alongside your physician, and drawing on his vetted network of physiotherapy and medical professionals where a recovery needs it. You can reach him at <a href="mailto:${site.email}">${site.email}</a>.</p>`,
       },
       {
         q: 'What does “not just return — but keeping you there” mean?',
@@ -509,7 +509,7 @@ export const content = {
       { route: 'contact', label: 'Contact', title: 'Get in touch with the team' },
     ],
     cta: {
-      kicker: 'Grey Matters Sports Group',
+      kicker: 'Work with Ben',
       heading: 'Talk to the team about a structured recovery.',
       body: 'Tell us about the injury and where you are in recovery, and we will explain how the program works alongside your medical care.',
       ctas: [{ route: 'contact', label: 'Contact the team' }, { route: 'apply', label: 'Book an analysis', ghost: true }],
@@ -772,7 +772,7 @@ export const content = {
 <h2>The science</h2>
 <p>Fascia is the throughline. It is continuous, it adapts to whatever you repeatedly ask of it, and it explains why localised, specific work outperforms general mobility training for most of the problems people actually bring me. That work led to my contribution to <em>Fascia: Clinical Applications for Health and Human Performance</em>, and it is why ELDOA sits at the centre of nearly every program I write.</p>
 <h2>Concussion</h2>
-<p>Through Grey Matters Sports Group I work on exercise-based concussion solutions from the onset of injury. Tim Fleiszer, Executive Director of Concussion Legacy Foundation Canada, and I have worked together for more than 15 years, including with military personnel through the Operation Brain Health program.</p>
+<p>I work on exercise-based concussion solutions from the onset of injury. Tim Fleiszer, Executive Director of Concussion Legacy Foundation Canada, and I have worked together for more than 15 years, including with military personnel through the Operation Brain Health program.</p>
 <h2>Teaching</h2>
 <p>More than a thousand professionals have come through my seminars. Teaching sharpens the work: you cannot hand-wave a principle to a room of practitioners who will apply it on Monday.</p>
 <h2>Executives</h2>
@@ -1271,7 +1271,7 @@ export const content = {
     seo: {
       title: 'Contact Ben Velazquez — NYC Performance Rehabilitation',
       description:
-        'Get in touch with Ben Velazquez and Grey Matters Sports Group. New York City, virtual worldwide, in English or Spanish.',
+        'Get in touch with Ben Velazquez — coaching, the concussion program, speaking and media. New York City, virtual worldwide, in English or Spanish.',
     },
     hero: {
       kicker: 'Contact',
@@ -1286,7 +1286,7 @@ export const content = {
     facts: [
       { k: 'Coaching enquiries', v: '<a href="/apply/">Apply for a free analysis</a>' },
       { k: 'Email', v: `<a href="mailto:${site.email}">${site.email}</a>` },
-      { k: 'Concussion program', v: 'Grey Matters Sports Group' },
+      { k: 'Concussion program', v: '<a href="/concussion-recovery/">Exercise-based recovery</a>' },
       { k: 'Based in', v: 'New York City, NY' },
       { k: 'Availability', v: 'Virtual worldwide · in person NYC' },
       { k: 'Languages', v: 'English · Spanish' },
@@ -1301,7 +1301,7 @@ export const content = {
         a: `<p>Yes. More than 1,000 professionals have been trained through Ben’s seminars. Email <a href="mailto:${site.email}">${site.email}</a> with dates, audience and format.</p>`,
       },
       {
-        q: 'How do I reach Grey Matters Sports Group?',
+        q: 'How do I ask about the concussion program?',
         a: `<p>Email <a href="mailto:${site.email}">${site.email}</a> and note that your enquiry is about the concussion program.</p>`,
       },
       {
@@ -1311,7 +1311,7 @@ export const content = {
     ],
     related: [
       { route: 'apply', label: 'Coaching', title: 'Book your free needs analysis' },
-      { route: 'concussion', label: 'Concussion', title: 'Grey Matters Sports Group' },
+      { route: 'concussion', label: 'Concussion', title: 'Exercise-based concussion recovery' },
       { route: 'about', label: 'Background', title: 'About Ben Velazquez' },
       { route: 'faq', label: 'Questions', title: 'Frequently asked questions' },
     ],

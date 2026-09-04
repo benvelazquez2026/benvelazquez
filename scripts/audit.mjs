@@ -193,6 +193,20 @@ for (const file of htmlFiles) {
     if (!/rel="[^"]*noopener/.test(a)) fail(rel, `target=_blank without rel=noopener: ${a.slice(0, 80)}`);
   }
 
+  /* --- Template leakage ---
+     A removed config key renders as the literal string "undefined" rather
+     than failing the build, so assert it never reaches the output. */
+  for (const token of ['undefined', 'null', '[object Object]', 'NaN']) {
+    if (html.includes(`>${token}<`) || html.includes(`"${token}"`) || html.includes(`:${token}`))
+      fail(rel, `template leaked "${token}" into the page`);
+  }
+
+  /* --- Mailto links must be real addresses --- */
+  for (const m of html.matchAll(/href="mailto:([^"]*)"/g)) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(m[1]))
+      fail(rel, `invalid mailto address: "${m[1]}"`);
+  }
+
   /* --- Performance smells --- */
   if (/<link[^>]+rel="stylesheet"[^>]+href="http/.test(html))
     fail(rel, 'external render-blocking stylesheet');

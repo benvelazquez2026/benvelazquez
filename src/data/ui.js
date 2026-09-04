@@ -15,6 +15,7 @@ export const ui = {
     menuLabel: 'Open menu',
     newWindow: '(opens in a new window)',
     navCta: 'Free analysis',
+    emailLink: 'Email Ben',
     rssTitle: 'Ben Velazquez — Weekly Insights',
     ogAlt: 'Ben Velazquez — Performance Rehabilitation, New York City',
     nav: {
@@ -73,6 +74,7 @@ export const ui = {
     menuLabel: 'Abrir menú',
     newWindow: '(se abre en una ventana nueva)',
     navCta: 'Análisis gratis',
+    emailLink: 'Escribir a Ben',
     rssTitle: 'Ben Velazquez — Insights semanales',
     ogAlt: 'Ben Velazquez — Rehabilitación de alto rendimiento, Nueva York',
     nav: {
