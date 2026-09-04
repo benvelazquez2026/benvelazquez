@@ -747,11 +747,11 @@ export const content = {
     hero: {
       kicker: 'About',
       h1: 'Twenty years in the room where careers are protected.',
-      lede: 'Performance rehabilitation specialist, strength coach, published author on fascia, and a recognised expert in exercise-based concussion solutions — based in New York City, working in English and Spanish.',
+      lede: 'Performance rehabilitation specialist, posturologist, strength coach, published author on fascia, and a recognised expert in exercise-based concussion solutions — based in New York City, working in English and Spanish.',
       ctas: [APPLY_CTA, { route: 'method', label: 'The method', ghost: true }],
     },
     answer: [
-      'Ben Velazquez is a New York City performance rehabilitation specialist and strength coach with more than 20 years working with elite performers. He has worked with athletes across the NFL, NHL and MLB, has trained over 1,000 professionals through his seminars, and is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.',
+      'Ben Velazquez is a New York City performance rehabilitation specialist, posturologist and strength coach with more than 20 years working with elite performers. He has worked with athletes across the NFL, NHL and MLB, has trained over 1,000 professionals through his seminars, and is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.',
       'He is a licensed Soma-Therapist, a Certified Strength &amp; Conditioning Specialist (CSCS), an ACSM Exercise Specialist and an ISSA Sports Performance Nutritionist, and a member of the NSCA, ACSM and ISSA. He coaches in English and Spanish, virtually worldwide and in person in New York City.',
     ],
     facts: [
@@ -786,7 +786,7 @@ export const content = {
     faqs: [
       {
         q: 'What are Ben Velazquez’s qualifications?',
-        a: '<p>Licensed Soma-Therapist (Performance Physical Therapy), Certified Strength &amp; Conditioning Specialist (CSCS), ACSM Exercise Specialist and ISSA Sports Performance Nutritionist. He is a member of the NSCA, ACSM and ISSA, and a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.</p>',
+        a: '<p>Licensed Soma-Therapist (Performance Physical Therapy), Certified Strength &amp; Conditioning Specialist (CSCS), ACSM Exercise Specialist and ISSA Sports Performance Nutritionist. He studied posturology under Dr. Bernard Bricot, is a member of the NSCA, ACSM and ISSA, and a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.</p>',
       },
       {
         q: 'Which professional athletes has Ben worked with?',
@@ -885,7 +885,7 @@ export const content = {
           'Everything in Core',
           'In-person and virtual, combined',
           'Up to 8–12 touchpoints / month, priority scheduling',
-          'Programming adjusted in real time as your week changes',
+          'Custom program design, adjusted in real time as your week changes',
           'Deeper integration with recovery, sleep and energy',
           'Direct on-call access, within agreed hours',
         ],
@@ -1549,6 +1549,7 @@ export const credentialsCopy = {
     'Certified Strength & Conditioning Specialist (CSCS)',
     'ACSM Exercise Specialist',
     'ISSA Sports Performance Nutritionist',
+    'Studied posturology under Dr. Bernard Bricot',
     'Member — NSCA · ACSM · ISSA',
   ],
   recogTag: 'Recognised in',

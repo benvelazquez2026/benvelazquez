@@ -40,8 +40,8 @@ export function personEntity(locale = 'en') {
         : 'Especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York.',
     jobTitle:
       locale === 'en'
-        ? ['Performance Rehabilitation Specialist', 'Strength and Conditioning Coach']
-        : ['Especialista en Rehabilitación de Alto Rendimiento', 'Preparador Físico'],
+        ? ['Performance Rehabilitation Specialist', 'Posturologist', 'Strength and Conditioning Coach']
+        : ['Especialista en Rehabilitación de Alto Rendimiento', 'Posturólogo', 'Preparador Físico'],
     image: absolute('/img/og-default.jpg'),
     email: `mailto:${site.email}`,
     sameAs: [...site.social, site.links.stack],
