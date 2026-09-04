@@ -79,7 +79,7 @@ export const content = {
         {
           idx: 'C',
           heading: 'Recuperación de conmociones',
-          body: 'Grey Matters Sports Group: soluciones de ejercicio para conmociones desde el inicio de la lesión. Un equipo integral enfocado no solo en el regreso, sino en mantenerte ahí.',
+          body: 'Soluciones de ejercicio para conmociones desde el inicio de la lesión. Un enfoque integral y en equipo, centrado no solo en el regreso, sino en mantenerte ahí.',
           route: 'concussion',
           link: 'El programa de conmociones →',
         },
@@ -148,7 +148,7 @@ export const content = {
       },
       {
         q: '¿Con quién trabaja Ben?',
-        a: '<p>Con tres grupos: atletas profesionales y en desarrollo, ejecutivos con agendas exigentes de viajes y escritorio, y personas en recuperación de conmociones a través de Grey Matters Sports Group. El método basado en la evaluación es el mismo para los tres; solo cambia la programación.</p>',
+        a: '<p>Con tres grupos: atletas profesionales y en desarrollo, ejecutivos con agendas exigentes de viajes y escritorio, y personas en recuperación de conmociones cerebrales. El método basado en la evaluación es el mismo para los tres; solo cambia la programación.</p>',
       },
       {
         q: '¿Ben trabaja con clientes a distancia?',
@@ -394,7 +394,7 @@ export const content = {
         {
           idx: '06',
           heading: 'Protocolos de conmoción',
-          body: 'Soluciones de ejercicio para conmociones desde el inicio de la lesión, a través de Grey Matters Sports Group.',
+          body: 'Soluciones de ejercicio para conmociones desde el inicio de la lesión, coordinadas con tu equipo médico.',
         },
       ],
     },
@@ -443,10 +443,10 @@ export const content = {
     seo: {
       title: 'Recuperación de Conmociones con Ejercicio | Ben Velazquez',
       description:
-        'Soluciones de ejercicio para conmociones desde el inicio de la lesión, con Grey Matters Sports Group. Un equipo integral enfocado en mantenerte ahí.',
+        'Soluciones de ejercicio para conmociones desde el inicio de la lesión con Ben Velazquez, NYC. Un equipo integral enfocado en mantenerte ahí.',
     },
     hero: {
-      kicker: 'Grey Matters Sports Group',
+      kicker: 'Recuperación de conmociones · NYC',
       h1: 'Soluciones de ejercicio para conmociones, desde el inicio de la lesión.',
       lede: 'Un enfoque integral y en equipo para la recuperación de conmociones cerebrales, centrado no solo en que regreses, sino en mantenerte ahí.',
       ctas: [
@@ -456,14 +456,14 @@ export const content = {
     },
     answer: [
       'La recuperación de conmociones basada en ejercicio utiliza actividad física progresada cuidadosamente y por debajo del umbral de síntomas como parte activa de la recuperación, en lugar de asumir el reposo completo prolongado como opción predeterminada. Se entrega como parte de un equipo coordinado que incluye supervisión médica.',
-      'Ben Velazquez es un experto reconocido en soluciones de ejercicio para conmociones y trabaja a través de Grey Matters Sports Group. Tim Fleiszer, Director Ejecutivo de Concussion Legacy Foundation Canada, ha trabajado con Ben durante más de 15 años, incluido el trabajo con personal militar a través del programa Operation Brain Health.',
+      'Ben Velazquez es un experto reconocido en soluciones de ejercicio para conmociones y dirige el programa personalmente. Tim Fleiszer, Director Ejecutivo de Concussion Legacy Foundation Canada, ha trabajado con Ben durante más de 15 años, incluido el trabajo con personal militar a través del programa Operation Brain Health.',
     ],
     facts: [
-      { k: 'Entregado por', v: 'Grey Matters Sports Group' },
+      { k: 'Entregado por', v: 'Ben Velazquez' },
       { k: 'Enfoque', v: 'Basado en ejercicio, desde el inicio' },
       { k: 'Modelo', v: 'Equipo integral multidisciplinar' },
       { k: 'Poblaciones', v: 'Atletas · militares · público general' },
-      { k: 'Contacto', v: `<a href="mailto:${site.emailConcussion}">${site.emailConcussion}</a>` },
+      { k: 'Contacto', v: `<a href="mailto:${site.email}">${site.email}</a>` },
       { k: 'Idiomas', v: 'Inglés · Español' },
     ],
     medical: {
@@ -496,8 +496,8 @@ export const content = {
         a: '<p>Para atletas de todos los niveles, para personal militar —Ben ha trabajado con personal militar a través de Operation Brain Health con Concussion Legacy Foundation Canada— y para cualquiera en recuperación de una conmoción que quiera un retorno estructurado y supervisado.</p>',
       },
       {
-        q: '¿Qué es Grey Matters Sports Group?',
-        a: `<p>Grey Matters Sports Group es el vehículo a través del cual se entrega el trabajo de conmociones: un equipo integral y multidisciplinar centrado en soluciones de ejercicio desde el inicio de la lesión. Puedes contactar al equipo en <a href="mailto:${site.emailConcussion}">${site.emailConcussion}</a>.</p>`,
+        q: '¿Quién dirige el programa de conmociones?',
+        a: `<p>Ben Velazquez dirige el programa personalmente. Es un experto reconocido en soluciones de ejercicio para conmociones y coordina un equipo multidisciplinar en torno a cada caso, trabajando junto a tu médico y apoyándose en su red verificada de profesionales de fisioterapia y medicina cuando la recuperación lo requiere. Puedes contactarlo en <a href="mailto:${site.email}">${site.email}</a>.</p>`,
       },
       {
         q: '¿Qué significa «no solo el regreso, sino mantenerte ahí»?',
@@ -511,7 +511,7 @@ export const content = {
       { route: 'contact', label: 'Contacto', title: 'Habla con el equipo' },
     ],
     cta: {
-      kicker: 'Grey Matters Sports Group',
+      kicker: 'Trabaja con Ben',
       heading: 'Habla con el equipo sobre una recuperación estructurada.',
       body: 'Cuéntanos sobre la lesión y en qué punto de la recuperación estás, y te explicaremos cómo funciona el programa junto a tu atención médica.',
       ctas: [
@@ -777,7 +777,7 @@ export const content = {
 <h2>La ciencia</h2>
 <p>La fascia es el hilo conductor. Es continua, se adapta a lo que le pides de forma repetida y explica por qué el trabajo localizado y específico supera al entrenamiento general de movilidad para la mayoría de los problemas que la gente me trae. Ese trabajo condujo a mi contribución a <em>Fascia: Clinical Applications for Health and Human Performance</em>, y es la razón por la que ELDOA está en el centro de casi todos los programas que escribo.</p>
 <h2>Conmociones</h2>
-<p>A través de Grey Matters Sports Group trabajo en soluciones de ejercicio para conmociones desde el inicio de la lesión. Tim Fleiszer, Director Ejecutivo de Concussion Legacy Foundation Canada, y yo llevamos más de 15 años trabajando juntos, incluido el trabajo con personal militar a través del programa Operation Brain Health.</p>
+<p>Trabajo en soluciones de ejercicio para conmociones desde el inicio de la lesión. Tim Fleiszer, Director Ejecutivo de Concussion Legacy Foundation Canada, y yo llevamos más de 15 años trabajando juntos, incluido el trabajo con personal militar a través del programa Operation Brain Health.</p>
 <h2>Enseñanza</h2>
 <p>Más de mil profesionales han pasado por mis seminarios. Enseñar afina el trabajo: no puedes despachar un principio con vaguedades ante una sala de profesionales que lo aplicarán el lunes.</p>
 <h2>Ejecutivos</h2>
@@ -1276,7 +1276,7 @@ export const content = {
     seo: {
       title: 'Contactar a Ben Velazquez — Rehabilitación NYC',
       description:
-        'Ponte en contacto con Ben Velazquez y Grey Matters Sports Group. Nueva York, virtual en todo el mundo, en inglés o español.',
+        'Ponte en contacto con Ben Velazquez: coaching, programa de conmociones, conferencias y prensa. Nueva York, virtual, en inglés o español.',
     },
     hero: {
       kicker: 'Contacto',
@@ -1291,7 +1291,7 @@ export const content = {
     facts: [
       { k: 'Consultas de coaching', v: '<a href="/es/aplicar/">Solicita un análisis gratuito</a>' },
       { k: 'Correo', v: `<a href="mailto:${site.email}">${site.email}</a>` },
-      { k: 'Programa de conmociones', v: 'Grey Matters Sports Group' },
+      { k: 'Programa de conmociones', v: '<a href="/es/recuperacion-de-conmociones/">Recuperación con ejercicio</a>' },
       { k: 'Con base en', v: 'Nueva York, NY' },
       { k: 'Disponibilidad', v: 'Virtual mundial · presencial NYC' },
       { k: 'Idiomas', v: 'Inglés · Español' },
@@ -1306,7 +1306,7 @@ export const content = {
         a: `<p>Sí. Más de 1,000 profesionales se han formado en los seminarios de Ben. Escribe a <a href="mailto:${site.email}">${site.email}</a> con fechas, público y formato.</p>`,
       },
       {
-        q: '¿Cómo contacto a Grey Matters Sports Group?',
+        q: '¿Cómo pregunto por el programa de conmociones?',
         a: `<p>Escribe a <a href="mailto:${site.email}">${site.email}</a> e indica que tu consulta es sobre el programa de conmociones.</p>`,
       },
       {
@@ -1316,7 +1316,7 @@ export const content = {
     ],
     related: [
       { route: 'apply', label: 'Coaching', title: 'Reserva tu análisis gratuito' },
-      { route: 'concussion', label: 'Conmociones', title: 'Grey Matters Sports Group' },
+      { route: 'concussion', label: 'Conmociones', title: 'Recuperación con base en el ejercicio' },
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
       { route: 'faq', label: 'Preguntas', title: 'Preguntas frecuentes' },
     ],

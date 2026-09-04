@@ -100,7 +100,7 @@ ${col(t.footerHeadings.explore, footerNav.explore)}
 ${col(t.footerHeadings.company, footerNav.company)}
 <div class="foot-col">
 <h3>${esc(t.footerHeadings.connect)}</h3>
-<ul>${socialLinks}<li><a href="mailto:${esc(site.email)}">Grey Matters Sports Group</a></li></ul>
+<ul>${socialLinks}<li><a href="mailto:${esc(site.email)}">${esc(t.emailLink)}</a></li></ul>
 </div>
 </div>
 <div class="foot-grid" style="margin-bottom:26px">
