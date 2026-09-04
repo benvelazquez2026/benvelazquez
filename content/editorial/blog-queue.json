@@ -1,0 +1,2321 @@
+{
+  "source": "Ben_Velazquez_100_Knowledge_Blogs.pdf",
+  "sourcePath": "content/editorial/Ben_Velazquez_100_Knowledge_Blogs.pdf",
+  "generated": "2026-09-04",
+  "cadence": "weekly, dated the Tuesday of the publishing week",
+  "howToUse": "See content/editorial/WEEKLY-BLOG.md. Take the lowest queuePosition whose status is \"queued\"; on publish set status to \"published\" plus publishedSlug and publishedDate.",
+  "pillars": [
+    {
+      "key": "eldoa",
+      "label": "ELDOA TECHNIQUE MASTERY"
+    },
+    {
+      "key": "posture",
+      "label": "TECH NECK & POSTURE TRANSFORMATION"
+    },
+    {
+      "key": "athletes",
+      "label": "PROFESSIONAL ATHLETE PERFORMANCE"
+    },
+    {
+      "key": "wellness",
+      "label": "HOLISTIC HEALTH & WELLNESS"
+    },
+    {
+      "key": "youth",
+      "label": "YOUTH DEVELOPMENT & FAMILY HEALTH"
+    },
+    {
+      "key": "practice",
+      "label": "BUSINESS & PROFESSIONAL DEVELOPMENT"
+    }
+  ],
+  "topics": [
+    {
+      "n": 1,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "The L5-S1 ELDOA: Why This Single Exercise Could Save Your Athletic Career",
+      "description": "Deep dive into Ben's favorite ELDOA position, explaining the biomechanics of spinal decompression at the L5-S1 junction, why 60 seconds is the magic number, and how professional athletes use this specific exercise for career longevity.",
+      "targetMarket": "Professional athletes, sports medicine professionals, chronic back pain sufferers",
+      "hashtags": [
+        "#ELDOA",
+        "#SpinalDecompression",
+        "#L5S1",
+        "#AthleticRecovery",
+        "#BackPainRelief",
+        "#SportsPerformance"
+      ],
+      "cta": "Download free L5-S1 ELDOA video guide; Join ELDOA Foundations online course",
+      "communities": "r/flexibility, SportsMed forums, Professional athlete LinkedIn groups",
+      "pillarKey": "eldoa",
+      "caution": [],
+      "audience": "clients",
+      "status": "published",
+      "publishedSlug": "the-l5-s1-eldoa",
+      "publishedDate": "2026-09-01",
+      "queuePosition": 1
+    },
+    {
+      "n": 2,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "ELDOA vs. McKenzie Method: Clinical Trial Results That Shocked Physical Therapists",
+      "description": "Analysis of recent randomized controlled trials comparing ELDOA to McKenzie exercises, explaining why ELDOA showed 4x greater disability improvements and what this means for chronic pain treatment.",
+      "targetMarket": "Physical therapists, chiropractors, chronic pain patients",
+      "hashtags": [
+        "#ELDOA",
+        "#McKenzieMethod",
+        "#ClinicalResearch",
+        "#PhysicalTherapy",
+        "#ChronicPain"
+      ],
+      "cta": "Register for ELDOA practitioner certification webinar",
+      "communities": "PT professional associations, Evidence-based practice groups",
+      "pillarKey": "eldoa",
+      "caution": [
+        "names third parties (Domi) — only publish claims Ben can personally stand behind",
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 75
+    },
+    {
+      "n": 3,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "From NHL Ice to NBA Court: How ELDOA Became Pro Sports' Secret Weapon",
+      "description": "Inside look at how Connor McDavid, Christian McCaffrey, and other elite athletes integrate ELDOA into their training, featuring exclusive insights from Ben's 20 years working with professionals.",
+      "targetMarket": "Sports fans, aspiring athletes, strength coaches",
+      "hashtags": [
+        "#NHL",
+        "#NBA",
+        "#ELDOA",
+        "#ProSports",
+        "#AthleticPerformance",
+        "#InjuryPrevention"
+      ],
+      "cta": "Book consultation for team ELDOA integration",
+      "communities": "Team-specific fan forums, S&C coach networks",
+      "pillarKey": "eldoa",
+      "caution": [
+        "names third parties (McCaffrey, McDavid) — only publish claims Ben can personally stand behind"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 51
+    },
+    {
+      "n": 4,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "The 3-Exercise ELDOA Morning Routine That Changed My Athletes' Lives",
+      "description": "Practical guide to T8-T9, L5-S1, and C4-C5 ELDOA positions for daily practice, including modifications for different fitness levels and common mistakes to avoid.",
+      "targetMarket": "General fitness enthusiasts, office workers, amateur athletes",
+      "hashtags": [
+        "#MorningRoutine",
+        "#ELDOA",
+        "#PostureCorrection",
+        "#DailyExercise",
+        "#SpinalHealth"
+      ],
+      "cta": "Join 30-Day ELDOA Challenge; Subscribe to weekly technique videos",
+      "communities": "r/fitness, morning routine Facebook groups",
+      "pillarKey": "eldoa",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 6
+    },
+    {
+      "n": 5,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "ELDOA for Tech Neck: The 12-Week Protocol I Developed for Silicon Valley",
+      "description": "Comprehensive breakdown of Ben's proprietary tech neck reversal protocol using ELDOA, including awareness exercises, mobility work, and proprioceptive training phases.",
+      "targetMarket": "Tech workers, remote employees, corporate wellness directors",
+      "hashtags": [
+        "#TechNeck",
+        "#ELDOA",
+        "#CorporateWellness",
+        "#RemoteWork",
+        "#PostureCorrection"
+      ],
+      "cta": "Download corporate wellness proposal template",
+      "communities": "Remote work forums, Tech company wellness groups",
+      "pillarKey": "eldoa",
+      "caution": [
+        "names third parties (Silicon Valley) — only publish claims Ben can personally stand behind"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 56
+    },
+    {
+      "n": 6,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "Why French Osteopath Guy Voyer's ELDOA Method Outperforms Spinal Decompression Therapy",
+      "description": "Historical perspective on ELDOA development, scientific principles of fascial tensegrity, and clinical evidence showing superior outcomes versus mechanical decompression.",
+      "targetMarket": "Healthcare practitioners, medical history enthusiasts",
+      "hashtags": [
+        "#ELDOA",
+        "#GuyVoyer",
+        "#SpinalDecompression",
+        "#Osteopathy",
+        "#MedicalHistory"
+      ],
+      "cta": "Access Guy Voyer tribute video series",
+      "communities": "Osteopathic associations, Alternative medicine forums",
+      "pillarKey": "eldoa",
+      "caution": [
+        "names third parties (Voyer) — only publish claims Ben can personally stand behind"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 61
+    },
+    {
+      "n": 7,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "ELDOA for Pitchers: How Mariano Rivera Used This Method Post-ACL Surgery",
+      "description": "Case study of using ELDOA in pre-surgical preparation and post-surgical rehabilitation, specific exercises for throwing athletes, and integration with traditional PT.",
+      "targetMarket": "Baseball players, sports medicine professionals, MLB fans",
+      "hashtags": [
+        "#Baseball",
+        "#ELDOA",
+        "#MarianoRivera",
+        "#ACLRecovery",
+        "#MLB",
+        "#PitcherHealth"
+      ],
+      "cta": "Download pitcher-specific ELDOA guide",
+      "communities": "Baseball coaching forums, MLB fan groups",
+      "pillarKey": "eldoa",
+      "caution": [
+        "names third parties (Rivera) — only publish claims Ben can personally stand behind"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 66
+    },
+    {
+      "n": 8,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "The Fascial Revolution: How ELDOA Targets All 250 Million Nerve Endings",
+      "description": "Latest research on fascia as a sensory organ, how ELDOA creates specific fascial tension patterns, and why this matters for pain relief and performance.",
+      "targetMarket": "Manual therapists, anatomy enthusiasts, chronic pain sufferers",
+      "hashtags": [
+        "#Fascia",
+        "#ELDOA",
+        "#Anatomy",
+        "#PainScience",
+        "#ManualTherapy"
+      ],
+      "cta": "Register for Fascial Anatomy webinar series",
+      "communities": "Anatomy Trains community, Fascia Research Congress attendees",
+      "pillarKey": "eldoa",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 11
+    },
+    {
+      "n": 9,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "ELDOA Certification: Is 2-4 Years of Training Worth $5,500?",
+      "description": "Honest assessment of ELDOA certification requirements, ROI for practitioners, and alternative learning pathways for different professional goals.",
+      "targetMarket": "Fitness professionals, PTs considering certification",
+      "hashtags": [
+        "#ELDOA",
+        "#Certification",
+        "#ContinuingEducation",
+        "#ROI",
+        "#FitnessCareers"
+      ],
+      "cta": "Schedule certification pathway consultation",
+      "communities": "Personal trainer forums, PT continuing education groups",
+      "pillarKey": "eldoa",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 76
+    },
+    {
+      "n": 10,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "Global ELDOA vs. Targeted Positions: Building Your Personal Protocol",
+      "description": "How to assess which ELDOA positions you need based on posture analysis, sport demands, and injury history, plus progression strategies.",
+      "targetMarket": "Self-directed learners, biohackers, movement enthusiasts",
+      "hashtags": [
+        "#ELDOA",
+        "#PersonalizedFitness",
+        "#MovementAssessment",
+        "#Biohacking"
+      ],
+      "cta": "Book virtual movement assessment",
+      "communities": "Biohacking forums, Movement culture groups",
+      "pillarKey": "eldoa",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 16
+    },
+    {
+      "n": 11,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "ELDOA in Water: The Post-Surgical Protocol That Accelerates Recovery by 39%",
+      "description": "Integration of ELDOA principles with aquatic therapy, specific protocols for different surgeries, and why hydrostatic pressure enhances spinal decompression.",
+      "targetMarket": "Post-surgical patients, aquatic therapists, surgeons",
+      "hashtags": [
+        "#ELDOA",
+        "#AquaticTherapy",
+        "#SurgicalRecovery",
+        "#Rehabilitation"
+      ],
+      "cta": "Find certified ELDOA aquatic therapist",
+      "communities": "Aquatic therapy associations, Surgery recovery support groups",
+      "pillarKey": "eldoa",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 70
+    },
+    {
+      "n": 12,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "Teaching ELDOA to 8-Year-Olds: What My Wrestler Son Taught Me",
+      "description": "Age-appropriate ELDOA modifications, benefits for young athletes, and how to make spinal health fun for kids based on Ben's experience with his son.",
+      "targetMarket": "Parents, youth coaches, pediatric therapists",
+      "hashtags": [
+        "#YouthSports",
+        "#ELDOA",
+        "#KidsHealth",
+        "#Wrestling",
+        "#Parenting"
+      ],
+      "cta": "Access youth ELDOA video library",
+      "communities": "Youth sports parent groups, Wrestling forums",
+      "pillarKey": "eldoa",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 21
+    },
+    {
+      "n": 13,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "ELDOA for Runners: Why Kenyan Athletes Are Adding This to Their Training",
+      "description": "How ELDOA improves running economy, specific positions for common running injuries, and integration with traditional training.",
+      "targetMarket": "Runners, running coaches, endurance athletes",
+      "hashtags": [
+        "#Running",
+        "#ELDOA",
+        "#RunningEconomy",
+        "#InjuryPrevention",
+        "#Marathon"
+      ],
+      "cta": "Join Runners' ELDOA workshop",
+      "communities": "r/running, Marathon training groups",
+      "pillarKey": "eldoa",
+      "caution": [
+        "names third parties (Kenyan) — only publish claims Ben can personally stand behind"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 73
+    },
+    {
+      "n": 14,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "The CEO's Secret: ELDOA Between Board Meetings",
+      "description": "Quick ELDOA routines for busy executives, how spinal decompression improves cognitive function, and why Fortune 500 CEOs are adopting this practice.",
+      "targetMarket": "Executives, entrepreneurs, business leaders",
+      "hashtags": [
+        "#ExecutiveHealth",
+        "#ELDOA",
+        "#Leadership",
+        "#Productivity",
+        "#CEO"
+      ],
+      "cta": "Book executive wellness consultation",
+      "communities": "Executive health forums, LinkedIn leadership groups",
+      "pillarKey": "eldoa",
+      "caution": [
+        "names third parties (Fortune 500) — only publish claims Ben can personally stand behind"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 74
+    },
+    {
+      "n": 15,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "ELDOA Troubleshooting: Why You're Not Feeling the Decompression",
+      "description": "Common technique errors, how to identify proper positioning, and modifications for different body types and flexibility levels.",
+      "targetMarket": "ELDOA practitioners, frustrated beginners",
+      "hashtags": [
+        "#ELDOA",
+        "#TechniqueTips",
+        "#Troubleshooting",
+        "#Form",
+        "#Flexibility"
+      ],
+      "cta": "Submit video for technique analysis",
+      "communities": "ELDOA Facebook groups, Movement forums",
+      "pillarKey": "eldoa",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 26
+    },
+    {
+      "n": 16,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "Combining ELDOA with Aldo Complex: Advanced Protocols for Athletes",
+      "description": "How to integrate multiple ELDOA positions into flowing sequences, sport-specific combinations, and recovery optimization strategies.",
+      "targetMarket": "Advanced practitioners, professional athletes, coaches",
+      "hashtags": [
+        "#ELDOA",
+        "#AdvancedTraining",
+        "#AthleticPerformance",
+        "#Recovery"
+      ],
+      "cta": "Access advanced ELDOA sequences",
+      "communities": "Elite athlete forums, Advanced fitness groups",
+      "pillarKey": "eldoa",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 31
+    },
+    {
+      "n": 17,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "ELDOA for Golfers: The Spinal Rotation Secret That Added 20 Yards",
+      "description": "Golf-specific ELDOA positions, how spinal decompression improves rotation, and case studies from PGA tour players.",
+      "targetMarket": "Golfers, golf instructors, country club fitness directors",
+      "hashtags": [
+        "#Golf",
+        "#ELDOA",
+        "#GolfFitness",
+        "#PGA",
+        "#SpinalRotation"
+      ],
+      "cta": "Download golf ELDOA guide",
+      "communities": "Golf forums, Country club networks",
+      "pillarKey": "eldoa",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 36
+    },
+    {
+      "n": 18,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "Why Physical Therapists Are Abandoning Traditional Methods for ELDOA",
+      "description": "Interviews with PTs who've transitioned to ELDOA, clinical outcomes comparison, and practice transformation strategies.",
+      "targetMarket": "Physical therapists, clinic owners",
+      "hashtags": [
+        "#PhysicalTherapy",
+        "#ELDOA",
+        "#ClinicalOutcomes",
+        "#PracticeManagement"
+      ],
+      "cta": "Join PT ELDOA integration mastermind",
+      "communities": "PT business groups, Clinical excellence forums",
+      "pillarKey": "eldoa",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 77
+    },
+    {
+      "n": 19,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "ELDOA and Pregnancy: Safe Spinal Decompression for Expecting Mothers",
+      "description": "Pregnancy-safe ELDOA modifications, benefits for common pregnancy discomforts, and postpartum recovery protocols.",
+      "targetMarket": "Pregnant women, prenatal fitness instructors, OB/GYNs",
+      "hashtags": [
+        "#Pregnancy",
+        "#ELDOA",
+        "#PrenatalFitness",
+        "#Maternity",
+        "#PostpartumRecovery"
+      ],
+      "cta": "Register for prenatal ELDOA certification",
+      "communities": "Pregnancy forums, Prenatal fitness groups",
+      "pillarKey": "eldoa",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 41
+    },
+    {
+      "n": 20,
+      "pillar": "ELDOA TECHNIQUE MASTERY",
+      "sourceTitle": "The Science of 60 Seconds: Why ELDOA Timing Can't Be Rushed",
+      "description": "Physiological changes that occur during 60-second holds, research on time under tension for fascial remodeling, and why shortcuts don't work.",
+      "targetMarket": "Science-minded practitioners, researchers, skeptics",
+      "hashtags": [
+        "#ELDOA",
+        "#ExerciseScience",
+        "#Research",
+        "#Biomechanics",
+        "#Fascia"
+      ],
+      "cta": "Access full research library",
+      "communities": "Exercise science forums, Research groups ## TECH NECK & POSTURE TRANSFORMATION (Articles 21-35)",
+      "pillarKey": "eldoa",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 46
+    },
+    {
+      "n": 21,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "Tech Neck Epidemic: Why 67% of Young Athletes Have Forward Head Posture",
+      "description": "Comprehensive analysis of smartphone impact on athletic performance, measurable decrements in agility and power, and the 148% increased concussion risk.",
+      "targetMarket": "Youth coaches, parents, sports medicine professionals",
+      "hashtags": [
+        "#TechNeck",
+        "#YouthSports",
+        "#PostureCorrection",
+        "#ConcussionPrevention"
+      ],
+      "cta": "Download youth athlete posture assessment guide",
+      "communities": "Youth sports associations, Parent athletic groups",
+      "pillarKey": "posture",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 48
+    },
+    {
+      "n": 22,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "The 4-Phase Tech Neck Reversal Protocol Used by NFL Teams",
+      "description": "Ben's proprietary system: awareness, mobility, reinforcement, and proprioception phases with specific exercises and progression criteria.",
+      "targetMarket": "Professional athletes, team physicians, strength coaches",
+      "hashtags": [
+        "#NFL",
+        "#TechNeck",
+        "#AthleticPerformance",
+        "#PostureTraining"
+      ],
+      "cta": "Book team posture assessment",
+      "communities": "NFL training forums, S&C coach networks",
+      "pillarKey": "posture",
+      "caution": [
+        "names third parties (NFL teams) — only publish claims Ben can personally stand behind"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 53
+    },
+    {
+      "n": 23,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "From 45° to 0°: Reversing Forward Head Posture in 12 Weeks",
+      "description": "Case studies showing craniovertebral angle improvement, before/after photos, and exact exercise progressions used.",
+      "targetMarket": "Chronic neck pain sufferers, office workers",
+      "hashtags": [
+        "#ForwardHeadPosture",
+        "#TechNeck",
+        "#PostureTransformation",
+        "#12WeekChallenge"
+      ],
+      "cta": "Join 12-week posture transformation program",
+      "communities": "Chronic pain support groups, Office worker forums",
+      "pillarKey": "posture",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 3
+    },
+    {
+      "n": 24,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "Why Your Wisdom Teeth Removal Might Be Causing Your Tech Neck",
+      "description": "Ben's insights on jaw-neck connections, how dental work affects posture, and specific assessments for TMJ-cervical relationships.",
+      "targetMarket": "Dental patients, dentists, manual therapists",
+      "hashtags": [
+        "#TMJ",
+        "#TechNeck",
+        "#DentalHealth",
+        "#PostureConnection"
+      ],
+      "cta": "Find jaw-posture specialist near you",
+      "communities": "TMJ support groups, Dental professional forums",
+      "pillarKey": "posture",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 8
+    },
+    {
+      "n": 25,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "Corporate Wellness Revolution: Google's On-Site ELDOA Program",
+      "description": "Inside look at tech giant wellness programs, ROI data showing $2.71 return per dollar spent, and implementation strategies.",
+      "targetMarket": "HR directors, corporate wellness managers, CEOs",
+      "hashtags": [
+        "#CorporateWellness",
+        "#Google",
+        "#ELDOA",
+        "#ROI",
+        "#EmployeeHealth"
+      ],
+      "cta": "Request corporate wellness proposal",
+      "communities": "HR LinkedIn groups, Corporate wellness associations",
+      "pillarKey": "posture",
+      "caution": [
+        "names third parties (Google) — only publish claims Ben can personally stand behind",
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 68
+    },
+    {
+      "n": 26,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "The Neurology of Tech Neck: Why Your Brain Fog Isn't Just Stress",
+      "description": "How forward head posture reduces cerebral blood flow, increases gamma wave activity, and impairs cognitive function.",
+      "targetMarket": "Knowledge workers, students, executives",
+      "hashtags": [
+        "#BrainHealth",
+        "#TechNeck",
+        "#CognitiveFunction",
+        "#Neurology"
+      ],
+      "cta": "Take cognitive-posture assessment",
+      "communities": "Biohacking forums, Student health groups",
+      "pillarKey": "posture",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 13
+    },
+    {
+      "n": 27,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "Tech Neck in Esports: The Hidden Performance Killer",
+      "description": "Specific challenges for gamers, how posture affects reaction time and accuracy, plus gamer-specific correction protocols.",
+      "targetMarket": "Esports athletes, gaming coaches, streaming professionals",
+      "hashtags": [
+        "#Esports",
+        "#Gaming",
+        "#TechNeck",
+        "#Performance",
+        "#Streaming"
+      ],
+      "cta": "Download gamer posture guide",
+      "communities": "Esports forums, Twitch communities",
+      "pillarKey": "posture",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 18
+    },
+    {
+      "n": 28,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "Pediatric Tech Neck: What Every Parent Needs to Know",
+      "description": "Age-specific warning signs, developmental impacts, and family-friendly correction strategies based on 5.5 hours average screen time.",
+      "targetMarket": "Parents, pediatricians, school administrators",
+      "hashtags": [
+        "#Parenting",
+        "#KidsHealth",
+        "#TechNeck",
+        "#ScreenTime",
+        "#Pediatrics"
+      ],
+      "cta": "Access family posture challenge",
+      "communities": "Parenting forums, School health groups",
+      "pillarKey": "posture",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 23
+    },
+    {
+      "n": 29,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "The $51 Billion Opportunity: Starting a Tech Neck Clinic",
+      "description": "Business model for posture correction services, equipment needs, insurance billing codes, and marketing strategies.",
+      "targetMarket": "Entrepreneurs, healthcare practitioners, investors",
+      "hashtags": [
+        "#HealthcareBusiness",
+        "#TechNeck",
+        "#Entrepreneurship",
+        "#Investment"
+      ],
+      "cta": "Download clinic startup guide",
+      "communities": "Healthcare entrepreneur groups, Investor forums",
+      "pillarKey": "posture",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 78
+    },
+    {
+      "n": 30,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "Tech Neck and Sleep: The Connection Nobody's Talking About",
+      "description": "How forward head posture affects sleep quality, breathing patterns, and recovery, plus bedtime posture protocols.",
+      "targetMarket": "Sleep-deprived individuals, sleep specialists",
+      "hashtags": [
+        "#Sleep",
+        "#TechNeck",
+        "#SleepQuality",
+        "#Recovery",
+        "#Health"
+      ],
+      "cta": "Get sleep posture assessment",
+      "communities": "Sleep disorder forums, Biohacking groups",
+      "pillarKey": "posture",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 28
+    },
+    {
+      "n": 31,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "Virtual Reality Posture Training: The Future is Here",
+      "description": "Latest VR technologies for posture correction, 2x improvement in motor learning, and home implementation strategies.",
+      "targetMarket": "Tech enthusiasts, rehabilitation professionals, early adopters",
+      "hashtags": [
+        "#VR",
+        "#PostureCorrection",
+        "#Technology",
+        "#Innovation",
+        "#Rehabilitation"
+      ],
+      "cta": "Try VR posture app beta",
+      "communities": "VR forums, Rehab tech groups",
+      "pillarKey": "posture",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 58
+    },
+    {
+      "n": 32,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "The Teacher's Guide to Classroom Posture",
+      "description": "How to identify tech neck in students, classroom modifications, and 5-minute movement breaks that improve focus.",
+      "targetMarket": "Teachers, school administrators, education policy makers",
+      "hashtags": [
+        "#Education",
+        "#TechNeck",
+        "#ClassroomHealth",
+        "#Teaching",
+        "#StudentWellness"
+      ],
+      "cta": "Download classroom movement guide",
+      "communities": "Teacher forums, Education reform groups",
+      "pillarKey": "posture",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 33
+    },
+    {
+      "n": 33,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "Tech Neck in the C-Suite: Executive Posture Optimization",
+      "description": "Why executives are 3x more likely to have severe forward head posture and tailored solutions for the boardroom.",
+      "targetMarket": "C-level executives, executive coaches, corporate boards",
+      "hashtags": [
+        "#ExecutiveHealth",
+        "#Leadership",
+        "#TechNeck",
+        "#CorporateWellness"
+      ],
+      "cta": "Book executive posture consultation",
+      "communities": "CEO forums, Executive coaching groups",
+      "pillarKey": "posture",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "note": "Partly covered by “Your chair is undoing your training” (2026-06-16) — take a different angle or skip.",
+      "queuePosition": 63
+    },
+    {
+      "n": 34,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "The Musician's Dilemma: Instrument Posture Meets Tech Neck",
+      "description": "Compound postural challenges for musicians, instrument-specific corrections, and performance optimization strategies.",
+      "targetMarket": "Musicians, music teachers, performing arts medicine specialists",
+      "hashtags": [
+        "#Musicians",
+        "#PostureHealth",
+        "#PerformingArts",
+        "#TechNeck"
+      ],
+      "cta": "Access musician posture library",
+      "communities": "Musician health forums, Orchestra networks",
+      "pillarKey": "posture",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 38
+    },
+    {
+      "n": 35,
+      "pillar": "TECH NECK & POSTURE TRANSFORMATION",
+      "sourceTitle": "Reversing Tech Neck Without Giving Up Your Phone",
+      "description": "Practical strategies for maintaining good posture while using devices, ergonomic hacks, and habit modification techniques.",
+      "targetMarket": "Smartphone addicts, pragmatic health seekers",
+      "hashtags": [
+        "#TechNeck",
+        "#Smartphones",
+        "#Ergonomics",
+        "#HealthyHabits"
+      ],
+      "cta": "Get personalized device-use strategy",
+      "communities": "Digital wellness groups, Productivity forums ## PROFESSIONAL ATHLETE PERFORMANCE (Articles 36-50)",
+      "pillarKey": "posture",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 43
+    },
+    {
+      "n": 36,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "Inside Connor McDavid's Recovery Room: ELDOA and Elite Performance",
+      "description": "Exclusive insights into how the NHL's best player uses ELDOA, specific protocols for hockey players, and injury prevention strategies.",
+      "targetMarket": "Hockey players, NHL fans, sports medicine professionals",
+      "hashtags": [
+        "#ConnorMcDavid",
+        "#NHL",
+        "#ELDOA",
+        "#HockeyPerformance",
+        "#InjuryPrevention"
+      ],
+      "cta": "Access hockey-specific ELDOA program",
+      "communities": "Hockey forums, NHL fan groups",
+      "pillarKey": "athletes",
+      "caution": [
+        "names third parties (McDavid) — only publish claims Ben can personally stand behind"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 42
+    },
+    {
+      "n": 37,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "The Superior Hard Drive: What Makes Elite Athletes' Brains Different",
+      "description": "Ben's theory on neurological differences in elite athletes, the role of parasympathetic dominance, and how to develop these qualities.",
+      "targetMarket": "Sports scientists, coaches, aspiring elite athletes",
+      "hashtags": [
+        "#EliteAthletes",
+        "#Neuroscience",
+        "#SportsPerformance",
+        "#BrainTraining"
+      ],
+      "cta": "Take neurological athlete assessment",
+      "communities": "Sports science forums, Coaching associations",
+      "pillarKey": "athletes",
+      "caution": [
+        "names third parties (Domi) — only publish claims Ben can personally stand behind"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 47
+    },
+    {
+      "n": 38,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "Christian McCaffrey's Secret: The Discipline Behind the Talent",
+      "description": "Inside look at the NFL's most disciplined athlete's training approach, recovery protocols, and mental preparation strategies.",
+      "targetMarket": "Football players, NFL fans, performance coaches",
+      "hashtags": [
+        "#ChristianMcCaffrey",
+        "#NFL",
+        "#Discipline",
+        "#Training",
+        "#Performance"
+      ],
+      "cta": "Download discipline development guide",
+      "communities": "NFL forums, Football training groups",
+      "pillarKey": "athletes",
+      "caution": [
+        "names third parties (McCaffrey) — only publish claims Ben can personally stand behind"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 52
+    },
+    {
+      "n": 39,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "Why Multi-Sport Athletes Dominate: The Science Ben Discovered",
+      "description": "Research-backed analysis of why 88% of elite athletes played multiple sports, optimal specialization timing, and parent guidance.",
+      "targetMarket": "Parents, youth coaches, sports administrators",
+      "hashtags": [
+        "#YouthSports",
+        "#MultiSport",
+        "#Specialization",
+        "#Development"
+      ],
+      "cta": "Get youth athlete development plan",
+      "communities": "Youth sports organizations, Parent groups",
+      "pillarKey": "athletes",
+      "caution": [
+        "names third parties (Domi) — only publish claims Ben can personally stand behind",
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 71
+    },
+    {
+      "n": 40,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "The 40% ACL Tear Risk: Concussion's Hidden Danger",
+      "description": "Ben's insights on the concussion-injury connection, neurological mechanisms, and prevention protocols that go beyond symptom resolution.",
+      "targetMarket": "Athletes, athletic trainers, sports medicine doctors",
+      "hashtags": [
+        "#Concussion",
+        "#ACL",
+        "#InjuryPrevention",
+        "#SportsScience"
+      ],
+      "cta": "Access concussion recovery protocol",
+      "communities": "Athletic training forums, Sports medicine groups",
+      "pillarKey": "athletes",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 57
+    },
+    {
+      "n": 41,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "Flow State on Demand: How Elite Athletes Slow Down Time",
+      "description": "Parasympathetic nervous system training, breathing protocols, and mental techniques used by top performers.",
+      "targetMarket": "Competitive athletes, performance psychologists, coaches",
+      "hashtags": [
+        "#FlowState",
+        "#MentalPerformance",
+        "#EliteAthletes",
+        "#Psychology"
+      ],
+      "cta": "Join flow state training program",
+      "communities": "Sports psychology groups, Mental performance forums",
+      "pillarKey": "athletes",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 2
+    },
+    {
+      "n": 42,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "The Pelvis-Performance Connection: What Separates Good from Great",
+      "description": "Why elite athletes have superior pelvic mobility, assessment techniques, and specific exercises to improve this crucial area.",
+      "targetMarket": "Athletes, biomechanics enthusiasts, coaches",
+      "hashtags": [
+        "#Biomechanics",
+        "#PelvicHealth",
+        "#AthleticPerformance",
+        "#Movement"
+      ],
+      "cta": "Book biomechanical assessment",
+      "communities": "Biomechanics forums, Movement culture groups",
+      "pillarKey": "athletes",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 7
+    },
+    {
+      "n": 43,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "Recovering Like a Pro: The Protocols Teams Don't Want You to Know",
+      "description": "Inside look at professional recovery rooms, specific protocols for different sports, and how to implement at home.",
+      "targetMarket": "Amateur athletes, weekend warriors, fitness enthusiasts",
+      "hashtags": [
+        "#Recovery",
+        "#ProAthletes",
+        "#Performance",
+        "#Fitness"
+      ],
+      "cta": "Create personalized recovery plan",
+      "communities": "Fitness forums, Amateur athlete groups",
+      "pillarKey": "athletes",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "note": "Partly covered by “Recovery isn’t rest. It’s a skill.” (2026-06-23) — take a different angle or skip.",
+      "queuePosition": 12
+    },
+    {
+      "n": 44,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "The Visual Edge: Why Elite Athletes See the Game Differently",
+      "description": "Visual processing differences in elite athletes, training protocols for visual skills, and sport-specific applications.",
+      "targetMarket": "Athletes, sports vision specialists, coaches",
+      "hashtags": [
+        "#SportsVision",
+        "#Performance",
+        "#Training",
+        "#EliteAthletes"
+      ],
+      "cta": "Take sports vision assessment",
+      "communities": "Sports vision forums, Coaching groups",
+      "pillarKey": "athletes",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 17
+    },
+    {
+      "n": 45,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "Building an Athlete's Neck: The Missing Link in Concussion Prevention",
+      "description": "Ben's neck strengthening protocols, the 5% reduction per pound of strength gained, and integration with sport training.",
+      "targetMarket": "Contact sport athletes, strength coaches, parents",
+      "hashtags": [
+        "#ConcussionPrevention",
+        "#NeckStrength",
+        "#ContactSports",
+        "#Safety"
+      ],
+      "cta": "Get neck strengthening program",
+      "communities": "Football forums, Combat sports groups",
+      "pillarKey": "athletes",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 62
+    },
+    {
+      "n": 46,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "The Gymnastics Advantage: Why Every Athlete Should Tumble",
+      "description": "How gymnastics develops superior body awareness, Ben's integration strategies, and age-appropriate progressions.",
+      "targetMarket": "Youth athletes, coaches, parents",
+      "hashtags": [
+        "#Gymnastics",
+        "#AthleticDevelopment",
+        "#BodyAwareness",
+        "#CrossTraining"
+      ],
+      "cta": "Find gymnastics cross-training program",
+      "communities": "Gymnastics forums, Youth sports groups",
+      "pillarKey": "athletes",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 22
+    },
+    {
+      "n": 47,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "Sport-Specific Recovery: Why One Size Doesn't Fit All",
+      "description": "Detailed recovery protocols for different sports, understanding unique demands, and customization strategies.",
+      "targetMarket": "Athletes, coaches, sports medicine professionals",
+      "hashtags": [
+        "#Recovery",
+        "#SportsSpecific",
+        "#Performance",
+        "#Training"
+      ],
+      "cta": "Get sport-specific recovery plan",
+      "communities": "Sport-specific forums, Coaching networks",
+      "pillarKey": "athletes",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 27
+    },
+    {
+      "n": 48,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "The Psychology of Injury: What Elite Athletes Know That You Don't",
+      "description": "Mental aspects of injury recovery, maintaining identity during rehab, and psychological strategies for faster return.",
+      "targetMarket": "Injured athletes, sports psychologists, coaches",
+      "hashtags": [
+        "#InjuryPsychology",
+        "#MentalHealth",
+        "#Recovery",
+        "#Athletes"
+      ],
+      "cta": "Access injury mindset program",
+      "communities": "Injury support groups, Sports psychology forums",
+      "pillarKey": "athletes",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 32
+    },
+    {
+      "n": 49,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "Training the Trainer: How to Spot Elite Potential",
+      "description": "Ben's methods for identifying athletic potential, key indicators across different ages, and development strategies.",
+      "targetMarket": "Talent scouts, coaches, sports administrators",
+      "hashtags": [
+        "#TalentIdentification",
+        "#Coaching",
+        "#Development",
+        "#Sports"
+      ],
+      "cta": "Learn talent assessment system",
+      "communities": "Coaching associations, Talent development groups",
+      "pillarKey": "athletes",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 37
+    },
+    {
+      "n": 50,
+      "pillar": "PROFESSIONAL ATHLETE PERFORMANCE",
+      "sourceTitle": "The Longevity Game: Extending Athletic Careers by 30%",
+      "description": "Strategies used by athletes who compete at elite levels past typical retirement age, based on Ben's 20 years of data.",
+      "targetMarket": "Aging athletes, masters competitors, coaches",
+      "hashtags": [
+        "#Longevity",
+        "#MastersAthletes",
+        "#Performance",
+        "#Aging"
+      ],
+      "cta": "Create career extension plan",
+      "communities": "Masters athletics forums, Longevity groups ## HOLISTIC HEALTH & WELLNESS (Articles 51-65)",
+      "pillarKey": "athletes",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 67
+    },
+    {
+      "n": 51,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "Structure Dictates Function: The Universal Law Ben Lives By",
+      "description": "Deep dive into this fundamental principle, real-world applications, and why most practitioners miss this connection.",
+      "targetMarket": "Healthcare practitioners, movement professionals, patients",
+      "hashtags": [
+        "#HolisticHealth",
+        "#Biomechanics",
+        "#StructureFunction",
+        "#Wellness"
+      ],
+      "cta": "Learn holistic assessment methods",
+      "communities": "Integrative medicine forums, Holistic health groups",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 4
+    },
+    {
+      "n": 52,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "Water: The Missing Link in Your Tissue Quality",
+      "description": "How hydration affects fascial mobility, Ben's hydration protocols for athletes, and why most people drink water wrong.",
+      "targetMarket": "Athletes, health enthusiasts, biohackers",
+      "hashtags": [
+        "#Hydration",
+        "#FascialHealth",
+        "#Performance",
+        "#Wellness"
+      ],
+      "cta": "Get personalized hydration protocol",
+      "communities": "Biohacking forums, Wellness groups",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 9
+    },
+    {
+      "n": 53,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "Sleep Position Secrets: What Pro Athletes Do Differently",
+      "description": "Optimal sleeping positions for spinal health, pillow selection science, and recovery optimization during sleep.",
+      "targetMarket": "Everyone who sleeps, athletes, recovery enthusiasts",
+      "hashtags": [
+        "#Sleep",
+        "#Recovery",
+        "#SpinalHealth",
+        "#Performance"
+      ],
+      "cta": "Download sleep position guide",
+      "communities": "Sleep optimization groups, Athletic recovery forums",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 14
+    },
+    {
+      "n": 54,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "The Inflammation-Posture Connection No One Talks About",
+      "description": "How systemic inflammation affects posture, dietary strategies for tissue health, and anti-inflammatory protocols.",
+      "targetMarket": "Chronic pain sufferers, nutrition enthusiasts, practitioners",
+      "hashtags": [
+        "#Inflammation",
+        "#Posture",
+        "#Nutrition",
+        "#ChronicPain"
+      ],
+      "cta": "Access anti-inflammatory protocol",
+      "communities": "Chronic pain forums, Nutrition groups",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 19
+    },
+    {
+      "n": 55,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "Breathing Wrong? How Dysfunctional Patterns Destroy Performance",
+      "description": "Connection between breathing and posture, assessment techniques, and correction strategies used with elite athletes.",
+      "targetMarket": "Athletes, yoga practitioners, breathing enthusiasts",
+      "hashtags": [
+        "#Breathing",
+        "#Performance",
+        "#Posture",
+        "#Wellness"
+      ],
+      "cta": "Take breathing assessment",
+      "communities": "Breathwork forums, Yoga communities",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 24
+    },
+    {
+      "n": 56,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "The Stress-Injury Cycle: Breaking Free with Nervous System Training",
+      "description": "How chronic stress predisposes to injury, nervous system regulation techniques, and integration with physical training.",
+      "targetMarket": "Stressed professionals, athletes, wellness seekers",
+      "hashtags": [
+        "#StressManagement",
+        "#InjuryPrevention",
+        "#NervousSystem",
+        "#Wellness"
+      ],
+      "cta": "Start nervous system training",
+      "communities": "Stress management groups, Wellness forums",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 29
+    },
+    {
+      "n": 57,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "Fascial Fitness After 40: The Protocol That Reverses Aging",
+      "description": "Age-specific fascial training, maintaining tissue quality through decades, and Ben's work with master athletes.",
+      "targetMarket": "40+ adults, masters athletes, anti-aging enthusiasts",
+      "hashtags": [
+        "#FascialFitness",
+        "#AntiAging",
+        "#Over40Fitness",
+        "#Longevity"
+      ],
+      "cta": "Join 40+ fascial fitness program",
+      "communities": "Over 40 fitness groups, Anti-aging forums",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 34
+    },
+    {
+      "n": 58,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "The Gut-Posture Axis: How Digestive Health Affects Your Spine",
+      "description": "Connections between gut health and postural control, microbiome optimization for athletes, and practical protocols.",
+      "targetMarket": "IBS sufferers, health enthusiasts, practitioners",
+      "hashtags": [
+        "#GutHealth",
+        "#Posture",
+        "#Microbiome",
+        "#Wellness"
+      ],
+      "cta": "Get gut-posture assessment",
+      "communities": "Gut health forums, Functional medicine groups",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 39
+    },
+    {
+      "n": 59,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "Cold Therapy Meets ELDOA: The Recovery Combination Changing Sports",
+      "description": "How to combine cold exposure with spinal decompression, timing protocols, and enhanced recovery benefits.",
+      "targetMarket": "Athletes, biohackers, recovery enthusiasts",
+      "hashtags": [
+        "#ColdTherapy",
+        "#ELDOA",
+        "#Recovery",
+        "#Performance"
+      ],
+      "cta": "Access cold-ELDOA protocol",
+      "communities": "Cold therapy groups, Biohacking forums",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 44
+    },
+    {
+      "n": 60,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "The Executive Athlete: Treating Your Career Like a Sport",
+      "description": "Applying athletic recovery principles to corporate performance, boardroom biomechanics, and sustainable success.",
+      "targetMarket": "Executives, entrepreneurs, high performers",
+      "hashtags": [
+        "#ExecutivePerformance",
+        "#CorporateAthlete",
+        "#Success",
+        "#Wellness"
+      ],
+      "cta": "Create executive performance plan",
+      "communities": "Executive forums, Entrepreneur groups",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "published",
+      "publishedSlug": "treat-your-career-like-a-sport",
+      "publishedDate": "2026-07-07",
+      "queuePosition": null
+    },
+    {
+      "n": 61,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "Pregnancy as Athletic Event: Performance-Based Prenatal Care",
+      "description": "Treating pregnancy with athletic preparation principles, maintaining performance, and optimal recovery strategies.",
+      "targetMarket": "Pregnant athletes, prenatal fitness professionals",
+      "hashtags": [
+        "#Pregnancy",
+        "#PrenatalFitness",
+        "#Athletes",
+        "#Performance"
+      ],
+      "cta": "Join prenatal performance program",
+      "communities": "Fit pregnancy forums, Female athlete groups",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 49
+    },
+    {
+      "n": 62,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "The Travel Warrior's Guide to Spinal Health",
+      "description": "Maintaining posture and performance while traveling, hotel room ELDOA routines, and jet lag recovery protocols.",
+      "targetMarket": "Business travelers, digital nomads, athletes",
+      "hashtags": [
+        "#Travel",
+        "#SpinalHealth",
+        "#BusinessTravel",
+        "#Wellness"
+      ],
+      "cta": "Download travel wellness kit",
+      "communities": "Digital nomad forums, Business travel groups",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "published",
+      "publishedSlug": "travel-recovery-routine",
+      "publishedDate": "2026-06-30",
+      "queuePosition": null
+    },
+    {
+      "n": 63,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "Nutrition for Fascia: Foods That Transform Your Movement",
+      "description": "Specific nutrients for fascial health, meal timing for tissue recovery, and supplement protocols used by pros.",
+      "targetMarket": "Nutrition enthusiasts, athletes, practitioners",
+      "hashtags": [
+        "#Nutrition",
+        "#FascialHealth",
+        "#Performance",
+        "#Diet"
+      ],
+      "cta": "Get fascial nutrition plan",
+      "communities": "Nutrition forums, Athletic diet groups",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 54
+    },
+    {
+      "n": 64,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "The Mind-Body Performance Lab in Your Living Room",
+      "description": "Creating a home environment for optimal recovery, essential equipment, and space optimization strategies.",
+      "targetMarket": "Home fitness enthusiasts, remote workers",
+      "hashtags": [
+        "#HomeFitness",
+        "#Recovery",
+        "#Performance",
+        "#Wellness"
+      ],
+      "cta": "Design your performance space",
+      "communities": "Home gym forums, Remote work groups",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 59
+    },
+    {
+      "n": 65,
+      "pillar": "HOLISTIC HEALTH & WELLNESS",
+      "sourceTitle": "Seasonal Training: Why Your Body Needs Different Things Year-Round",
+      "description": "Adapting training to seasonal changes, circadian optimization, and natural performance cycles.",
+      "targetMarket": "Athletes, coaches, wellness enthusiasts",
+      "hashtags": [
+        "#SeasonalTraining",
+        "#Circadian",
+        "#Performance",
+        "#Nature"
+      ],
+      "cta": "Create seasonal training plan",
+      "communities": "Natural health forums, Coaching groups ## YOUTH DEVELOPMENT & FAMILY HEALTH (Articles 66-80)",
+      "pillarKey": "wellness",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 64
+    },
+    {
+      "n": 66,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "The 8-Year-Old Wrestler: Teaching ELDOA to Kids",
+      "description": "Ben's experience teaching his son, age-appropriate modifications, and making spinal health fun for children.",
+      "targetMarket": "Parents, youth coaches, pediatric therapists",
+      "hashtags": [
+        "#YouthFitness",
+        "#ELDOA",
+        "#Parenting",
+        "#KidsHealth"
+      ],
+      "cta": "Access kids ELDOA program",
+      "communities": "Parenting forums, Youth sports groups",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 5
+    },
+    {
+      "n": 67,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "Why 37% More Youth Athletes Are Getting Injured (And How to Stop It)",
+      "description": "Early specialization dangers, multi-sport benefits, and evidence-based injury prevention strategies.",
+      "targetMarket": "Parents, youth coaches, sports administrators",
+      "hashtags": [
+        "#YouthSports",
+        "#InjuryPrevention",
+        "#Specialization",
+        "#Safety"
+      ],
+      "cta": "Get youth injury prevention guide",
+      "communities": "Youth sports organizations, Parent groups",
+      "pillarKey": "youth",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 69
+    },
+    {
+      "n": 68,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "The Family Posture Challenge: 30 Days to Transform Your Home",
+      "description": "Making posture correction a family activity, age-appropriate exercises, and creating healthy habits together.",
+      "targetMarket": "Families, parents, health-conscious households",
+      "hashtags": [
+        "#FamilyFitness",
+        "#Posture",
+        "#HealthyHabits",
+        "#Parenting"
+      ],
+      "cta": "Join family posture challenge",
+      "communities": "Family fitness groups, Parenting forums",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 10
+    },
+    {
+      "n": 69,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "Screen Time Survival Guide: Protecting Your Child's Spine",
+      "description": "Practical strategies for managing device use, posture-friendly setups, and movement breaks that kids actually do.",
+      "targetMarket": "Parents, educators, pediatricians",
+      "hashtags": [
+        "#ScreenTime",
+        "#KidsHealth",
+        "#Posture",
+        "#Parenting"
+      ],
+      "cta": "Download screen time toolkit",
+      "communities": "Digital parenting groups, Education forums",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 15
+    },
+    {
+      "n": 70,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "Building Athletic Kids: The Play-First Approach",
+      "description": "Why unstructured play beats organized sports before age 10, development milestones, and creating athletic environments.",
+      "targetMarket": "Parents, early childhood educators, coaches",
+      "hashtags": [
+        "#YouthDevelopment",
+        "#Play",
+        "#Athletics",
+        "#Parenting"
+      ],
+      "cta": "Get athletic development timeline",
+      "communities": "Early childhood forums, Youth coaching groups",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 20
+    },
+    {
+      "n": 71,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "The Teenage Athlete's Body: Navigating Growth Spurts and Performance",
+      "description": "Managing training during peak height velocity, injury prevention during growth, and optimization strategies.",
+      "targetMarket": "Teen athletes, parents, coaches",
+      "hashtags": [
+        "#TeenAthletes",
+        "#GrowthSpurt",
+        "#Development",
+        "#Sports"
+      ],
+      "cta": "Access teen athlete guide",
+      "communities": "Teen sports forums, Parent groups",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 25
+    },
+    {
+      "n": 72,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "College Recruiting Reality: Why Multi-Sport Athletes Win",
+      "description": "What college coaches really look for, building a recruiting profile, and leveraging multi-sport background.",
+      "targetMarket": "High school athletes, parents, coaches",
+      "hashtags": [
+        "#CollegeRecruiting",
+        "#MultiSport",
+        "#Athletics",
+        "#Education"
+      ],
+      "cta": "Create recruiting strategy",
+      "communities": "College recruiting forums, High school sports groups",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 30
+    },
+    {
+      "n": 73,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "The Youth Concussion Crisis: What Parents Must Know",
+      "description": "Recognition beyond obvious symptoms, return-to-play realities, and long-term protection strategies.",
+      "targetMarket": "Parents, coaches, school administrators",
+      "hashtags": [
+        "#Concussion",
+        "#YouthSafety",
+        "#Sports",
+        "#Health"
+      ],
+      "cta": "Download concussion guide",
+      "communities": "Youth safety forums, Parent groups",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 35
+    },
+    {
+      "n": 74,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "Raising Resilient Athletes: Mental Skills for Young Competitors",
+      "description": "Building mental toughness appropriately, handling pressure, and creating positive sport experiences.",
+      "targetMarket": "Parents, youth coaches, sports psychologists",
+      "hashtags": [
+        "#MentalToughness",
+        "#YouthSports",
+        "#Resilience",
+        "#Parenting"
+      ],
+      "cta": "Access mental skills program",
+      "communities": "Sports parenting forums, Coaching groups",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 40
+    },
+    {
+      "n": 75,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "The $3,000 Problem: Making Elite Training Accessible",
+      "description": "Affordable alternatives to expensive programs, community resources, and DIY training solutions.",
+      "targetMarket": "Budget-conscious parents, community organizers",
+      "hashtags": [
+        "#YouthSports",
+        "#Affordability",
+        "#Community",
+        "#Access"
+      ],
+      "cta": "Find affordable programs",
+      "communities": "Community sports groups, Parent forums",
+      "pillarKey": "youth",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 72
+    },
+    {
+      "n": 76,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "Nutrition for Growing Athletes: Beyond the Basics",
+      "description": "Age-specific nutrition needs, practical meal planning, and supplement safety for young athletes.",
+      "targetMarket": "Parents, youth athletes, nutritionists",
+      "hashtags": [
+        "#YouthNutrition",
+        "#Athletes",
+        "#HealthyEating",
+        "#Growth"
+      ],
+      "cta": "Get youth nutrition plan",
+      "communities": "Sports nutrition forums, Parent groups",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 45
+    },
+    {
+      "n": 77,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "The Homework-Training Balance: Academic Success for Athletes",
+      "description": "Time management strategies, cognitive benefits of training, and creating sustainable schedules.",
+      "targetMarket": "Student-athletes, parents, educators",
+      "hashtags": [
+        "#StudentAthlete",
+        "#Balance",
+        "#Education",
+        "#Sports"
+      ],
+      "cta": "Download balance toolkit",
+      "communities": "Student-athlete forums, Education groups",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 50
+    },
+    {
+      "n": 78,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "Preventing Burnout: When Your Young Athlete Wants to Quit",
+      "description": "Recognizing burnout signs, rekindling joy in sport, and knowing when to pivot.",
+      "targetMarket": "Parents, coaches, young athletes",
+      "hashtags": [
+        "#Burnout",
+        "#YouthSports",
+        "#MentalHealth",
+        "#Parenting"
+      ],
+      "cta": "Access burnout prevention guide",
+      "communities": "Youth sports forums, Mental health groups",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 55
+    },
+    {
+      "n": 79,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "The Social Media Athlete: Building Healthy Digital Habits",
+      "description": "Managing social media pressure, using platforms positively, and maintaining perspective.",
+      "targetMarket": "Teen athletes, parents, coaches",
+      "hashtags": [
+        "#SocialMedia",
+        "#YouthAthletes",
+        "#DigitalWellness",
+        "#Parenting"
+      ],
+      "cta": "Get social media guidelines",
+      "communities": "Digital wellness forums, Youth groups",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 60
+    },
+    {
+      "n": 80,
+      "pillar": "YOUTH DEVELOPMENT & FAMILY HEALTH",
+      "sourceTitle": "Creating Champions at Home: The Parent-Coach Dynamic",
+      "description": "Supporting without pressuring, effective communication, and being the parent your athlete needs.",
+      "targetMarket": "Sports parents, youth coaches",
+      "hashtags": [
+        "#Parenting",
+        "#YouthSports",
+        "#Coaching",
+        "#Support"
+      ],
+      "cta": "Join parent-coach workshop",
+      "communities": "Sports parenting forums, Coaching groups ## BUSINESS & PROFESSIONAL DEVELOPMENT (Articles 81-100)",
+      "pillarKey": "youth",
+      "caution": [],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 65
+    },
+    {
+      "n": 81,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "Building a $1M Practice: The ELDOA Business Model",
+      "description": "Business strategies for ELDOA practitioners, pricing models, and scaling beyond 1-on-1 sessions.",
+      "targetMarket": "Healthcare entrepreneurs, ELDOA practitioners",
+      "hashtags": [
+        "#BusinessDevelopment",
+        "#ELDOA",
+        "#Healthcare",
+        "#Entrepreneurship"
+      ],
+      "cta": "Access business blueprint",
+      "communities": "Healthcare business forums, Entrepreneur groups",
+      "pillarKey": "practice",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 79
+    },
+    {
+      "n": 82,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "Corporate Contracts: Landing Fortune 500 Wellness Programs",
+      "description": "Proposal strategies, ROI presentations, and implementation plans for corporate clients.",
+      "targetMarket": "Wellness professionals, business developers",
+      "hashtags": [
+        "#CorporateWellness",
+        "#B2B",
+        "#Sales",
+        "#Healthcare"
+      ],
+      "cta": "Download proposal template",
+      "communities": "B2B sales forums, Corporate wellness groups",
+      "pillarKey": "practice",
+      "caution": [
+        "names third parties (Fortune 500) — only publish claims Ben can personally stand behind"
+      ],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 80
+    },
+    {
+      "n": 83,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "The Spanish-Speaking Market: $1.9 Trillion Opportunity",
+      "description": "Culturally adapted content strategies, platform selection, and community building for Hispanic audiences.",
+      "targetMarket": "Healthcare marketers, Spanish-speaking practitioners",
+      "hashtags": [
+        "#HispanicHealth",
+        "#Marketing",
+        "#Bilingual",
+        "#Business"
+      ],
+      "cta": "Get Spanish market guide",
+      "communities": "Hispanic business forums, Healthcare marketing groups",
+      "pillarKey": "practice",
+      "caution": [
+        "carries a hard statistic — cite a real source or drop the number"
+      ],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 81
+    },
+    {
+      "n": 84,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "Virtual ELDOA: Building a Global Practice from Your Living Room",
+      "description": "Technology setup, legal considerations, and marketing strategies for online ELDOA instruction.",
+      "targetMarket": "Online practitioners, digital entrepreneurs",
+      "hashtags": [
+        "#VirtualHealth",
+        "#ELDOA",
+        "#OnlineBusiness",
+        "#Telemedicine"
+      ],
+      "cta": "Launch virtual practice",
+      "communities": "Telehealth forums, Online business groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 82
+    },
+    {
+      "n": 85,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "Insurance Billing for ELDOA: Cracking the Code",
+      "description": "CPT codes, documentation requirements, and maximizing reimbursements for ELDOA services.",
+      "targetMarket": "Healthcare providers, billing specialists",
+      "hashtags": [
+        "#MedicalBilling",
+        "#Insurance",
+        "#ELDOA",
+        "#Healthcare"
+      ],
+      "cta": "Access billing guide",
+      "communities": "Medical billing forums, Practice management groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 83
+    },
+    {
+      "n": 86,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "The Referral Network: Building Relationships That Build Practices",
+      "description": "Creating referral systems with physicians, developing professional relationships, and reciprocal strategies.",
+      "targetMarket": "Healthcare practitioners, network builders",
+      "hashtags": [
+        "#Networking",
+        "#Referrals",
+        "#Healthcare",
+        "#Business"
+      ],
+      "cta": "Build referral system",
+      "communities": "Healthcare networking groups, Business forums",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 84
+    },
+    {
+      "n": 87,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "Content Marketing for Movement Professionals: The SEO Playbook",
+      "description": "Keyword strategies, content calendars, and ranking for \"ELDOA near me\" searches.",
+      "targetMarket": "Healthcare marketers, practice owners",
+      "hashtags": [
+        "#SEO",
+        "#ContentMarketing",
+        "#Healthcare",
+        "#Digital"
+      ],
+      "cta": "Get SEO checklist",
+      "communities": "Healthcare marketing forums, SEO groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 85
+    },
+    {
+      "n": 88,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "From Practitioner to CEO: Scaling Your Health Business",
+      "description": "Transition strategies, hiring, systems development, and maintaining quality while growing.",
+      "targetMarket": "Practice owners, healthcare entrepreneurs",
+      "hashtags": [
+        "#Leadership",
+        "#Scaling",
+        "#Healthcare",
+        "#Business"
+      ],
+      "cta": "Join CEO mastermind",
+      "communities": "Healthcare CEO forums, Business scaling groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 86
+    },
+    {
+      "n": 89,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "The Workshop Model: Teaching ELDOA to Groups Profitably",
+      "description": "Workshop design, pricing strategies, and marketing approaches for group education.",
+      "targetMarket": "ELDOA instructors, educators",
+      "hashtags": [
+        "#Workshops",
+        "#Education",
+        "#ELDOA",
+        "#Business"
+      ],
+      "cta": "Create workshop blueprint",
+      "communities": "Workshop leader forums, Education business groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 87
+    },
+    {
+      "n": 90,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "Athlete Sponsorships: Getting Paid to Work with Pros",
+      "description": "Approaching teams, structuring deals, and leveraging athlete relationships for practice growth.",
+      "targetMarket": "Sports medicine professionals, ambitious practitioners",
+      "hashtags": [
+        "#Sponsorship",
+        "#ProSports",
+        "#Business",
+        "#Healthcare"
+      ],
+      "cta": "Learn sponsorship strategies",
+      "communities": "Sports business forums, Sponsorship groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 88
+    },
+    {
+      "n": 91,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "The Membership Model: Recurring Revenue for Recovery Services",
+      "description": "Creating membership programs, retention strategies, and technology platforms for subscriptions.",
+      "targetMarket": "Practice owners, fitness professionals",
+      "hashtags": [
+        "#Membership",
+        "#RecurringRevenue",
+        "#Business",
+        "#Healthcare"
+      ],
+      "cta": "Build membership program",
+      "communities": "Subscription business forums, Healthcare groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 89
+    },
+    {
+      "n": 92,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "Publishing Your Way to Authority: The Practitioner's Guide",
+      "description": "Writing for journals, creating books, and leveraging published work for practice growth.",
+      "targetMarket": "Healthcare professionals, aspiring authors",
+      "hashtags": [
+        "#Publishing",
+        "#Authority",
+        "#Healthcare",
+        "#Writing"
+      ],
+      "cta": "Start publishing journey",
+      "communities": "Healthcare writing groups, Author forums",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 90
+    },
+    {
+      "n": 93,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "The Speaking Circuit: Conferences, Panels, and Paid Presentations",
+      "description": "Breaking into speaking, crafting compelling presentations, and monetizing expertise.",
+      "targetMarket": "Healthcare experts, aspiring speakers",
+      "hashtags": [
+        "#PublicSpeaking",
+        "#Conferences",
+        "#Healthcare",
+        "#Business"
+      ],
+      "cta": "Book speaking coach",
+      "communities": "Speaker forums, Conference organizer groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 91
+    },
+    {
+      "n": 94,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "Digital Products: Creating Passive Income from Your Expertise",
+      "description": "Course creation, app development, and digital product strategies for practitioners.",
+      "targetMarket": "Digital entrepreneurs, healthcare professionals",
+      "hashtags": [
+        "#DigitalProducts",
+        "#PassiveIncome",
+        "#Online",
+        "#Healthcare"
+      ],
+      "cta": "Create digital product",
+      "communities": "Digital product forums, Course creator groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 92
+    },
+    {
+      "n": 95,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "The Franchise Alternative: Licensing Your Methods",
+      "description": "Creating licensable systems, protecting IP, and scaling through other practitioners.",
+      "targetMarket": "System creators, business strategists",
+      "hashtags": [
+        "#Licensing",
+        "#Franchise",
+        "#Business",
+        "#Scaling"
+      ],
+      "cta": "Explore licensing options",
+      "communities": "Franchise forums, Licensing groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 93
+    },
+    {
+      "n": 96,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "Media Relations: Getting Featured in Major Publications",
+      "description": "PR strategies, journalist relationships, and leveraging media for practice growth.",
+      "targetMarket": "Healthcare professionals, PR enthusiasts",
+      "hashtags": [
+        "#PR",
+        "#MediaRelations",
+        "#Healthcare",
+        "#Marketing"
+      ],
+      "cta": "Get media training",
+      "communities": "PR forums, Healthcare marketing groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 94
+    },
+    {
+      "n": 97,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "The Retirement Plan: Building a Sellable Practice",
+      "description": "Creating systems, documenting processes, and maximizing practice value for eventual sale.",
+      "targetMarket": "Practice owners, long-term planners",
+      "hashtags": [
+        "#ExitStrategy",
+        "#Business",
+        "#Healthcare",
+        "#Planning"
+      ],
+      "cta": "Value your practice",
+      "communities": "Business broker forums, Exit planning groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 95
+    },
+    {
+      "n": 98,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "International Expansion: Taking ELDOA Global",
+      "description": "International licensing, cultural adaptations, and building global practitioner networks.",
+      "targetMarket": "Ambitious practitioners, international entrepreneurs",
+      "hashtags": [
+        "#Global",
+        "#Expansion",
+        "#ELDOA",
+        "#International"
+      ],
+      "cta": "Explore international options",
+      "communities": "International business forums, Global health groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 96
+    },
+    {
+      "n": 99,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "The Next Generation: Training Future ELDOA Masters",
+      "description": "Mentorship programs, succession planning, and preserving methodology integrity.",
+      "targetMarket": "Senior practitioners, educators",
+      "hashtags": [
+        "#Mentorship",
+        "#Education",
+        "#ELDOA",
+        "#Legacy"
+      ],
+      "cta": "Become a mentor",
+      "communities": "Mentorship forums, Education groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 97
+    },
+    {
+      "n": 100,
+      "pillar": "BUSINESS & PROFESSIONAL DEVELOPMENT",
+      "sourceTitle": "2030 Vision: The Future of Movement Medicine",
+      "description": "Emerging technologies, market predictions, and positioning for the next decade of growth.",
+      "targetMarket": "Forward-thinking practitioners, investors",
+      "hashtags": [
+        "#Future",
+        "#Innovation",
+        "#Healthcare",
+        "#Technology"
+      ],
+      "cta": "Join future of medicine summit",
+      "communities": "Healthcare innovation forums, Futurist groups",
+      "pillarKey": "practice",
+      "caution": [],
+      "audience": "practitioners",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 98
+    }
+  ]
+}
