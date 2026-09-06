@@ -76,6 +76,10 @@ link that does not resolve.
 
 ## Shipping it
 
+This post goes live automatically. Pushing to `main` triggers the Cloudflare
+deploy, and nobody reads it in between — so the checks below are the only thing
+standing between a bad draft and benvelazquez.com. Run them, and mean it.
+
 ```bash
 npm run check          # build + audit; must pass clean
 npm run og             # regenerate OG cards, including the two new ones
@@ -84,25 +88,44 @@ npm run og             # regenerate OG cards, including the two new ones
 `npm run check` fails on broken links, oversized SEO fields, missing alt text
 and invalid JSON-LD. Fix what it reports rather than working around it. If
 Playwright is unavailable, skip `npm run og` — the missing card falls back to
-`og-default.jpg` and the build still passes; note it in the PR.
+`og-default.jpg` and the build still passes.
 
-Record the topic, which validates the slug and date against the post you just
-added:
+Before committing, reread the draft once against `VOICE.md` as if Ben were
+about to see it on his own site, because he will. Anything you are not certain
+of — a number, a name, a claim about a person or an organisation — comes out
+now, not later.
+
+Record the topic. This validates the slug and date against the post you just
+added, so the queue cannot drift from the site:
 
 ```bash
 node scripts/next-insight.mjs --mark 1 --slug the-l5-s1-eldoa --date 2026-09-08
 ```
 
-Commit `src/data/insights.js`, `content/editorial/blog-queue.json` and any new
-`public/img/og-insight-*.jpg`, on a fresh branch off `main`:
+Then commit `src/data/insights.js`, `content/editorial/blog-queue.json` and any
+new `public/img/og-insight-*.jpg` on `main`, and push:
 
+```bash
+git checkout main && git pull origin main
+git commit -am "Weekly insight: <title>"
+git push -u origin main
 ```
+
+Say what shipped: the title, the URL it will live at, the topic number, and
+anything you trimmed from the brief and why.
+
+### If it will not go green
+
+Never push a red build to `main` — that publishes a broken site with no one
+watching. If `npm run check` fails and you cannot fix it cleanly, or the topic
+turns out to be one you should not publish under Ben's name, stop and do this
+instead:
+
+```bash
 git checkout -b insight/<english-slug>
+git push -u origin insight/<english-slug>
 ```
 
-Open a pull request titled `Weekly insight: <title>`. In the body: the topic
-number and pillar, a two-line summary of the argument, anything trimmed from
-the brief and why, and the output of `npm run check`.
-
-**Ben reviews and merges.** Do not push to `main` — merging is what puts the
-post on the live site.
+Open a pull request titled `Weekly insight (needs review): <title>`, say plainly
+what is wrong in the body, and leave it for Ben. A week with no post is a far
+smaller problem than a week with a broken or dishonest one.

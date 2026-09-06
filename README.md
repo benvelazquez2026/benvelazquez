@@ -118,10 +118,12 @@ Then optionally regenerate its OG card: `npm run og`.
 
 ### The weekly insight, on a schedule
 
-A recurring Claude Code task writes one of these every week and opens a pull
-request for review; nothing reaches the live site without a merge. It works
-from `content/editorial/` — the playbook in `WEEKLY-BLOG.md`, the voice rules
-in `VOICE.md`, and a queue of 100 topics built from Ben's research PDF.
+A recurring Claude Code task writes one of these every Sunday evening and
+pushes it to `main`, which deploys it — so the post goes live without a review
+step. It works from `content/editorial/` — the playbook in `WEEKLY-BLOG.md`,
+the voice rules in `VOICE.md`, and a queue of 100 topics built from Ben's
+research PDF. If the build will not go green, or the topic turns out to be
+unpublishable, the run opens a pull request instead of pushing.
 
 ```bash
 node scripts/next-insight.mjs            # the topic due next, and its date
