@@ -43,6 +43,34 @@ belong on this site as written. Reshape it:
   business and practice-building pillar, queue positions 77+) are parked at the
   end of the queue for that reason — if one surfaces, skip it and take the next.
 
+### Topics that carry a source
+
+Some topics have a `reference` key and a list of `keyClaims`. Those come from a
+real paper sitting in `content/editorial/`, and they are the exception to
+"strip the numbers" — you may state them, because they are checkable.
+
+Read the matching entry under `references` in `blog-queue.json` first. It
+carries the citation, the path to the PDF, and a `scopeWarning` saying what the
+paper does and does not establish. Respect it literally: a paper that explains a
+mechanism is not evidence that a protocol works, and the gap between the two is
+exactly where this kind of writing usually goes wrong.
+
+Attribute in plain prose — "the cell biologist Donald Ingber", "work done at
+Harvard in the 1990s". No footnotes or journal references; it is a blog. Use the
+`keyClaims` as written rather than reaching for figures of your own, and if you
+want to state something the list does not contain, open the PDF and confirm it
+before writing it.
+
+### Topics that run as a series
+
+The biotensegrity topics (#101–110) are a ten-week block, deliberately in order:
+#101 lays the foundation and #110 closes it. Each one should assume the reader
+may not have read the others, but reward them if they have — open by standing on
+the previous week's idea in a sentence, and link to it. Do not restate it.
+
+If you skip one in the middle of a series, say so in the next one rather than
+leaving a silent gap in the argument.
+
 If a topic cannot be made honest and useful within those limits, skip it and
 move on:
 

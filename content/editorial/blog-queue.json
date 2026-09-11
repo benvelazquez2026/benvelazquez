@@ -1,9 +1,9 @@
 {
   "source": "Ben_Velazquez_100_Knowledge_Blogs.pdf",
   "sourcePath": "content/editorial/Ben_Velazquez_100_Knowledge_Blogs.pdf",
-  "generated": "2026-09-04",
-  "cadence": "weekly, dated the Tuesday of the publishing week",
-  "howToUse": "See content/editorial/WEEKLY-BLOG.md. Take the lowest queuePosition whose status is \"queued\"; on publish set status to \"published\" plus publishedSlug and publishedDate.",
+  "generated": "2026-09-10",
+  "cadence": "weekly, dated the Tuesday of the publishing week. The biotensegrity series (#101-110) runs as a consecutive ten-week block at the front of the queue; the pillar rotation resumes after it.",
+  "howToUse": "See content/editorial/WEEKLY-BLOG.md. Take the lowest queuePosition whose status is \"queued\"; on publish set status to \"published\" plus publishedSlug and publishedDate. A topic carrying a \"reference\" key has a real source in content/editorial/ — read the entry in \"references\" before writing it, and use its keyClaims rather than reaching for numbers of your own.",
   "pillars": [
     {
       "key": "eldoa",
@@ -28,6 +28,10 @@
     {
       "key": "practice",
       "label": "BUSINESS & PROFESSIONAL DEVELOPMENT"
+    },
+    {
+      "key": "biotensegrity",
+      "label": "BIOTENSEGRITY & STRUCTURAL BALANCE"
     }
   ],
   "topics": [
@@ -79,7 +83,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 75
+      "queuePosition": 85
     },
     {
       "n": 3,
@@ -105,7 +109,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 51
+      "queuePosition": 57
     },
     {
       "n": 4,
@@ -128,7 +132,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 6
+      "queuePosition": 12
     },
     {
       "n": 5,
@@ -153,7 +157,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 56
+      "queuePosition": 62
     },
     {
       "n": 6,
@@ -178,7 +182,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 61
+      "queuePosition": 67
     },
     {
       "n": 7,
@@ -204,7 +208,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 66
+      "queuePosition": 72
     },
     {
       "n": 8,
@@ -227,7 +231,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 11
+      "queuePosition": 17
     },
     {
       "n": 9,
@@ -252,7 +256,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 76
+      "queuePosition": 86
     },
     {
       "n": 10,
@@ -274,7 +278,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 16
+      "queuePosition": 22
     },
     {
       "n": 11,
@@ -298,7 +302,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 70
+      "queuePosition": 77
     },
     {
       "n": 12,
@@ -321,7 +325,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 21
+      "queuePosition": 27
     },
     {
       "n": 13,
@@ -346,7 +350,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 73
+      "queuePosition": 81
     },
     {
       "n": 14,
@@ -371,7 +375,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 74
+      "queuePosition": 84
     },
     {
       "n": 15,
@@ -394,7 +398,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 26
+      "queuePosition": 32
     },
     {
       "n": 16,
@@ -416,7 +420,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 31
+      "queuePosition": 37
     },
     {
       "n": 17,
@@ -439,7 +443,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 36
+      "queuePosition": 42
     },
     {
       "n": 18,
@@ -461,7 +465,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 77
+      "queuePosition": 87
     },
     {
       "n": 19,
@@ -484,7 +488,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 41
+      "queuePosition": 47
     },
     {
       "n": 20,
@@ -507,7 +511,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 46
+      "queuePosition": 52
     },
     {
       "n": 21,
@@ -531,7 +535,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 48
+      "queuePosition": 59
     },
     {
       "n": 22,
@@ -555,7 +559,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 53
+      "queuePosition": 64
     },
     {
       "n": 23,
@@ -577,7 +581,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 3
+      "queuePosition": 14
     },
     {
       "n": 24,
@@ -599,7 +603,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 8
+      "queuePosition": 19
     },
     {
       "n": 25,
@@ -625,7 +629,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 68
+      "queuePosition": 79
     },
     {
       "n": 26,
@@ -647,7 +651,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 13
+      "queuePosition": 24
     },
     {
       "n": 27,
@@ -670,7 +674,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 18
+      "queuePosition": 29
     },
     {
       "n": 28,
@@ -693,7 +697,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 23
+      "queuePosition": 34
     },
     {
       "n": 29,
@@ -717,7 +721,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 78
+      "queuePosition": 88
     },
     {
       "n": 30,
@@ -740,7 +744,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 28
+      "queuePosition": 39
     },
     {
       "n": 31,
@@ -765,7 +769,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 58
+      "queuePosition": 69
     },
     {
       "n": 32,
@@ -788,7 +792,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 33
+      "queuePosition": 44
     },
     {
       "n": 33,
@@ -813,7 +817,7 @@
       "publishedSlug": null,
       "publishedDate": null,
       "note": "Partly covered by “Your chair is undoing your training” (2026-06-16) — take a different angle or skip.",
-      "queuePosition": 63
+      "queuePosition": 74
     },
     {
       "n": 34,
@@ -835,7 +839,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 38
+      "queuePosition": 49
     },
     {
       "n": 35,
@@ -857,7 +861,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 43
+      "queuePosition": 54
     },
     {
       "n": 36,
@@ -882,7 +886,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 42
+      "queuePosition": 53
     },
     {
       "n": 37,
@@ -906,7 +910,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 47
+      "queuePosition": 58
     },
     {
       "n": 38,
@@ -931,7 +935,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 52
+      "queuePosition": 63
     },
     {
       "n": 39,
@@ -956,7 +960,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 71
+      "queuePosition": 82
     },
     {
       "n": 40,
@@ -980,7 +984,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 57
+      "queuePosition": 68
     },
     {
       "n": 41,
@@ -1002,7 +1006,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 2
+      "queuePosition": 13
     },
     {
       "n": 42,
@@ -1024,7 +1028,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 7
+      "queuePosition": 18
     },
     {
       "n": 43,
@@ -1047,7 +1051,7 @@
       "publishedSlug": null,
       "publishedDate": null,
       "note": "Partly covered by “Recovery isn’t rest. It’s a skill.” (2026-06-23) — take a different angle or skip.",
-      "queuePosition": 12
+      "queuePosition": 23
     },
     {
       "n": 44,
@@ -1069,7 +1073,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 17
+      "queuePosition": 28
     },
     {
       "n": 45,
@@ -1093,7 +1097,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 62
+      "queuePosition": 73
     },
     {
       "n": 46,
@@ -1115,7 +1119,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 22
+      "queuePosition": 33
     },
     {
       "n": 47,
@@ -1137,7 +1141,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 27
+      "queuePosition": 38
     },
     {
       "n": 48,
@@ -1159,7 +1163,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 32
+      "queuePosition": 43
     },
     {
       "n": 49,
@@ -1181,7 +1185,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 37
+      "queuePosition": 48
     },
     {
       "n": 50,
@@ -1205,7 +1209,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 67
+      "queuePosition": 78
     },
     {
       "n": 51,
@@ -1227,7 +1231,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 4
+      "queuePosition": 15
     },
     {
       "n": 52,
@@ -1249,7 +1253,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 9
+      "queuePosition": 20
     },
     {
       "n": 53,
@@ -1271,7 +1275,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 14
+      "queuePosition": 25
     },
     {
       "n": 54,
@@ -1293,7 +1297,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 19
+      "queuePosition": 30
     },
     {
       "n": 55,
@@ -1315,7 +1319,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 24
+      "queuePosition": 35
     },
     {
       "n": 56,
@@ -1337,7 +1341,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 29
+      "queuePosition": 40
     },
     {
       "n": 57,
@@ -1359,7 +1363,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 34
+      "queuePosition": 45
     },
     {
       "n": 58,
@@ -1381,7 +1385,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 39
+      "queuePosition": 50
     },
     {
       "n": 59,
@@ -1403,7 +1407,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 44
+      "queuePosition": 55
     },
     {
       "n": 60,
@@ -1447,7 +1451,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 49
+      "queuePosition": 60
     },
     {
       "n": 62,
@@ -1491,7 +1495,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 54
+      "queuePosition": 65
     },
     {
       "n": 64,
@@ -1513,7 +1517,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 59
+      "queuePosition": 70
     },
     {
       "n": 65,
@@ -1535,7 +1539,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 64
+      "queuePosition": 75
     },
     {
       "n": 66,
@@ -1557,7 +1561,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 5
+      "queuePosition": 16
     },
     {
       "n": 67,
@@ -1581,7 +1585,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 69
+      "queuePosition": 80
     },
     {
       "n": 68,
@@ -1603,7 +1607,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 10
+      "queuePosition": 21
     },
     {
       "n": 69,
@@ -1625,7 +1629,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 15
+      "queuePosition": 26
     },
     {
       "n": 70,
@@ -1647,7 +1651,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 20
+      "queuePosition": 31
     },
     {
       "n": 71,
@@ -1669,7 +1673,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 25
+      "queuePosition": 36
     },
     {
       "n": 72,
@@ -1691,7 +1695,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 30
+      "queuePosition": 41
     },
     {
       "n": 73,
@@ -1713,7 +1717,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 35
+      "queuePosition": 46
     },
     {
       "n": 74,
@@ -1735,7 +1739,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 40
+      "queuePosition": 51
     },
     {
       "n": 75,
@@ -1759,7 +1763,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 72
+      "queuePosition": 83
     },
     {
       "n": 76,
@@ -1781,7 +1785,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 45
+      "queuePosition": 56
     },
     {
       "n": 77,
@@ -1803,7 +1807,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 50
+      "queuePosition": 61
     },
     {
       "n": 78,
@@ -1825,7 +1829,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 55
+      "queuePosition": 66
     },
     {
       "n": 79,
@@ -1847,7 +1851,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 60
+      "queuePosition": 71
     },
     {
       "n": 80,
@@ -1869,7 +1873,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 65
+      "queuePosition": 76
     },
     {
       "n": 81,
@@ -1893,7 +1897,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 79
+      "queuePosition": 89
     },
     {
       "n": 82,
@@ -1917,7 +1921,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 80
+      "queuePosition": 90
     },
     {
       "n": 83,
@@ -1941,7 +1945,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 81
+      "queuePosition": 91
     },
     {
       "n": 84,
@@ -1963,7 +1967,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 82
+      "queuePosition": 92
     },
     {
       "n": 85,
@@ -1985,7 +1989,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 83
+      "queuePosition": 93
     },
     {
       "n": 86,
@@ -2007,7 +2011,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 84
+      "queuePosition": 94
     },
     {
       "n": 87,
@@ -2029,7 +2033,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 85
+      "queuePosition": 95
     },
     {
       "n": 88,
@@ -2051,7 +2055,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 86
+      "queuePosition": 96
     },
     {
       "n": 89,
@@ -2073,7 +2077,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 87
+      "queuePosition": 97
     },
     {
       "n": 90,
@@ -2095,7 +2099,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 88
+      "queuePosition": 98
     },
     {
       "n": 91,
@@ -2117,7 +2121,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 89
+      "queuePosition": 99
     },
     {
       "n": 92,
@@ -2139,7 +2143,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 90
+      "queuePosition": 100
     },
     {
       "n": 93,
@@ -2161,7 +2165,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 91
+      "queuePosition": 101
     },
     {
       "n": 94,
@@ -2183,7 +2187,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 92
+      "queuePosition": 102
     },
     {
       "n": 95,
@@ -2205,7 +2209,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 93
+      "queuePosition": 103
     },
     {
       "n": 96,
@@ -2227,7 +2231,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 94
+      "queuePosition": 104
     },
     {
       "n": 97,
@@ -2249,7 +2253,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 95
+      "queuePosition": 105
     },
     {
       "n": 98,
@@ -2271,7 +2275,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 96
+      "queuePosition": 106
     },
     {
       "n": 99,
@@ -2293,7 +2297,7 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 97
+      "queuePosition": 107
     },
     {
       "n": 100,
@@ -2315,7 +2319,332 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 98
+      "queuePosition": 108
+    },
+    {
+      "n": 101,
+      "pillar": "BIOTENSEGRITY & STRUCTURAL BALANCE",
+      "pillarKey": "biotensegrity",
+      "sourceTitle": "Your skeleton is not a stack of bricks",
+      "description": "The load-bearing mental model almost everyone carries is wrong. Bones are compression struts suspended in a continuous tension network of muscle, tendon, ligament and fascia — not a column of blocks resting on each other. What changes about training, and about back pain, once you stop thinking of the spine as a stack.",
+      "targetMarket": "Athletes, executives with back pain, anyone told they have \"bad discs\"",
+      "hashtags": [
+        "#Biotensegrity",
+        "#Tensegrity",
+        "#StructuralBalance",
+        "#Fascia",
+        "#ELDOA"
+      ],
+      "cta": "Book the free 20-minute Performance Needs Analysis",
+      "communities": "",
+      "reference": "ingber-1998",
+      "keyClaims": [
+        "Ingber: the 206 bones of the skeleton are the compression struts; muscles, tendons and ligaments are the tension-bearing members that pull them up against gravity and stabilise them in a vertical form.",
+        "Fuller’s term for the mechanism is \"continuous tension and local compression\".",
+        "Most buildings derive stability from continuous compression under gravity — a body does not. That is the whole difference."
+      ],
+      "caution": [
+        "Ingber establishes tensegrity at the cellular and skeletal level; applying it to a specific training or clinical decision is Ben’s inference, not the paper’s finding. Present it as the reasoning behind how he works, never as proof that a protocol works."
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 2,
+      "note": "The foundational post of the series — write this one first. Related to #51 (Structure dictates function); this is the mechanism underneath that principle, so cross-link rather than repeat."
+    },
+    {
+      "n": 102,
+      "pillar": "BIOTENSEGRITY & STRUCTURAL BALANCE",
+      "pillarKey": "biotensegrity",
+      "sourceTitle": "Why the pain is rarely where the problem is",
+      "description": "In a tensegrity structure, tension is transmitted continuously — pull one member and every member feels it, including ones on the far side. The clinical corollary Ben works from daily: a hip that stopped rotating and a shoulder that will not settle are frequently the same problem, and treating the loud end of it changes nothing.",
+      "targetMarket": "Chronic pain sufferers, athletes with recurring \"unrelated\" injuries",
+      "hashtags": [
+        "#Biotensegrity",
+        "#Tensegrity",
+        "#StructuralBalance",
+        "#Fascia",
+        "#ELDOA"
+      ],
+      "cta": "Book the free 20-minute Performance Needs Analysis",
+      "communities": "",
+      "reference": "ingber-1998",
+      "keyClaims": [
+        "Ingber: an increase in tension in one member results in increased tension in members throughout the structure — even ones on the opposite side.",
+        "Tension-bearing members map the shortest path between adjacent members, so load travels by geometry, not by proximity to the symptom."
+      ],
+      "caution": [
+        "Ingber establishes tensegrity at the cellular and skeletal level; applying it to a specific training or clinical decision is Ben’s inference, not the paper’s finding. Present it as the reasoning behind how he works, never as proof that a protocol works.",
+        "Do not diagnose or imply that a reader’s specific pain has a distant cause. Describe how Ben reasons; send the specific case to the Needs Analysis."
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 3
+    },
+    {
+      "n": 103,
+      "pillar": "BIOTENSEGRITY & STRUCTURAL BALANCE",
+      "pillarKey": "biotensegrity",
+      "sourceTitle": "Prestress: a good body is never really \"relaxed\"",
+      "description": "A tensegrity structure is loaded before any external force arrives — that is what makes it instantly responsive. Resting tone is not wasted energy, and \"just relax\" is bad cueing. The difference between tone, which you want, and tension, which you do not.",
+      "targetMarket": "Executives told to relax, athletes with chronic guarding, anyone doing down-regulation work",
+      "hashtags": [
+        "#Biotensegrity",
+        "#Tensegrity",
+        "#StructuralBalance",
+        "#Fascia",
+        "#ELDOA"
+      ],
+      "cta": "Book the free 20-minute Performance Needs Analysis",
+      "communities": "",
+      "reference": "ingber-1998",
+      "keyClaims": [
+        "Ingber: in a prestressed structure all members are already in tension or compression before any external force is applied; the counteracting forces equilibrate and are what stabilise it.",
+        "Cells could be made stiff or flexible by varying the prestress in the cytoskeleton (Wang & Butler, magnetic twisting, 1993) — the resting state sets the response."
+      ],
+      "caution": [
+        "Ingber establishes tensegrity at the cellular and skeletal level; applying it to a specific training or clinical decision is Ben’s inference, not the paper’s finding. Present it as the reasoning behind how he works, never as proof that a protocol works.",
+        "\"Tone vs tension\" is Ben’s clinical framing, not Ingber’s language. Keep the attribution clean."
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 4
+    },
+    {
+      "n": 104,
+      "pillar": "BIOTENSEGRITY & STRUCTURAL BALANCE",
+      "pillarKey": "biotensegrity",
+      "sourceTitle": "Why the body gets stiffer the harder you pull",
+      "description": "Pull on your own skin and the resistance rises as you tug — muscle, cartilage, blood vessel and skin all do it. It is called linear stiffening and it has a structural explanation. Why this is a feature rather than a fault, what it means for warm-up, and why loading gradually is not superstition.",
+      "targetMarket": "Lifters, coaches, athletes returning to load",
+      "hashtags": [
+        "#Biotensegrity",
+        "#Tensegrity",
+        "#StructuralBalance",
+        "#Fascia",
+        "#ELDOA"
+      ],
+      "cta": "Book the free 20-minute Performance Needs Analysis",
+      "communities": "",
+      "reference": "ingber-1998",
+      "keyClaims": [
+        "Ingber: many tissues — muscle, cartilage, blood vessels, skin — exhibit linear stiffening; even isolated molecules such as DNA do.",
+        "The tensegrity explanation: as applied stress increases, more structural members reorient to lie in the direction of the stress.",
+        "Wang & Butler (1993) increased stress on integrins and cells became progressively stiffer, as whole tissues do."
+      ],
+      "caution": [
+        "Ingber establishes tensegrity at the cellular and skeletal level; applying it to a specific training or clinical decision is Ben’s inference, not the paper’s finding. Present it as the reasoning behind how he works, never as proof that a protocol works."
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 5,
+      "note": "The natural bridge topic to warm-up and progressive loading — good candidate to run near pre-season."
+    },
+    {
+      "n": 105,
+      "pillar": "BIOTENSEGRITY & STRUCTURAL BALANCE",
+      "pillarKey": "biotensegrity",
+      "sourceTitle": "The load path is specific — which is why general mobility work underdelivers",
+      "description": "Force does not simply diffuse through a body. Ingber’s group found that pulling on adhesion receptors reached deep inside the cell while pulling on metabolic receptors did not: forces travel defined paths. The training argument that follows is the one behind ELDOA — position determines what actually gets loaded, and a vague stretch loads something vague.",
+      "targetMarket": "Athletes, physical therapists, anyone whose stretching routine has stopped paying",
+      "hashtags": [
+        "#Biotensegrity",
+        "#Tensegrity",
+        "#StructuralBalance",
+        "#Fascia",
+        "#ELDOA"
+      ],
+      "cta": "Book the free 20-minute Performance Needs Analysis",
+      "communities": "",
+      "reference": "ingber-1998",
+      "keyClaims": [
+        "Ingber: applying stress to cell-surface receptors involved with metabolism rather than adhesion did not effectively convey force into the cell — mechanical forces are transmitted over specific molecular paths.",
+        "Maniotis pulled on surface adhesion receptors with micropipettes and cytoskeletal filaments and structures in the nucleus realigned immediately in the direction of pull."
+      ],
+      "caution": [
+        "Ingber establishes tensegrity at the cellular and skeletal level; applying it to a specific training or clinical decision is Ben’s inference, not the paper’s finding. Present it as the reasoning behind how he works, never as proof that a protocol works."
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 6,
+      "note": "Strongest ELDOA-adjacent post in the series. Cross-link /eldoa/ and the L5-S1 post."
+    },
+    {
+      "n": 106,
+      "pillar": "BIOTENSEGRITY & STRUCTURAL BALANCE",
+      "pillarKey": "biotensegrity",
+      "sourceTitle": "Your cells can feel your posture",
+      "description": "The honest version of \"posture affects your health\" — a mechanism instead of a moral lecture. Pull on a cell’s surface and its nucleus realigns immediately; the enzymes that run protein synthesis and energy conversion are physically mounted on the cytoskeleton, so changing the mechanics changes the chemistry. What eleven hours in a chair is actually doing, one scale down.",
+      "targetMarket": "Executives, desk-bound professionals, tech neck",
+      "hashtags": [
+        "#Biotensegrity",
+        "#Tensegrity",
+        "#StructuralBalance",
+        "#Fascia",
+        "#ELDOA"
+      ],
+      "cta": "Book the free 20-minute Performance Needs Analysis",
+      "communities": "",
+      "reference": "ingber-1998",
+      "keyClaims": [
+        "Ingber: many of the enzymes and other substances that control protein synthesis, energy conversion and growth are physically immobilised on the cytoskeleton, so changing cytoskeletal geometry and mechanics can affect biochemical reactions and which genes are activated.",
+        "Maniotis: pulling on surface adhesion receptors realigned structures inside the nucleus immediately — cells and nuclei do not behave like viscous water balloons."
+      ],
+      "caution": [
+        "Ingber establishes tensegrity at the cellular and skeletal level; applying it to a specific training or clinical decision is Ben’s inference, not the paper’s finding. Present it as the reasoning behind how he works, never as proof that a protocol works.",
+        "Do not claim posture causes or cures disease. The paper shows mechanotransduction exists; it does not license a health outcome claim."
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 7,
+      "note": "Pairs with #33 and the published chair post — take the mechanism angle, not the \"sitting is bad\" angle, which is already covered."
+    },
+    {
+      "n": 107,
+      "pillar": "BIOTENSEGRITY & STRUCTURAL BALANCE",
+      "pillarKey": "biotensegrity",
+      "sourceTitle": "Tissue does its real work in the middle",
+      "description": "One of the more striking findings in the paper: cells forced flat divided, cells prevented from spreading died, and cells that were neither too extended nor too retracted got on with their actual job. Held lightly as an analogy and taken seriously as a principle — the useful range is the middle one, which is the case for deloads, and against training at either extreme for thirty years.",
+      "targetMarket": "Athletes in long seasons, executives, anyone who only has one intensity",
+      "hashtags": [
+        "#Biotensegrity",
+        "#Tensegrity",
+        "#StructuralBalance",
+        "#Fascia",
+        "#ELDOA"
+      ],
+      "cta": "Book the free 20-minute Performance Needs Analysis",
+      "communities": "",
+      "reference": "ingber-1998",
+      "keyClaims": [
+        "Chen, Singhvi and Whitesides (with Ingber): cells flattened on adhesive islands became more likely to divide; cells prevented from spreading activated apoptosis; cells neither too extended nor too retracted differentiated and performed tissue-specific function.",
+        "Ingber: \"mechanical restructuring of the cell and cytoskeleton apparently tells the cell what to do.\""
+      ],
+      "caution": [
+        "Ingber establishes tensegrity at the cellular and skeletal level; applying it to a specific training or clinical decision is Ben’s inference, not the paper’s finding. Present it as the reasoning behind how he works, never as proof that a protocol works.",
+        "This is an analogy to training dose, and must be labelled as one in the text. The experiment says nothing about training volume; do not let the sentence imply it does."
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 8,
+      "note": "Related to the published \"Treat your career like a sport\" — link, do not restate."
+    },
+    {
+      "n": 108,
+      "pillar": "BIOTENSEGRITY & STRUCTURAL BALANCE",
+      "pillarKey": "biotensegrity",
+      "sourceTitle": "The cantilever problem: a giraffe’s neck and yours",
+      "description": "Ingber uses the muscle-and-bone neck of a giraffe as a prestressed cantilever. A head carried forward of the body is the same engineering problem with worse geometry — a tension network asked to hold a lever that keeps getting longer. Why building the neck is structural work, not a vanity exercise, and where it sits in concussion preparation.",
+      "targetMarket": "Contact-sport athletes, parents of young athletes, tech neck, concussion recovery",
+      "hashtags": [
+        "#Biotensegrity",
+        "#Tensegrity",
+        "#StructuralBalance",
+        "#Fascia",
+        "#ELDOA"
+      ],
+      "cta": "Book the free 20-minute Performance Needs Analysis",
+      "communities": "",
+      "reference": "ingber-1998",
+      "keyClaims": [
+        "Ingber: the muscle-and-bone neck of a giraffe is a prestressed tensegrity cantilever, of the same class as Snelson’s cable-and-beam sculptures.",
+        "The skeleton’s bones are compression struts held by tensile soft tissue — a cantilever holds by the tension network, not by the strut."
+      ],
+      "caution": [
+        "Ingber establishes tensegrity at the cellular and skeletal level; applying it to a specific training or clinical decision is Ben’s inference, not the paper’s finding. Present it as the reasoning behind how he works, never as proof that a protocol works.",
+        "Neck strength and concussion risk is an active research area. Say what Ben does in preparation and why; do not claim neck training prevents concussion."
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 9,
+      "note": "Ties directly to the concussion service page — cross-link /concussion-recovery/."
+    },
+    {
+      "n": 109,
+      "pillar": "BIOTENSEGRITY & STRUCTURAL BALANCE",
+      "pillarKey": "biotensegrity",
+      "sourceTitle": "You cannot recover one body part",
+      "description": "Tensegrity arrays behave as coupled oscillators — tension distributed through the array tunes the whole system as one. Which is the structural reason recovery is global: why the calf that will not settle can be a sleep problem, why breathing work changes tissue that no one touched, and why chasing a single site is usually the slow route.",
+      "targetMarket": "In-season athletes, executives, anyone with one stubborn recurring site",
+      "hashtags": [
+        "#Biotensegrity",
+        "#Tensegrity",
+        "#StructuralBalance",
+        "#Fascia",
+        "#ELDOA"
+      ],
+      "cta": "Book the free 20-minute Performance Needs Analysis",
+      "communities": "",
+      "reference": "ingber-1998",
+      "keyClaims": [
+        "Coffey and Pienta (Johns Hopkins) found tensegrity structures function as coupled harmonic oscillators; DNA, nuclei, cytoskeletal filaments, ion channels and whole cells and tissues exhibit characteristic resonant frequencies.",
+        "Ingber: transmission of tension through a tensegrity array distributes force to all interconnected elements and \"tunes\" the whole system mechanically as one."
+      ],
+      "caution": [
+        "Ingber establishes tensegrity at the cellular and skeletal level; applying it to a specific training or clinical decision is Ben’s inference, not the paper’s finding. Present it as the reasoning behind how he works, never as proof that a protocol works.",
+        "\"Resonant frequency\" is a magnet for pseudoscience. Stay on the paper’s claim — mechanical coupling — and do not drift into frequency healing."
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 10,
+      "note": "Related to the published \"Recovery isn’t rest. It’s a skill.\" — this is the structural argument beneath it."
+    },
+    {
+      "n": 110,
+      "pillar": "BIOTENSEGRITY & STRUCTURAL BALANCE",
+      "pillarKey": "biotensegrity",
+      "sourceTitle": "Structural balance is an efficiency argument, not an aesthetic one",
+      "description": "Tensegrity delivers maximum strength for a minimum of material, because tension takes the shortest path available. A balanced structure is therefore a cheap one to run, and a compensating structure spends more energy to produce less output. The closing argument of the series: correct what is not right, then load it — because the alternative is paying interest on it for twenty years.",
+      "targetMarket": "Athletes, executives, longevity-minded readers",
+      "hashtags": [
+        "#Biotensegrity",
+        "#Tensegrity",
+        "#StructuralBalance",
+        "#Fascia",
+        "#ELDOA"
+      ],
+      "cta": "Book the free 20-minute Performance Needs Analysis",
+      "communities": "",
+      "reference": "ingber-1998",
+      "keyClaims": [
+        "Ingber: tensegrity structures offer a maximum amount of strength for a given amount of building material, because tensional forces transmit over the shortest distance between two points.",
+        "Ingber: fully triangulated tensegrity structures may have been selected through evolution because of their structural efficiency — high mechanical strength using a minimum of material.",
+        "The same basic arrangement of bones and muscles appears in Tyrannosaurus rex and Homo sapiens; animals, insects and plants all rely on prestress for mechanical stability."
+      ],
+      "caution": [
+        "Ingber establishes tensegrity at the cellular and skeletal level; applying it to a specific training or clinical decision is Ben’s inference, not the paper’s finding. Present it as the reasoning behind how he works, never as proof that a protocol works."
+      ],
+      "audience": "clients",
+      "status": "queued",
+      "publishedSlug": null,
+      "publishedDate": null,
+      "queuePosition": 11,
+      "note": "Write this one last — it is the series closer and should reference the earlier nine."
     }
-  ]
+  ],
+  "references": {
+    "ingber-1998": {
+      "citation": "Donald E. Ingber, \"The Architecture of Life\", Scientific American, January 1998, pp. 48–57.",
+      "path": "content/editorial/Ingber-1998-The-Architecture-of-Life.pdf",
+      "howToCite": "In the body, attribute plainly — \"the cell biologist Donald Ingber\", \"work at Harvard in the 1990s\". No footnotes, no inline journal references; it is a blog, not a paper. Every claim you attribute must actually be in the PDF.",
+      "scopeWarning": "The paper is about architecture from molecules to the skeleton. It supports the mechanism — bones as compression struts in a continuous tension network, force transmitted globally along specific paths, mechanics changing cell behaviour. It does not evaluate any exercise, therapy or protocol, and must never be cited as though it does."
+    }
+  }
 }
