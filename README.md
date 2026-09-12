@@ -88,8 +88,14 @@ scripts/
   audit.mjs            Pre-flight checks on dist/. CI fails on any error.
   serve.mjs            Local preview with production-like headers + brotli.
   make-og.mjs          Renders branded OG images and PNG icons (Playwright).
+  next-insight.mjs     Picks the next weekly blog topic and records it once shipped.
   subset-fonts.py      Re-subsets the webfonts (fontTools).
 fonts-src/             Unmodified font originals, kept so subsetting is repeatable.
+content/editorial/     Not built — the editorial pipeline behind the weekly post.
+  WEEKLY-BLOG.md       The standing playbook a scheduled run follows.
+  VOICE.md             Ben's voice and style guide, plus what may not be claimed.
+  blog-queue.json      The 100 topics, in publishing order, with status.
+  Ben_Velazquez_100_Knowledge_Blogs.pdf   The source research the queue came from.
 ```
 
 ---
@@ -109,6 +115,27 @@ Each post needs `slug`, `date`, `updated`, `tag`, `title`, `summary`
 (the answer-first block), `body`, and `faqs` — all bilingual.
 
 Then optionally regenerate its OG card: `npm run og`.
+
+### The weekly insight, on a schedule
+
+A recurring Claude Code task writes one of these every Sunday evening and
+pushes it to `main`, which deploys it — so the post goes live without a review
+step. It works from `content/editorial/` — the playbook in `WEEKLY-BLOG.md`,
+the voice rules in `VOICE.md`, and a queue of 100 topics built from Ben's
+research PDF. If the build will not go green, or the topic turns out to be
+unpublishable, the run opens a pull request instead of pushing.
+
+```bash
+node scripts/next-insight.mjs            # the topic due next, and its date
+node scripts/next-insight.mjs --list 10  # what is coming up
+node scripts/next-insight.mjs --status   # queue counts and what has shipped
+```
+
+Posts are dated the Tuesday of their publishing week. To take the queue in a
+different direction, reorder `queuePosition` in `blog-queue.json` or skip a
+topic with `--skip <n> --reason "…"`. Editing `WEEKLY-BLOG.md` or `VOICE.md`
+changes how every future post is written — that is the intended way to steer
+it.
 
 ### Edit page copy
 

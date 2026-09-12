@@ -13,6 +13,109 @@
 
 export const insights = [
   {
+    slug: { en: 'the-l5-s1-eldoa', es: 'el-eldoa-l5-s1' },
+    date: '2026-09-01',
+    updated: '2026-09-01',
+    tag: { en: 'ELDOA', es: 'ELDOA' },
+    title: {
+      en: 'The L5-S1 ELDOA: one minute, done properly',
+      es: 'El ELDOA L5-S1: un minuto, bien hecho',
+    },
+    summary: {
+      en: 'The lumbosacral junction is where a spine that has stopped sharing work sends the bill. The L5-S1 ELDOA is the position I give more often than any other — and the one people most often perform as a stretch, which it is not.',
+      es: 'La unión lumbosacra es donde una columna que dejó de repartir el trabajo pasa la factura. El ELDOA L5-S1 es la posición que más receto, y la que más se confunde con un estiramiento, que no lo es.',
+    },
+    meta: {
+      en: 'What the L5-S1 ELDOA is, why the lumbosacral junction absorbs the load the rest of the spine stops sharing, and how to hold it properly.',
+      es: 'Qué es el ELDOA L5-S1, por qué la unión lumbosacra absorbe la carga que el resto de la columna deja de repartir y cómo sostenerlo bien.',
+    },
+    answer: {
+      en: [
+        'The L5-S1 ELDOA is a one-minute self-normalising position that creates tension through the fascial chains around the lumbosacral junction — the joint between the last lumbar vertebra and the sacrum. Held correctly, it asks the body to create space at that segment actively, using the limbs to build tension in every direction at once, rather than being pulled open passively.',
+        'It is the position I prescribe most often because L5-S1 is where a spine that has stopped sharing work tends to send the bill. It is also the position most often performed badly: people relax into it like a stretch, when the entire mechanism depends on holding maximum tension for the full sixty seconds.',
+      ],
+      es: [
+        'El ELDOA L5-S1 es una postura de autonormalización de un minuto que crea tensión a través de las cadenas fasciales alrededor de la unión lumbosacra: la articulación entre la última vértebra lumbar y el sacro. Sostenida correctamente, pide al cuerpo que genere espacio en ese segmento de forma activa, usando las extremidades para construir tensión en todas las direcciones a la vez, en lugar de abrirse de forma pasiva.',
+        'Es la posición que más receto porque L5-S1 es donde una columna que dejó de repartir el trabajo suele pasar la factura. También es la que peor se ejecuta: la gente se relaja dentro de ella como si fuera un estiramiento, cuando todo el mecanismo depende de mantener la tensión máxima durante los sesenta segundos completos.',
+      ],
+    },
+    body: {
+      en: `<p>Twenty years of intake sessions and the same segment keeps coming up. Different sports, different decades, different jobs — and a lumbosacral junction that has quietly stopped sharing the load with the rest of the spine.</p>
+<h2>Why that one joint ends up paying the bill</h2>
+<p>L5-S1 is a transition. Above it sits a mobile column. Below it sits the sacrum, wedged between two pelvic bones and, in practical terms, not going anywhere. So every rotation the mid-back has stopped producing, every bit of extension the hips have given up, every hour spent folded into a chair — that demand does not evaporate. It travels down the chain and arrives at the last segment that still moves freely.</p>
+<p>That is not a design flaw. It is arithmetic. The joint is not weak; it is doing several other joints' work on top of its own. It is also why an image can read far worse than the person in front of me feels, and why "there is something going on at L5-S1" explains almost nothing on its own. The interesting question is never what happened at that segment. It is what stopped happening everywhere else.</p>
+<h2>A stretch and an ELDOA are not the same thing</h2>
+<p>This is where most people go wrong, and it is worth being precise about.</p>
+<p>A stretch lengthens tissue by pulling on it — gravity, a strap, a partner, your own hands. Something external does the work and you soften to allow it. An ELDOA does the opposite. You set a very specific position that puts the segment you are targeting at the centre of a tension chain, and then <em>you</em> create the tension, from the extremities inward, in every direction available. Feet, legs, pelvis, ribs, arms, hands, even the jaw and the tongue. Nothing is passive. Nothing softens.</p>
+<p>The point is not to feel a pull somewhere. The point is that fascia is continuous, so tension built at the ends of the chain has to be resolved somewhere along it — and the position is designed so that the somewhere is one specific joint. Change the position slightly and you are working on a different segment. Relax any part of the chain and you are working on nothing at all.</p>
+<h2>What the minute actually asks of you</h2>
+<h3>1. Set the frame before you build the tension</h3>
+<p>Everything is decided in the first ten seconds. The lumbar spine has to be flat against the floor, the pelvis square, the position of the legs exact. If the frame is wrong, the tension you build afterwards travels somewhere you did not intend. Most people rush this part because it does not feel like the exercise. It is the exercise.</p>
+<h3>2. Build tension outward, then keep building</h3>
+<p>Reach through the heels, lengthen through the crown of the head, open the hands, hold the ribs down. You should be working hard within about five seconds. The mistake is treating the setup as the peak and then coasting — an ELDOA held at sixty per cent effort for a minute is not a lighter version of the exercise, it is a different exercise, and not a useful one.</p>
+<h3>3. The last fifteen seconds are the whole thing</h3>
+<p>One minute is the standard for a reason: the position needs long enough for tension to distribute through the chain, and the final quarter of it is where that actually resolves. Those are also the seconds where the body starts negotiating — a shoulder creeps up, a heel drifts, the breath gets short and shallow. Breathe, hold the frame, finish honestly. Forty-five honest seconds beats ninety dishonest ones every time.</p>
+<h2>What it will not do</h2>
+<p>It will not fix a problem you have not identified. If a specific position reproduces a sharp, radiating pain, that is information to act on with a clinician, not something to push through for a minute a day. Nothing here is a diagnosis or a substitute for one.</p>
+<p>It will also not, on its own, undo eleven hours of sitting. One minute against a whole day is not a fair fight, and I have never claimed otherwise — <a href="/insights/your-chair-is-undoing-your-training/">the chair still wins on volume</a>. What it does do is give one overworked segment a daily, deliberate ask in the opposite direction, and hold that ground while the real work — restoring what the hips and mid-back stopped contributing — goes on above and below it.</p>
+<h2>The part nobody wants to hear</h2>
+<p>It is one minute, and it is unpleasant, and it works when it is done every day and does very little when it is done on Tuesdays. That is the entire trade. The athletes who keep it are not the ones with more discipline than you; they are the ones who stopped treating it as optional the first time it gave them a season back.</p>
+<p>If you want the fuller picture of where this sits in a program, <a href="/eldoa/">the method page covers how ELDOA is used</a>. If you want to know which segment is actually paying your bill, that is what the analysis is for.</p>`,
+      es: `<p>Veinte años de evaluaciones iniciales y el mismo segmento aparece una y otra vez. Distintos deportes, distintas décadas, distintos trabajos, y una unión lumbosacra que en silencio dejó de repartir la carga con el resto de la columna.</p>
+<h2>Por qué esa articulación acaba pagando la factura</h2>
+<p>L5-S1 es una transición. Encima hay una columna móvil. Debajo está el sacro, encajado entre los dos huesos de la pelvis y, en la práctica, sin ir a ninguna parte. Así que cada rotación que la espalda media dejó de producir, cada grado de extensión que las caderas abandonaron, cada hora doblado en una silla: esa demanda no se evapora. Baja por la cadena y llega al último segmento que todavía se mueve con libertad.</p>
+<p>No es un defecto de diseño. Es aritmética. La articulación no es débil; está haciendo el trabajo de varias otras además del suyo. También es la razón por la que una imagen puede verse mucho peor de lo que la persona siente, y por la que «hay algo en L5-S1» no explica casi nada por sí solo. La pregunta interesante nunca es qué pasó en ese segmento. Es qué dejó de pasar en todos los demás.</p>
+<h2>Un estiramiento y un ELDOA no son lo mismo</h2>
+<p>Aquí es donde casi todo el mundo se equivoca, y vale la pena ser preciso.</p>
+<p>Un estiramiento alarga el tejido tirando de él: la gravedad, una banda, un compañero, tus propias manos. Algo externo hace el trabajo y tú te relajas para permitirlo. Un ELDOA hace lo contrario. Colocas una postura muy específica que sitúa el segmento objetivo en el centro de una cadena de tensión y luego <em>tú</em> creas esa tensión, desde las extremidades hacia dentro, en todas las direcciones disponibles. Pies, piernas, pelvis, costillas, brazos, manos, incluso la mandíbula y la lengua. Nada es pasivo. Nada se afloja.</p>
+<p>El objetivo no es sentir un tirón en algún sitio. El objetivo es que la fascia es continua, así que la tensión construida en los extremos de la cadena tiene que resolverse en algún punto de ella, y la postura está diseñada para que ese punto sea una articulación concreta. Cambia un poco la posición y estás trabajando otro segmento. Afloja cualquier parte de la cadena y no estás trabajando nada.</p>
+<h2>Lo que ese minuto te exige de verdad</h2>
+<h3>1. Monta la estructura antes de construir la tensión</h3>
+<p>Todo se decide en los primeros diez segundos. La zona lumbar tiene que quedar plana contra el suelo, la pelvis cuadrada, la posición de las piernas exacta. Si la estructura está mal, la tensión que construyas después viajará a un sitio que no pretendías. La mayoría corre por esta parte porque no le parece el ejercicio. Es el ejercicio.</p>
+<h3>2. Construye tensión hacia fuera, y sigue construyendo</h3>
+<p>Empuja por los talones, alárgate por la coronilla, abre las manos, mantén las costillas abajo. Deberías estar trabajando duro a los cinco segundos. El error es tratar la colocación como el punto máximo y luego dejarse ir: un ELDOA sostenido al sesenta por ciento durante un minuto no es una versión suave del ejercicio, es otro ejercicio, y no uno útil.</p>
+<h3>3. Los últimos quince segundos son todo</h3>
+<p>El minuto es el estándar por una razón: la postura necesita tiempo suficiente para que la tensión se distribuya por la cadena, y es en el último cuarto donde eso realmente se resuelve. Son también los segundos en los que el cuerpo empieza a negociar: un hombro sube, un talón se desliza, la respiración se vuelve corta y superficial. Respira, sostén la estructura, termina con honestidad. Cuarenta y cinco segundos honestos valen más que noventa deshonestos, siempre.</p>
+<h2>Lo que no va a hacer</h2>
+<p>No va a resolver un problema que no has identificado. Si una posición concreta reproduce un dolor agudo o irradiado, eso es información para tratar con un profesional, no algo que atravesar un minuto al día. Nada de esto es un diagnóstico ni lo sustituye.</p>
+<p>Tampoco va a deshacer, por sí solo, once horas sentado. Un minuto contra un día entero no es una pelea justa, y nunca he dicho lo contrario: <a href="/es/insights/tu-silla-deshace-tu-entrenamiento/">la silla sigue ganando por volumen</a>. Lo que sí hace es darle a un segmento sobrecargado una petición diaria y deliberada en la dirección opuesta, y sostener ese terreno mientras el trabajo real —recuperar lo que las caderas y la espalda media dejaron de aportar— avanza por encima y por debajo.</p>
+<h2>La parte que nadie quiere oír</h2>
+<p>Es un minuto, es incómodo, funciona cuando se hace todos los días y hace muy poco cuando se hace los martes. Ese es todo el intercambio. Los atletas que lo mantienen no tienen más disciplina que tú; simplemente dejaron de tratarlo como opcional la primera vez que les devolvió una temporada.</p>
+<p>Si quieres ver dónde encaja esto dentro de un programa, <a href="/es/eldoa/">la página del método explica cómo se usa el ELDOA</a>. Y si quieres saber qué segmento está pagando tu factura, para eso está el análisis.</p>`,
+    },
+    faqs: {
+      en: [
+        {
+          q: 'Is the L5-S1 ELDOA safe if I already have back pain?',
+          a: '<p>For most people it is well tolerated, because the position is built on active tension rather than end-range loading. But "back pain" covers a great many different problems, and the right answer depends on which one you have. If a position reproduces sharp or radiating pain, stop and get it assessed rather than working through it. That is exactly what the free Performance Needs Analysis is for.</p>',
+        },
+        {
+          q: 'Why exactly one minute?',
+          a: '<p>One minute is the working standard because the position needs long enough for tension to distribute through the fascial chain and resolve at the targeted segment, and that happens in the back half of the hold. A shorter hold at full tension is still worth doing; a longer hold at partial tension mostly is not. Effort quality matters more than the clock.</p>',
+        },
+        {
+          q: 'How often should I do it, and is one position enough?',
+          a: '<p>Daily is the point — this is a habit, not a session. One well-chosen position done every day outperforms six done occasionally. Whether L5-S1 is the right one for you depends on where your spine has actually stopped sharing work, which is what an assessment establishes before anything gets prescribed.</p>',
+        },
+      ],
+      es: [
+        {
+          q: '¿Es seguro el ELDOA L5-S1 si ya tengo dolor de espalda?',
+          a: '<p>La mayoría lo tolera bien, porque la postura se construye sobre tensión activa y no sobre carga en rango final. Pero «dolor de espalda» abarca problemas muy distintos, y la respuesta correcta depende de cuál tengas. Si una posición reproduce dolor agudo o irradiado, detente y hazlo evaluar en lugar de atravesarlo. Para eso existe el Análisis de Necesidades gratuito.</p>',
+        },
+        {
+          q: '¿Por qué exactamente un minuto?',
+          a: '<p>El minuto es el estándar de trabajo porque la postura necesita tiempo suficiente para que la tensión se distribuya por la cadena fascial y se resuelva en el segmento objetivo, y eso ocurre en la segunda mitad del sostén. Un minuto más corto con tensión máxima sigue valiendo; uno más largo con tensión parcial, en general no. La calidad del esfuerzo importa más que el reloj.</p>',
+        },
+        {
+          q: '¿Con qué frecuencia debo hacerlo? ¿Basta con una sola posición?',
+          a: '<p>Diario: esa es la idea, porque esto es un hábito, no una sesión. Una posición bien elegida hecha todos los días rinde más que seis hechas de vez en cuando. Si L5-S1 es la adecuada para ti depende de dónde tu columna dejó realmente de repartir el trabajo, y eso es lo que establece una evaluación antes de recetar nada.</p>',
+        },
+      ],
+    },
+  },
+
+  {
     slug: { en: 'treat-your-career-like-a-sport', es: 'trata-tu-carrera-como-un-deporte' },
     date: '2026-07-07',
     updated: '2026-07-07',
