@@ -406,6 +406,10 @@ ${pageTail(page, locale)}`;
 /* Method                                                               */
 /* ------------------------------------------------------------------ */
 
+/** "In practice" photo beside the method steps (public/img/method-practice-*). */
+const PRACTICE_SIZES = '(min-width: 861px) 540px, 100vw';
+const practiceSet = (ext) => [600, 900, 1200].map((w) => `/img/method-practice-${w}.${ext} ${w}w`).join(', ');
+
 export function buildMethod({ locale, page }) {
   const html = `${pageHero({ ...page.hero, heading: page.hero.h1, lede: esc(page.hero.lede), locale })}
 <div class="ticks"></div>
@@ -424,13 +428,21 @@ ${each(
 )}
 </ul>
 </div>
-<div class="method-visual reveal">
-<div class="scan"></div><div class="ring"></div>
-<div class="vlabel">
+<figure class="method-visual has-photo reveal">
+<picture>
+<source type="image/avif" srcset="${practiceSet('avif')}" sizes="${PRACTICE_SIZES}">
+<source type="image/webp" srcset="${practiceSet('webp')}" sizes="${PRACTICE_SIZES}">
+<img src="/img/method-practice-900.jpg" srcset="${practiceSet('jpg')}" sizes="${PRACTICE_SIZES}" width="1200" height="1260" alt="${
+    locale === 'es'
+      ? 'Ben Velazquez guía a un cliente sentado en una colchoneta en una postura con los brazos por encima de la cabeza'
+      : 'Ben Velazquez guiding a client seated on a mat through an overhead-reach posture'
+  }" loading="lazy" decoding="async">
+</picture>
+<figcaption class="vlabel">
 <span class="mono">${locale === 'es' ? 'Rendimiento · medido' : 'Performance · measured'}</span>
 <strong>${locale === 'es' ? 'Precisión sobre intensidad.' : 'Precision over intensity.'}</strong>
-</div>
-</div>
+</figcaption>
+</figure>
 </div>
 </section>
 <section class="block">

@@ -1168,6 +1168,23 @@ p {
   font-size: 1.5rem;
   color: var(--bone);
 }
+/* With a photo: image on top, the label becomes a caption strip below it. */
+.method-visual.has-photo {
+  aspect-ratio: auto;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.method-visual.has-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 1260;
+  object-fit: cover;
+}
+.method-visual.has-photo .vlabel {
+  padding: 22px 26px 24px;
+}
 
 /* --------------------------------------------------------------------------
    Pricing tiers
