@@ -765,6 +765,15 @@ export const content = {
         'Especialista en rehabilitación de alto rendimiento en Nueva York. 20+ años con atletas de NFL, NHL y MLB, autor sobre fascia y experto en conmociones.',
     },
     hero: {
+      photo: {
+        slug: 'hero-about',
+        widths: [800, 1200, 1600],
+        width: 1600,
+        height: 2000,
+        position: '50% 18%',
+        narrow: true,
+        alt: 'Retrato de Ben Velazquez sonriendo, con los brazos cruzados sobre una mesa',
+      },
       kicker: 'Sobre Ben',
       h1: 'Veinte años en la sala donde se protegen las carreras.',
       lede: 'Especialista en rehabilitación de alto rendimiento, preparador físico, autor publicado sobre fascia y experto reconocido en soluciones de ejercicio para conmociones cerebrales — con base en Nueva York, trabajando en inglés y español.',

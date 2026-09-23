@@ -23,11 +23,12 @@ ${lede ? `<p>${lede}</p>` : ''}
  * in public/img as `${slug}-${width}.{avif,webp,jpg}`. It is the LCP image,
  * so it loads eagerly at high priority.
  */
-export function heroPhoto({ slug, widths, width, height, alt, position }) {
-  const sizes = '(min-width: 901px) 60vw, 100vw';
+export function heroPhoto({ slug, widths, width, height, alt, position, narrow = false }) {
+  // `narrow` gives a portrait a slimmer desktop panel, so the crop is not all face.
+  const sizes = narrow ? '(min-width: 901px) 44vw, 100vw' : '(min-width: 901px) 60vw, 100vw';
   const set = (ext) => widths.map((w) => `/img/${slug}-${w}.${ext} ${w}w`).join(', ');
   const style = position ? ` style="--photo-pos:${esc(position)}"` : '';
-  return `<picture class="hero-photo"${style}>
+  return `<picture class="${narrow ? 'hero-photo is-narrow' : 'hero-photo'}"${style}>
 <source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
 <source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">
 <img src="/img/${slug}-${widths[0]}.jpg" srcset="${set('jpg')}" sizes="${sizes}" width="${width}" height="${height}" alt="${esc(

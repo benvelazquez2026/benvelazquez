@@ -633,6 +633,14 @@ p {
 .hero-video video.is-playing {
   opacity: 1;
 }
+.hero-photo.is-narrow {
+  width: 44%;
+}
+@media (max-width: 900px) {
+  .hero-photo.is-narrow {
+    width: 100%;
+  }
+}
 /* Interior heroes: the photo sits under the content, never in the flow. */
 .page-hero > .hero-photo {
   position: absolute;

@@ -760,6 +760,15 @@ export const content = {
         'Performance rehabilitation specialist and strength coach in NYC. 20+ years with NFL, NHL and MLB athletes, fascia author and concussion exercise expert.',
     },
     hero: {
+      photo: {
+        slug: 'hero-about',
+        widths: [800, 1200, 1600],
+        width: 1600,
+        height: 2000,
+        position: '50% 18%',
+        narrow: true,
+        alt: 'Portrait of Ben Velazquez smiling, arms folded on a table',
+      },
       kicker: 'About',
       h1: 'Twenty years in the room where careers are protected.',
       lede: 'Performance rehabilitation specialist, strength coach, published author on fascia, and a recognised expert in exercise-based concussion solutions — based in New York City, working in English and Spanish.',
