@@ -492,6 +492,16 @@ export const content = {
 <p>El trabajo de conmociones basado en ejercicio se entrega como una parte de un equipo coordinado, junto a tus profesionales médicos, no en su lugar. Si has sufrido un golpe en la cabeza, acude primero a un médico. Si presentas dolor de cabeza que empeora, vómitos repetidos, convulsiones, debilidad o entumecimiento, o confusión o somnolencia crecientes, busca atención de urgencia de inmediato.</p>`,
     },
     approach: {
+      photo: {
+        slug: 'concussion-posture-gait',
+        widths: [700, 1386],
+        width: 1386,
+        height: 1382,
+        display: 520,
+        zoom: true,
+        caption: 'Esquema general del control postura–marcha · Diagrama: PosturePro · Clic para ampliar',
+        alt: 'Diagrama, esquema general del control de la postura y la marcha: las señales sensoriales llegan a la corteza cerebral, el sistema límbico y los ganglios basales, que actúan a través del tálamo, el cerebelo y el tronco encefálico sobre la red locomotora espinal, combinando movimiento voluntario, emocional y automático.',
+      },
       kicker: 'El enfoque',
       heading: 'Por qué ejercicio, y por qué temprano.',
       body: `<p>La pauta antigua para las conmociones era reposo completo hasta la resolución de los síntomas. La práctica ha avanzado bastante. La actividad cuidadosamente dosificada, por debajo del umbral de síntomas, introducida bajo supervisión y progresada según la evidencia y no según el calendario, es hoy una parte central del manejo de la conmoción.</p>

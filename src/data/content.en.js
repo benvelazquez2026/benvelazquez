@@ -490,6 +490,16 @@ export const content = {
 <p>Exercise-based concussion work is delivered as one part of a coordinated team, alongside your medical providers — not instead of them. If you have sustained a head injury, see a physician first. If you are experiencing worsening headache, repeated vomiting, seizures, weakness or numbness, increasing confusion or drowsiness, seek emergency care immediately.</p>`,
     },
     approach: {
+      photo: {
+        slug: 'concussion-posture-gait',
+        widths: [700, 1386],
+        width: 1386,
+        height: 1382,
+        display: 520,
+        zoom: true,
+        caption: 'General schema of posture–gait control · Diagram: PosturePro · Click to enlarge',
+        alt: 'Diagram, general schema of posture and gait control: sensory signals feed the cerebral cortex, limbic system and basal ganglia, which act through the thalamus, cerebellum and brainstem on the spinal locomotor network, combining voluntary, emotional and automatic movement.',
+      },
       kicker: 'The approach',
       heading: 'Why exercise, and why early.',
       body: `<p>The old default for concussion was complete rest until symptoms resolved. Practice has moved on considerably. Carefully dosed, sub-symptom-threshold activity, introduced under supervision and progressed on evidence rather than on a calendar, is now a central part of how concussion is managed.</p>

@@ -1445,6 +1445,18 @@ p {
   height: auto;
   border-radius: var(--radius);
 }
+.side-zoom {
+  display: block;
+  cursor: zoom-in;
+}
+.side-photo figcaption {
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
 @media (max-width: 860px) {
   .split-media {
     grid-template-columns: 1fr;

@@ -55,18 +55,36 @@ ${heroPhoto({ ...poster, position: null, alt: '' }).replace('<picture class="her
 }
 
 /**
- * A single photo set beside a block of prose (see .split-media). One source
- * width, never upscaled; files are `${slug}-${width}.{avif,webp,jpg}`.
+ * A photo or diagram set beside a block of prose (see .split-media). Never
+ * upscaled: files are `${slug}-${w}.{avif,webp,jpg}` for each of `widths`
+ * (default: just `width`). `display` caps the column (default: native
+ * width); `zoom` links to the largest JPEG so a diagram can be read full
+ * size; `caption` adds a figcaption (e.g. a credit).
  */
-export function sidePhoto({ slug, width, height, alt }) {
-  const base = `/img/${slug}-${width}`;
+export function sidePhoto({ slug, width, height, alt, widths = [width], display = width, zoom = false, caption }) {
+  const set = (ext) => widths.map((w) => `/img/${slug}-${w}.${ext} ${w}w`).join(', ');
+  const sizes = `(min-width: 861px) ${display}px, 100vw`;
+  const img = `<picture>
+<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
+<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">
+<img src="/img/${slug}-${widths[0]}.jpg" srcset="${set('jpg')}" sizes="${sizes}" width="${width}" height="${height}" alt="${esc(
+    alt,
+  )}" loading="lazy" decoding="async">
+</picture>`;
+  const max = widths[widths.length - 1];
   return `<figure class="side-photo reveal">
-<picture>
-<source type="image/avif" srcset="${base}.avif">
-<source type="image/webp" srcset="${base}.webp">
-<img src="${base}.jpg" width="${width}" height="${height}" alt="${esc(alt)}" loading="lazy" decoding="async">
-</picture>
+${zoom ? `<a class="side-zoom" href="/img/${slug}-${max}.jpg">${img}</a>` : img}
+${caption ? `<figcaption>${esc(caption)}</figcaption>` : ''}
 </figure>`;
+}
+
+/** Prose, with an optional side photo (`photo` as for sidePhoto). */
+export function proseWithPhoto(body, photo) {
+  if (!photo) return `<div class="prose reveal">${body}</div>`;
+  return `<div class="split-media" style="--media-w:${photo.display || photo.width}px">
+<div class="prose reveal">${body}</div>
+${sidePhoto(photo)}
+</div>`;
 }
 
 /** Interior page hero, optionally over a background photo or video. */

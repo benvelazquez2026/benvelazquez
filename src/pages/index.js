@@ -18,7 +18,7 @@ import {
   faqSection,
   quoteGrid,
   heroPhoto,
-  sidePhoto,
+  proseWithPhoto,
   videoGrid,
   cardGrid,
   tierGrid,
@@ -310,14 +310,7 @@ ${
     ? `<section class="block on-bone">
 <div class="wrap">
 ${sectionHead({ kicker: page.problem.kicker, heading: esc(page.problem.heading) })}
-${
-  page.problem.photo
-    ? `<div class="split-media" style="--media-w:${page.problem.photo.width}px">
-<div class="prose reveal">${page.problem.body}</div>
-${sidePhoto(page.problem.photo)}
-</div>`
-    : `<div class="prose reveal">${page.problem.body}</div>`
-}
+${proseWithPhoto(page.problem.body, page.problem.photo)}
 </div>
 </section>`
     : ''
@@ -339,7 +332,7 @@ ${
     ? `<section class="block">
 <div class="wrap">
 ${sectionHead({ kicker: page.approach.kicker, heading: esc(page.approach.heading) })}
-<div class="prose reveal">${page.approach.body}</div>
+${proseWithPhoto(page.approach.body, page.approach.photo)}
 </div>
 </section>`
     : ''
