@@ -18,6 +18,7 @@ import {
   faqSection,
   quoteGrid,
   heroPhoto,
+  sidePhoto,
   videoGrid,
   cardGrid,
   tierGrid,
@@ -309,7 +310,14 @@ ${
     ? `<section class="block on-bone">
 <div class="wrap">
 ${sectionHead({ kicker: page.problem.kicker, heading: esc(page.problem.heading) })}
+${
+  page.problem.photo
+    ? `<div class="split-media">
 <div class="prose reveal">${page.problem.body}</div>
+${sidePhoto(page.problem.photo)}
+</div>`
+    : `<div class="prose reveal">${page.problem.body}</div>`
+}
 </div>
 </section>`
     : ''

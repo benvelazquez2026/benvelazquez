@@ -1420,6 +1420,31 @@ p {
   line-height: 1.75;
   color: var(--bone-dim);
 }
+/* Prose with a photo beside it. The photo is capped at its native size. */
+.split-media {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 366px);
+  gap: 54px;
+  align-items: center;
+}
+.side-photo {
+  margin: 0;
+}
+.side-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+@media (max-width: 860px) {
+  .split-media {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .side-photo {
+    max-width: 366px;
+  }
+}
 .on-bone .prose {
   color: var(--slate);
 }

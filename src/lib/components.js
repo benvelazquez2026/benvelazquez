@@ -53,6 +53,21 @@ ${heroPhoto({ ...poster, position: null, alt: '' }).replace('<picture class="her
 </div>`;
 }
 
+/**
+ * A single photo set beside a block of prose (see .split-media). One source
+ * width, never upscaled; files are `${slug}-${width}.{avif,webp,jpg}`.
+ */
+export function sidePhoto({ slug, width, height, alt }) {
+  const base = `/img/${slug}-${width}`;
+  return `<figure class="side-photo reveal">
+<picture>
+<source type="image/avif" srcset="${base}.avif">
+<source type="image/webp" srcset="${base}.webp">
+<img src="${base}.jpg" width="${width}" height="${height}" alt="${esc(alt)}" loading="lazy" decoding="async">
+</picture>
+</figure>`;
+}
+
 /** Interior page hero, optionally over a background photo or video. */
 export function pageHero({ kicker, heading, lede, ctas = [], photo, video, locale = 'en' }) {
   const media = video ? heroVideo(video) : photo ? heroPhoto(photo) : '';

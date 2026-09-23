@@ -366,6 +366,7 @@ export const content = {
       { k: 'Languages', v: 'English · Spanish' },
     ],
     problem: {
+      photo: { slug: 'athletes-cleared', width: 366, height: 366, alt: 'Stanford football player, number 95, pointing downfield during a game' },
       kicker: 'The gap',
       heading: 'Cleared to play is not the same as ready to play.',
       body: `<p>Rehabilitation usually ends when the pain does. That is the moment most athletes get handed back to a strength programme — with the compensation patterns that caused the injury still fully intact.</p>

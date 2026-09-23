@@ -365,6 +365,7 @@ export const content = {
       { k: 'Idiomas', v: 'Inglés · Español' },
     ],
     problem: {
+      photo: { slug: 'athletes-cleared', width: 366, height: 366, alt: 'Jugador de fútbol americano de Stanford, número 95, señalando hacia el campo durante un partido' },
       kicker: 'La brecha',
       heading: 'Estar dado de alta no es lo mismo que estar listo para jugar.',
       body: `<p>La rehabilitación suele terminar cuando termina el dolor. Ese es el momento en que la mayoría de los atletas vuelve a un programa de fuerza, con los patrones de compensación que causaron la lesión totalmente intactos.</p>
