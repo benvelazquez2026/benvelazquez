@@ -458,6 +458,15 @@ export const content = {
         'Exercise-based concussion solutions from the onset of injury with Ben Velazquez, NYC. A team focused not just on return, but on keeping you there.',
     },
     hero: {
+      photo: {
+        slug: 'hero-concussion',
+        widths: [750, 1125],
+        width: 1125,
+        height: 1515,
+        position: '55% 18%',
+        narrow: true,
+        alt: 'A coach guiding a client through a kneeling overhead-reach posture on a mat',
+      },
       kicker: 'Concussion recovery · NYC',
       h1: 'Exercise-based concussion solutions, from the onset of injury.',
       lede: 'A holistic, team-based approach to concussion recovery — focused not just on getting you back, but on keeping you there.',

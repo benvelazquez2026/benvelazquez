@@ -457,6 +457,15 @@ export const content = {
         'Soluciones de ejercicio para conmociones desde el inicio de la lesión con Ben Velazquez, NYC. Un equipo integral enfocado en mantenerte ahí.',
     },
     hero: {
+      photo: {
+        slug: 'hero-concussion',
+        widths: [750, 1125],
+        width: 1125,
+        height: 1515,
+        position: '55% 18%',
+        narrow: true,
+        alt: 'Un entrenador guía a una clienta en una postura de rodillas con los brazos por encima de la cabeza sobre una colchoneta',
+      },
       kicker: 'Recuperación de conmociones · NYC',
       h1: 'Soluciones de ejercicio para conmociones, desde el inicio de la lesión.',
       lede: 'Un enfoque integral y en equipo para la recuperación de conmociones cerebrales, centrado no solo en que regreses, sino en mantenerte ahí.',
