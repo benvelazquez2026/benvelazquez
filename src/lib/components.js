@@ -18,9 +18,28 @@ ${lede ? `<p>${lede}</p>` : ''}
 </div>`;
 }
 
-/** Interior page hero. */
-export function pageHero({ kicker, heading, lede, ctas = [], locale = 'en' }) {
-  return `<section class="page-hero">
+/**
+ * Full-bleed hero background photo (see .hero-photo in main.css). Files live
+ * in public/img as `${slug}-${width}.{avif,webp,jpg}`. It is the LCP image,
+ * so it loads eagerly at high priority.
+ */
+export function heroPhoto({ slug, widths, width, height, alt, position }) {
+  const sizes = '(min-width: 901px) 60vw, 100vw';
+  const set = (ext) => widths.map((w) => `/img/${slug}-${w}.${ext} ${w}w`).join(', ');
+  const style = position ? ` style="--photo-pos:${esc(position)}"` : '';
+  return `<picture class="hero-photo"${style}>
+<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
+<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">
+<img src="/img/${slug}-${widths[0]}.jpg" srcset="${set('jpg')}" sizes="${sizes}" width="${width}" height="${height}" alt="${esc(
+    alt,
+  )}" fetchpriority="high" decoding="async">
+</picture>`;
+}
+
+/** Interior page hero, optionally over a background photo. */
+export function pageHero({ kicker, heading, lede, ctas = [], photo, locale = 'en' }) {
+  return `<section class="${photo ? 'page-hero has-photo' : 'page-hero'}">
+${photo ? heroPhoto(photo) : ''}
 <div class="wrap">
 <span class="mono eyebrow">${esc(kicker)}</span>
 <h1 class="h1">${heading}</h1>

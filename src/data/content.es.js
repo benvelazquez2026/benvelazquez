@@ -339,6 +339,14 @@ export const content = {
         'Rehabilitación de rendimiento, prevención de lesiones y retorno al juego para atletas profesionales y en desarrollo. Experiencia en NFL, NHL y MLB.',
     },
     hero: {
+      photo: {
+        slug: 'hero-athletes',
+        widths: [800, 1179],
+        width: 1179,
+        height: 782,
+        position: '46% 58%',
+        alt: 'Pitcher de los Phillies levantando la pierna en el montículo frente a un estadio lleno',
+      },
       kicker: 'Atletas · Profesionales y en desarrollo',
       h1: 'Recupérate más rápido, muévete mejor, alarga la carrera.',
       lede: 'Rehabilitación de rendimiento y prevención de lesiones basadas en cómo funciona realmente tu cuerpo — el enfoque que ha mantenido en el campo a atletas de la NFL, la NHL y la MLB.',

@@ -340,6 +340,14 @@ export const content = {
         'Performance rehabilitation, injury prevention and return-to-play programming for pro and developing athletes. NFL, NHL and MLB experience. NYC and virtual.',
     },
     hero: {
+      photo: {
+        slug: 'hero-athletes',
+        widths: [800, 1179],
+        width: 1179,
+        height: 782,
+        position: '46% 58%',
+        alt: 'Phillies pitcher in his leg kick on the mound in front of a packed crowd',
+      },
       kicker: 'Athletes · Professional & developing',
       h1: 'Recover faster, move better, extend the career.',
       lede: 'Performance rehabilitation and injury prevention built around how your body actually works — the approach that has kept athletes across the NFL, NHL and MLB on the field.',
