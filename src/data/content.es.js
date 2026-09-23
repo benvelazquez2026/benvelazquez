@@ -20,6 +20,7 @@ export const content = {
         'Rehabilitación de alto rendimiento, ELDOA y preparación física en Nueva York. La confianza de atletas de NFL, NHL y MLB. Ahora con cupos para ejecutivos.',
     },
     hero: {
+      imageAlt: 'Ben Velazquez junto al ring en un gimnasio de boxeo al aire libre',
       kicker: 'NYC · Rehabilitación de alto rendimiento',
       h1: 'El coach al que vuelan <span class="signal">los mejores atletas del mundo.</span>',
       lede: 'Rehabilitación de alto rendimiento galardonada y experto reconocido en soluciones de ejercicio para conmociones cerebrales — ahora con cupos limitados para ejecutivos.',

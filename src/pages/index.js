@@ -68,12 +68,24 @@ function crumb(locale, keys, currentName) {
 /* Home                                                                 */
 /* ------------------------------------------------------------------ */
 
+/** Home hero photo: responsive widths in public/img, and the slot it fills (see .hero-photo). */
+const HERO_WIDTHS = [750, 1100, 1500];
+const HERO_SIZES = '(min-width: 901px) 60vw, 100vw';
+
 export function buildHome({ locale, content, credentialsCopy }) {
   const c = content.home;
   const t = ui[locale];
   const url = urlFor('home', locale);
 
+  const heroSrcset = (ext) => HERO_WIDTHS.map((w) => `/img/hero-ben-${w}.${ext} ${w}w`).join(', ');
   const html = `<section class="hero">
+<picture class="hero-photo">
+<source type="image/avif" srcset="${heroSrcset('avif')}" sizes="${HERO_SIZES}">
+<source type="image/webp" srcset="${heroSrcset('webp')}" sizes="${HERO_SIZES}">
+<img src="/img/hero-ben-1100.jpg" srcset="${heroSrcset('jpg')}" sizes="${HERO_SIZES}" width="1500" height="2000" alt="${esc(
+    c.hero.imageAlt,
+  )}" fetchpriority="high" decoding="async">
+</picture>
 <div class="wrap hero-grid">
 <div class="reveal">
 <span class="mono eyebrow">${esc(c.hero.kicker)}</span>

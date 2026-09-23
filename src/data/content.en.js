@@ -27,6 +27,7 @@ export const content = {
         'Performance rehabilitation, ELDOA and strength coaching in NYC. Trusted by NFL, NHL and MLB athletes — now taking a limited number of executive clients.',
     },
     hero: {
+      imageAlt: 'Ben Velazquez ringside at an open-air boxing gym',
       kicker: 'NYC · Performance Rehabilitation',
       h1: 'The coach the world’s best athletes <span class="signal">fly in to see.</span>',
       lede: 'Award-winning performance rehabilitation and a recognised expert in concussion exercise solutions — now taking a limited number of executive clients.',

@@ -590,6 +590,54 @@ p {
   background: radial-gradient(closest-side, rgba(31, 157, 118, 0.16), transparent 70%);
   pointer-events: none;
 }
+/* The photo sits in the right of the hero on desktop, Ben's face in the
+   open space above the stats. On narrow screens it becomes a band across
+   the top and the copy starts below his face. Gradients fade it into the
+   ink so the text keeps its contrast. */
+.hero-photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  pointer-events: none;
+}
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 60%;
+}
+.hero-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, var(--ink) 0%, rgba(20, 22, 26, 0.55) 30%, rgba(20, 22, 26, 0.1) 60%, rgba(20, 22, 26, 0.3) 100%),
+    linear-gradient(180deg, rgba(20, 22, 26, 0.2) 0%, transparent 30%, rgba(20, 22, 26, 0.82) 62%, var(--ink) 100%);
+}
+@media (max-width: 900px) {
+  .hero {
+    padding-top: min(82vw, 400px);
+  }
+  .hero-photo {
+    bottom: auto;
+    width: 100%;
+    height: min(128vw, 620px);
+  }
+  .hero-photo img {
+    object-position: 50% 32%;
+  }
+  .hero-photo::after {
+    background: linear-gradient(
+      180deg,
+      rgba(20, 22, 26, 0.15) 0%,
+      transparent 25%,
+      rgba(20, 22, 26, 0.7) 60%,
+      var(--ink) 88%
+    );
+  }
+}
 .hero-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
