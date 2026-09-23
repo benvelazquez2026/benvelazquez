@@ -9,6 +9,15 @@ export const quotes = [
     id: 'fleiszer',
     name: 'Tim Fleiszer',
     featured: true,
+    // Shown beside the quote on the home page (public/img/results-fleiszer-*).
+    photo: {
+      slug: 'fleiszer',
+      widths: [480, 624],
+      alt: {
+        en: 'Hamilton Tiger-Cats defensive lineman celebrating with both arms raised',
+        es: 'Liniero defensivo de los Hamilton Tiger-Cats celebrando con los brazos en alto',
+      },
+    },
     role: {
       en: 'Executive Director, Concussion Legacy Foundation Canada · 4× Grey Cup Champion',
       es: 'Director Ejecutivo, Concussion Legacy Foundation Canada · 4× campeón de la Grey Cup',
@@ -22,6 +31,14 @@ export const quotes = [
     id: 'luzardo',
     name: 'Jesús Luzardo',
     featured: true,
+    photo: {
+      slug: 'luzardo',
+      widths: [480, 720, 960],
+      alt: {
+        en: 'Philadelphia Phillies pitcher following through on a pitch',
+        es: 'Pitcher de los Philadelphia Phillies completando un lanzamiento',
+      },
+    },
     role: { en: 'Starting Pitcher · Philadelphia', es: 'Pitcher abridor · Philadelphia' },
     text: {
       en: '“Thanks to working with Ben, I’ve felt at my best physically over these last two years. Feeling what needs to get fixed and how to fix it quickly is something I’ve come to learn in that time. Getting the body into the proper form to perform at the level I want is tough for many athletes — and working with Ben has made it easier for me to do that.”',

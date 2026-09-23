@@ -127,7 +127,7 @@ ${answerBlock({ paragraphs: c.answer, locale })}
 <section class="block" id="results">
 <div class="wrap">
 ${sectionHead({ kicker: c.results.kicker, heading: esc(c.results.heading) })}
-${quoteGrid(quotes, locale)}
+${quoteGrid(quotes, locale, { photos: true })}
 <p class="reveal" style="margin-top:26px">
 <a class="arrow-link" href="${esc(pathFor('results', locale))}">${esc(t.nav.results)} →</a>
 </p>

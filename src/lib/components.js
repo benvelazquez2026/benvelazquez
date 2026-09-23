@@ -88,16 +88,31 @@ ${each(
 }
 
 /** Testimonial grid. `featured` quotes span the full width. */
-export function quoteGrid(quotes, locale = 'en') {
+export function quoteGrid(quotes, locale = 'en', { photos = false } = {}) {
   return `<div class="quotes reveal">
-${each(
-  quotes,
-  (q) => `<figure class="${cx('quote', q.featured && 'featured')}">
-<blockquote><p>${q.text[locale]}</p></blockquote>
-<figcaption>${esc(q.name)}<span>${q.role[locale]}</span></figcaption>
-</figure>`,
-)}
+${each(quotes, (q) => {
+  const photo = photos && q.photo;
+  const body = `<blockquote><p>${q.text[locale]}</p></blockquote>
+<figcaption>${esc(q.name)}<span>${q.role[locale]}</span></figcaption>`;
+  return `<figure class="${cx('quote', q.featured && 'featured', photo && 'has-photo')}">
+${photo ? `${quotePhoto(photo, locale)}<div class="quote-body">${body}</div>` : body}
+</figure>`;
+})}
 </div>`;
+}
+
+/** Portrait (4:5) testimonial photo, served as AVIF/WebP/JPEG from public/img. */
+function quotePhoto({ slug, widths, alt }, locale) {
+  const set = (ext) => widths.map((w) => `/img/results-${slug}-${w}.${ext} ${w}w`).join(', ');
+  const sizes = '(min-width: 701px) 360px, 100vw';
+  const max = widths[widths.length - 1];
+  return `<picture class="quote-photo">
+<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
+<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">
+<img src="/img/results-${slug}-${widths[0]}.jpg" srcset="${set('jpg')}" sizes="${sizes}" width="${max}" height="${Math.round(
+    (max * 5) / 4,
+  )}" alt="${esc(alt[locale])}" loading="lazy" decoding="async">
+</picture>`;
 }
 
 /** Click-to-load video grid — no third-party JS until the visitor asks. */
