@@ -596,6 +596,9 @@ write(
 /img/*
   Cache-Control: public, max-age=31536000, immutable
 
+/video/*
+  Cache-Control: public, max-age=31536000, immutable
+
 # HTML: always revalidate so content edits go live immediately.
 /*.html
   Cache-Control: public, max-age=0, must-revalidate

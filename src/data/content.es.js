@@ -649,6 +649,10 @@ export const content = {
         'La mayoría del entrenamiento desgasta el cuerpo. Esto lo reconstruye. El método de tres partes detrás de 20+ años de rehabilitación con atletas de élite.',
     },
     hero: {
+      video: {
+        src: '/video/method-hero.mp4',
+        poster: { slug: 'hero-method', widths: [720], width: 720, height: 720, position: '50% 4%' },
+      },
       kicker: 'El método',
       h1: 'La mayoría del entrenamiento desgasta el cuerpo. Esto lo reconstruye.',
       lede: 'Tres principios, aplicados en orden, tanto si eres un atleta profesional en temporada congestionada como un ejecutivo en su cuarto vuelo de la semana.',

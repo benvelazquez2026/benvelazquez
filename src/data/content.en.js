@@ -644,6 +644,10 @@ export const content = {
         'Most training breaks the body down. This builds it back up. The three-part method behind 20+ years of performance rehabilitation with elite athletes.',
     },
     hero: {
+      video: {
+        src: '/video/method-hero.mp4',
+        poster: { slug: 'hero-method', widths: [720], width: 720, height: 720, position: '50% 4%' },
+      },
       kicker: 'The method',
       h1: 'Most training breaks the body down. This builds it back up.',
       lede: 'Three principles, applied in order, whether you are a professional athlete in a congested season or an executive on your fourth flight of the week.',

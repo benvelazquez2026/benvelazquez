@@ -36,10 +36,28 @@ export function heroPhoto({ slug, widths, width, height, alt, position }) {
 </picture>`;
 }
 
-/** Interior page hero, optionally over a background photo. */
-export function pageHero({ kicker, heading, lede, ctas = [], photo, locale = 'en' }) {
-  return `<section class="${photo ? 'page-hero has-photo' : 'page-hero'}">
-${photo ? heroPhoto(photo) : ''}
+/**
+ * Muted, looping background video over a poster photo. Expects a VP9 .webm
+ * next to the .mp4 (H.264) at `src`; browsers fetch only the first they can play. Purely decorative,
+ * so it is hidden from assistive tech. There is no `autoplay` attribute:
+ * site.js starts it only when it is on screen and the visitor has not asked
+ * for reduced motion or data saving; everyone else keeps the poster.
+ */
+export function heroVideo({ src, poster }) {
+  const style = poster.position ? ` style="--photo-pos:${esc(poster.position)}"` : '';
+  return `<div class="hero-photo hero-video"${style} aria-hidden="true">
+${heroPhoto({ ...poster, position: null, alt: '' }).replace('<picture class="hero-photo"', '<picture')}
+<video muted loop playsinline preload="none" disablepictureinpicture data-hero-video><source src="${esc(
+    src.replace(/\.mp4$/, '.webm'),
+  )}" type="video/webm"><source src="${esc(src)}" type="video/mp4"></video>
+</div>`;
+}
+
+/** Interior page hero, optionally over a background photo or video. */
+export function pageHero({ kicker, heading, lede, ctas = [], photo, video, locale = 'en' }) {
+  const media = video ? heroVideo(video) : photo ? heroPhoto(photo) : '';
+  return `<section class="${media ? 'page-hero has-photo' : 'page-hero'}">
+${media}
 <div class="wrap">
 <span class="mono eyebrow">${esc(kicker)}</span>
 <h1 class="h1">${heading}</h1>

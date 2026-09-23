@@ -29,6 +29,29 @@
     });
   }
 
+  /* ---- Hero background video ------------------------------------------- */
+  // Plays only while on screen, and never for reduced motion or Save-Data.
+  var heroVideo = document.querySelector('[data-hero-video]');
+  var saveData = navigator.connection && navigator.connection.saveData;
+  if (
+    heroVideo &&
+    'IntersectionObserver' in window &&
+    !window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
+    !saveData
+  ) {
+    heroVideo.addEventListener('playing', function () {
+      heroVideo.classList.add('is-playing');
+    });
+    new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) {
+        var p = heroVideo.play();
+        if (p && p.catch) p.catch(function () {});
+      } else {
+        heroVideo.pause();
+      }
+    }).observe(heroVideo);
+  }
+
   /* ---- Reveal on scroll ------------------------------------------------- */
   var reveals = document.querySelectorAll('.reveal');
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
