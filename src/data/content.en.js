@@ -215,6 +215,7 @@ export const content = {
       { k: 'Concierge roster', v: '7 positions, by application' },
     ],
     problem: {
+      photo: { slug: 'executive-problem', width: 534, height: 667, alt: 'Three people lying on mats with their legs raised straight up a wall, arms extended' },
       kicker: 'The problem',
       heading: 'One hour of training cannot outvote eleven hours in a chair.',
       body: `<p>Most senior professionals are not under-trained. They are under-recovered and over-compressed. Eleven hours a day folded over a screen, a hundred flights a year, and sleep treated as the variable that gives way first.</p>

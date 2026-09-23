@@ -214,6 +214,7 @@ export const content = {
       { k: 'Roster Concierge', v: '7 lugares, por aplicación' },
     ],
     problem: {
+      photo: { slug: 'executive-problem', width: 534, height: 667, alt: 'Tres personas acostadas sobre colchonetas con las piernas elevadas contra la pared y los brazos extendidos' },
       kicker: 'El problema',
       heading: 'Una hora de entrenamiento no puede con once horas en una silla.',
       body: `<p>La mayoría de los profesionales sénior no está falta de entrenamiento. Está mal recuperada y sobrecomprimida. Once horas al día encorvado frente a una pantalla, cien vuelos al año y el sueño tratado como la variable que cede primero.</p>

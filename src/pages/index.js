@@ -312,7 +312,7 @@ ${
 ${sectionHead({ kicker: page.problem.kicker, heading: esc(page.problem.heading) })}
 ${
   page.problem.photo
-    ? `<div class="split-media">
+    ? `<div class="split-media" style="--media-w:${page.problem.photo.width}px">
 <div class="prose reveal">${page.problem.body}</div>
 ${sidePhoto(page.problem.photo)}
 </div>`

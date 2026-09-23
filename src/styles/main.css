@@ -1420,10 +1420,11 @@ p {
   line-height: 1.75;
   color: var(--bone-dim);
 }
-/* Prose with a photo beside it. The photo is capped at its native size. */
+/* Prose with a photo beside it. The photo is capped at its native size,
+   passed in as --media-w. */
 .split-media {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 366px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, var(--media-w, 366px));
   gap: 54px;
   align-items: center;
 }
@@ -1442,7 +1443,7 @@ p {
     gap: 30px;
   }
   .side-photo {
-    max-width: 366px;
+    max-width: var(--media-w, 366px);
   }
 }
 .on-bone .prose {
