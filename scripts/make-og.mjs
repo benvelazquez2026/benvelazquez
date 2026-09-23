@@ -24,6 +24,7 @@ import { insights } from '../src/data/insights.js';
 import { content as contentEn } from '../src/data/content.en.js';
 import { content as contentEs } from '../src/data/content.es.js';
 import { plain, esc } from '../src/lib/html.js';
+import { LOGO_PATH, LOGO_WIDTH, LOGO_HEIGHT, logoSvg } from '../src/data/logo.js';
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const OUT_IMG = join(ROOT, 'public', 'img');
@@ -78,7 +79,8 @@ body{width:1200px;height:630px;background:#14161A;font-family:H,sans-serif;color
 .ticks{position:absolute;left:0;right:0;bottom:0;height:18px;
   background-image:repeating-linear-gradient(90deg,rgba(239,237,226,.16) 0 1px,transparent 1px 28px)}
 .top{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2}
-.mark{font-family:B;font-weight:800;font-size:26px;letter-spacing:.02em}
+.mark{display:flex;align-items:center;gap:18px;font-family:B;font-weight:800;font-size:26px;letter-spacing:.02em}
+.mark svg{width:81px;height:56px;color:#EFEBE2}
 .mark i{color:#1F9D76;font-style:normal}
 .strap{font-family:M;font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:#8C8980}
 .mid{position:relative;z-index:2;max-width:940px}
@@ -94,22 +96,37 @@ h1{font-family:B;font-weight:800;letter-spacing:-.025em;line-height:1.03;
   vertical-align:middle}
 </style></head><body>
 <div class="glow"></div>
-<div class="top"><div class="mark">BEN VELAZQUEZ<i>.</i></div><div class="strap">${esc(STRAP[locale])}</div></div>
+<div class="top"><div class="mark">${logoSvg()}<span>BEN VELAZQUEZ<i>.</i></span></div><div class="strap">${esc(STRAP[locale])}</div></div>
 <div class="mid"><div class="kicker">${esc(kicker)}</div><h1>${esc(title)}</h1></div>
 <div class="foot"><span><i class="dot"></i>${esc(FOOT[locale])}</span><span>benvelazquez.com</span></div>
 <div class="ticks"></div>
 </body></html>`;
 }
 
+/**
+ * The app icon / favicon: the logo, white on the brand ink, centred in a
+ * square. Written to public/icons/icon.svg and rasterised from there.
+ */
+function iconSvg() {
+  const side = LOGO_WIDTH + 100;
+  const dx = (side - LOGO_WIDTH) / 2;
+  const dy = (side - LOGO_HEIGHT) / 2;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${side} ${side}" role="img" aria-label="Ben Velazquez">
+  <title>Ben Velazquez</title>
+  <rect width="${side}" height="${side}" fill="#14161A"/>
+  <path transform="translate(${dx} ${dy})" fill="#FFFFFF" fill-rule="evenodd" d="${LOGO_PATH}"/>
+</svg>
+`;
+}
+
 function iconHtml(size, maskable) {
-  const svg = readFileSync(join(OUT_ICON, 'icon.svg'), 'utf8');
+  // Maskable icons get cropped to a circle; keep the logo inside the safe zone.
   const pad = maskable ? size * 0.14 : 0;
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 *{margin:0;padding:0}
 body{width:${size}px;height:${size}px;background:#14161A;display:flex;align-items:center;justify-content:center}
 svg{width:${size - pad * 2}px;height:${size - pad * 2}px}
-${maskable ? 'body{border-radius:0}svg rect:first-of-type{rx:0}' : ''}
-</style></head><body>${svg}</body></html>`;
+</style></head><body>${iconSvg()}</body></html>`;
 }
 
 /** Trim a headline to something that reads well at OG size. */
@@ -152,6 +169,12 @@ targets.unshift({
 
 mkdirSync(OUT_IMG, { recursive: true });
 mkdirSync(OUT_ICON, { recursive: true });
+writeFileSync(join(OUT_ICON, 'icon.svg'), iconSvg());
+// The bare logo (white, transparent background) for press and embeds.
+writeFileSync(
+  join(OUT_ICON, 'logo.svg'),
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${LOGO_WIDTH} ${LOGO_HEIGHT}" role="img" aria-label="Ben Velazquez"><title>Ben Velazquez</title><path fill="#FFFFFF" fill-rule="evenodd" d="${LOGO_PATH}"/></svg>\n`,
+);
 
 const browser = await chromium.launch({
   executablePath: existsSync('/opt/pw-browsers/chromium') ? undefined : undefined,

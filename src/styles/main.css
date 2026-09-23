@@ -338,8 +338,30 @@ p {
   text-decoration: none;
   white-space: nowrap;
 }
-.wordmark span {
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.wordmark .logo {
+  flex: none;
+  width: 42px;
+  height: 29px;
+}
+.wordmark-text span {
   color: var(--signal);
+}
+@media (max-width: 520px) {
+  .wordmark-text {
+    display: none;
+  }
+}
+.logo-foot {
+  display: block;
+  width: 70px;
+  height: 48px;
+  margin-bottom: 16px;
+  color: var(--bone);
 }
 .nav-links {
   display: flex;

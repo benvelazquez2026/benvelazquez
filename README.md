@@ -69,6 +69,7 @@ build.mjs              The whole build. Reads src/data, writes dist/.
 src/
   data/
     site.js            Domain, business identity, route table, prices, videos.
+    logo.js            The BEN / V logo as one SVG path (header, footer, icons, OG cards).
     ui.js              Navigation and chrome strings (EN + ES).
     content.en.js      All English page copy.
     content.es.js      All Spanish page copy — same shape as the English file.
@@ -87,7 +88,8 @@ worker/index.js        Cloudflare Worker: apex→www canonical redirect.
 scripts/
   audit.mjs            Pre-flight checks on dist/. CI fails on any error.
   serve.mjs            Local preview with production-like headers + brotli.
-  make-og.mjs          Renders branded OG images and PNG icons (Playwright).
+  make-og.mjs          Renders branded OG images, icon.svg/logo.svg and PNG icons
+                       from src/data/logo.js (Playwright).
   subset-fonts.py      Re-subsets the webfonts (fontTools).
 fonts-src/             Unmodified font originals, kept so subsetting is repeatable.
 ```

@@ -106,7 +106,13 @@ export function businessEntity(locale = 'en') {
         ? 'Performance rehabilitation, ELDOA and strength coaching in New York City for professional athletes, executives and people recovering from concussion. Available virtually worldwide and in person in NYC.'
         : 'Rehabilitación de alto rendimiento, ELDOA y preparación física en Nueva York para atletas profesionales, ejecutivos y personas en recuperación de conmociones cerebrales. Disponible en línea a nivel mundial y presencial en NYC.',
     image: absolute('/img/og-default.jpg'),
-    logo: absolute('/icons/icon-512.png'),
+    logo: {
+      '@type': 'ImageObject',
+      url: absolute('/icons/icon-512.png'),
+      width: 512,
+      height: 512,
+      caption: site.name,
+    },
     email: `mailto:${site.email}`,
     founder: { '@id': ID.person },
     employee: { '@id': ID.person },
