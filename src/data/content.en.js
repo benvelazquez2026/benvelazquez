@@ -26,6 +26,7 @@ export const content = {
       description:
         'Performance rehabilitation, ELDOA and strength coaching in NYC. Trusted by NFL, NHL and MLB athletes — now taking a limited number of executive clients.',
     },
+    answerPhoto: { slug: 'home-answer', width: 474, height: 592, alt: 'New York Yankees pitcher in pinstripes striding into a pitch' },
     hero: {
       imageAlt: 'Ben Velazquez ringside at an open-air boxing gym',
       kicker: 'NYC · Performance Rehabilitation',

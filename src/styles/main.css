@@ -1439,6 +1439,9 @@ p {
 .side-photo {
   margin: 0;
 }
+.split-media > .answer-block {
+  margin-bottom: 0;
+}
 .side-photo img {
   display: block;
   width: 100%;

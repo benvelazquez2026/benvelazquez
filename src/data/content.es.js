@@ -19,6 +19,7 @@ export const content = {
       description:
         'Rehabilitación de alto rendimiento, ELDOA y preparación física en Nueva York. La confianza de atletas de NFL, NHL y MLB. Ahora con cupos para ejecutivos.',
     },
+    answerPhoto: { slug: 'home-answer', width: 474, height: 592, alt: 'Pitcher de los New York Yankees con uniforme a rayas lanzando la pelota' },
     hero: {
       imageAlt: 'Ben Velazquez junto al ring en un gimnasio de boxeo al aire libre',
       kicker: 'NYC · Rehabilitación de alto rendimiento',

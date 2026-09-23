@@ -19,6 +19,7 @@ import {
   quoteGrid,
   heroPhoto,
   proseWithPhoto,
+  sidePhoto,
   videoGrid,
   cardGrid,
   tierGrid,
@@ -99,8 +100,9 @@ ${each(
 ${proofStrip(c.proofLabel, proofNames)}
 
 <section class="block-tight">
-<div class="wrap">
+<div class="wrap split-media" style="--media-w:${c.answerPhoto.width}px">
 ${answerBlock({ paragraphs: c.answer, locale })}
+${sidePhoto(c.answerPhoto)}
 </div>
 </section>
 
