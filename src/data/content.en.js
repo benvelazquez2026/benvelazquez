@@ -24,12 +24,12 @@ export const content = {
     seo: {
       title: 'Ben Velazquez | Performance Rehabilitation & ELDOA, NYC',
       description:
-        'Performance rehabilitation, ELDOA and strength coaching in NYC. Trusted by NFL, NHL and MLB athletes — now taking a limited number of executive clients.',
+        'Performance rehab, ELDOA and strength coaching in NYC, Tampa and Puerto Rico. Trusted by NFL, NHL and MLB athletes — now taking executive clients.',
     },
     answerPhoto: { slug: 'home-answer', width: 474, height: 592, alt: 'New York Yankees pitcher in pinstripes striding into a pitch' },
     hero: {
       imageAlt: 'Ben Velazquez ringside at an open-air boxing gym',
-      kicker: 'NYC · Performance Rehabilitation',
+      kicker: 'NYC · Tampa · Puerto Rico · Performance Rehabilitation',
       h1: 'The coach the world’s best athletes <span class="signal">fly in to see.</span>',
       lede: 'Award-winning performance rehabilitation and a recognised expert in concussion exercise solutions — now taking a limited number of executive clients.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
@@ -41,8 +41,8 @@ export const content = {
     ],
     proofLabel: 'Trusted by elite performers',
     answer: [
-      'Ben Velazquez is a New York City performance rehabilitation specialist and strength coach with more than 20 years working with elite performers, including athletes across the NFL, NHL and MLB. He is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>, a licensed Soma-Therapist and a Certified Strength &amp; Conditioning Specialist.',
-      'He works with three groups: professional and developing athletes, time-poor executives, and people recovering from concussion. Every engagement begins with a free 20-minute Performance Needs Analysis, and work is delivered virtually worldwide or in person in New York City, in English or Spanish.',
+      'Ben Velazquez is a performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico, with more than 20 years working with elite performers, including athletes across the NFL, NHL and MLB. He is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>, a licensed Soma-Therapist and a Certified Strength &amp; Conditioning Specialist.',
+      'He works with three groups: professional and developing athletes, time-poor executives, and people recovering from concussion. Every engagement begins with a free 20-minute Performance Needs Analysis, and work is delivered virtually worldwide or in person in New York City, Tampa and Puerto Rico, in English or Spanish.',
     ],
     philosophy: {
       kicker: 'Philosophy',
@@ -153,7 +153,7 @@ export const content = {
     faqs: [
       {
         q: 'Who is Ben Velazquez?',
-        a: '<p>Ben Velazquez is a performance rehabilitation specialist and strength coach based in New York City, with more than 20 years working with elite performers. He has worked with athletes across the NFL, NHL and MLB, is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>, and is a recognised expert in exercise-based concussion solutions.</p>',
+        a: '<p>Ben Velazquez is a performance rehabilitation specialist and strength coach based in New York City, Tampa and Puerto Rico, with more than 20 years working with elite performers. He has worked with athletes across the NFL, NHL and MLB, is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>, and is a recognised expert in exercise-based concussion solutions.</p>',
       },
       {
         q: 'Who does Ben work with?',
@@ -161,7 +161,7 @@ export const content = {
       },
       {
         q: 'Does Ben work with clients remotely?',
-        a: '<p>Yes. Most executive work is delivered virtually and travels with the client. In-person work in New York City is available through the Concierge track, which begins with a full-day in-person Performance Day.</p>',
+        a: '<p>Yes. Most executive work is delivered virtually and travels with the client. In-person work in New York City, Tampa and Puerto Rico is available through the Concierge track, which begins with a full-day in-person Performance Day.</p>',
       },
       {
         q: 'How do I start working with Ben?',
@@ -195,7 +195,7 @@ export const content = {
     seo: {
       title: 'Executive Performance Coaching in NYC | Ben Velazquez',
       description:
-        'Private performance coaching for time-poor executives: ELDOA, decompression and strength programming that travels with you. NYC and virtual worldwide.',
+        'Private performance coaching for time-poor executives: ELDOA, decompression and strength work that travels with you. NYC, Tampa, Puerto Rico and virtual.',
     },
     hero: {
       kicker: 'Now open · Limited roster',
@@ -209,7 +209,7 @@ export const content = {
       'Core membership is $2,300 per month on a quarterly commitment and includes four virtual sessions, custom programming refreshed monthly, bounded async access with a 24-hour weekday response, and quarterly reassessment. Every place begins with a free 20-minute Performance Needs Analysis.',
     ],
     facts: [
-      { k: 'Format', v: 'Virtual worldwide · in person in NYC' },
+      { k: 'Format', v: 'Virtual worldwide · in person in NYC, Tampa & Puerto Rico' },
       { k: 'Core investment', v: '$2,300 / month' },
       { k: 'Commitment', v: 'Quarterly' },
       { k: 'Entry point', v: 'Free 20-min needs analysis' },
@@ -222,7 +222,7 @@ export const content = {
       heading: 'One hour of training cannot outvote eleven hours in a chair.',
       body: `<p>Most senior professionals are not under-trained. They are under-recovered and over-compressed. Eleven hours a day folded over a screen, a hundred flights a year, and sleep treated as the variable that gives way first.</p>
 <p>The body adapts to whatever position it holds longest. That is why postural pain so rarely responds to training harder — you are trying to outvote eleven hours with one, and the arithmetic does not work.</p>
-<p>The answer is not more volume. It is precision: identifying the two or three restrictions actually limiting you, then interrupting the pattern often enough that the body stops treating a chair as its default shape.</p>`,
+<p>The answer is not more volume. It is precision: identifying the two or three restrictions that actually limit you, then interrupting the pattern often enough that the body stops treating a chair as its default shape.</p>`,
     },
     outcomes: {
       kicker: 'What changes',
@@ -251,7 +251,7 @@ export const content = {
         {
           idx: '05',
           heading: 'A body that lasts the career',
-          body: 'Periodised across the year the way an athlete’s is, so capacity is measured in decades rather than quarters.',
+          body: 'Periodized across the year the way an athlete’s is, so capacity is measured in decades rather than quarters.',
         },
         {
           idx: '06',
@@ -340,7 +340,7 @@ export const content = {
     seo: {
       title: 'Performance Rehabilitation for Athletes | Ben Velazquez',
       description:
-        'Performance rehabilitation, injury prevention and return-to-play programming for pro and developing athletes. NFL, NHL and MLB experience. NYC and virtual.',
+        'Performance rehab, injury prevention and return-to-play programming for pro and developing athletes. NFL, NHL and MLB. NYC, Tampa, Puerto Rico and virtual.',
     },
     hero: {
       photo: {
@@ -359,13 +359,13 @@ export const content = {
     answerPhoto: { slug: 'athletes-answer', widths: [600, 880], width: 880, height: 1100, display: 440, alt: 'Pitcher in a pinstriped uniform following through on a pitch, back leg kicked high, in front of a packed stadium' },
     answer: [
       'Performance rehabilitation is the work that sits between physiotherapy and strength and conditioning: restoring structural balance and tissue quality first, then building the qualities a sport actually demands. It is what keeps an athlete available rather than merely cleared.',
-      'Ben Velazquez has spent more than 20 years doing this with athletes across the NFL, NHL and MLB. Every program begins with a movement and postural assessment, uses ELDOA and fascial work to address what the assessment finds, and only then progresses to performance qualities.',
+      'Ben Velazquez has spent more than 20 years doing this with athletes across the NFL, NHL and MLB. Every program begins with a movement and postural assessment, uses ELDOA and fascia work to address what the assessment finds, and only then progresses to performance qualities.',
     ],
     facts: [
       { k: 'Leagues', v: 'NFL · NHL · MLB' },
       { k: 'Experience', v: '20+ years with elite performers' },
-      { k: 'Core practice', v: 'ELDOA · fascial work · strength' },
-      { k: 'Format', v: 'In person in NYC · virtual worldwide' },
+      { k: 'Core practice', v: 'ELDOA · fascia work · strength' },
+      { k: 'Format', v: 'In person in NYC, Tampa & Puerto Rico · virtual worldwide' },
       { k: 'Also serves', v: 'Developing and collegiate athletes' },
       { k: 'Languages', v: 'English · Spanish' },
     ],
@@ -436,7 +436,7 @@ export const content = {
       },
       {
         q: 'Is the work available remotely?',
-        a: '<p>Yes. Virtual programming and coaching is available worldwide, which is how most in-season work is delivered. In-person work is available in New York City.</p>',
+        a: '<p>Yes. Virtual programming and coaching is available worldwide, which is how most in-season work is delivered. In-person work is available in New York City, Tampa and Puerto Rico.</p>',
       },
     ],
     related: [
@@ -458,7 +458,7 @@ export const content = {
     seo: {
       title: 'Exercise-Based Concussion Recovery | Ben Velazquez',
       description:
-        'Exercise-based concussion solutions from the onset of injury with Ben Velazquez, NYC. A team focused not just on return, but on keeping you there.',
+        'Exercise-based concussion solutions from the onset of injury with Ben Velazquez in NYC, Tampa and Puerto Rico. Focused on return, and on keeping you there.',
     },
     hero: {
       photo: {
@@ -470,14 +470,14 @@ export const content = {
         narrow: true,
         alt: 'A coach guiding a client through a kneeling overhead-reach posture on a mat',
       },
-      kicker: 'Concussion recovery · NYC',
+      kicker: 'Concussion recovery · NYC · Tampa · Puerto Rico',
       h1: 'Exercise-based concussion solutions, from the onset of injury.',
       lede: 'A holistic, team-based approach to concussion recovery — focused not just on getting you back, but on keeping you there.',
       ctas: [{ route: 'apply', label: 'Learn about the program' }, { route: 'contact', label: 'Get in touch', ghost: true }],
     },
     answer: [
       'Exercise-based concussion recovery uses carefully progressed, sub-symptom-threshold physical activity as an active part of recovery, rather than treating extended complete rest as the default. It is delivered as part of a coordinated team that includes medical oversight.',
-      'Ben Velazquez is a recognised expert in concussion exercise solutions and leads the program himself. Tim Fleiszer, Executive Director of Concussion Legacy Foundation Canada, has worked with Ben for more than 15 years, including with military personnel through the Operation Brain Health program.',
+      'Ben Velazquez is a recognised expert in concussion exercise solutions and leads the program himself. For over 15 years, Ben has worked with the Concussion Legacy Foundation Canada, its Executive Director Tim Fleiszer, and military personnel through the foundation’s Operation Brain Health program.',
     ],
     facts: [
       { k: 'Delivered by', v: 'Ben Velazquez' },
@@ -643,7 +643,7 @@ export const content = {
       },
       {
         q: 'Where can I learn ELDOA in New York City?',
-        a: '<p>ELDOA is a core part of every program I write, for athletes and executives alike, delivered in person in NYC or virtually. Every engagement starts with a free 20-minute Performance Needs Analysis, which is what determines which postures you actually need.</p>',
+        a: '<p>ELDOA is a core part of every program I write, for athletes and executives alike, delivered in person in NYC, Tampa and Puerto Rico, or virtually. Every engagement starts with a free 20-minute Performance Needs Analysis, which is what determines which postures you actually need.</p>',
       },
     ],
     related: [
@@ -779,7 +779,7 @@ export const content = {
     seo: {
       title: 'About Ben Velazquez — NYC Performance Rehab Specialist',
       description:
-        'Performance rehabilitation specialist and strength coach in NYC. 20+ years with NFL, NHL and MLB athletes, fascia author and concussion exercise expert.',
+        'Performance rehab specialist and strength coach in NYC, Tampa and Puerto Rico. 20+ years with NFL, NHL and MLB athletes; fascia author, concussion expert.',
     },
     hero: {
       photo: {
@@ -793,15 +793,15 @@ export const content = {
       },
       kicker: 'About',
       h1: 'Twenty years in the room where careers are protected.',
-      lede: 'Performance rehabilitation specialist, strength coach, published author on fascia, and a recognised expert in exercise-based concussion solutions — based in New York City, working in English and Spanish.',
+      lede: 'Performance rehabilitation specialist, strength coach, published author on fascia, and a recognised expert in exercise-based concussion solutions — based in New York City, Tampa and Puerto Rico, working in English and Spanish.',
       ctas: [APPLY_CTA, { route: 'method', label: 'The method', ghost: true }],
     },
     answer: [
-      'Ben Velazquez is a New York City performance rehabilitation specialist and strength coach with more than 20 years working with elite performers. He has worked with athletes across the NFL, NHL and MLB, has trained over 1,000 professionals through his seminars, and is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.',
-      'He is a licensed Soma-Therapist, a Certified Strength &amp; Conditioning Specialist (CSCS), an ACSM Exercise Specialist and an ISSA Sports Performance Nutritionist, and a member of the NSCA, ACSM and ISSA. He coaches in English and Spanish, virtually worldwide and in person in New York City.',
+      'Ben Velazquez is a performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico, with more than 20 years working with elite performers. He has worked with athletes across the NFL, NHL and MLB, has trained over 1,000 professionals through his seminars, and is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.',
+      'He is a licensed Soma-Therapist, a Certified Strength &amp; Conditioning Specialist (CSCS), an ACSM Exercise Specialist and an ISSA Sports Performance Nutritionist, and a member of the NSCA, ACSM and ISSA. He coaches in English and Spanish, virtually worldwide and in person in New York City, Tampa and Puerto Rico.',
     ],
     facts: [
-      { k: 'Based in', v: 'New York City' },
+      { k: 'Based in', v: 'New York City · Tampa · Puerto Rico' },
       { k: 'Experience', v: '20+ years with elite performers' },
       { k: 'Leagues', v: 'NFL · NHL · MLB' },
       { k: 'Seminars', v: '1,000+ professionals trained' },
@@ -840,7 +840,7 @@ export const content = {
       },
       {
         q: 'Where is Ben Velazquez based?',
-        a: '<p>New York City. In-person work is available in NYC, and virtual coaching is available worldwide.</p>',
+        a: '<p>New York City, Tampa and Puerto Rico. In-person work is available in all three, and virtual coaching is available worldwide.</p>',
       },
       {
         q: 'What book has Ben contributed to?',
@@ -1106,7 +1106,7 @@ export const content = {
     seo: {
       title: 'Frequently Asked Questions | Ben Velazquez',
       description:
-        'Answers on programs, pricing, ELDOA, remote coaching, concussion recovery and how to start working with Ben Velazquez in NYC or virtually.',
+        'Answers on programs, pricing, ELDOA, remote coaching, concussion recovery and how to start with Ben Velazquez in NYC, Tampa, Puerto Rico or virtually.',
     },
     hero: {
       kicker: 'Questions',
@@ -1136,7 +1136,7 @@ export const content = {
           },
           {
             q: 'Can the work be done remotely?',
-            a: '<p>Yes. Most executive work is virtual and travels with the client. In-person work is available in New York City, and is a required part of the Concierge track.</p>',
+            a: '<p>Yes. Most executive work is virtual and travels with the client. In-person work is available in New York City, Tampa and Puerto Rico, and is a required part of the Concierge track.</p>',
           },
           {
             q: 'What languages do you work in?',
@@ -1319,7 +1319,7 @@ export const content = {
     seo: {
       title: 'Contact Ben Velazquez — NYC Performance Rehabilitation',
       description:
-        'Get in touch with Ben Velazquez — coaching, the concussion program, speaking and media. New York City, virtual worldwide, in English or Spanish.',
+        'Get in touch with Ben Velazquez — coaching, the concussion program, speaking and media. NYC, Tampa, Puerto Rico and virtual, in English or Spanish.',
     },
     hero: {
       kicker: 'Contact',
@@ -1329,14 +1329,14 @@ export const content = {
     },
     answer: [
       `The fastest route for coaching enquiries is the free Performance Needs Analysis application. For everything else — the concussion program, speaking, seminars, media or partnerships — email ${site.email}.`,
-      'Ben is based in New York City and works virtually worldwide, in English or Spanish.',
+      'Ben is based in New York City, Tampa and Puerto Rico, and works virtually worldwide, in English or Spanish.',
     ],
     facts: [
       { k: 'Coaching enquiries', v: '<a href="/apply/">Apply for a free analysis</a>' },
       { k: 'Email', v: `<a href="mailto:${site.email}">${site.email}</a>` },
       { k: 'Concussion program', v: '<a href="/concussion-recovery/">Exercise-based recovery</a>' },
-      { k: 'Based in', v: 'New York City, NY' },
-      { k: 'Availability', v: 'Virtual worldwide · in person NYC' },
+      { k: 'Based in', v: 'New York City · Tampa · Puerto Rico' },
+      { k: 'Availability', v: 'Virtual worldwide · in person NYC, Tampa & Puerto Rico' },
       { k: 'Languages', v: 'English · Spanish' },
     ],
     faqs: [
@@ -1370,7 +1370,7 @@ export const content = {
     seo: {
       title: 'The Ben Velazquez Podcast — Performance & Longevity',
       description:
-        'Conversations on performance, recovery and longevity with the people who live at the top — hosted by NYC performance rehabilitation specialist Ben Velazquez.',
+        'Conversations on performance, recovery and longevity with people at the top, hosted by performance rehab specialist Ben Velazquez (NYC, Tampa, Puerto Rico).',
     },
     hero: {
       kicker: 'Podcast',
@@ -1380,7 +1380,7 @@ export const content = {
     },
     answer: [
       'The Ben Velazquez Podcast features conversations on performance, recovery and longevity with athletes, practitioners and executives operating at the highest level.',
-      'It is hosted by Ben Velazquez, a New York City performance rehabilitation specialist with more than 20 years working with athletes across the NFL, NHL and MLB.',
+      'It is hosted by Ben Velazquez, a performance rehabilitation specialist in New York City, Tampa and Puerto Rico, with more than 20 years working with athletes across the NFL, NHL and MLB.',
     ],
     faqs: [
       {

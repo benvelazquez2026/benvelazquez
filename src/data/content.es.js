@@ -17,12 +17,12 @@ export const content = {
     seo: {
       title: 'Ben Velazquez | Rehabilitación de Alto Rendimiento, NYC',
       description:
-        'Rehabilitación de alto rendimiento, ELDOA y preparación física en Nueva York. La confianza de atletas de NFL, NHL y MLB. Ahora con cupos para ejecutivos.',
+        'Rehabilitación de alto rendimiento, ELDOA y preparación física en Nueva York, Tampa y Puerto Rico. Con atletas de NFL, NHL y MLB. Cupos para ejecutivos.',
     },
     answerPhoto: { slug: 'home-answer', width: 474, height: 592, alt: 'Pitcher de los New York Yankees con uniforme a rayas lanzando la pelota' },
     hero: {
       imageAlt: 'Ben Velazquez junto al ring en un gimnasio de boxeo al aire libre',
-      kicker: 'NYC · Rehabilitación de alto rendimiento',
+      kicker: 'NYC · Tampa · Puerto Rico · Rehabilitación de alto rendimiento',
       h1: 'El coach al que vuelan <span class="signal">los mejores atletas del mundo.</span>',
       lede: 'Rehabilitación de alto rendimiento galardonada y experto reconocido en soluciones de ejercicio para conmociones cerebrales — ahora con cupos limitados para ejecutivos.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
@@ -34,8 +34,8 @@ export const content = {
     ],
     proofLabel: 'La confianza de la élite',
     answer: [
-      'Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, con más de 20 años trabajando con atletas de élite, incluidos deportistas de la NFL, la NHL y la MLB. Es coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em>, Soma-Terapeuta licenciado y Especialista Certificado en Fuerza y Acondicionamiento.',
-      'Trabaja con tres grupos: atletas profesionales y en desarrollo, ejecutivos con poco tiempo, y personas en recuperación de conmociones cerebrales. Cada colaboración empieza con un Análisis de Necesidades de Rendimiento gratuito de 20 minutos, en línea a nivel mundial o presencial en Nueva York, en inglés o español.',
+      'Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, Tampa y Puerto Rico, con más de 20 años trabajando con atletas de élite, incluidos deportistas de la NFL, la NHL y la MLB. Es coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em>, Soma-Terapeuta licenciado y Especialista Certificado en Fuerza y Acondicionamiento.',
+      'Trabaja con tres grupos: atletas profesionales y en desarrollo, ejecutivos con poco tiempo, y personas en recuperación de conmociones cerebrales. Cada colaboración empieza con un Análisis de Necesidades de Rendimiento gratuito de 20 minutos, en línea a nivel mundial o presencial en Nueva York, Tampa y Puerto Rico, en inglés o español.',
     ],
     philosophy: {
       kicker: 'Filosofía',
@@ -146,7 +146,7 @@ export const content = {
     faqs: [
       {
         q: '¿Quién es Ben Velazquez?',
-        a: '<p>Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico con base en Nueva York, con más de 20 años trabajando con atletas de élite. Ha trabajado con deportistas de la NFL, la NHL y la MLB, es coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em> y es un experto reconocido en soluciones de ejercicio para conmociones cerebrales.</p>',
+        a: '<p>Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico con base en Nueva York, Tampa y Puerto Rico, con más de 20 años trabajando con atletas de élite. Ha trabajado con deportistas de la NFL, la NHL y la MLB, es coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em> y es un experto reconocido en soluciones de ejercicio para conmociones cerebrales.</p>',
       },
       {
         q: '¿Con quién trabaja Ben?',
@@ -154,7 +154,7 @@ export const content = {
       },
       {
         q: '¿Ben trabaja con clientes a distancia?',
-        a: '<p>Sí. La mayor parte del trabajo ejecutivo es virtual y viaja con el cliente. El trabajo presencial en Nueva York está disponible a través del nivel Concierge, que comienza con un Performance Day presencial de jornada completa.</p>',
+        a: '<p>Sí. La mayor parte del trabajo ejecutivo es virtual y viaja con el cliente. El trabajo presencial en Nueva York, Tampa y Puerto Rico está disponible a través del nivel Concierge, que comienza con un Performance Day presencial de jornada completa.</p>',
       },
       {
         q: '¿Cómo empiezo a trabajar con Ben?',
@@ -194,7 +194,7 @@ export const content = {
     seo: {
       title: 'Coaching de Rendimiento Ejecutivo en NYC | Ben Velazquez',
       description:
-        'Coaching privado para ejecutivos sin tiempo: ELDOA, descompresión y programación de fuerza que viaja contigo. Nueva York y virtual en todo el mundo.',
+        'Coaching privado para ejecutivos sin tiempo: ELDOA, descompresión y programación de fuerza que viaja contigo. Nueva York, Tampa, Puerto Rico y virtual.',
     },
     hero: {
       kicker: 'Cupos abiertos · Roster limitado',
@@ -208,7 +208,7 @@ export const content = {
       'La membresía Core cuesta $2,300 al mes con compromiso trimestral e incluye cuatro sesiones virtuales, programación personalizada actualizada cada mes, acceso asincrónico acotado con respuesta en 24 horas en días hábiles y reevaluación trimestral. Cada lugar empieza con un Análisis de Necesidades de Rendimiento gratuito de 20 minutos.',
     ],
     facts: [
-      { k: 'Formato', v: 'Virtual mundial · presencial en NYC' },
+      { k: 'Formato', v: 'Virtual mundial · presencial en NYC, Tampa y Puerto Rico' },
       { k: 'Inversión Core', v: '$2,300 / mes' },
       { k: 'Compromiso', v: 'Trimestral' },
       { k: 'Punto de entrada', v: 'Análisis gratuito de 20 min' },
@@ -358,13 +358,13 @@ export const content = {
     answerPhoto: { slug: 'athletes-answer', widths: [600, 880], width: 880, height: 1100, display: 440, alt: 'Pitcher con uniforme a rayas completando un lanzamiento, con la pierna trasera en alto, frente a un estadio lleno' },
     answer: [
       'La rehabilitación de rendimiento es el trabajo que se sitúa entre la fisioterapia y la preparación física: primero restaura el equilibrio estructural y la calidad del tejido, y después construye las cualidades que el deporte realmente exige. Es lo que mantiene disponible a un atleta, no solo dado de alta.',
-      'Ben Velazquez lleva más de 20 años haciendo esto con atletas de la NFL, la NHL y la MLB. Cada programa comienza con una evaluación de movimiento y postura, usa ELDOA y trabajo fascial para atender lo que la evaluación encuentra, y solo entonces progresa hacia cualidades de rendimiento.',
+      'Ben Velazquez lleva más de 20 años haciendo esto con atletas de la NFL, la NHL y la MLB. Cada programa comienza con una evaluación de movimiento y postura, usa ELDOA y trabajo de fascia para atender lo que la evaluación encuentra, y solo entonces progresa hacia cualidades de rendimiento.',
     ],
     facts: [
       { k: 'Ligas', v: 'NFL · NHL · MLB' },
       { k: 'Experiencia', v: '20+ años con atletas de élite' },
-      { k: 'Práctica central', v: 'ELDOA · trabajo fascial · fuerza' },
-      { k: 'Formato', v: 'Presencial en NYC · virtual mundial' },
+      { k: 'Práctica central', v: 'ELDOA · trabajo de fascia · fuerza' },
+      { k: 'Formato', v: 'Presencial en NYC, Tampa y Puerto Rico · virtual mundial' },
       { k: 'También atiende', v: 'Atletas en desarrollo y universitarios' },
       { k: 'Idiomas', v: 'Inglés · Español' },
     ],
@@ -435,7 +435,7 @@ export const content = {
       },
       {
         q: '¿El trabajo está disponible a distancia?',
-        a: '<p>Sí. La programación y el coaching virtuales están disponibles en todo el mundo, y así es como se entrega la mayor parte del trabajo en temporada. El trabajo presencial está disponible en Nueva York.</p>',
+        a: '<p>Sí. La programación y el coaching virtuales están disponibles en todo el mundo, y así es como se entrega la mayor parte del trabajo en temporada. El trabajo presencial está disponible en Nueva York, Tampa y Puerto Rico.</p>',
       },
     ],
     related: [
@@ -457,7 +457,7 @@ export const content = {
     seo: {
       title: 'Recuperación de Conmociones con Ejercicio | Ben Velazquez',
       description:
-        'Soluciones de ejercicio para conmociones desde el inicio de la lesión con Ben Velazquez, NYC. Un equipo integral enfocado en mantenerte ahí.',
+        'Soluciones de ejercicio para conmociones desde el inicio de la lesión con Ben Velazquez en NYC, Tampa y Puerto Rico. Un equipo enfocado en mantenerte ahí.',
     },
     hero: {
       photo: {
@@ -469,7 +469,7 @@ export const content = {
         narrow: true,
         alt: 'Un entrenador guía a una clienta en una postura de rodillas con los brazos por encima de la cabeza sobre una colchoneta',
       },
-      kicker: 'Recuperación de conmociones · NYC',
+      kicker: 'Recuperación de conmociones · NYC · Tampa · Puerto Rico',
       h1: 'Soluciones de ejercicio para conmociones, desde el inicio de la lesión.',
       lede: 'Un enfoque integral y en equipo para la recuperación de conmociones cerebrales, centrado no solo en que regreses, sino en mantenerte ahí.',
       ctas: [
@@ -479,7 +479,7 @@ export const content = {
     },
     answer: [
       'La recuperación de conmociones basada en ejercicio utiliza actividad física progresada cuidadosamente y por debajo del umbral de síntomas como parte activa de la recuperación, en lugar de asumir el reposo completo prolongado como opción predeterminada. Se entrega como parte de un equipo coordinado que incluye supervisión médica.',
-      'Ben Velazquez es un experto reconocido en soluciones de ejercicio para conmociones y dirige el programa personalmente. Tim Fleiszer, Director Ejecutivo de Concussion Legacy Foundation Canada, ha trabajado con Ben durante más de 15 años, incluido el trabajo con personal militar a través del programa Operation Brain Health.',
+      'Ben Velazquez es un experto reconocido en soluciones de ejercicio para conmociones y dirige el programa personalmente. Durante más de 15 años, Ben ha trabajado con la Concussion Legacy Foundation Canada, su Director Ejecutivo Tim Fleiszer y personal militar a través del programa Operation Brain Health de la fundación.',
     ],
     facts: [
       { k: 'Entregado por', v: 'Ben Velazquez' },
@@ -648,7 +648,7 @@ export const content = {
       },
       {
         q: '¿Dónde puedo aprender ELDOA en Nueva York?',
-        a: '<p>ELDOA es parte central de cada programa que escribo, tanto para atletas como para ejecutivos, presencial en NYC o virtual. Toda colaboración empieza con un Análisis de Necesidades de Rendimiento gratuito de 20 minutos, que es lo que determina qué posturas necesitas realmente.</p>',
+        a: '<p>ELDOA es parte central de cada programa que escribo, tanto para atletas como para ejecutivos, presencial en NYC, Tampa y Puerto Rico, o virtual. Toda colaboración empieza con un Análisis de Necesidades de Rendimiento gratuito de 20 minutos, que es lo que determina qué posturas necesitas realmente.</p>',
       },
     ],
     related: [
@@ -784,7 +784,7 @@ export const content = {
     seo: {
       title: 'Sobre Ben Velazquez — Rehabilitación de Rendimiento NYC',
       description:
-        'Especialista en rehabilitación de alto rendimiento en Nueva York. 20+ años con atletas de NFL, NHL y MLB, autor sobre fascia y experto en conmociones.',
+        'Especialista en rehabilitación de alto rendimiento en NYC, Tampa y Puerto Rico. 20+ años con atletas de NFL, NHL y MLB; autor sobre fascia y conmociones.',
     },
     hero: {
       photo: {
@@ -798,15 +798,15 @@ export const content = {
       },
       kicker: 'Sobre Ben',
       h1: 'Veinte años en la sala donde se protegen las carreras.',
-      lede: 'Especialista en rehabilitación de alto rendimiento, preparador físico, autor publicado sobre fascia y experto reconocido en soluciones de ejercicio para conmociones cerebrales — con base en Nueva York, trabajando en inglés y español.',
+      lede: 'Especialista en rehabilitación de alto rendimiento, preparador físico, autor publicado sobre fascia y experto reconocido en soluciones de ejercicio para conmociones cerebrales — con base en Nueva York, Tampa y Puerto Rico, trabajando en inglés y español.',
       ctas: [APPLY_CTA, { route: 'method', label: 'El método', ghost: true }],
     },
     answer: [
-      'Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, con más de 20 años trabajando con atletas de élite. Ha trabajado con deportistas de la NFL, la NHL y la MLB, ha formado a más de 1,000 profesionales en sus seminarios y es coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em>.',
-      'Es Soma-Terapeuta licenciado, Especialista Certificado en Fuerza y Acondicionamiento (CSCS), Especialista en Ejercicio ACSM y Nutricionista de Rendimiento Deportivo ISSA, además de miembro de NSCA, ACSM e ISSA. Entrena en inglés y español, virtualmente en todo el mundo y presencialmente en Nueva York.',
+      'Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, Tampa y Puerto Rico, con más de 20 años trabajando con atletas de élite. Ha trabajado con deportistas de la NFL, la NHL y la MLB, ha formado a más de 1,000 profesionales en sus seminarios y es coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em>.',
+      'Es Soma-Terapeuta licenciado, Especialista Certificado en Fuerza y Acondicionamiento (CSCS), Especialista en Ejercicio ACSM y Nutricionista de Rendimiento Deportivo ISSA, además de miembro de NSCA, ACSM e ISSA. Entrena en inglés y español, virtualmente en todo el mundo y presencialmente en Nueva York, Tampa y Puerto Rico.',
     ],
     facts: [
-      { k: 'Con base en', v: 'Nueva York' },
+      { k: 'Con base en', v: 'Nueva York · Tampa · Puerto Rico' },
       { k: 'Experiencia', v: '20+ años con atletas de élite' },
       { k: 'Ligas', v: 'NFL · NHL · MLB' },
       { k: 'Seminarios', v: '1,000+ profesionales formados' },
@@ -845,7 +845,7 @@ export const content = {
       },
       {
         q: '¿Dónde tiene su base Ben Velazquez?',
-        a: '<p>En Nueva York. El trabajo presencial está disponible en NYC y el coaching virtual está disponible en todo el mundo.</p>',
+        a: '<p>En Nueva York, Tampa y Puerto Rico. El trabajo presencial está disponible en los tres lugares y el coaching virtual está disponible en todo el mundo.</p>',
       },
       {
         q: '¿A qué libro ha contribuido Ben?',
@@ -1111,7 +1111,7 @@ export const content = {
     seo: {
       title: 'Preguntas Frecuentes | Ben Velazquez',
       description:
-        'Respuestas sobre programas, precios, ELDOA, coaching a distancia, recuperación de conmociones y cómo empezar a trabajar con Ben Velazquez en NYC o virtual.',
+        'Programas, precios, ELDOA, coaching a distancia, conmociones y cómo empezar con Ben Velazquez en NYC, Tampa, Puerto Rico o virtual.',
     },
     hero: {
       kicker: 'Preguntas',
@@ -1141,7 +1141,7 @@ export const content = {
           },
           {
             q: '¿El trabajo puede hacerse a distancia?',
-            a: '<p>Sí. La mayor parte del trabajo ejecutivo es virtual y viaja con el cliente. El trabajo presencial está disponible en Nueva York y es parte obligatoria del nivel Concierge.</p>',
+            a: '<p>Sí. La mayor parte del trabajo ejecutivo es virtual y viaja con el cliente. El trabajo presencial está disponible en Nueva York, Tampa y Puerto Rico, y es parte obligatoria del nivel Concierge.</p>',
           },
           {
             q: '¿En qué idiomas trabajas?',
@@ -1324,7 +1324,7 @@ export const content = {
     seo: {
       title: 'Contactar a Ben Velazquez — Rehabilitación NYC',
       description:
-        'Ponte en contacto con Ben Velazquez: coaching, programa de conmociones, conferencias y prensa. Nueva York, virtual, en inglés o español.',
+        'Ponte en contacto con Ben Velazquez: coaching, programa de conmociones, conferencias y prensa. NYC, Tampa, Puerto Rico y virtual, en inglés o español.',
     },
     hero: {
       kicker: 'Contacto',
@@ -1334,14 +1334,14 @@ export const content = {
     },
     answer: [
       `La vía más rápida para consultas de coaching es la solicitud del Análisis de Necesidades de Rendimiento gratuito. Para todo lo demás —el programa de conmociones, conferencias, seminarios, prensa o alianzas— escribe a ${site.email}.`,
-      'Ben tiene su base en Nueva York y trabaja virtualmente en todo el mundo, en inglés o español.',
+      'Ben tiene su base en Nueva York, Tampa y Puerto Rico, y trabaja virtualmente en todo el mundo, en inglés o español.',
     ],
     facts: [
       { k: 'Consultas de coaching', v: '<a href="/es/aplicar/">Solicita un análisis gratuito</a>' },
       { k: 'Correo', v: `<a href="mailto:${site.email}">${site.email}</a>` },
       { k: 'Programa de conmociones', v: '<a href="/es/recuperacion-de-conmociones/">Recuperación con ejercicio</a>' },
-      { k: 'Con base en', v: 'Nueva York, NY' },
-      { k: 'Disponibilidad', v: 'Virtual mundial · presencial NYC' },
+      { k: 'Con base en', v: 'Nueva York · Tampa · Puerto Rico' },
+      { k: 'Disponibilidad', v: 'Virtual mundial · presencial en NYC, Tampa y Puerto Rico' },
       { k: 'Idiomas', v: 'Inglés · Español' },
     ],
     faqs: [
@@ -1375,7 +1375,7 @@ export const content = {
     seo: {
       title: 'El Podcast de Ben Velazquez — Rendimiento y Longevidad',
       description:
-        'Conversaciones sobre rendimiento, recuperación y longevidad con quienes viven en la cima — presentado por el especialista de Nueva York Ben Velazquez.',
+        'Rendimiento, recuperación y longevidad con quienes viven en la cima. Presentado por el especialista Ben Velazquez (NYC, Tampa, Puerto Rico).',
     },
     hero: {
       kicker: 'Podcast',
@@ -1388,7 +1388,7 @@ export const content = {
     },
     answer: [
       'El Podcast de Ben Velazquez presenta conversaciones sobre rendimiento, recuperación y longevidad con atletas, profesionales y ejecutivos que operan al más alto nivel.',
-      'Lo presenta Ben Velazquez, especialista en rehabilitación de alto rendimiento en Nueva York con más de 20 años trabajando con atletas de la NFL, la NHL y la MLB.',
+      'Lo presenta Ben Velazquez, especialista en rehabilitación de alto rendimiento en Nueva York, Tampa y Puerto Rico, con más de 20 años trabajando con atletas de la NFL, la NHL y la MLB.',
     ],
     faqs: [
       {

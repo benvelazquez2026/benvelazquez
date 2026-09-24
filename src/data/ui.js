@@ -17,7 +17,7 @@ export const ui = {
     navCta: 'Free analysis',
     emailLink: 'Email Ben',
     rssTitle: 'Ben Velazquez — Weekly Insights',
-    ogAlt: 'Ben Velazquez — Performance Rehabilitation, New York City',
+    ogAlt: 'Ben Velazquez — Performance Rehabilitation, New York City, Tampa and Puerto Rico',
     nav: {
       home: 'Home',
       about: 'About',
@@ -38,9 +38,9 @@ export const ui = {
       terms: 'Terms',
       disclosure: 'Affiliate disclosure',
     },
-    footerTag: 'Performance Rehabilitation · NYC',
+    footerTag: 'Performance Rehabilitation · NYC · Tampa · Puerto Rico',
     footerBlurb:
-      'Performance rehabilitation, ELDOA and strength coaching for professional athletes, executives and people recovering from concussion. New York City and worldwide, in English or Spanish.',
+      'Performance rehabilitation, ELDOA and strength coaching for professional athletes, executives and people recovering from concussion. New York City, Tampa, Puerto Rico and worldwide, in English or Spanish.',
     footerHeadings: {
       work: 'Who I work with',
       explore: 'Explore',
@@ -76,7 +76,7 @@ export const ui = {
     navCta: 'Análisis gratis',
     emailLink: 'Escribir a Ben',
     rssTitle: 'Ben Velazquez — Insights semanales',
-    ogAlt: 'Ben Velazquez — Rehabilitación de alto rendimiento, Nueva York',
+    ogAlt: 'Ben Velazquez — Rehabilitación de alto rendimiento, Nueva York, Tampa y Puerto Rico',
     nav: {
       home: 'Inicio',
       about: 'Sobre Ben',
@@ -97,9 +97,9 @@ export const ui = {
       terms: 'Términos',
       disclosure: 'Divulgación de afiliados',
     },
-    footerTag: 'Rehabilitación de alto rendimiento · NYC',
+    footerTag: 'Rehabilitación de alto rendimiento · NYC · Tampa · Puerto Rico',
     footerBlurb:
-      'Rehabilitación de alto rendimiento, ELDOA y preparación física para atletas profesionales, ejecutivos y personas en recuperación de conmociones cerebrales. Nueva York y todo el mundo, en inglés o español.',
+      'Rehabilitación de alto rendimiento, ELDOA y preparación física para atletas profesionales, ejecutivos y personas en recuperación de conmociones cerebrales. Nueva York, Tampa, Puerto Rico y todo el mundo, en inglés o español.',
     footerHeadings: {
       work: 'Para quién trabajo',
       explore: 'Explorar',

@@ -384,14 +384,14 @@ function llmsIndex() {
     : '';
   return `${stagingBanner}# Ben Velazquez
 
-> Performance rehabilitation specialist and strength coach in New York City. 20+ years with elite performers including athletes across the NFL, NHL and MLB. Co-contributing author of "Fascia: Clinical Applications for Health and Human Performance". Recognised expert in exercise-based concussion solutions. Coaches in English and Spanish, virtually worldwide and in person in NYC.
+> Performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico. 20+ years with elite performers including athletes across the NFL, NHL and MLB. Co-contributing author of "Fascia: Clinical Applications for Health and Human Performance". Recognised expert in exercise-based concussion solutions. Coaches in English and Spanish, virtually worldwide and in person in NYC, Tampa and Puerto Rico.
 
 ## Key facts
 
 - Name: Ben Velazquez
 - Role: Performance rehabilitation specialist, strength and conditioning coach
-- Location: New York City, NY, United States
-- Serves: Worldwide (virtual), New York City (in person)
+- Location: New York City, NY; Tampa, FL; Puerto Rico
+- Serves: Worldwide (virtual); New York City, Tampa and Puerto Rico (in person)
 - Languages: English, Spanish
 - Credentials: Licensed Soma-Therapist; Certified Strength & Conditioning Specialist (CSCS); ACSM Exercise Specialist; ISSA Sports Performance Nutritionist; member of NSCA, ACSM, ISSA
 - Published: Co-contributing author, "Fascia: Clinical Applications for Health and Human Performance"

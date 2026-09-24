@@ -58,8 +58,8 @@ const MONO = fontData('space-mono-400-latin.woff2');
 const LOCALE_CONTENT = { en: contentEn, es: contentEs };
 
 const STRAP = {
-  en: 'Performance Rehabilitation · NYC',
-  es: 'Rehabilitación de Alto Rendimiento · NYC',
+  en: 'Performance Rehab · NYC · Tampa · Puerto Rico',
+  es: 'Rehabilitación · NYC · Tampa · Puerto Rico',
 };
 const FOOT = {
   en: 'NFL · NHL · MLB · 20+ years · ELDOA & fascial work',
@@ -162,7 +162,7 @@ for (const locale of site.locales) {
 // The fallback image, used anywhere a page-specific one is missing.
 targets.unshift({
   file: 'og-default.jpg',
-  kicker: 'NYC · Performance Rehabilitation',
+  kicker: 'NYC · Tampa · Puerto Rico · Performance Rehabilitation',
   title: 'The coach the world’s best athletes fly in to see.',
   locale: 'en',
 });
