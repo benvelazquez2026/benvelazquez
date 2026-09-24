@@ -202,6 +202,7 @@ export const content = {
       lede: 'Energía sostenida en semanas brutales. Libertad del dolor de espalda y cuello del escritorio y los asientos de avión. La misma rehabilitación de rendimiento que mantiene a los atletas profesionales en el campo, adaptada a cómo vives realmente.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
+    answerPhoto: { slug: 'executive-answer', width: 384, height: 384, alt: 'Un grupo de atletas de pie en un antiguo gimnasio iluminado por el sol que entra por altos ventanales' },
     answer: [
       'El coaching de rendimiento ejecutivo con Ben Velazquez es un programa privado y basado en la evaluación para profesionales sénior que viajan constantemente y pasan sentados la mayor parte del día. Combina descompresión vertebral con ELDOA, trabajo fascial y programación de fuerza en una rutina que cabe en una habitación de hotel y en un hueco de quince minutos.',
       'La membresía Core cuesta $2,300 al mes con compromiso trimestral e incluye cuatro sesiones virtuales, programación personalizada actualizada cada mes, acceso asincrónico acotado con respuesta en 24 horas en días hábiles y reevaluación trimestral. Cada lugar empieza con un Análisis de Necesidades de Rendimiento gratuito de 20 minutos.',

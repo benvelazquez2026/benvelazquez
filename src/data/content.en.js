@@ -203,6 +203,7 @@ export const content = {
       lede: 'Sustained energy through brutal weeks. Freedom from the back and neck pain of desks and plane seats. The same performance rehabilitation that keeps professional athletes on the field, built for the way you actually live.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
+    answerPhoto: { slug: 'executive-answer', width: 384, height: 384, alt: 'A group of athletes standing in a sunlit old gymnasium, light streaming through tall arched windows' },
     answer: [
       'Executive performance coaching with Ben Velazquez is a private, assessment-led program for senior professionals who travel constantly and sit for most of the day. It combines ELDOA spinal decompression, fascial work and strength programming into a routine that fits a hotel room and a fifteen-minute gap.',
       'Core membership is $2,300 per month on a quarterly commitment and includes four virtual sessions, custom programming refreshed monthly, bounded async access with a 24-hour weekday response, and quarterly reassessment. Every place begins with a free 20-minute Performance Needs Analysis.',
