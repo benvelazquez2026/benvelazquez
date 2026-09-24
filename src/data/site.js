@@ -75,6 +75,9 @@ export const site = {
     // Placeholders — swap for the live URLs when they are ready.
     executiveReset: '#',
     podcast: '#',
+    // Concussion page "Remote assessment": CLFC's self-assessment app. The
+    // results come to Ben by text and email for review.
+    remoteAssessment: '#',
     gtg: '#',
     p2717: '#',
     superpatch: '#',

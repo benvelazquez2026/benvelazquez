@@ -532,7 +532,7 @@ ${pageTail(page, locale)}`;
     schema: [
       serviceEntity({
         url,
-        name: locale === 'en' ? 'Executive Team membership' : 'Membresía del Executive Team',
+        name: locale === 'en' ? 'Executive Roster membership' : 'Membresía del Executive Roster',
         description: plain(page.answer[0]),
         serviceType: locale === 'en' ? 'Performance coaching' : 'Coaching de rendimiento',
         locale,

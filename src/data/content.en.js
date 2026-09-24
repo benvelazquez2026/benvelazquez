@@ -15,7 +15,7 @@
 
 import { site } from './site.js';
 
-const APPLY_CTA = { route: 'apply', label: 'Book your free analysis' };
+const APPLY_CTA = { route: 'apply', label: 'Book your free intro call' };
 const PROGRAMS_CTA = { route: 'programs', label: 'See the programs', ghost: true };
 
 export const content = {
@@ -42,7 +42,7 @@ export const content = {
     proofLabel: 'Trusted by elite performers',
     answer: [
       'Ben Velazquez is a performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico, with more than 20 years working with elite performers, including athletes across the NFL, NHL and MLB. He is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>, a licensed Soma-Therapist and a Certified Strength &amp; Conditioning Specialist.',
-      'He works with three groups: professional and developing athletes, time-poor executives, and people recovering from concussion. Every engagement begins with a free 20-minute Performance Needs Analysis, and work is delivered virtually worldwide or in person in New York City, Tampa and Puerto Rico, in English or Spanish.',
+      'He works with three groups: professional and developing athletes, time-poor executives, and people recovering from concussion. Every engagement begins with a free 20-minute intro call, and work is delivered virtually worldwide or in person in New York City, Tampa and Puerto Rico, in English or Spanish.',
     ],
     philosophy: {
       kicker: 'Philosophy',
@@ -98,7 +98,7 @@ export const content = {
       kicker: '03 — Programs',
       heading: 'Start where you are. Access scales with commitment.',
       lede: 'A clear path from a self-guided start to direct, private work. The top tiers are intentionally limited.',
-      note: 'Every place on the team begins with a free Performance Needs Analysis.',
+      note: 'Every place on the team begins with a free intro call.',
     },
     method: {
       kicker: '04 — Method',
@@ -130,10 +130,10 @@ export const content = {
     },
     analysis: {
       kicker: 'Free · By application',
-      heading: 'Try out for a place on the Executive Team.',
-      lede: 'Every place on the team starts the same way: a free 20-minute virtual Performance Needs Analysis. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you join the team.',
+      heading: 'Try out for a place on the Executive Roster.',
+      lede: 'Every place on the team starts the same way: a free 20-minute virtual intro call. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you join the team.',
       rows: [
-        { n: '01', b: 'The analysis', t: 'A focused 20-minute virtual assessment of how you move, load, and recover.' },
+        { n: '01', b: 'The intro call', t: 'A focused 20-minute virtual assessment of how you move, load, and recover.' },
         {
           n: '02',
           b: 'Your takeaway',
@@ -165,7 +165,7 @@ export const content = {
       },
       {
         q: 'How do I start working with Ben?',
-        a: `<p>Every engagement begins with a free 20-minute virtual Performance Needs Analysis. You leave with a personalised snapshot of the two or three things most limiting you and where to start — whether or not you go on to work together. <a href="/apply/">Apply for your analysis</a>.</p>`,
+        a: `<p>Every engagement begins with a free 20-minute virtual intro call. You leave with a personalised snapshot of the two or three things most limiting you and where to start — whether or not you go on to work together. <a href="/apply/">Apply for your intro call</a>.</p>`,
       },
       {
         q: 'What languages does Ben coach in?',
@@ -184,7 +184,7 @@ export const content = {
     ],
     cta: {
       kicker: 'The tryout',
-      heading: 'Every place on the team starts with a free analysis.',
+      heading: 'Every place on the team starts with a free intro call.',
       body: 'Twenty minutes, virtual, no cost. You leave with a plan you can use — whether or not we work together.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
@@ -206,15 +206,15 @@ export const content = {
     answerPhoto: { slug: 'executive-answer', width: 384, height: 384, alt: 'A group of athletes standing in a sunlit old gymnasium, light streaming through tall arched windows' },
     answer: [
       'Executive performance coaching with Ben Velazquez is a private, assessment-led program for senior professionals who travel constantly and sit for most of the day. It combines ELDOA spinal decompression, fascial work and strength programming into a routine that fits a hotel room and a fifteen-minute gap.',
-      'Core membership is $2,300 per month on a quarterly commitment and includes four virtual sessions, custom programming refreshed monthly, bounded async access with a 24-hour weekday response, and quarterly reassessment. Every place begins with a free 20-minute Performance Needs Analysis.',
+      'Core membership is $2,300 per month on a quarterly commitment and includes four virtual sessions, custom programming refreshed monthly, bounded async access with a 24-hour weekday response, and quarterly reassessment. Places are by application: Ben personally selects every client, and each place begins with a free 20-minute intro call.',
     ],
     facts: [
       { k: 'Format', v: 'Virtual worldwide · in person in NYC, Tampa & Puerto Rico' },
       { k: 'Core investment', v: '$2,300 / month' },
       { k: 'Commitment', v: 'Quarterly' },
-      { k: 'Entry point', v: 'Free 20-min needs analysis' },
+      { k: 'Entry point', v: 'Free intro call (20 min)' },
       { k: 'Languages', v: 'English · Spanish' },
-      { k: 'Concierge roster', v: '7 positions, by application' },
+      { k: 'Admission', v: 'By application · Ben selects every client' },
     ],
     problem: {
       photo: { slug: 'executive-problem', width: 534, height: 667, alt: 'Three people lying on mats with their legs raised straight up a wall, arms extended' },
@@ -266,7 +266,7 @@ export const content = {
       steps: [
         {
           n: '01',
-          h: 'Full needs analysis',
+          h: 'Full assessment (included in Core)',
           p: 'A deep movement and postural assessment establishes the baseline — how you move, load and recover, measured rather than assumed.',
         },
         {
@@ -306,7 +306,11 @@ export const content = {
       },
       {
         q: 'What is the difference between Core and Concierge?',
-        a: '<p>Core is virtual, four sessions a month, at $2,300/month. Concierge combines in-person and virtual with 8–12 touchpoints a month, priority scheduling and direct on-call access within agreed hours, at $6,500/month plus travel at cost. Concierge is by application only, capped at 7 positions, and begins with a required in-person Performance Day from $3,000.</p>',
+        a: '<p>Core is virtual, four sessions a month, at $2,300/month. Concierge combines in-person and virtual with 8–12 touchpoints a month, priority scheduling and direct on-call access within agreed hours, at $6,500/month plus travel at cost. Concierge is capped at 7 positions and begins with a required in-person Performance Day from $3,000. Both are by application — Ben personally selects every client.</p>',
+      },
+      {
+        q: 'Is there a way to start on my own first?',
+        a: `<p>Yes. The Executive Reset is a self-guided ELDOA and mobility program built for desk-bound, travel-heavy professionals: ten to fifteen minutes a day, no equipment, and yours to keep. It is a $${site.pricing.resetDisplay} one-time fee, with no application needed. <a href="/programs/">See all programs</a>.</p>`,
       },
       {
         q: 'Is there a minimum commitment?',
@@ -325,12 +329,12 @@ export const content = {
       { route: 'programs', label: 'Pricing', title: 'Programs and membership tiers' },
       { route: 'eldoa', label: 'The practice', title: 'What ELDOA is and how it works' },
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'Limited roster',
-      heading: 'Try out for a place on the Executive Team.',
-      body: `A free 20-minute virtual analysis. You leave with a plan you can use, whether or not you join. ${site.roster.openSpots} spots open this month.`,
+      heading: 'Try out for a place on the Executive Roster.',
+      body: `A free 20-minute virtual intro call. You leave with a plan you can use, whether or not you join. ${site.roster.openSpots} spots open this month.`,
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -448,7 +452,7 @@ export const content = {
     cta: {
       kicker: 'Start here',
       heading: 'Every program starts with an assessment.',
-      body: 'A free 20-minute virtual analysis of how you move, load and recover — and a clear plan for what to address first.',
+      body: 'A free 20-minute virtual intro call of how you move, load and recover — and a clear plan for what to address first.',
       ctas: [{ route: 'apply', label: 'Start your assessment' }, PROGRAMS_CTA],
     },
   },
@@ -473,7 +477,7 @@ export const content = {
       kicker: 'Concussion recovery · NYC · Tampa · Puerto Rico',
       h1: 'Exercise-based concussion solutions, from the onset of injury.',
       lede: 'A holistic, team-based approach to concussion recovery — focused not just on getting you back, but on keeping you there.',
-      ctas: [{ route: 'apply', label: 'Learn about the program' }, { route: 'contact', label: 'Get in touch', ghost: true }],
+      ctas: [{ route: 'apply', label: 'Learn about the program' }, { href: site.links.remoteAssessment, label: 'Remote assessment', ghost: true }],
     },
     answer: [
       'Exercise-based concussion recovery uses carefully progressed, sub-symptom-threshold physical activity as an active part of recovery, rather than treating extended complete rest as the default. It is delivered as part of a coordinated team that includes medical oversight.',
@@ -545,7 +549,7 @@ export const content = {
       kicker: 'Work with Ben',
       heading: 'Talk to the team about a structured recovery.',
       body: 'Tell us about the injury and where you are in recovery, and we will explain how the program works alongside your medical care.',
-      ctas: [{ route: 'contact', label: 'Contact the team' }, { route: 'apply', label: 'Book an analysis', ghost: true }],
+      ctas: [{ route: 'contact', label: 'Contact the team' }, { route: 'apply', label: 'Book an intro call', ghost: true }],
     },
   },
 
@@ -643,19 +647,19 @@ export const content = {
       },
       {
         q: 'Where can I learn ELDOA in New York City?',
-        a: '<p>ELDOA is a core part of every program I write, for athletes and executives alike, delivered in person in NYC, Tampa and Puerto Rico, or virtually. Every engagement starts with a free 20-minute Performance Needs Analysis, which is what determines which postures you actually need.</p>',
+        a: '<p>ELDOA is a core part of every program I write, for athletes and executives alike, delivered in person in NYC, Tampa and Puerto Rico, or virtually. Every engagement starts with a free 20-minute intro call, which is what determines which postures you actually need.</p>',
       },
     ],
     related: [
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
       { route: 'executive', label: 'For executives', title: 'Executive performance coaching' },
       { route: 'athletes', label: 'For athletes', title: 'Performance rehabilitation' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'Learn it properly',
       heading: 'The right postures depend on what your assessment finds.',
-      body: 'A free 20-minute analysis identifies the segments actually limiting you — and which ELDOA postures are worth your ten minutes a day.',
+      body: 'A free 20-minute intro call identifies the segments actually limiting you — and which ELDOA postures are worth your ten minutes a day.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -764,7 +768,7 @@ export const content = {
       { route: 'eldoa', label: 'The practice', title: 'What ELDOA is and how it works' },
       { route: 'about', label: 'Background', title: 'About Ben Velazquez' },
       { route: 'programs', label: 'Pricing', title: 'Programs and membership tiers' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'Stage one',
@@ -822,7 +826,7 @@ export const content = {
 <h2>Teaching</h2>
 <p>More than a thousand professionals have come through my seminars. Teaching sharpens the work: you cannot hand-wave a principle to a room of practitioners who will apply it on Monday.</p>
 <h2>Executives</h2>
-<p>The methods that keep a professional athlete on the field turn out to transfer almost directly to people who sit for eleven hours and fly a hundred times a year. Same compression, same compensation patterns, less recovery time and far less support. That is why the Executive Team exists, and why the roster is small.</p>`,
+<p>The methods that keep a professional athlete on the field turn out to transfer almost directly to people who sit for eleven hours and fly a hundred times a year. Same compression, same compensation patterns, less recovery time and far less support. That is why the Executive Roster exists, and why it is kept small.</p>`,
     },
     credentials: {
       kicker: 'Credentials & recognition',
@@ -864,7 +868,7 @@ export const content = {
     cta: {
       kicker: 'Work together',
       heading: 'Every engagement starts the same way.',
-      body: 'A free 20-minute virtual Performance Needs Analysis — and a plan you keep, whether or not we work together.',
+      body: 'A free 20-minute virtual intro call — and a plan you keep, whether or not we work together.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -872,19 +876,19 @@ export const content = {
   /* ====================================================================== */
   programs: {
     seo: {
-      title: 'Programs & Pricing — Executive Team | Ben Velazquez',
+      title: 'Programs & Pricing — Executive Roster | Ben Velazquez',
       description:
         'Three ways to work with Ben Velazquez: the $297 Executive Reset, Core Executive Performance at $2,300/mo, and Concierge Private Performance by application.',
     },
     hero: {
       kicker: 'Programs',
       h1: 'Start where you are. Access scales with commitment.',
-      lede: 'A clear path from a self-guided start to direct, private work. The top tiers are intentionally limited — and every place begins with a free Performance Needs Analysis.',
+      lede: 'A clear path from a self-guided start to direct, private work. The top tiers are intentionally limited — and every place begins with a free intro call.',
       ctas: [APPLY_CTA],
     },
     answer: [
-      'There are three ways to work with Ben Velazquez. The Executive Reset is a self-guided ELDOA and mobility program at $297 one-time. Core Executive Performance is $2,300 per month on a quarterly commitment, with four virtual sessions, custom programming and bounded async access. Concierge Private Performance is $6,500 per month plus travel at cost, by application only, capped at 7 positions.',
-      'The Concierge track requires an in-person Performance Day first — a full-day evaluation and consultation from $3,000, one-time. Regardless of tier, every place on the team starts with a free 20-minute virtual Performance Needs Analysis.',
+      'There are three ways to work with Ben Velazquez. The Executive Reset is a self-guided ELDOA and mobility program at $297 one-time. Core Executive Performance is $2,300 per month on a quarterly commitment, with four virtual sessions, custom programming and bounded async access. Concierge Private Performance is $6,500 per month plus travel at cost, capped at 7 positions. Core and Concierge are both by application: Ben personally selects every client.',
+      'The Concierge track requires an in-person Performance Day first — a full-day evaluation and consultation from $3,000, one-time. Regardless of tier, every place on the team starts with a free 20-minute virtual intro call.',
     ],
     tiers: [
       {
@@ -910,7 +914,7 @@ export const content = {
         price: `$${site.pricing.core.toLocaleString('en-US')} <small>/ month</small>`,
         desc: 'The right touchpoints and real access — built for the time-poor executive.',
         features: [
-          'Full Performance Needs Analysis + deep movement and postural assessment',
+          'Full assessment (included in Core) — deep movement and postural assessment',
           '4 virtual sessions / month — programming plus ELDOA and rehab coaching',
           'Custom program design, refreshed monthly, that travels with you',
           'Bounded async access — voice/text form checks, 24h weekday response',
@@ -920,7 +924,7 @@ export const content = {
         ],
         cta: 'Apply',
         route: 'apply',
-        fine: 'Quarterly commitment. Best for executives who want outcomes and access, not session volume.',
+        fine: 'By application · Quarterly commitment. Best for executives who want outcomes and access, not session volume.',
       },
       {
         step: 'Concierge',
@@ -945,13 +949,13 @@ export const content = {
     ],
     prereq: {
       kicker: 'Required prerequisite',
-      heading: 'The Performance Day',
+      heading: 'Performance Day ($3,000, Concierge only)',
       body: `<p>Every Concierge place begins with a full-day, in-person evaluation and consultation — from $${site.pricing.performanceDay.toLocaleString(
         'en-US',
       )}, one-time.</p>
 <p>A full day is what it takes to see how a body actually behaves rather than how it presents in a twenty-minute window: movement under fatigue, how you load in the afternoon versus the morning, and the patterns that only appear once you stop performing for the assessment.</p>`,
     },
-    note: 'Every place on the team begins with a free Performance Needs Analysis.',
+    note: 'Every place on the team begins with a free intro call.',
     faqs: [
       {
         q: 'How much does it cost to work with Ben Velazquez?',
@@ -964,7 +968,7 @@ export const content = {
         )}.</p>`,
       },
       {
-        q: 'What is included in the free Performance Needs Analysis?',
+        q: 'What is included in the free intro call?',
         a: '<p>A focused 20-minute virtual assessment of how you move, load and recover, and a personalised snapshot of the two or three things most limiting you and where to start. It is genuinely free and yours to keep whether or not you go on to work together.</p>',
       },
       {
@@ -992,11 +996,11 @@ export const content = {
       { route: 'executive', label: 'For executives', title: 'What executive coaching involves' },
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
       { route: 'faq', label: 'Questions', title: 'Frequently asked questions' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'The way in',
-      heading: 'Every tier starts with the same free analysis.',
+      heading: 'Every tier starts with the same free intro call.',
       body: `Twenty minutes, virtual, no cost, no obligation. ${site.roster.openSpots} roster spots open this month.`,
       ctas: [APPLY_CTA],
     },
@@ -1039,19 +1043,19 @@ export const content = {
       },
       {
         q: 'Can I speak to a current client?',
-        a: '<p>Where a client has agreed to it, introductions can sometimes be arranged after a needs analysis. Client confidentiality means this is never assumed.</p>',
+        a: '<p>Where a client has agreed to it, introductions can sometimes be arranged after an intro call. Client confidentiality means this is never assumed.</p>',
       },
     ],
     related: [
       { route: 'athletes', label: 'For athletes', title: 'Performance rehabilitation' },
       { route: 'about', label: 'Background', title: 'About Ben Velazquez' },
       { route: 'concussion', label: 'Concussion', title: 'Exercise-based concussion recovery' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'The tryout',
       heading: 'The same standard of care, whatever you do for a living.',
-      body: 'A free 20-minute virtual analysis, and a plan you keep whether or not we work together.',
+      body: 'A free 20-minute virtual intro call, and a plan you keep whether or not we work together.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -1091,12 +1095,12 @@ export const content = {
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
       { route: 'eldoa', label: 'The practice', title: 'What ELDOA is and how it works' },
       { route: 'podcast', label: 'Listen', title: 'The Ben Velazquez Podcast' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'Put it into practice',
       heading: 'Reading about it only goes so far.',
-      body: 'A free 20-minute analysis tells you which of these actually apply to your body, and in what order.',
+      body: 'A free 20-minute intro call tells you which of these actually apply to your body, and in what order.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -1111,12 +1115,12 @@ export const content = {
     hero: {
       kicker: 'Questions',
       h1: 'Everything people ask before they start.',
-      lede: 'Programs, pricing, the method, remote work and how the free Performance Needs Analysis actually runs.',
+      lede: 'Programs, pricing, the method, remote work and how the free intro call actually runs.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
     answer: [
       'This page collects the questions asked most often about working with Ben Velazquez: what performance rehabilitation is, what ELDOA involves, how much the programs cost, whether the work can be done remotely, and how to start.',
-      'Every engagement begins with a free 20-minute virtual Performance Needs Analysis, available in English or Spanish.',
+      'Every engagement begins with a free 20-minute virtual intro call, available in English or Spanish.',
     ],
     groups: [
       {
@@ -1124,10 +1128,10 @@ export const content = {
         faqs: [
           {
             q: 'How do I start working with Ben Velazquez?',
-            a: '<p>Every engagement begins with a free 20-minute virtual Performance Needs Analysis. You leave with a personalised snapshot of the two or three things most limiting you and where to start, whether or not you go on to work together. <a href="/apply/">Apply here</a>.</p>',
+            a: '<p>Every engagement begins with a free 20-minute virtual intro call. You leave with a personalised snapshot of the two or three things most limiting you and where to start, whether or not you go on to work together. <a href="/apply/">Apply here</a>.</p>',
           },
           {
-            q: 'Is the Performance Needs Analysis really free?',
+            q: 'Is the intro call really free?',
             a: '<p>Yes. It is a genuine 20-minute assessment, and the takeaway plan is yours to keep regardless of whether you join the team.</p>',
           },
           {
@@ -1220,11 +1224,11 @@ export const content = {
       { route: 'programs', label: 'Pricing', title: 'Programs and membership tiers' },
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
       { route: 'eldoa', label: 'The practice', title: 'What ELDOA is and how it works' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'Still deciding?',
-      heading: 'The analysis answers more than a page can.',
+      heading: 'The intro call answers more than a page can.',
       body: 'Twenty minutes, virtual, free. You leave with a plan you can use either way.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
@@ -1233,22 +1237,22 @@ export const content = {
   /* ====================================================================== */
   apply: {
     seo: {
-      title: 'Apply — Free Performance Needs Analysis | Ben Velazquez',
+      title: 'Apply — Free Intro Call (20 min) | Ben Velazquez',
       description:
-        'Apply for a free 20-minute virtual Performance Needs Analysis. Leave with a personalised plan you keep, whether or not you join the Executive Team.',
+        'Apply for a free 20-minute virtual intro call. Leave with a personalised plan you keep, whether or not you join the Executive Roster.',
     },
     hero: {
       kicker: 'Free · By application',
-      h1: 'Try out for a place on the Executive Team.',
-      lede: 'Every place on the team starts the same way: a free 20-minute virtual Performance Needs Analysis. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you join the team.',
+      h1: 'Try out for a place on the Executive Roster.',
+      lede: 'Every place on the team starts the same way: a free 20-minute virtual intro call. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you join the team.',
       ctas: [],
     },
     answer: [
-      'The Performance Needs Analysis is a free, 20-minute virtual assessment of how you move, load and recover. You leave with a personalised snapshot of the two or three things most limiting you and where to start — yours to keep whether or not you go on to work together.',
+      'The intro call is a free, 20-minute virtual assessment of how you move, load and recover. You leave with a personalised snapshot of the two or three things most limiting you and where to start — yours to keep whether or not you go on to work together.',
       `If it is a fit, you are offered one of a limited number of roster positions. ${site.roster.openSpots} spots are open this month. Available in English or Spanish.`,
     ],
     steps: [
-      { n: '01', b: 'The analysis', t: 'A focused 20-minute virtual assessment of how you move, load, and recover.' },
+      { n: '01', b: 'The intro call', t: 'A focused 20-minute virtual assessment of how you move, load, and recover.' },
       {
         n: '02',
         b: 'Your takeaway',
@@ -1264,7 +1268,7 @@ export const content = {
     form: {
       heading: 'Apply for your tryout',
       // Subject line on the email Formspree delivers.
-      subject: 'New application — Performance Needs Analysis',
+      subject: 'New application — intro call',
       name: 'Name',
       namePh: 'Your name',
       email: 'Email',
@@ -1280,17 +1284,17 @@ export const content = {
       messagePh: 'A few words about your goals…',
       submit: 'Apply for my tryout',
       sending: 'Sending…',
-      ok: 'Thank you — your tryout request is in. If it’s a fit, we’ll reach out to book your Performance Needs Analysis.',
+      ok: 'Thank you — your tryout request is in. If it’s a fit, we’ll reach out to book your intro call.',
       err: `Something went wrong sending that. Please email ${site.email} directly and we’ll pick it up from there.`,
-      note: 'Your details are used only to arrange your analysis. No list, no sharing.',
+      note: 'Your details are used only to arrange your intro call. No list, no sharing.',
     },
     faqs: [
       {
         q: 'What happens after I apply?',
-        a: '<p>You will hear back with next steps. If it looks like a fit, we book the free 20-minute virtual analysis; if it is not, you will be told directly rather than left waiting.</p>',
+        a: '<p>You will hear back with next steps. If it looks like a fit, we book the free 20-minute virtual intro call; if it is not, you will be told directly rather than left waiting.</p>',
       },
       {
-        q: 'Is the analysis really free?',
+        q: 'Is the intro call really free?',
         a: '<p>Yes. It is a genuine assessment and the takeaway plan is yours to keep regardless of what you decide afterwards.</p>',
       },
       {
@@ -1298,12 +1302,12 @@ export const content = {
         a: '<p>No — just enough floor space to stand and move a little, and a camera that can see you. No equipment needed.</p>',
       },
       {
-        q: 'Can the analysis be done in Spanish?',
+        q: 'Can the intro call be done in Spanish?',
         a: '<p>Yes. Just note it in the form and the call will be conducted in Spanish.</p>',
       },
       {
         q: 'What if I’m not an executive?',
-        a: '<p>The same analysis is the entry point for athletes and for people recovering from concussion. Select the option that fits in the form.</p>',
+        a: '<p>The same intro call is the entry point for athletes and for people recovering from concussion. Select the option that fits in the form.</p>',
       },
     ],
     related: [
@@ -1328,11 +1332,11 @@ export const content = {
       ctas: [APPLY_CTA],
     },
     answer: [
-      `The fastest route for coaching enquiries is the free Performance Needs Analysis application. For everything else — the concussion program, speaking, seminars, media or partnerships — email ${site.email}.`,
+      `The fastest route for coaching enquiries is the free intro call application. For everything else — the concussion program, speaking, seminars, media or partnerships — email ${site.email}.`,
       'Ben is based in New York City, Tampa and Puerto Rico, and works virtually worldwide, in English or Spanish.',
     ],
     facts: [
-      { k: 'Coaching enquiries', v: '<a href="/apply/">Apply for a free analysis</a>' },
+      { k: 'Coaching enquiries', v: '<a href="/apply/">Apply for a free intro call</a>' },
       { k: 'Email', v: `<a href="mailto:${site.email}">${site.email}</a>` },
       { k: 'Concussion program', v: '<a href="/concussion-recovery/">Exercise-based recovery</a>' },
       { k: 'Based in', v: 'New York City · Tampa · Puerto Rico' },
@@ -1342,7 +1346,7 @@ export const content = {
     faqs: [
       {
         q: 'What is the fastest way to reach Ben?',
-        a: '<p>For coaching, the <a href="/apply/">analysis application</a> — it goes straight into the intake queue. For anything else, email is the fastest route.</p>',
+        a: '<p>For coaching, the <a href="/apply/">intro call application</a> — it goes straight into the intake queue. For anything else, email is the fastest route.</p>',
       },
       {
         q: 'Do you take speaking or seminar bookings?',
@@ -1358,7 +1362,7 @@ export const content = {
       },
     ],
     related: [
-      { route: 'apply', label: 'Coaching', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Coaching', title: 'Book your free intro call' },
       { route: 'concussion', label: 'Concussion', title: 'Exercise-based concussion recovery' },
       { route: 'about', label: 'Background', title: 'About Ben Velazquez' },
       { route: 'faq', label: 'Questions', title: 'Frequently asked questions' },
@@ -1400,7 +1404,7 @@ export const content = {
       { route: 'insights', label: 'Reading', title: 'Weekly insights' },
       { route: 'about', label: 'Background', title: 'About Ben Velazquez' },
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
   },
 
@@ -1498,7 +1502,7 @@ export const content = {
 <h2>What is collected</h2>
 <p>The only information collected is what you type into the application or contact form: your name, your email address, the option you select, and any message you write. Nothing else is requested and nothing else is stored.</p>
 <h2>What it is used for</h2>
-<p>Solely to respond to your enquiry and, where relevant, to arrange your Performance Needs Analysis. Your details are not sold, rented, or shared with third parties for marketing. You are not added to a mailing list by submitting the form.</p>
+<p>Solely to respond to your enquiry and, where relevant, to arrange your intro call. Your details are not sold, rented, or shared with third parties for marketing. You are not added to a mailing list by submitting the form.</p>
 <h2>Analytics and tracking</h2>
 <p>This site uses no advertising cookies, no third-party tracking pixels and no cross-site profiling. Aggregate, anonymous traffic statistics may be collected by the hosting platform for operational purposes; these do not identify you.</p>
 <h2>Third-party embeds</h2>

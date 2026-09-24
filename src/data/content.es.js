@@ -8,7 +8,7 @@
 
 import { site } from './site.js';
 
-const APPLY_CTA = { route: 'apply', label: 'Reserva tu análisis gratuito' };
+const APPLY_CTA = { route: 'apply', label: 'Reserva tu llamada introductoria gratuita' };
 const PROGRAMS_CTA = { route: 'programs', label: 'Ver los programas', ghost: true };
 
 export const content = {
@@ -35,7 +35,7 @@ export const content = {
     proofLabel: 'La confianza de la élite',
     answer: [
       'Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, Tampa y Puerto Rico, con más de 20 años trabajando con atletas de élite, incluidos deportistas de la NFL, la NHL y la MLB. Es coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em>, Soma-Terapeuta licenciado y Especialista Certificado en Fuerza y Acondicionamiento.',
-      'Trabaja con tres grupos: atletas profesionales y en desarrollo, ejecutivos con poco tiempo, y personas en recuperación de conmociones cerebrales. Cada colaboración empieza con un Análisis de Necesidades de Rendimiento gratuito de 20 minutos, en línea a nivel mundial o presencial en Nueva York, Tampa y Puerto Rico, en inglés o español.',
+      'Trabaja con tres grupos: atletas profesionales y en desarrollo, ejecutivos con poco tiempo, y personas en recuperación de conmociones cerebrales. Cada colaboración empieza con una llamada introductoria gratuita de 20 minutos, en línea a nivel mundial o presencial en Nueva York, Tampa y Puerto Rico, en inglés o español.',
     ],
     philosophy: {
       kicker: 'Filosofía',
@@ -91,7 +91,7 @@ export const content = {
       kicker: '03 — Programas',
       heading: 'Empieza donde estás. El acceso crece con el compromiso.',
       lede: 'Un camino claro desde un inicio autoguiado hasta el trabajo privado y directo. Los niveles superiores son intencionalmente limitados.',
-      note: 'Cada lugar en el equipo comienza con un Análisis de Necesidades de Rendimiento gratuito.',
+      note: 'Cada lugar en el equipo comienza con una llamada introductoria gratuita.',
     },
     method: {
       kicker: '04 — Método',
@@ -123,10 +123,10 @@ export const content = {
     },
     analysis: {
       kicker: 'Gratis · Por aplicación',
-      heading: 'Haz tu prueba para un lugar en el Executive Team.',
-      lede: 'Cada lugar en el equipo empieza igual: un Análisis de Necesidades de Rendimiento virtual de 20 minutos, gratuito. Encuentro qué está frenando tu cuerpo, y te vas con un plan claro para resolverlo, te unas o no al equipo.',
+      heading: 'Haz tu prueba para un lugar en el Executive Roster.',
+      lede: 'Cada lugar en el equipo empieza igual: una llamada introductoria virtual de 20 minutos, gratuita. Encuentro qué está frenando tu cuerpo, y te vas con un plan claro para resolverlo, te unas o no al equipo.',
       rows: [
-        { n: '01', b: 'El análisis', t: 'Una evaluación virtual enfocada de 20 minutos sobre cómo te mueves, cargas y te recuperas.' },
+        { n: '01', b: 'La llamada', t: 'Una evaluación virtual enfocada de 20 minutos sobre cómo te mueves, cargas y te recuperas.' },
         {
           n: '02',
           b: 'Lo que te llevas',
@@ -158,7 +158,7 @@ export const content = {
       },
       {
         q: '¿Cómo empiezo a trabajar con Ben?',
-        a: '<p>Toda colaboración empieza con un Análisis de Necesidades de Rendimiento virtual y gratuito de 20 minutos. Te vas con un diagnóstico personalizado de las dos o tres cosas que más te limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/aplicar/">Solicita tu análisis</a>.</p>',
+        a: '<p>Toda colaboración empieza con una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un diagnóstico personalizado de las dos o tres cosas que más te limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/aplicar/">Solicita tu llamada</a>.</p>',
       },
       {
         q: '¿En qué idiomas entrena Ben?',
@@ -183,7 +183,7 @@ export const content = {
     ],
     cta: {
       kicker: 'La prueba',
-      heading: 'Cada lugar en el equipo empieza con un análisis gratuito.',
+      heading: 'Cada lugar en el equipo empieza con una llamada introductoria gratuita.',
       body: 'Veinte minutos, virtual, sin costo. Te vas con un plan que puedes usar, trabajemos juntos o no.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
@@ -205,15 +205,15 @@ export const content = {
     answerPhoto: { slug: 'executive-answer', width: 384, height: 384, alt: 'Un grupo de atletas de pie en un antiguo gimnasio iluminado por el sol que entra por altos ventanales' },
     answer: [
       'El coaching de rendimiento ejecutivo con Ben Velazquez es un programa privado y basado en la evaluación para profesionales sénior que viajan constantemente y pasan sentados la mayor parte del día. Combina descompresión vertebral con ELDOA, trabajo fascial y programación de fuerza en una rutina que cabe en una habitación de hotel y en un hueco de quince minutos.',
-      'La membresía Core cuesta $2,300 al mes con compromiso trimestral e incluye cuatro sesiones virtuales, programación personalizada actualizada cada mes, acceso asincrónico acotado con respuesta en 24 horas en días hábiles y reevaluación trimestral. Cada lugar empieza con un Análisis de Necesidades de Rendimiento gratuito de 20 minutos.',
+      'La membresía Core cuesta $2,300 al mes con compromiso trimestral e incluye cuatro sesiones virtuales, programación personalizada actualizada cada mes, acceso asincrónico acotado con respuesta en 24 horas en días hábiles y reevaluación trimestral. Los lugares son por aplicación: Ben selecciona personalmente a cada cliente, y cada lugar empieza con una llamada introductoria gratuita de 20 minutos.',
     ],
     facts: [
       { k: 'Formato', v: 'Virtual mundial · presencial en NYC, Tampa y Puerto Rico' },
       { k: 'Inversión Core', v: '$2,300 / mes' },
       { k: 'Compromiso', v: 'Trimestral' },
-      { k: 'Punto de entrada', v: 'Análisis gratuito de 20 min' },
+      { k: 'Punto de entrada', v: 'Llamada introductoria gratuita (20 min)' },
       { k: 'Idiomas', v: 'Inglés · Español' },
-      { k: 'Roster Concierge', v: '7 lugares, por aplicación' },
+      { k: 'Admisión', v: 'Por aplicación · Ben selecciona a cada cliente' },
     ],
     problem: {
       photo: { slug: 'executive-problem', width: 534, height: 667, alt: 'Tres personas acostadas sobre colchonetas con las piernas elevadas contra la pared y los brazos extendidos' },
@@ -265,7 +265,7 @@ export const content = {
       steps: [
         {
           n: '01',
-          h: 'Análisis de necesidades completo',
+          h: 'Evaluación completa (incluida en Core)',
           p: 'Una evaluación profunda de movimiento y postura establece la línea base: cómo te mueves, cargas y te recuperas, medido y no supuesto.',
         },
         {
@@ -305,7 +305,11 @@ export const content = {
       },
       {
         q: '¿Cuál es la diferencia entre Core y Concierge?',
-        a: '<p>Core es virtual, cuatro sesiones al mes, por $2,300/mes. Concierge combina presencial y virtual con 8–12 puntos de contacto al mes, agenda prioritaria y acceso directo dentro de horarios acordados, por $6,500/mes más viajes a costo. Concierge es solo por aplicación, está limitado a 7 lugares y comienza con un Performance Day presencial obligatorio desde $3,000.</p>',
+        a: '<p>Core es virtual, cuatro sesiones al mes, por $2,300/mes. Concierge combina presencial y virtual con 8–12 puntos de contacto al mes, agenda prioritaria y acceso directo dentro de horarios acordados, por $6,500/mes más viajes a costo. Concierge está limitado a 7 lugares y comienza con un Performance Day presencial obligatorio desde $3,000. Ambos son por aplicación: Ben selecciona personalmente a cada cliente.</p>',
+      },
+      {
+        q: '¿Puedo empezar primero por mi cuenta?',
+        a: `<p>Sí. El Executive Reset es un programa autoguiado de ELDOA y movilidad para profesionales que pasan el día sentados y viajan mucho: de diez a quince minutos al día, sin equipo y tuyo para siempre. Es un pago único de $${site.pricing.resetDisplay}, sin necesidad de aplicar. <a href="/es/programas/">Ver todos los programas</a>.</p>`,
       },
       {
         q: '¿Hay un compromiso mínimo?',
@@ -324,12 +328,12 @@ export const content = {
       { route: 'programs', label: 'Precios', title: 'Programas y niveles de membresía' },
       { route: 'eldoa', label: 'La práctica', title: 'Qué es ELDOA y cómo funciona' },
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu análisis gratuito' },
+      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'Roster limitado',
-      heading: 'Haz tu prueba para un lugar en el Executive Team.',
-      body: `Un análisis virtual gratuito de 20 minutos. Te vas con un plan que puedes usar, te unas o no. ${site.roster.openSpots} lugares abiertos este mes.`,
+      heading: 'Haz tu prueba para un lugar en el Executive Roster.',
+      body: `Una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un plan que puedes usar, te unas o no. ${site.roster.openSpots} lugares abiertos este mes.`,
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -447,7 +451,7 @@ export const content = {
     cta: {
       kicker: 'Empieza aquí',
       heading: 'Cada programa empieza con una evaluación.',
-      body: 'Un análisis virtual gratuito de 20 minutos sobre cómo te mueves, cargas y te recuperas, y un plan claro sobre qué atender primero.',
+      body: 'Una llamada introductoria virtual y gratuita de 20 minutos sobre cómo te mueves, cargas y te recuperas, y un plan claro sobre qué atender primero.',
       ctas: [{ route: 'apply', label: 'Comienza tu evaluación' }, PROGRAMS_CTA],
     },
   },
@@ -474,7 +478,7 @@ export const content = {
       lede: 'Un enfoque integral y en equipo para la recuperación de conmociones cerebrales, centrado no solo en que regreses, sino en mantenerte ahí.',
       ctas: [
         { route: 'apply', label: 'Conoce el programa' },
-        { route: 'contact', label: 'Contactar', ghost: true },
+        { href: site.links.remoteAssessment, label: 'Evaluación remota', ghost: true },
       ],
     },
     answer: [
@@ -549,7 +553,7 @@ export const content = {
       body: 'Cuéntanos sobre la lesión y en qué punto de la recuperación estás, y te explicaremos cómo funciona el programa junto a tu atención médica.',
       ctas: [
         { route: 'contact', label: 'Contactar al equipo' },
-        { route: 'apply', label: 'Reservar un análisis', ghost: true },
+        { route: 'apply', label: 'Reservar una llamada introductoria', ghost: true },
       ],
     },
   },
@@ -648,19 +652,19 @@ export const content = {
       },
       {
         q: '¿Dónde puedo aprender ELDOA en Nueva York?',
-        a: '<p>ELDOA es parte central de cada programa que escribo, tanto para atletas como para ejecutivos, presencial en NYC, Tampa y Puerto Rico, o virtual. Toda colaboración empieza con un Análisis de Necesidades de Rendimiento gratuito de 20 minutos, que es lo que determina qué posturas necesitas realmente.</p>',
+        a: '<p>ELDOA es parte central de cada programa que escribo, tanto para atletas como para ejecutivos, presencial en NYC, Tampa y Puerto Rico, o virtual. Toda colaboración empieza con una llamada introductoria gratuita de 20 minutos, que es lo que determina qué posturas necesitas realmente.</p>',
       },
     ],
     related: [
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
       { route: 'executive', label: 'Para ejecutivos', title: 'Coaching de rendimiento ejecutivo' },
       { route: 'athletes', label: 'Para atletas', title: 'Rehabilitación de rendimiento' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu análisis gratuito' },
+      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'Apréndelo bien',
       heading: 'Las posturas correctas dependen de lo que encuentre tu evaluación.',
-      body: 'Un análisis gratuito de 20 minutos identifica los segmentos que realmente te limitan, y qué posturas de ELDOA merecen tus diez minutos diarios.',
+      body: 'Una llamada introductoria gratuita de 20 minutos identifica los segmentos que realmente te limitan, y qué posturas de ELDOA merecen tus diez minutos diarios.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -769,7 +773,7 @@ export const content = {
       { route: 'eldoa', label: 'La práctica', title: 'Qué es ELDOA y cómo funciona' },
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
       { route: 'programs', label: 'Precios', title: 'Programas y niveles de membresía' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu análisis gratuito' },
+      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'Etapa uno',
@@ -827,7 +831,7 @@ export const content = {
 <h2>Enseñanza</h2>
 <p>Más de mil profesionales han pasado por mis seminarios. Enseñar afina el trabajo: no puedes despachar un principio con vaguedades ante una sala de profesionales que lo aplicarán el lunes.</p>
 <h2>Ejecutivos</h2>
-<p>Los métodos que mantienen a un atleta profesional en el campo resultan trasladables casi directamente a personas que se sientan once horas y vuelan cien veces al año. La misma compresión, los mismos patrones de compensación, menos tiempo de recuperación y mucho menos apoyo. Por eso existe el Executive Team, y por eso el roster es pequeño.</p>`,
+<p>Los métodos que mantienen a un atleta profesional en el campo resultan trasladables casi directamente a personas que se sientan once horas y vuelan cien veces al año. La misma compresión, los mismos patrones de compensación, menos tiempo de recuperación y mucho menos apoyo. Por eso existe el Executive Roster, y por eso se mantiene pequeño.</p>`,
     },
     credentials: {
       kicker: 'Credenciales y reconocimiento',
@@ -869,7 +873,7 @@ export const content = {
     cta: {
       kicker: 'Trabajemos juntos',
       heading: 'Toda colaboración empieza igual.',
-      body: 'Un Análisis de Necesidades de Rendimiento virtual y gratuito de 20 minutos, y un plan que te quedas, trabajemos juntos o no.',
+      body: 'Una llamada introductoria virtual y gratuita de 20 minutos, y un plan que te quedas, trabajemos juntos o no.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -877,19 +881,19 @@ export const content = {
   /* ====================================================================== */
   programs: {
     seo: {
-      title: 'Programas y Precios — Executive Team | Ben Velazquez',
+      title: 'Programas y Precios — Executive Roster | Ben Velazquez',
       description:
         'Tres formas de trabajar con Ben Velazquez: Executive Reset ($297), Core Executive Performance ($2,300/mes) y Concierge Private Performance por aplicación.',
     },
     hero: {
       kicker: 'Programas',
       h1: 'Empieza donde estás. El acceso crece con el compromiso.',
-      lede: 'Un camino claro desde un inicio autoguiado hasta el trabajo privado y directo. Los niveles superiores son intencionalmente limitados, y cada lugar comienza con un Análisis de Necesidades de Rendimiento gratuito.',
+      lede: 'Un camino claro desde un inicio autoguiado hasta el trabajo privado y directo. Los niveles superiores son intencionalmente limitados, y cada lugar comienza con una llamada introductoria gratuita.',
       ctas: [APPLY_CTA],
     },
     answer: [
-      'Hay tres formas de trabajar con Ben Velazquez. El Executive Reset es un programa autoguiado de ELDOA y movilidad por $297 en pago único. Core Executive Performance cuesta $2,300 al mes con compromiso trimestral, e incluye cuatro sesiones virtuales, programación personalizada y acceso asincrónico acotado. Concierge Private Performance cuesta $6,500 al mes más viajes a costo, solo por aplicación y limitado a 7 lugares.',
-      'El nivel Concierge requiere primero un Performance Day presencial: una evaluación y consulta de jornada completa desde $3,000, en pago único. Sea cual sea el nivel, cada lugar en el equipo empieza con un Análisis de Necesidades de Rendimiento virtual y gratuito de 20 minutos.',
+      'Hay tres formas de trabajar con Ben Velazquez. El Executive Reset es un programa autoguiado de ELDOA y movilidad por $297 en pago único. Core Executive Performance cuesta $2,300 al mes con compromiso trimestral, e incluye cuatro sesiones virtuales, programación personalizada y acceso asincrónico acotado. Concierge Private Performance cuesta $6,500 al mes más viajes a costo, limitado a 7 lugares. Core y Concierge son por aplicación: Ben selecciona personalmente a cada cliente.',
+      'El nivel Concierge requiere primero un Performance Day presencial: una evaluación y consulta de jornada completa desde $3,000, en pago único. Sea cual sea el nivel, cada lugar en el equipo empieza con una llamada introductoria virtual y gratuita de 20 minutos.',
     ],
     tiers: [
       {
@@ -915,7 +919,7 @@ export const content = {
         price: `$${site.pricing.core.toLocaleString('en-US')} <small>/ mes</small>`,
         desc: 'Los puntos de contacto justos y acceso real — hecho para el ejecutivo sin tiempo.',
         features: [
-          'Análisis de Necesidades completo + evaluación profunda de movimiento y postura',
+          'Evaluación completa (incluida en Core): análisis profundo de movimiento y postura',
           '4 sesiones virtuales / mes — programación más coaching de ELDOA y rehabilitación',
           'Diseño de programa personalizado, actualizado cada mes, que viaja contigo',
           'Acceso asincrónico acotado — revisiones por voz/texto, respuesta en 24 h en días hábiles',
@@ -925,7 +929,7 @@ export const content = {
         ],
         cta: 'Aplicar',
         route: 'apply',
-        fine: 'Compromiso trimestral. Ideal para ejecutivos que quieren resultados y acceso, no volumen de sesiones.',
+        fine: 'Por aplicación · Compromiso trimestral. Ideal para ejecutivos que quieren resultados y acceso, no volumen de sesiones.',
       },
       {
         step: 'Concierge',
@@ -950,13 +954,13 @@ export const content = {
     ],
     prereq: {
       kicker: 'Requisito obligatorio',
-      heading: 'El Performance Day',
+      heading: 'Performance Day ($3,000, solo Concierge)',
       body: `<p>Cada lugar Concierge comienza con una evaluación y consulta presencial de jornada completa — desde $${site.pricing.performanceDay.toLocaleString(
         'en-US',
       )}, en pago único.</p>
 <p>Una jornada completa es lo que hace falta para ver cómo se comporta realmente un cuerpo, y no cómo se presenta en una ventana de veinte minutos: el movimiento bajo fatiga, cómo cargas por la tarde frente a por la mañana, y los patrones que solo aparecen cuando dejas de actuar para la evaluación.</p>`,
     },
-    note: 'Cada lugar en el equipo comienza con un Análisis de Necesidades de Rendimiento gratuito.',
+    note: 'Cada lugar en el equipo comienza con una llamada introductoria gratuita.',
     faqs: [
       {
         q: '¿Cuánto cuesta trabajar con Ben Velazquez?',
@@ -969,7 +973,7 @@ export const content = {
         )}.</p>`,
       },
       {
-        q: '¿Qué incluye el Análisis de Necesidades gratuito?',
+        q: '¿Qué incluye la llamada introductoria gratuita?',
         a: '<p>Una evaluación virtual enfocada de 20 minutos sobre cómo te mueves, cargas y te recuperas, y un diagnóstico personalizado de las dos o tres cosas que más te limitan y por dónde empezar. Es genuinamente gratuito y te lo quedas trabajemos juntos o no.</p>',
       },
       {
@@ -997,11 +1001,11 @@ export const content = {
       { route: 'executive', label: 'Para ejecutivos', title: 'Qué implica el coaching ejecutivo' },
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
       { route: 'faq', label: 'Preguntas', title: 'Preguntas frecuentes' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu análisis gratuito' },
+      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'La forma de entrar',
-      heading: 'Todos los niveles empiezan con el mismo análisis gratuito.',
+      heading: 'Todos los niveles empiezan con la misma llamada introductoria gratuita.',
       body: `Veinte minutos, virtual, sin costo ni compromiso. ${site.roster.openSpots} lugares abiertos este mes.`,
       ctas: [APPLY_CTA],
     },
@@ -1044,19 +1048,19 @@ export const content = {
       },
       {
         q: '¿Puedo hablar con un cliente actual?',
-        a: '<p>Cuando un cliente lo ha aceptado, a veces pueden organizarse presentaciones después de un análisis de necesidades. La confidencialidad del cliente hace que esto nunca se dé por supuesto.</p>',
+        a: '<p>Cuando un cliente lo ha aceptado, a veces pueden organizarse presentaciones después de una llamada introductoria. La confidencialidad del cliente hace que esto nunca se dé por supuesto.</p>',
       },
     ],
     related: [
       { route: 'athletes', label: 'Para atletas', title: 'Rehabilitación de rendimiento' },
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
       { route: 'concussion', label: 'Conmociones', title: 'Recuperación con base en el ejercicio' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu análisis gratuito' },
+      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'La prueba',
       heading: 'El mismo estándar de atención, sea cual sea tu profesión.',
-      body: 'Un análisis virtual gratuito de 20 minutos, y un plan que te quedas trabajemos juntos o no.',
+      body: 'Una llamada introductoria virtual y gratuita de 20 minutos, y un plan que te quedas trabajemos juntos o no.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -1096,12 +1100,12 @@ export const content = {
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
       { route: 'eldoa', label: 'La práctica', title: 'Qué es ELDOA y cómo funciona' },
       { route: 'podcast', label: 'Escuchar', title: 'El Podcast de Ben Velazquez' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu análisis gratuito' },
+      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'Llévalo a la práctica',
       heading: 'Leer sobre esto solo llega hasta cierto punto.',
-      body: 'Un análisis gratuito de 20 minutos te dice cuáles de estas ideas aplican realmente a tu cuerpo, y en qué orden.',
+      body: 'Una llamada introductoria gratuita de 20 minutos te dice cuáles de estas ideas aplican realmente a tu cuerpo, y en qué orden.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -1116,12 +1120,12 @@ export const content = {
     hero: {
       kicker: 'Preguntas',
       h1: 'Todo lo que se pregunta antes de empezar.',
-      lede: 'Programas, precios, el método, el trabajo a distancia y cómo funciona realmente el Análisis de Necesidades de Rendimiento gratuito.',
+      lede: 'Programas, precios, el método, el trabajo a distancia y cómo funciona realmente la llamada introductoria gratuita.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
     answer: [
       'Esta página reúne las preguntas más frecuentes sobre trabajar con Ben Velazquez: qué es la rehabilitación de rendimiento, en qué consiste ELDOA, cuánto cuestan los programas, si el trabajo puede hacerse a distancia y cómo empezar.',
-      'Toda colaboración empieza con un Análisis de Necesidades de Rendimiento virtual y gratuito de 20 minutos, disponible en inglés o español.',
+      'Toda colaboración empieza con una llamada introductoria virtual y gratuita de 20 minutos, disponible en inglés o español.',
     ],
     groups: [
       {
@@ -1129,10 +1133,10 @@ export const content = {
         faqs: [
           {
             q: '¿Cómo empiezo a trabajar con Ben Velazquez?',
-            a: '<p>Toda colaboración empieza con un Análisis de Necesidades de Rendimiento virtual y gratuito de 20 minutos. Te vas con un diagnóstico personalizado de las dos o tres cosas que más te limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/aplicar/">Solicítalo aquí</a>.</p>',
+            a: '<p>Toda colaboración empieza con una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un diagnóstico personalizado de las dos o tres cosas que más te limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/aplicar/">Solicítalo aquí</a>.</p>',
           },
           {
-            q: '¿El Análisis de Necesidades es realmente gratuito?',
+            q: '¿La llamada introductoria es realmente gratuita?',
             a: '<p>Sí. Es una evaluación real de 20 minutos, y el plan que te llevas es tuyo, te unas o no al equipo.</p>',
           },
           {
@@ -1225,11 +1229,11 @@ export const content = {
       { route: 'programs', label: 'Precios', title: 'Programas y niveles de membresía' },
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
       { route: 'eldoa', label: 'La práctica', title: 'Qué es ELDOA y cómo funciona' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu análisis gratuito' },
+      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
     ],
     cta: {
       kicker: '¿Aún lo estás pensando?',
-      heading: 'El análisis responde más de lo que puede una página.',
+      heading: 'La llamada introductoria responde más de lo que puede una página.',
       body: 'Veinte minutos, virtual, gratis. Te vas con un plan que puedes usar de cualquier manera.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
@@ -1238,22 +1242,22 @@ export const content = {
   /* ====================================================================== */
   apply: {
     seo: {
-      title: 'Aplicar — Análisis de Necesidades Gratuito | Ben Velazquez',
+      title: 'Aplicar — Llamada Introductoria Gratuita (20 min) | Ben Velazquez',
       description:
-        'Solicita un Análisis de Necesidades de Rendimiento virtual y gratuito de 20 minutos. Te vas con un plan personalizado, te unas o no al Executive Team.',
+        'Solicita una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un plan personalizado, te unas o no al Executive Roster.',
     },
     hero: {
       kicker: 'Gratis · Por aplicación',
-      h1: 'Haz tu prueba para un lugar en el Executive Team.',
-      lede: 'Cada lugar en el equipo empieza igual: un Análisis de Necesidades de Rendimiento virtual de 20 minutos, gratuito. Encuentro qué está frenando tu cuerpo, y te vas con un plan claro para resolverlo, te unas o no al equipo.',
+      h1: 'Haz tu prueba para un lugar en el Executive Roster.',
+      lede: 'Cada lugar en el equipo empieza igual: una llamada introductoria virtual de 20 minutos, gratuita. Encuentro qué está frenando tu cuerpo, y te vas con un plan claro para resolverlo, te unas o no al equipo.',
       ctas: [],
     },
     answer: [
-      'El Análisis de Necesidades de Rendimiento es una evaluación virtual gratuita de 20 minutos sobre cómo te mueves, cargas y te recuperas. Te vas con un diagnóstico personalizado de las dos o tres cosas que más te limitan y por dónde empezar, tuyo trabajemos juntos o no.',
+      'La llamada introductoria es una evaluación virtual gratuita de 20 minutos sobre cómo te mueves, cargas y te recuperas. Te vas con un diagnóstico personalizado de las dos o tres cosas que más te limitan y por dónde empezar, tuyo trabajemos juntos o no.',
       `Si encajas, se te ofrece uno de los pocos lugares disponibles en el roster. Este mes hay ${site.roster.openSpots} lugares abiertos. Disponible en inglés o español.`,
     ],
     steps: [
-      { n: '01', b: 'El análisis', t: 'Una evaluación virtual enfocada de 20 minutos sobre cómo te mueves, cargas y te recuperas.' },
+      { n: '01', b: 'La llamada', t: 'Una evaluación virtual enfocada de 20 minutos sobre cómo te mueves, cargas y te recuperas.' },
       {
         n: '02',
         b: 'Lo que te llevas',
@@ -1269,7 +1273,7 @@ export const content = {
     form: {
       heading: 'Haz tu prueba',
       // Asunto del correo que entrega Formspree.
-      subject: 'Nueva solicitud — Análisis de Necesidades de Rendimiento',
+      subject: 'Nueva solicitud — llamada introductoria',
       name: 'Nombre',
       namePh: 'Tu nombre',
       email: 'Correo',
@@ -1285,17 +1289,17 @@ export const content = {
       messagePh: 'Unas palabras sobre tus objetivos…',
       submit: 'Enviar mi solicitud',
       sending: 'Enviando…',
-      ok: 'Gracias — tu solicitud está enviada. Si encajas, te contactaremos para reservar tu Análisis de Necesidades.',
+      ok: 'Gracias — tu solicitud está enviada. Si encajas, te contactaremos para reservar tu llamada introductoria.',
       err: `Algo falló al enviar. Escribe directamente a ${site.email} y lo retomamos desde ahí.`,
-      note: 'Tus datos se usan únicamente para organizar tu análisis. Sin listas, sin compartir.',
+      note: 'Tus datos se usan únicamente para organizar tu llamada introductoria. Sin listas, sin compartir.',
     },
     faqs: [
       {
         q: '¿Qué ocurre después de aplicar?',
-        a: '<p>Recibirás respuesta con los siguientes pasos. Si parece encajar, reservamos el análisis virtual gratuito de 20 minutos; si no encaja, te lo diremos directamente en lugar de dejarte esperando.</p>',
+        a: '<p>Recibirás respuesta con los siguientes pasos. Si parece encajar, reservamos la llamada introductoria virtual y gratuita de 20 minutos; si no encaja, te lo diremos directamente en lugar de dejarte esperando.</p>',
       },
       {
-        q: '¿El análisis es realmente gratuito?',
+        q: '¿La llamada introductoria es realmente gratuita?',
         a: '<p>Sí. Es una evaluación real y el plan que te llevas es tuyo, decidas lo que decidas después.</p>',
       },
       {
@@ -1303,12 +1307,12 @@ export const content = {
         a: '<p>No, solo espacio suficiente en el suelo para ponerte de pie y moverte un poco, y una cámara que te vea. Sin equipamiento.</p>',
       },
       {
-        q: '¿El análisis puede hacerse en español?',
+        q: '¿La llamada introductoria puede hacerse en español?',
         a: '<p>Sí. Indícalo en el formulario y la llamada se realizará en español.</p>',
       },
       {
         q: '¿Y si no soy ejecutivo?',
-        a: '<p>El mismo análisis es el punto de entrada para atletas y para personas en recuperación de conmociones. Selecciona la opción que corresponda en el formulario.</p>',
+        a: '<p>La misma llamada introductoria es el punto de entrada para atletas y para personas en recuperación de conmociones. Selecciona la opción que corresponda en el formulario.</p>',
       },
     ],
     related: [
@@ -1333,11 +1337,11 @@ export const content = {
       ctas: [APPLY_CTA],
     },
     answer: [
-      `La vía más rápida para consultas de coaching es la solicitud del Análisis de Necesidades de Rendimiento gratuito. Para todo lo demás —el programa de conmociones, conferencias, seminarios, prensa o alianzas— escribe a ${site.email}.`,
+      `La vía más rápida para consultas de coaching es la solicitud de la llamada introductoria gratuita. Para todo lo demás —el programa de conmociones, conferencias, seminarios, prensa o alianzas— escribe a ${site.email}.`,
       'Ben tiene su base en Nueva York, Tampa y Puerto Rico, y trabaja virtualmente en todo el mundo, en inglés o español.',
     ],
     facts: [
-      { k: 'Consultas de coaching', v: '<a href="/es/aplicar/">Solicita un análisis gratuito</a>' },
+      { k: 'Consultas de coaching', v: '<a href="/es/aplicar/">Solicita una llamada introductoria gratuita</a>' },
       { k: 'Correo', v: `<a href="mailto:${site.email}">${site.email}</a>` },
       { k: 'Programa de conmociones', v: '<a href="/es/recuperacion-de-conmociones/">Recuperación con ejercicio</a>' },
       { k: 'Con base en', v: 'Nueva York · Tampa · Puerto Rico' },
@@ -1347,7 +1351,7 @@ export const content = {
     faqs: [
       {
         q: '¿Cuál es la vía más rápida para contactar a Ben?',
-        a: '<p>Para coaching, la <a href="/es/aplicar/">solicitud de análisis</a>: entra directamente en la cola de admisión. Para cualquier otra cosa, el correo es la vía más rápida.</p>',
+        a: '<p>Para coaching, la <a href="/es/aplicar/">solicitud de llamada introductoria</a>: entra directamente en la cola de admisión. Para cualquier otra cosa, el correo es la vía más rápida.</p>',
       },
       {
         q: '¿Aceptas conferencias o seminarios?',
@@ -1363,7 +1367,7 @@ export const content = {
       },
     ],
     related: [
-      { route: 'apply', label: 'Coaching', title: 'Reserva tu análisis gratuito' },
+      { route: 'apply', label: 'Coaching', title: 'Reserva tu llamada introductoria gratuita' },
       { route: 'concussion', label: 'Conmociones', title: 'Recuperación con base en el ejercicio' },
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
       { route: 'faq', label: 'Preguntas', title: 'Preguntas frecuentes' },
@@ -1408,7 +1412,7 @@ export const content = {
       { route: 'insights', label: 'Lectura', title: 'Insights semanales' },
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu análisis gratuito' },
+      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
     ],
   },
 
@@ -1506,7 +1510,7 @@ export const content = {
 <h2>Qué se recopila</h2>
 <p>La única información que se recopila es la que escribes en el formulario de solicitud o de contacto: tu nombre, tu correo electrónico, la opción que seleccionas y el mensaje que redactes. No se solicita ni se almacena nada más.</p>
 <h2>Para qué se usa</h2>
-<p>Únicamente para responder a tu consulta y, cuando corresponda, organizar tu Análisis de Necesidades de Rendimiento. Tus datos no se venden, alquilan ni comparten con terceros con fines de marketing. Enviar el formulario no te añade a ninguna lista de correo.</p>
+<p>Únicamente para responder a tu consulta y, cuando corresponda, organizar tu llamada introductoria. Tus datos no se venden, alquilan ni comparten con terceros con fines de marketing. Enviar el formulario no te añade a ninguna lista de correo.</p>
 <h2>Analítica y seguimiento</h2>
 <p>Este sitio no usa cookies publicitarias, ni píxeles de seguimiento de terceros, ni perfilado entre sitios. La plataforma de alojamiento puede recopilar estadísticas de tráfico agregadas y anónimas con fines operativos; no te identifican.</p>
 <h2>Contenido incrustado de terceros</h2>

@@ -397,7 +397,7 @@ function llmsIndex() {
 - Published: Co-contributing author, "Fascia: Clinical Applications for Health and Human Performance"
 - Known for: ELDOA, fascial work, assessment-led performance rehabilitation, exercise-based concussion recovery
 - Athletes worked with: Christian McCaffrey (NFL), Derek Carr (NFL), Connor McDavid (NHL), Max Domi (NHL), Jesús Luzardo (MLB); appeared in "Being: Mariano" (FOX Sports)
-- Entry point: free 20-minute virtual Performance Needs Analysis
+- Entry point: free 20-minute virtual intro call
 - Contact: ${site.email}
 
 ## Programs and pricing (USD)
@@ -405,7 +405,7 @@ function llmsIndex() {
 - The Executive Reset — $${site.pricing.resetDisplay} one-time, self-guided ELDOA and mobility program
 - Core: Executive Performance — $${site.pricing.core.toLocaleString(
     'en-US',
-  )}/month, quarterly commitment, 4 virtual sessions/month, custom programming, bounded async access, quarterly reassessment
+  )}/month, by application, quarterly commitment, 4 virtual sessions/month, custom programming, bounded async access, quarterly reassessment
 - Concierge: Private Performance — $${site.pricing.concierge.toLocaleString(
     'en-US',
   )}/month plus travel at cost, by application, capped at ${site.roster.conciergeSeats} positions, requires an in-person Performance Day from $${site.pricing.performanceDay.toLocaleString(
