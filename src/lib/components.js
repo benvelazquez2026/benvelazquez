@@ -165,9 +165,13 @@ export function quoteGrid(quotes, locale = 'en', { photos = false } = {}) {
   const full = (q) => q.featured || (photos && q.photo);
   const halves = quotes.filter((q) => !full(q));
   const orphan = halves.length % 2 ? halves[halves.length - 1] : null;
+  const photoCards = photos ? quotes.filter((q) => q.photo) : [];
   return `<div class="quotes reveal">
 ${each(quotes, (q) => {
   const photo = photos && q.photo;
+  const right = photo && photoCards.indexOf(q) % 2 === 1;
+  const max = photo ? photo.widths[photo.widths.length - 1] : 0;
+  const style = photo && photo.wide ? ` style="--photo-w:${max}px;--photo-ar:${1 / photo.ratio}"` : '';
   const body = `<blockquote><p>${q.text[locale]}</p></blockquote>
 <figcaption>${esc(q.name)}<span>${q.role[locale]}</span></figcaption>`;
   return `<figure class="${cx(
@@ -175,8 +179,9 @@ ${each(quotes, (q) => {
     q.featured && 'featured',
     photo && 'has-photo',
     photo && photo.wide && 'photo-wide',
+    right && 'photo-right',
     q === orphan && 'span-all',
-  )}">
+  )}"${style}>
 ${photo ? `${quotePhoto(photo, locale)}<div class="quote-body">${body}</div>` : body}
 </figure>`;
 })}
@@ -189,7 +194,7 @@ ${photo ? `${quotePhoto(photo, locale)}<div class="quote-body">${body}</div>` : 
  */
 function quotePhoto({ slug, widths, alt, ratio = 5 / 4, wide = false }, locale) {
   const set = (ext) => widths.map((w) => `/img/results-${slug}-${w}.${ext} ${w}w`).join(', ');
-  const sizes = wide ? '(min-width: 701px) 640px, 100vw' : '(min-width: 701px) 360px, 100vw';
+  const sizes = wide ? `(min-width: 701px) ${Math.min(640, widths[widths.length - 1])}px, 100vw` : '(min-width: 701px) 360px, 100vw';
   const max = widths[widths.length - 1];
   return `<picture class="quote-photo">
 <source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">

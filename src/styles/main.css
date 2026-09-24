@@ -1040,16 +1040,20 @@ p {
 .quote.featured p {
   font-size: 1.4rem;
 }
-/* Featured quote with a photo: photo beside the quote, alternating sides. */
+/* Quote with a photo: photo beside the quote, alternating sides (quoteGrid
+   sets .photo-right on every second photo card). */
+.quotes {
+  grid-auto-flow: row dense;
+}
 .quote.has-photo {
   display: grid;
   grid-template-columns: 360px 1fr;
   padding: 0;
 }
-.quote.has-photo:nth-child(even) {
+.quote.has-photo.photo-right {
   grid-template-columns: 1fr 360px;
 }
-.quote.has-photo:nth-child(even) .quote-photo {
+.quote.has-photo.photo-right .quote-photo {
   order: 2;
 }
 .quote-photo {
@@ -1073,26 +1077,30 @@ p {
 .quote.span-all {
   grid-column: 1 / -1;
 }
-/* Landscape photo: a wide panel at the photo's own shape, not a tall crop. */
+/* Landscape photo: a wide panel at the photo's own shape (--photo-ar), never
+   wider than the file itself (--photo-w), so small images are not upscaled. */
 .quote.has-photo.photo-wide {
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: min(58%, var(--photo-w)) 1fr;
 }
-.quote.has-photo.photo-wide:nth-child(even) {
-  grid-template-columns: 1fr 1.4fr;
+.quote.has-photo.photo-wide.photo-right {
+  grid-template-columns: 1fr min(58%, var(--photo-w));
 }
 .photo-wide .quote-photo {
   min-height: 0;
-  aspect-ratio: 2000 / 1288;
+  aspect-ratio: var(--photo-ar);
+  align-self: center;
 }
 .photo-wide .quote-photo img {
   object-position: 50% 30%;
 }
 @media (max-width: 700px) {
   .quote.has-photo,
-  .quote.has-photo:nth-child(even) {
+  .quote.has-photo.photo-right,
+  .quote.has-photo.photo-wide,
+  .quote.has-photo.photo-wide.photo-right {
     grid-template-columns: 1fr;
   }
-  .quote.has-photo:nth-child(even) .quote-photo {
+  .quote.has-photo.photo-right .quote-photo {
     order: 0;
   }
   .quote-photo {
@@ -1100,12 +1108,8 @@ p {
     aspect-ratio: 4 / 5;
     max-height: 480px;
   }
-  .quote.has-photo.photo-wide,
-  .quote.has-photo.photo-wide:nth-child(even) {
-    grid-template-columns: 1fr;
-  }
   .photo-wide .quote-photo {
-    aspect-ratio: 2000 / 1288;
+    aspect-ratio: var(--photo-ar);
   }
 }
 @media (max-width: 700px) {

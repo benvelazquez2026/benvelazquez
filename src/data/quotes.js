@@ -77,6 +77,16 @@ export const quotes = [
   {
     id: 'carr',
     name: 'Derek Carr',
+    photo: {
+      slug: 'carr',
+      widths: [474],
+      ratio: 266 / 474,
+      wide: true,
+      alt: {
+        en: 'Derek Carr in a Las Vegas Raiders jersey pumping his fist on the field',
+        es: 'Derek Carr con la camiseta de los Las Vegas Raiders celebrando con el puño en el campo',
+      },
+    },
     role: { en: 'Quarterback · NFL', es: 'Quarterback · NFL' },
     text: {
       en: '“Working with Ben has been a game changer for me.”',
