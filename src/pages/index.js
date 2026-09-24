@@ -43,11 +43,20 @@ import {
 /** Wrap the answer block + optional fact list in a section. */
 function answerSection(page, locale, { onBone = false } = {}) {
   if (!page.answer) return '';
+  const body = `${answerBlock({ paragraphs: page.answer, locale })}
+${page.facts ? factList(page.facts, locale) : ''}`;
+  const photo = page.answerPhoto;
   return `<section class="block-tight ${onBone ? 'on-bone' : ''}">
-<div class="wrap">
-${answerBlock({ paragraphs: page.answer, locale })}
-${page.facts ? factList(page.facts, locale) : ''}
-</div>
+${
+  photo
+    ? `<div class="wrap split-media" style="--media-w:${photo.display || photo.width}px">
+<div>${body}</div>
+${sidePhoto(photo)}
+</div>`
+    : `<div class="wrap">
+${body}
+</div>`
+}
 </section>`;
 }
 

@@ -355,6 +355,7 @@ export const content = {
       lede: 'Performance rehabilitation and injury prevention built around how your body actually works — the approach that has kept athletes across the NFL, NHL and MLB on the field.',
       ctas: [{ route: 'apply', label: 'Start your assessment' }, PROGRAMS_CTA],
     },
+    answerPhoto: { slug: 'athletes-answer', widths: [600, 880], width: 880, height: 1100, display: 440, alt: 'Pitcher in a pinstriped uniform following through on a pitch, back leg kicked high, in front of a packed stadium' },
     answer: [
       'Performance rehabilitation is the work that sits between physiotherapy and strength and conditioning: restoring structural balance and tissue quality first, then building the qualities a sport actually demands. It is what keeps an athlete available rather than merely cleared.',
       'Ben Velazquez has spent more than 20 years doing this with athletes across the NFL, NHL and MLB. Every program begins with a movement and postural assessment, uses ELDOA and fascial work to address what the assessment finds, and only then progresses to performance qualities.',

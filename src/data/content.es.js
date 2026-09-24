@@ -354,6 +354,7 @@ export const content = {
       lede: 'Rehabilitación de rendimiento y prevención de lesiones basadas en cómo funciona realmente tu cuerpo — el enfoque que ha mantenido en el campo a atletas de la NFL, la NHL y la MLB.',
       ctas: [{ route: 'apply', label: 'Comienza tu evaluación' }, PROGRAMS_CTA],
     },
+    answerPhoto: { slug: 'athletes-answer', widths: [600, 880], width: 880, height: 1100, display: 440, alt: 'Pitcher con uniforme a rayas completando un lanzamiento, con la pierna trasera en alto, frente a un estadio lleno' },
     answer: [
       'La rehabilitación de rendimiento es el trabajo que se sitúa entre la fisioterapia y la preparación física: primero restaura el equilibrio estructural y la calidad del tejido, y después construye las cualidades que el deporte realmente exige. Es lo que mantiene disponible a un atleta, no solo dado de alta.',
       'Ben Velazquez lleva más de 20 años haciendo esto con atletas de la NFL, la NHL y la MLB. Cada programa comienza con una evaluación de movimiento y postura, usa ELDOA y trabajo fascial para atender lo que la evaluación encuentra, y solo entonces progresa hacia cualidades de rendimiento.',
