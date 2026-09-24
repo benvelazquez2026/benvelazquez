@@ -805,6 +805,7 @@ export const content = {
       lede: 'Especialista en rehabilitación de alto rendimiento, preparador físico, autor publicado sobre fascia y experto reconocido en soluciones de ejercicio para conmociones cerebrales — con base en Nueva York, Tampa y Puerto Rico, trabajando en inglés y español.',
       ctas: [APPLY_CTA, { route: 'method', label: 'El método', ghost: true }],
     },
+    answerPhoto: { slug: 'about-answer', widths: [600, 900, 1200], width: 1200, height: 1500, display: 440, alt: 'Estudio de entrenamiento privado con ring de boxeo, estantes de mancuernas, bancos y una pista de sprint naranja' },
     answer: [
       'Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, Tampa y Puerto Rico, con más de 20 años trabajando con atletas de élite. Ha trabajado con deportistas de la NFL, la NHL y la MLB, ha formado a más de 1,000 profesionales en sus seminarios y es coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em>.',
       'Es Soma-Terapeuta licenciado, Especialista Certificado en Fuerza y Acondicionamiento (CSCS), Especialista en Ejercicio ACSM y Nutricionista de Rendimiento Deportivo ISSA, además de miembro de NSCA, ACSM e ISSA. Entrena en inglés y español, virtualmente en todo el mundo y presencialmente en Nueva York, Tampa y Puerto Rico.',
