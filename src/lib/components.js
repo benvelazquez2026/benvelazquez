@@ -160,28 +160,42 @@ ${each(
 
 /** Testimonial grid. `featured` quotes span the full width. */
 export function quoteGrid(quotes, locale = 'en', { photos = false } = {}) {
+  // Featured and photo cards span both columns. If that leaves an odd number
+  // of half-width cards, the last one spans too, so no row is left half empty.
+  const full = (q) => q.featured || (photos && q.photo);
+  const halves = quotes.filter((q) => !full(q));
+  const orphan = halves.length % 2 ? halves[halves.length - 1] : null;
   return `<div class="quotes reveal">
 ${each(quotes, (q) => {
   const photo = photos && q.photo;
   const body = `<blockquote><p>${q.text[locale]}</p></blockquote>
 <figcaption>${esc(q.name)}<span>${q.role[locale]}</span></figcaption>`;
-  return `<figure class="${cx('quote', q.featured && 'featured', photo && 'has-photo')}">
+  return `<figure class="${cx(
+    'quote',
+    q.featured && 'featured',
+    photo && 'has-photo',
+    photo && photo.wide && 'photo-wide',
+    q === orphan && 'span-all',
+  )}">
 ${photo ? `${quotePhoto(photo, locale)}<div class="quote-body">${body}</div>` : body}
 </figure>`;
 })}
 </div>`;
 }
 
-/** Portrait (4:5) testimonial photo, served as AVIF/WebP/JPEG from public/img. */
-function quotePhoto({ slug, widths, alt }, locale) {
+/**
+ * Testimonial photo, served as AVIF/WebP/JPEG from public/img. Portrait
+ * (4:5) by default; `ratio` (height / width) and `wide` for landscape shots.
+ */
+function quotePhoto({ slug, widths, alt, ratio = 5 / 4, wide = false }, locale) {
   const set = (ext) => widths.map((w) => `/img/results-${slug}-${w}.${ext} ${w}w`).join(', ');
-  const sizes = '(min-width: 701px) 360px, 100vw';
+  const sizes = wide ? '(min-width: 701px) 640px, 100vw' : '(min-width: 701px) 360px, 100vw';
   const max = widths[widths.length - 1];
   return `<picture class="quote-photo">
 <source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
 <source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">
 <img src="/img/results-${slug}-${widths[0]}.jpg" srcset="${set('jpg')}" sizes="${sizes}" width="${max}" height="${Math.round(
-    (max * 5) / 4,
+    max * ratio,
   )}" alt="${esc(alt[locale])}" loading="lazy" decoding="async">
 </picture>`;
 }

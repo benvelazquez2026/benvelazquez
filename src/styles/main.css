@@ -1069,6 +1069,24 @@ p {
   padding: 34px;
   align-self: center;
 }
+.quote.has-photo,
+.quote.span-all {
+  grid-column: 1 / -1;
+}
+/* Landscape photo: a wide panel at the photo's own shape, not a tall crop. */
+.quote.has-photo.photo-wide {
+  grid-template-columns: 1.4fr 1fr;
+}
+.quote.has-photo.photo-wide:nth-child(even) {
+  grid-template-columns: 1fr 1.4fr;
+}
+.photo-wide .quote-photo {
+  min-height: 0;
+  aspect-ratio: 2000 / 1288;
+}
+.photo-wide .quote-photo img {
+  object-position: 50% 30%;
+}
 @media (max-width: 700px) {
   .quote.has-photo,
   .quote.has-photo:nth-child(even) {
@@ -1081,6 +1099,13 @@ p {
     min-height: 0;
     aspect-ratio: 4 / 5;
     max-height: 480px;
+  }
+  .quote.has-photo.photo-wide,
+  .quote.has-photo.photo-wide:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+  .photo-wide .quote-photo {
+    aspect-ratio: 2000 / 1288;
   }
 }
 @media (max-width: 700px) {
