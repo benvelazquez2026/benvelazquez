@@ -6,6 +6,21 @@
 
 export const quotes = [
   {
+    // Executive client. Leads the home and results grids, and is the
+    // pull quote on the executive page (content.*.js -> executive.testimonial).
+    id: 'meringoff',
+    name: 'Stephen Meringoff',
+    featured: true,
+    role: {
+      en: 'Executive client · Trained with Ben for 20+ years',
+      es: 'Cliente ejecutivo · Entrena con Ben desde hace más de 20 años',
+    },
+    text: {
+      en: '“Ben has been my personal trainer for over 20 years. He has keen intuition and an encyclopedic knowledge of the human body. He is an absolute savant at working remotely, a skill that very few trainers have been able to develop. At 82 years of age, I feel 20 years younger than that, in no small part due to Ben.”',
+      es: '“Ben ha sido mi entrenador personal durante más de 20 años. Tiene una intuición aguda y un conocimiento enciclopédico del cuerpo humano. Es un verdadero genio trabajando a distancia, una habilidad que muy pocos entrenadores han logrado desarrollar. A mis 82 años, me siento 20 años más joven, en gran parte gracias a Ben.”',
+    },
+  },
+  {
     id: 'fleiszer',
     name: 'Tim Fleiszer',
     featured: true,

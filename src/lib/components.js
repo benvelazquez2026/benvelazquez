@@ -205,6 +205,18 @@ function quotePhoto({ slug, widths, alt, ratio = 5 / 4, wide = false }, locale) 
 </picture>`;
 }
 
+/** One testimonial set large, as a full-width pull quote. */
+export function pullQuote(q, locale = 'en') {
+  return `<section class="block pull-quote-band">
+<div class="wrap">
+<figure class="pull-quote reveal">
+<blockquote><p>${q.text[locale]}</p></blockquote>
+<figcaption>${esc(q.name)}<span>${q.role[locale]}</span></figcaption>
+</figure>
+</div>
+</section>`;
+}
+
 /** Click-to-load video grid — no third-party JS until the visitor asks. */
 export function videoGrid(videos, locale = 'en') {
   const t = ui[locale];

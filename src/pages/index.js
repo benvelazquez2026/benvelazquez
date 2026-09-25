@@ -17,6 +17,7 @@ import {
   factList,
   faqSection,
   quoteGrid,
+  pullQuote,
   heroPhoto,
   proseWithPhoto,
   sidePhoto,
@@ -316,9 +317,11 @@ ${each(items, (post) => {
 export function buildStandardPage({ locale, key, page, content, extraSections = '' }) {
   const url = urlFor(key, locale);
 
+  const testimonial = page.testimonial && quotes.find((q) => q.id === page.testimonial);
   const html = `${pageHero({ ...page.hero, heading: page.hero.h1, lede: esc(page.hero.lede), locale })}
 <div class="ticks"></div>
 ${answerSection(page, locale)}
+${testimonial ? pullQuote(testimonial, locale) : ''}
 ${
   page.problem
     ? `<section class="block on-bone">

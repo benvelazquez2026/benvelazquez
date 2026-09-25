@@ -1118,6 +1118,44 @@ p {
   }
 }
 
+/* Executive pull quote: one testimonial, set large. */
+.pull-quote-band {
+  padding-top: 0;
+}
+.pull-quote {
+  margin: 0;
+  max-width: 62rem;
+  padding: 8px 0 8px 34px;
+  border-left: 3px solid var(--signal);
+}
+.pull-quote p {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.45rem, 2.6vw, 2.15rem);
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  color: var(--bone);
+  margin-bottom: 24px;
+}
+.pull-quote figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--signal);
+}
+.pull-quote figcaption span {
+  display: block;
+  margin-top: 4px;
+  color: var(--stone);
+  letter-spacing: 0.08em;
+}
+@media (max-width: 640px) {
+  .pull-quote {
+    padding-left: 20px;
+  }
+}
+
 /* --------------------------------------------------------------------------
    Method list
    -------------------------------------------------------------------------- */

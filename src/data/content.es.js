@@ -216,6 +216,7 @@ export const content = {
       { k: 'Idiomas', v: 'Inglés · Español' },
       { k: 'Admisión', v: 'Previa solicitud · Ben selecciona a cada cliente' },
     ],
+    testimonial: 'meringoff',
     problem: {
       photo: { slug: 'executive-problem', width: 534, height: 667, alt: 'Tres personas acostadas sobre colchonetas con las piernas elevadas contra la pared y los brazos extendidos' },
       kicker: 'El problema',

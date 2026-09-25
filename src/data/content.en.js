@@ -217,6 +217,7 @@ export const content = {
       { k: 'Languages', v: 'English · Spanish' },
       { k: 'Admission', v: 'By application · Ben selects every client' },
     ],
+    testimonial: 'meringoff',
     problem: {
       photo: { slug: 'executive-problem', width: 534, height: 667, alt: 'Three people lying on mats with their legs raised straight up a wall, arms extended' },
       kicker: 'The problem',
