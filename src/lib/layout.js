@@ -204,10 +204,10 @@ ${blockIndexing || !xDefault ? '' : `<link rel="alternate" hreflang="x-default" 
 
 <meta property="og:type" content="${esc(ogType)}">
 <meta property="og:site_name" content="${esc(site.name)}">
-<meta property="og:locale" content="${locale === 'es' ? 'es_ES' : 'en_US'}">
+<meta property="og:locale" content="${locale === 'es' ? 'es_US' : 'en_US'}">
 ${each(
   alts.filter((a) => a.locale !== locale),
-  (a) => `<meta property="og:locale:alternate" content="${a.locale === 'es' ? 'es_ES' : 'en_US'}">`,
+  (a) => `<meta property="og:locale:alternate" content="${a.locale === 'es' ? 'es_US' : 'en_US'}">`,
 )}
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">

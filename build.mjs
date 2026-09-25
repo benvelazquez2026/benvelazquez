@@ -384,7 +384,7 @@ function llmsIndex() {
     : '';
   return `${stagingBanner}# Ben Velazquez
 
-> Performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico. 20+ years with elite performers including athletes across the NFL, NHL and MLB. Co-contributing author of "Fascia: Clinical Applications for Health and Human Performance". Recognised expert in exercise-based concussion solutions. Coaches in English and Spanish, virtually worldwide and in person in NYC, Tampa and Puerto Rico.
+> Performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico. 20+ years with elite performers including athletes across the NFL, NHL and MLB. Co-contributing author of "Fascia: Clinical Applications for Health and Human Performance". Recognized expert in exercise-based concussion solutions. Coaches in English and Spanish, virtually worldwide and in person in NYC, Tampa and Puerto Rico.
 
 ## Key facts
 
@@ -395,7 +395,7 @@ function llmsIndex() {
 - Languages: English, Spanish
 - Credentials: Licensed Soma-Therapist; Certified Strength & Conditioning Specialist (CSCS); ACSM Exercise Specialist; ISSA Sports Performance Nutritionist; member of NSCA, ACSM, ISSA
 - Published: Co-contributing author, "Fascia: Clinical Applications for Health and Human Performance"
-- Known for: ELDOA, fascial work, assessment-led performance rehabilitation, exercise-based concussion recovery
+- Known for: ELDOA, fascia work, assessment-led performance rehabilitation, exercise-based concussion recovery
 - Athletes worked with: Christian McCaffrey (NFL), Derek Carr (NFL), Connor McDavid (NHL), Max Domi (NHL), Jesús Luzardo (MLB); appeared in "Being: Mariano" (FOX Sports)
 - Entry point: free 20-minute virtual intro call
 - Contact: ${site.email}
@@ -440,7 +440,7 @@ function llmsFull() {
     ``,
     `Source: ${site.origin}`,
     `Generated: ${BUILD_DATE}`,
-    `Licence: content © ${new Date().getFullYear()} Ben Velazquez. Quotation with attribution to ${site.origin} is welcome.`,
+    `License: content © ${new Date().getFullYear()} Ben Velazquez. Quotation with attribution to ${site.origin} is welcome.`,
     ``,
   ];
 
@@ -636,6 +636,8 @@ write(
 /testimonials                  /results/                  301
 /concussion                    /concussion-recovery/      301
 /es/index.html                 /es/                       301
+/es/aplicar                    /es/solicitar/             301
+/es/aplicar/                   /es/solicitar/             301
 `,
 );
 

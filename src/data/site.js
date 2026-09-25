@@ -91,7 +91,7 @@ export const site = {
       name: { en: 'Performance work with the world’s best', es: 'Trabajo de rendimiento con el mejor del mundo' },
       tag: 'NHL · Connor McDavid',
       description: {
-        en: 'Ben Velazquez leading a performance rehabilitation session with NHL centre Connor McDavid.',
+        en: 'Ben Velazquez leading a performance rehabilitation session with NHL center Connor McDavid.',
         es: 'Ben Velazquez dirigiendo una sesión de rehabilitación de rendimiento con el centro de la NHL Connor McDavid.',
       },
       uploadDate: '2023-08-14',
@@ -155,7 +155,7 @@ export const routes = [
   { key: 'results', path: { en: 'results', es: 'resultados' }, priority: 0.8, changefreq: 'monthly' },
   { key: 'insights', path: { en: 'insights', es: 'insights' }, priority: 0.8, changefreq: 'weekly' },
   { key: 'faq', path: { en: 'faq', es: 'preguntas-frecuentes' }, priority: 0.8, changefreq: 'monthly' },
-  { key: 'apply', path: { en: 'apply', es: 'aplicar' }, priority: 0.9, changefreq: 'monthly' },
+  { key: 'apply', path: { en: 'apply', es: 'solicitar' }, priority: 0.9, changefreq: 'monthly' },
   { key: 'contact', path: { en: 'contact', es: 'contacto' }, priority: 0.7, changefreq: 'yearly' },
   { key: 'podcast', path: { en: 'podcast', es: 'podcast' }, priority: 0.6, changefreq: 'monthly' },
   { key: 'whatIUse', path: { en: 'what-i-use', es: 'lo-que-uso' }, priority: 0.6, changefreq: 'monthly' },

@@ -62,8 +62,8 @@ const STRAP = {
   es: 'Rehabilitación · NYC · Tampa · Puerto Rico',
 };
 const FOOT = {
-  en: 'NFL · NHL · MLB · 20+ years · ELDOA & fascial work',
-  es: 'NFL · NHL · MLB · 20+ años · ELDOA y trabajo fascial',
+  en: 'NFL · NHL · MLB · 20+ years · ELDOA & fascia work',
+  es: 'NFL · NHL · MLB · 20+ años · ELDOA y trabajo de fascia',
 };
 
 function cardHtml({ kicker, title, locale }) {

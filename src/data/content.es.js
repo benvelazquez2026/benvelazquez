@@ -105,7 +105,7 @@ export const content = {
         },
         {
           n: '02',
-          h: 'ELDOA y trabajo fascial',
+          h: 'ELDOA y trabajo de fascia',
           p: 'Posturas de autonormalización que descomprimen la columna y las articulaciones — la práctica diaria por la que juran los atletas de élite.',
         },
         {
@@ -123,20 +123,20 @@ export const content = {
       lede: 'Galardonado y reconocido a nivel nacional — respaldado por la ciencia, no solo por la experiencia.',
     },
     analysis: {
-      kicker: 'Gratis · Por aplicación',
-      heading: 'Haz tu prueba para un lugar en el Executive Roster.',
+      kicker: 'Gratis · Previa solicitud',
+      heading: 'Solicita tu lugar en el Executive Roster.',
       lede: 'Cada lugar en el equipo empieza igual: una llamada introductoria virtual de 20 minutos, gratuita. Encuentro qué está frenando tu cuerpo, y te vas con un plan claro para resolverlo, te unas o no al equipo.',
       rows: [
         { n: '01', b: 'La llamada', t: 'Una evaluación virtual enfocada de 20 minutos sobre cómo te mueves, cargas y te recuperas.' },
         {
           n: '02',
           b: 'Lo que te llevas',
-          t: 'Un diagnóstico personalizado: las dos o tres cosas que más te limitan y por dónde empezar. Tuyo para siempre.',
+          t: 'Un resumen personalizado: las dos o tres cosas que más te limitan y por dónde empezar. Tuyo para siempre.',
         },
-        { n: '03', b: 'La prueba', t: 'Si encajas, se te ofrece uno de los pocos lugares disponibles en el roster.' },
+        { n: '03', b: 'La selección', t: 'Si encajas, se te ofrece uno de los pocos lugares disponibles en el roster.' },
       ],
       spots: `Lugares disponibles este mes: ${site.roster.openSpots}`,
-      cta: 'Haz tu prueba',
+      cta: 'Solicita tu lugar',
     },
     insights: {
       kicker: 'Insights semanales',
@@ -159,7 +159,7 @@ export const content = {
       },
       {
         q: '¿Cómo empiezo a trabajar con Ben?',
-        a: '<p>Toda colaboración empieza con una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un diagnóstico personalizado de las dos o tres cosas que más te limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/aplicar/">Solicita tu llamada</a>.</p>',
+        a: '<p>Toda colaboración empieza con una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un resumen personalizado de las dos o tres cosas que más te limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/solicitar/">Solicita tu llamada</a>.</p>',
       },
       {
         q: '¿En qué idiomas entrena Ben?',
@@ -171,7 +171,7 @@ export const content = {
           'en-US',
         )}/mes con compromiso trimestral. Concierge Private Performance cuesta $${site.pricing.concierge.toLocaleString(
           'en-US',
-        )}/mes por aplicación, limitado a ${site.roster.conciergeSeats} lugares, y comienza con un Performance Day obligatorio desde $${site.pricing.performanceDay.toLocaleString(
+        )}/mes más viajes a costo, previa solicitud, limitado a ${site.roster.conciergeSeats} lugares, y comienza con un Performance Day obligatorio desde $${site.pricing.performanceDay.toLocaleString(
           'en-US',
         )}. Todo el detalle está en la <a href="/es/programas/">página de programas</a>.</p>`,
       },
@@ -183,7 +183,7 @@ export const content = {
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
     ],
     cta: {
-      kicker: 'La prueba',
+      kicker: 'El primer paso',
       heading: 'Cada lugar en el equipo empieza con una llamada introductoria gratuita.',
       body: 'Veinte minutos, virtual, sin costo. Te vas con un plan que puedes usar, trabajemos juntos o no.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
@@ -205,8 +205,8 @@ export const content = {
     },
     answerPhoto: { slug: 'executive-answer', width: 384, height: 384, alt: 'Un grupo de atletas de pie en un antiguo gimnasio iluminado por el sol que entra por altos ventanales' },
     answer: [
-      'El coaching de rendimiento ejecutivo con Ben Velazquez es un programa privado y basado en la evaluación para profesionales sénior que viajan constantemente y pasan sentados la mayor parte del día. Combina descompresión vertebral con ELDOA, trabajo fascial y programación de fuerza en una rutina que cabe en una habitación de hotel y en un hueco de quince minutos.',
-      'La membresía Core cuesta $2,300 al mes con compromiso trimestral e incluye cuatro sesiones virtuales, programación personalizada actualizada cada mes, acceso asincrónico acotado con respuesta en 24 horas en días hábiles y reevaluación trimestral. Los lugares son por aplicación: Ben selecciona personalmente a cada cliente, y cada lugar empieza con una llamada introductoria gratuita de 20 minutos.',
+      'El coaching de rendimiento ejecutivo con Ben Velazquez es un programa privado y basado en la evaluación para profesionales sénior que viajan constantemente y pasan sentados la mayor parte del día. Combina descompresión vertebral con ELDOA, trabajo de fascia y programación de fuerza en una rutina que cabe en una habitación de hotel y en un hueco de quince minutos.',
+      'La membresía Core cuesta $2,300 al mes con compromiso trimestral e incluye cuatro sesiones virtuales, programación personalizada actualizada cada mes, acceso asincrónico acotado con respuesta en 24 horas en días hábiles y reevaluación trimestral. Los lugares son previa solicitud: Ben selecciona personalmente a cada cliente, y cada lugar empieza con una llamada introductoria gratuita de 20 minutos.',
     ],
     facts: [
       { k: 'Formato', v: 'Virtual mundial · presencial en NYC, Tampa y Puerto Rico' },
@@ -214,7 +214,7 @@ export const content = {
       { k: 'Compromiso', v: 'Trimestral' },
       { k: 'Punto de entrada', v: 'Llamada introductoria gratuita (20 min)' },
       { k: 'Idiomas', v: 'Inglés · Español' },
-      { k: 'Admisión', v: 'Por aplicación · Ben selecciona a cada cliente' },
+      { k: 'Admisión', v: 'Previa solicitud · Ben selecciona a cada cliente' },
     ],
     problem: {
       photo: { slug: 'executive-problem', width: 534, height: 667, alt: 'Tres personas acostadas sobre colchonetas con las piernas elevadas contra la pared y los brazos extendidos' },
@@ -306,11 +306,11 @@ export const content = {
       },
       {
         q: '¿Cuál es la diferencia entre Core y Concierge?',
-        a: '<p>Core es virtual, cuatro sesiones al mes, por $2,300/mes. Concierge combina presencial y virtual con 8–12 puntos de contacto al mes, agenda prioritaria y acceso directo dentro de horarios acordados, por $6,500/mes más viajes a costo. Concierge está limitado a 7 lugares y comienza con un Performance Day presencial obligatorio desde $3,000. Ambos son por aplicación: Ben selecciona personalmente a cada cliente.</p>',
+        a: '<p>Core es virtual, cuatro sesiones al mes, por $2,300/mes. Concierge combina presencial y virtual con 8–12 puntos de contacto al mes, agenda prioritaria y acceso directo dentro de horarios acordados, por $6,500/mes más viajes a costo. Concierge está limitado a 7 lugares y comienza con un Performance Day presencial obligatorio desde $3,000. Ambos son previa solicitud: Ben selecciona personalmente a cada cliente.</p>',
       },
       {
         q: '¿Puedo empezar primero por mi cuenta?',
-        a: `<p>Sí. El Executive Reset es un programa autoguiado de ELDOA y movilidad para profesionales que pasan el día sentados y viajan mucho: de diez a quince minutos al día, sin equipo y tuyo para siempre. Es un pago único de $${site.pricing.resetDisplay}, sin necesidad de aplicar. <a href="/es/programas/">Ver todos los programas</a>.</p>`,
+        a: `<p>Sí. El Executive Reset es un programa autoguiado de ELDOA y movilidad para profesionales que pasan el día sentados y viajan mucho: de diez a quince minutos al día, sin equipo y tuyo para siempre. Es un pago único de $${site.pricing.resetDisplay}, sin necesidad de solicitud. <a href="/es/programas/">Ver todos los programas</a>.</p>`,
       },
       {
         q: '¿Hay un compromiso mínimo?',
@@ -333,7 +333,7 @@ export const content = {
     ],
     cta: {
       kicker: 'Roster limitado',
-      heading: 'Haz tu prueba para un lugar en el Executive Roster.',
+      heading: 'Solicita tu lugar en el Executive Roster.',
       body: `Una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un plan que puedes usar, te unas o no. ${site.roster.openSpots} lugares abiertos este mes.`,
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
@@ -688,7 +688,7 @@ export const content = {
       ctas: [APPLY_CTA, { route: 'eldoa', label: '¿Qué es ELDOA?', ghost: true }],
     },
     answer: [
-      'El método tiene tres etapas, aplicadas estrictamente en orden. Primero, evaluar: cada programa parte de datos medidos sobre cómo tu cuerpo se mueve, carga y se recupera, no de suposiciones. Segundo, descomprimir: ELDOA y trabajo fascial atienden las restricciones concretas que encontró la evaluación. Tercero, construir: la fuerza y las cualidades de rendimiento se añaden sobre una estructura capaz de expresarlas.',
+      'El método tiene tres etapas, aplicadas estrictamente en orden. Primero, evaluar: cada programa parte de datos medidos sobre cómo tu cuerpo se mueve, carga y se recupera, no de suposiciones. Segundo, descomprimir: ELDOA y trabajo de fascia atienden las restricciones concretas que encontró la evaluación. Tercero, construir: la fuerza y las cualidades de rendimiento se añaden sobre una estructura capaz de expresarlas.',
       'El orden es lo esencial. Añadir carga a una estructura desequilibrada refuerza el desequilibrio. Primero el equilibrio estructural; después las cualidades de rendimiento.',
     ],
     steps: {
@@ -702,7 +702,7 @@ export const content = {
         },
         {
           n: '02',
-          h: 'ELDOA y trabajo fascial',
+          h: 'ELDOA y trabajo de fascia',
           p: 'Posturas de autonormalización dirigidas que descomprimen un segmento vertebral o articulación concretos, elegidos a partir de lo que encontró la evaluación. Esta es la práctica diaria: de diez a quince minutos, sin equipamiento, en cualquier lugar.',
         },
         {
@@ -885,7 +885,7 @@ export const content = {
     seo: {
       title: 'Programas y Precios — Executive Roster | Ben Velazquez',
       description:
-        'Tres formas de trabajar con Ben Velazquez: Executive Reset ($297), Core Executive Performance ($2,300/mes) y Concierge Private Performance por aplicación.',
+        'Tres formas de trabajar con Ben Velazquez: Executive Reset ($297), Core Executive Performance ($2,300/mes) y Concierge Private Performance previa solicitud.',
     },
     hero: {
       kicker: 'Programas',
@@ -894,7 +894,7 @@ export const content = {
       ctas: [APPLY_CTA],
     },
     answer: [
-      'Hay tres formas de trabajar con Ben Velazquez. El Executive Reset es un programa autoguiado de ELDOA y movilidad por $297 en pago único. Core Executive Performance cuesta $2,300 al mes con compromiso trimestral, e incluye cuatro sesiones virtuales, programación personalizada y acceso asincrónico acotado. Concierge Private Performance cuesta $6,500 al mes más viajes a costo, limitado a 7 lugares. Core y Concierge son por aplicación: Ben selecciona personalmente a cada cliente.',
+      'Hay tres formas de trabajar con Ben Velazquez. El Executive Reset es un programa autoguiado de ELDOA y movilidad por $297 en pago único. Core Executive Performance cuesta $2,300 al mes con compromiso trimestral, e incluye cuatro sesiones virtuales, programación personalizada y acceso asincrónico acotado. Concierge Private Performance cuesta $6,500 al mes más viajes a costo, limitado a 7 lugares. Core y Concierge son previa solicitud: Ben selecciona personalmente a cada cliente.',
       'El nivel Concierge requiere primero un Performance Day presencial: una evaluación y consulta de jornada completa desde $3,000, en pago único. Sea cual sea el nivel, cada lugar en el equipo empieza con una llamada introductoria virtual y gratuita de 20 minutos.',
     ],
     tiers: [
@@ -929,9 +929,9 @@ export const content = {
           'Acceso coordinado a la red verificada de Ben — nutrición, fisioterapia, medicina',
           'Acceso de miembro a productos de socios',
         ],
-        cta: 'Aplicar',
+        cta: 'Solicitar',
         route: 'apply',
-        fine: 'Por aplicación · Compromiso trimestral. Ideal para ejecutivos que quieren resultados y acceso, no volumen de sesiones.',
+        fine: 'Previa solicitud · Compromiso trimestral. Ideal para ejecutivos que quieren resultados y acceso, no volumen de sesiones.',
       },
       {
         step: 'Concierge',
@@ -946,10 +946,10 @@ export const content = {
           'Mayor integración con recuperación, sueño y energía',
           'Acceso directo bajo demanda, dentro de horarios acordados',
         ],
-        cta: 'Solicitar aplicar',
+        cta: 'Solicitar un lugar',
         route: 'apply',
         ghost: true,
-        fine: `Por aplicación · ${site.roster.conciergeSeats} lugares. Requiere el Performance Day (desde $${site.pricing.performanceDay.toLocaleString(
+        fine: `Previa solicitud · ${site.roster.conciergeSeats} lugares. Requiere el Performance Day (desde $${site.pricing.performanceDay.toLocaleString(
           'en-US',
         )}, pago único). Viajes facturados a costo cuando el trabajo es presencial: vuelos (business en trayectos de 3 h+), transporte terrestre y hotel.`,
       },
@@ -976,7 +976,7 @@ export const content = {
       },
       {
         q: '¿Qué incluye la llamada introductoria gratuita?',
-        a: '<p>Una evaluación virtual enfocada de 20 minutos sobre cómo te mueves, cargas y te recuperas, y un diagnóstico personalizado de las dos o tres cosas que más te limitan y por dónde empezar. Es genuinamente gratuito y te lo quedas trabajemos juntos o no.</p>',
+        a: '<p>Una evaluación virtual enfocada de 20 minutos sobre cómo te mueves, cargas y te recuperas, y un resumen personalizado de las dos o tres cosas que más te limitan y por dónde empezar. Es genuinamente gratuito y te lo quedas trabajemos juntos o no.</p>',
       },
       {
         q: '¿Por qué el roster Concierge está limitado a 7?',
@@ -1060,9 +1060,9 @@ export const content = {
       { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
     ],
     cta: {
-      kicker: 'La prueba',
+      kicker: 'El primer paso',
       heading: 'El mismo estándar de atención, sea cual sea tu profesión.',
-      body: 'Una llamada introductoria virtual y gratuita de 20 minutos, y un plan que te quedas trabajemos juntos o no.',
+      body: 'Una llamada introductoria virtual y gratuita de 20 minutos, y un plan que te quedas, trabajemos juntos o no.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -1135,7 +1135,7 @@ export const content = {
         faqs: [
           {
             q: '¿Cómo empiezo a trabajar con Ben Velazquez?',
-            a: '<p>Toda colaboración empieza con una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un diagnóstico personalizado de las dos o tres cosas que más te limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/aplicar/">Solicítalo aquí</a>.</p>',
+            a: '<p>Toda colaboración empieza con una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un resumen personalizado de las dos o tres cosas que más te limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/solicitar/">Solicítalo aquí</a>.</p>',
           },
           {
             q: '¿La llamada introductoria es realmente gratuita?',
@@ -1168,7 +1168,7 @@ export const content = {
               'en-US',
             )}/mes con compromiso trimestral. Concierge Private Performance cuesta $${site.pricing.concierge.toLocaleString(
               'en-US',
-            )}/mes más viajes a costo, por aplicación, limitado a ${site.roster.conciergeSeats} lugares, y requiere un Performance Day único desde $${site.pricing.performanceDay.toLocaleString(
+            )}/mes más viajes a costo, previa solicitud, limitado a ${site.roster.conciergeSeats} lugares, y requiere un Performance Day único desde $${site.pricing.performanceDay.toLocaleString(
               'en-US',
             )}. Ver la <a href="/es/programas/">página de programas</a>.</p>`,
           },
@@ -1244,18 +1244,18 @@ export const content = {
   /* ====================================================================== */
   apply: {
     seo: {
-      title: 'Aplicar — Llamada Introductoria Gratuita (20 min) | Ben Velazquez',
+      title: 'Llamada Introductoria Gratuita (20 min) | Ben Velazquez',
       description:
         'Solicita una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un plan personalizado, te unas o no al Executive Roster.',
     },
     hero: {
-      kicker: 'Gratis · Por aplicación',
-      h1: 'Haz tu prueba para un lugar en el Executive Roster.',
+      kicker: 'Gratis · Previa solicitud',
+      h1: 'Solicita tu lugar en el Executive Roster.',
       lede: 'Cada lugar en el equipo empieza igual: una llamada introductoria virtual de 20 minutos, gratuita. Encuentro qué está frenando tu cuerpo, y te vas con un plan claro para resolverlo, te unas o no al equipo.',
       ctas: [],
     },
     answer: [
-      'La llamada introductoria es una evaluación virtual gratuita de 20 minutos sobre cómo te mueves, cargas y te recuperas. Te vas con un diagnóstico personalizado de las dos o tres cosas que más te limitan y por dónde empezar, tuyo trabajemos juntos o no.',
+      'La llamada introductoria es una evaluación virtual gratuita de 20 minutos sobre cómo te mueves, cargas y te recuperas. Te vas con un resumen personalizado de las dos o tres cosas que más te limitan y por dónde empezar, tuyo, trabajemos juntos o no.',
       `Si encajas, se te ofrece uno de los pocos lugares disponibles en el roster. Este mes hay ${site.roster.openSpots} lugares abiertos. Disponible en inglés o español.`,
     ],
     steps: [
@@ -1263,9 +1263,9 @@ export const content = {
       {
         n: '02',
         b: 'Lo que te llevas',
-        t: 'Un diagnóstico personalizado: las dos o tres cosas que más te limitan y por dónde empezar. Tuyo para siempre.',
+        t: 'Un resumen personalizado: las dos o tres cosas que más te limitan y por dónde empezar. Tuyo para siempre.',
       },
-      { n: '03', b: 'La prueba', t: 'Si encajas, se te ofrece uno de los pocos lugares disponibles en el roster.' },
+      { n: '03', b: 'La selección', t: 'Si encajas, se te ofrece uno de los pocos lugares disponibles en el roster.' },
     ],
     list: [
       { b: 'Es una evaluación de verdad.', t: 'Te vas con un plan que puedes usar, aunque no trabajemos juntos.' },
@@ -1273,7 +1273,7 @@ export const content = {
       { b: 'Roster limitado.', t: 'Solo acepto a un número reducido de ejecutivos a la vez.' },
     ],
     form: {
-      heading: 'Haz tu prueba',
+      heading: 'Solicita tu lugar',
       // Asunto del correo que entrega Formspree.
       subject: 'Nueva solicitud — llamada introductoria',
       name: 'Nombre',
@@ -1297,7 +1297,7 @@ export const content = {
     },
     faqs: [
       {
-        q: '¿Qué ocurre después de aplicar?',
+        q: '¿Qué ocurre después de enviar mi solicitud?',
         a: '<p>Recibirás respuesta con los siguientes pasos. Si parece encajar, reservamos la llamada introductoria virtual y gratuita de 20 minutos; si no encaja, te lo diremos directamente en lugar de dejarte esperando.</p>',
       },
       {
@@ -1343,7 +1343,7 @@ export const content = {
       'Ben tiene su base en Nueva York, Tampa y Puerto Rico, y trabaja virtualmente en todo el mundo, en inglés o español.',
     ],
     facts: [
-      { k: 'Consultas de coaching', v: '<a href="/es/aplicar/">Solicita una llamada introductoria gratuita</a>' },
+      { k: 'Consultas de coaching', v: '<a href="/es/solicitar/">Solicita una llamada introductoria gratuita</a>' },
       { k: 'Correo', v: `<a href="mailto:${site.email}">${site.email}</a>` },
       { k: 'Programa de conmociones', v: '<a href="/es/recuperacion-de-conmociones/">Recuperación con ejercicio</a>' },
       { k: 'Con base en', v: 'Nueva York · Tampa · Puerto Rico' },
@@ -1353,7 +1353,7 @@ export const content = {
     faqs: [
       {
         q: '¿Cuál es la vía más rápida para contactar a Ben?',
-        a: '<p>Para coaching, la <a href="/es/aplicar/">solicitud de llamada introductoria</a>: entra directamente en la cola de admisión. Para cualquier otra cosa, el correo es la vía más rápida.</p>',
+        a: '<p>Para coaching, la <a href="/es/solicitar/">solicitud de llamada introductoria</a>: entra directamente en la cola de admisión. Para cualquier otra cosa, el correo es la vía más rápida.</p>',
       },
       {
         q: '¿Aceptas conferencias o seminarios?',

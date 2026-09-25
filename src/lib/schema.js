@@ -23,7 +23,7 @@ export const ID = {
 /** The Person entity — the anchor for E-E-A-T and for AI entity resolution. */
 export function personEntity(locale = 'en') {
   const bio = {
-    en: 'Ben Velazquez is a performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico, with over 20 years working with elite performers, including athletes across the NFL, NHL and MLB. He is a co-contributing author of "Fascia: Clinical Applications for Health and Human Performance", a licensed Soma-Therapist and a Certified Strength & Conditioning Specialist, and a recognised expert in exercise-based concussion solutions.',
+    en: 'Ben Velazquez is a performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico, with over 20 years working with elite performers, including athletes across the NFL, NHL and MLB. He is a co-contributing author of "Fascia: Clinical Applications for Health and Human Performance", a licensed Soma-Therapist and a Certified Strength & Conditioning Specialist, and a recognized expert in exercise-based concussion solutions.',
     es: 'Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, Tampa y Puerto Rico, con más de 20 años trabajando con atletas de élite de la NFL, la NHL y la MLB. Es coautor colaborador de "Fascia: Clinical Applications for Health and Human Performance", Soma-Terapeuta licenciado y Especialista Certificado en Fuerza y Acondicionamiento, y un experto reconocido en soluciones de ejercicio para conmociones cerebrales.',
   };
 

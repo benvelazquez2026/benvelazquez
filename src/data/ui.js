@@ -89,7 +89,7 @@ export const ui = {
       results: 'Resultados',
       insights: 'Insights',
       faq: 'Preguntas frecuentes',
-      apply: 'Aplicar',
+      apply: 'Solicitar',
       contact: 'Contacto',
       podcast: 'Podcast',
       whatIUse: 'Lo que uso',

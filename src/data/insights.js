@@ -22,12 +22,12 @@ export const insights = [
       es: 'Trata tu carrera como un deporte',
     },
     summary: {
-      en: 'Elite athletes periodise, recover and protect the body that earns them a living. Executives rarely do — and pay for it in their fifties. Here is how to apply an athlete’s training calendar to a career.',
+      en: 'Elite athletes periodize, recover and protect the body that earns them a living. Executives rarely do — and pay for it in their fifties. Here is how to apply an athlete’s training calendar to a career.',
       es: 'Los atletas de élite periodizan, se recuperan y cuidan el cuerpo que les da de comer. Los ejecutivos rara vez lo hacen, y lo pagan a los cincuenta. Así se aplica el calendario de un atleta a una carrera.',
     },
     /* Meta description — deliberately shorter than `summary`, which is the card excerpt. */
     meta: {
-      en: 'Elite athletes periodise, recover and protect the body that earns them a living. How to apply an athlete’s training calendar to a 30-year career.',
+      en: 'Elite athletes periodize, recover and protect the body that earns them a living. How to apply an athlete’s training calendar to a 30-year career.',
       es: 'Los atletas de élite periodizan y se recuperan a propósito. Cómo aplicar el calendario de entrenamiento de un atleta a una carrera de 30 años.',
     },
     answer: {
@@ -43,20 +43,20 @@ export const insights = [
     body: {
       en: `<p>I have spent twenty years around people whose bodies are their livelihood. The thing that surprises executives most, when they first sit down with me, is how little of a professional athlete's year is spent at full effort.</p>
 <h2>Nobody competes for twelve months</h2>
-<p>An NHL centre does not skate at playoff intensity in July. A starting pitcher does not throw max-effort bullpens in January. The calendar is divided deliberately: an off-season where structure is rebuilt, a pre-season where capacity is raised, an in-season where the work shifts almost entirely to maintenance and recovery, and a genuine break at the end.</p>
+<p>An NHL center does not skate at playoff intensity in July. A starting pitcher does not throw max-effort bullpens in January. The calendar is divided deliberately: an off-season where structure is rebuilt, a pre-season where capacity is raised, an in-season where the work shifts almost entirely to maintenance and recovery, and a genuine break at the end.</p>
 <p>That structure is not indulgence. It is the mechanism. Adaptation happens in the recovery window, not in the session. Remove the recovery window and you remove the adaptation — you are left with accumulated fatigue that looks like effort and produces nothing.</p>
 <h2>The executive runs one phase for thirty years</h2>
 <p>Now look at how a senior professional actually operates. Every quarter is a competition phase. There is no off-season, no deload, no planned trough. Travel is constant, sleep is the variable that gets sacrificed first, and training — if it happens — is squeezed into whatever thirty minutes survives the calendar.</p>
 <p>The body does not care that this is normal for the industry. It responds the same way an athlete's body responds to a season with no rest: the tissue quality degrades, the movement options narrow, and eventually something that had been quietly compensating for years gives out. Usually a lower back. Often a neck. Rarely a surprise, in hindsight.</p>
-<h2>What periodising a career actually looks like</h2>
+<h2>What periodizing a career actually looks like</h2>
 <h3>1. Build low-intensity blocks into the year on purpose</h3>
 <p>Not holidays where you answer email from a different time zone — actual reduced-load periods. Two or three weeks, two or three times a year, where the training volume drops, the travel is deliberately thinner and the body gets a window to consolidate. Athletes call this a deload. It is the least glamorous and most reliably effective thing on this page.</p>
 <h3>2. Schedule recovery as work, not as reward</h3>
 <p>Sleep, decompression and mobility are not what you do once the important things are finished. For a professional athlete they <em>are</em> the important things — the session is simply the stimulus. If mobility work only happens when the day goes well, it will happen four times a month, and four times a month changes nothing.</p>
 <h3>3. Measure in decades</h3>
-<p>The right question is not "can I sustain this quarter." Anyone can sustain a quarter. The question is whether the way you are training, travelling and sleeping right now is something you could run for another twenty years and still be sharp, mobile and pain-free at the end of it. If the honest answer is no, the plan is not a plan. It is a countdown.</p>
+<p>The right question is not "can I sustain this quarter." Anyone can sustain a quarter. The question is whether the way you are training, traveling and sleeping right now is something you could run for another twenty years and still be sharp, mobile and pain-free at the end of it. If the honest answer is no, the plan is not a plan. It is a countdown.</p>
 <h2>The trade nobody wants to hear</h2>
-<p>Periodising a career means accepting slightly less output in some months in exchange for a much longer runway. Every athlete I have worked with has made that trade, most of them reluctantly, and none of them regret it. The ones who refused it are the ones whose careers ended early — not because they were not talented, but because the body stopped cooperating before the ambition did.</p>
+<p>Periodizing a career means accepting slightly less output in some months in exchange for a much longer runway. Every athlete I have worked with has made that trade, most of them reluctantly, and none of them regret it. The ones who refused it are the ones whose careers ended early — not because they were not talented, but because the body stopped cooperating before the ambition did.</p>
 <p>Your career is longer than a playing career. The case for treating it like one is stronger, not weaker.</p>`,
       es: `<p>He pasado veinte años rodeado de personas cuyo cuerpo es su medio de vida. Lo que más sorprende a los ejecutivos, cuando se sientan conmigo por primera vez, es lo poco que un atleta profesional pasa realmente a máximo esfuerzo.</p>
 <h2>Nadie compite doce meses</h2>
@@ -79,8 +79,8 @@ export const insights = [
     faqs: {
       en: [
         {
-          q: 'What does “periodisation” mean for someone who isn’t an athlete?',
-          a: '<p>Periodisation means deliberately varying training load and recovery across the year instead of holding one constant intensity. For a non-athlete it usually looks like three or four training blocks a year with different emphases, separated by planned lower-load weeks — and travel-heavy months treated as reduced-load months by design rather than by accident.</p>',
+          q: 'What does “periodization” mean for someone who isn’t an athlete?',
+          a: '<p>Periodization means deliberately varying training load and recovery across the year instead of holding one constant intensity. For a non-athlete it usually looks like three or four training blocks a year with different emphases, separated by planned lower-load weeks — and travel-heavy months treated as reduced-load months by design rather than by accident.</p>',
         },
         {
           q: 'How many low-intensity weeks should I plan per year?',
@@ -150,9 +150,9 @@ export const insights = [
 <h3>Walk before you sit again</h3>
 <p>Ten minutes on your feet before the first meeting or the first hotel-desk session. Not exercise — circulation, and a reset of the postural pattern before it hardens.</p>
 <h2>Do it on landing, not tomorrow</h2>
-<p>Timing matters more than duration. Ten minutes within an hour of landing is worth substantially more than forty minutes the following afternoon, because you are interrupting the pattern before the tissue adapts to it. The best travellers I know treat it like customs: an unavoidable step between the plane and the rest of the trip.</p>
+<p>Timing matters more than duration. Ten minutes within an hour of landing is worth substantially more than forty minutes the following afternoon, because you are interrupting the pattern before the tissue adapts to it. The best travelers I know treat it like customs: an unavoidable step between the plane and the rest of the trip.</p>
 <h2>The version that survives a real schedule</h2>
-<p>Any routine that requires equipment, a gym, or thirty free minutes will not survive a real travel week. That is why the programme I write for travelling clients fits in a hotel room, needs nothing but floor space, and takes ten minutes. A routine you actually do at forty percent quality beats a perfect one you skip.</p>`,
+<p>Any routine that requires equipment, a gym, or thirty free minutes will not survive a real travel week. That is why the program I write for traveling clients fits in a hotel room, needs nothing but floor space, and takes ten minutes. A routine you actually do at forty percent quality beats a perfect one you skip.</p>`,
       es: `<p>Los atletas con los que trabajo vuelan más que casi nadie. Temporadas de ochenta y dos partidos, dobles jornadas en husos horarios distintos, vuelos chárter que aterrizan a las tres de la madrugada. Han resuelto el problema del viaje por necesidad, y la solución se traslada directamente a cualquiera cuya agenda parezca un horario de aerolínea.</p>
 <h2>Qué hace realmente un vuelo largo</h2>
 <p>Seis horas en un asiento de turista, o incluso de business, son seis horas de compresión axial sobre una columna que no tiene ocasión de descargar. Las caderas permanecen en flexión todo el tiempo, lo que acorta progresivamente los flexores e inclina la pelvis. La cabeza queda por delante de los hombros —sobre un portátil, un libro o una pantalla— lo que carga la columna cervical con varias veces el peso de la propia cabeza.</p>
@@ -239,12 +239,12 @@ export const insights = [
 <h3>Breathing mechanics</h3>
 <p>People under sustained pressure default to shallow, upper-chest breathing, which keeps the nervous system in a low-grade sympathetic state all day. Restoring diaphragmatic mechanics is genuinely trainable, takes a few minutes a day, and changes how quickly the body downshifts after stress.</p>
 <h3>Tissue quality</h3>
-<p>Fascia responds to what you repeatedly ask of it. Sitting for eleven hours a day is a request, and the body honours it. Decompression work and myofascial stretching are how you make a competing request — which is why ELDOA sits at the centre of the recovery work I prescribe.</p>
+<p>Fascia responds to what you repeatedly ask of it. Sitting for eleven hours a day is a request, and the body honors it. Decompression work and myofascial stretching are how you make a competing request — which is why ELDOA sits at the center of the recovery work I prescribe.</p>
 <h3>Parasympathetic tone</h3>
-<p>The ability to move from high output into genuine rest is trainable. People who never practise it stay half-activated through the evening, sleep poorly, and start the next day with a deficit that compounds.</p>
+<p>The ability to move from high output into genuine rest is trainable. People who never practice it stay half-activated through the evening, sleep poorly, and start the next day with a deficit that compounds.</p>
 <h2>Why the hardest workers recover worst</h2>
 <p>There is a pattern I see constantly. The people with the most discipline apply all of it to output and none of it to recovery, because recovery feels like the opposite of discipline. So the training is excellent, the diet is excellent, and the body is still falling apart — because the one variable that consolidates all the others was never given a slot in the calendar.</p>
-<p>The fix is not to work less. It is to move recovery from the category of "reward" into the category of "work". Something that appears in the calendar, has a defined protocol, and does not get cancelled when the week gets difficult.</p>
+<p>The fix is not to work less. It is to move recovery from the category of "reward" into the category of "work". Something that appears in the calendar, has a defined protocol, and does not get canceled when the week gets difficult.</p>
 <h2>The debt metaphor is literal</h2>
 <p>The body genuinely does keep a ledger. Under-recovery shows up first as stiffness and poor sleep, then as a nagging injury that will not resolve, then as the thing that takes you out for three months. By the time it is a diagnosis, it has usually been an unpaid debt for years.</p>
 <p>Build it in, or the body collects with interest.</p>`,
@@ -345,9 +345,9 @@ export const insights = [
 <li><strong>Open the hips.</strong> Active extension, not a passive stretch — the body needs to be reminded the range exists under control.</li>
 <li><strong>Reset the head and shoulders.</strong> Ten seconds of drawing the head back over the shoulders, repeated often, does more than one long session of it.</li>
 </ol>
-<p>Total cost: about two minutes, five or six times a day. That is not a training programme, and it is not meant to be. It is an interruption — the thing that stops eleven hours from being eleven uninterrupted hours.</p>
+<p>Total cost: about two minutes, five or six times a day. That is not a training program, and it is not meant to be. It is an interruption — the thing that stops eleven hours from being eleven uninterrupted hours.</p>
 <h2>Small resets beat big corrections</h2>
-<p>By the time a postural problem is painful enough to schedule an appointment for, it has usually been developing for years, and unwinding it takes months. The people who never get there are not the ones with the best training programme. They are the ones who never let the position accumulate in the first place.</p>
+<p>By the time a postural problem is painful enough to schedule an appointment for, it has usually been developing for years, and unwinding it takes months. The people who never get there are not the ones with the best training program. They are the ones who never let the position accumulate in the first place.</p>
 <p>Your chair is a training stimulus whether you intend it or not. The only question is whether anything is competing with it.</p>`,
       es: `<p>Esta es la conversación más frecuente que tengo con clientes ejecutivos, y suele empezar con frustración: «entreno cinco días a la semana y la espalda me sigue doliendo». Casi siempre es así. El entrenamiento no es el problema, y más entrenamiento no es la solución.</p>
 <h2>Para la postura, la duración gana a la intensidad</h2>
