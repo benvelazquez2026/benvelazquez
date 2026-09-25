@@ -58,6 +58,7 @@ export const content = {
       lede: 'Una mirada al entrenamiento en sí — empezando con sesiones junto a Connor McDavid.',
     },
     who: {
+      photo: { slug: 'home-who', widths: [740, 1100, 1480], width: 1480, height: 1110, display: 560, alt: 'Jugador de los Detroit Red Wings en el hielo con la camiseta roja de local y el stick en la mano' },
       kicker: '02 — Para quién',
       heading: 'Tres tipos de personas. Un mismo estándar.',
       lede: 'Los mismos métodos que mantienen a los atletas profesionales en la cima ahora funcionan para los líderes que mueven el mundo.',

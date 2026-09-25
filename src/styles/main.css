@@ -1468,6 +1468,13 @@ p {
 .side-photo {
   margin: 0;
 }
+/* Section heading beside a photo: keep the usual gap before the cards. */
+.who-head {
+  margin-bottom: 44px;
+}
+.who-head .sec-head {
+  margin-bottom: 0;
+}
 .split-media > .answer-block {
   margin-bottom: 0;
 }

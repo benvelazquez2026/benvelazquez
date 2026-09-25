@@ -65,6 +65,7 @@ export const content = {
       lede: 'A look at the training itself — starting with sessions alongside Connor McDavid.',
     },
     who: {
+      photo: { slug: 'home-who', widths: [740, 1100, 1480], width: 1480, height: 1110, display: 560, alt: 'Detroit Red Wings player on the ice in a red home jersey, stick in hand' },
       kicker: '02 — Who I work with',
       heading: 'Three kinds of people. One standard of care.',
       lede: 'The same methods that keep professional athletes at the top now work for the leaders who run the rest of the world.',

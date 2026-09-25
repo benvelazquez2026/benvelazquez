@@ -145,7 +145,10 @@ ${videoGrid(site.videos, locale)}
 
 <section class="block on-bone" id="who">
 <div class="wrap">
+<div class="split-media who-head" style="--media-w:${c.who.photo.display}px">
 ${sectionHead({ kicker: c.who.kicker, heading: esc(c.who.heading), lede: esc(c.who.lede) })}
+${sidePhoto(c.who.photo)}
+</div>
 ${cardGrid(c.who.cards, locale)}
 </div>
 </section>
