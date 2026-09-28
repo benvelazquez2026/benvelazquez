@@ -99,7 +99,7 @@ export const content = {
       kicker: '03 — Programs',
       heading: 'Start where you are. Access scales with commitment.',
       lede: 'A clear path from a self-guided start to direct, private work. The top tiers are intentionally limited.',
-      note: 'Every place on the team begins with a free intro call.',
+      note: 'Working with Ben begins with a free intro call.',
     },
     method: {
       kicker: '04 — Method',
@@ -132,7 +132,7 @@ export const content = {
     analysis: {
       kicker: 'Free · By application',
       heading: 'Try out for a place on the Executive Roster.',
-      lede: 'Every place on the team starts the same way: a free 20-minute virtual intro call. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you join the team.',
+      lede: 'Working with Ben starts the same way: a free 20-minute virtual intro call. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you go on to work with Ben.',
       rows: [
         { n: '01', b: 'The intro call', t: 'A focused 20-minute virtual assessment of how you move, load, and recover.' },
         {
@@ -185,7 +185,7 @@ export const content = {
     ],
     cta: {
       kicker: 'The tryout',
-      heading: 'Every place on the team starts with a free intro call.',
+      heading: 'Working with Ben starts with a free intro call.',
       body: 'Twenty minutes, virtual, no cost. You leave with a plan you can use — whether or not we work together.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
@@ -264,7 +264,7 @@ export const content = {
     },
     how: {
       kicker: 'How it runs',
-      heading: 'What a month on the team looks like.',
+      heading: 'What a month working with Ben looks like.',
       steps: [
         {
           n: '01',
@@ -565,13 +565,13 @@ export const content = {
       { route: 'athletes', label: 'Athletes', title: 'Performance rehabilitation for athletes' },
       { route: 'about', label: 'Background', title: 'About Ben Velazquez' },
       { route: 'results', label: 'Proof', title: 'Endorsements and testimonials' },
-      { route: 'contact', label: 'Contact', title: 'Get in touch with the team' },
+      { route: 'contact', label: 'Contact', title: 'Get in touch with Ben' },
     ],
     cta: {
       kicker: 'Work with Ben',
-      heading: 'Talk to the team about a structured recovery.',
-      body: 'Tell us about the injury and where you are in recovery, and we will explain how the program works alongside your medical care.',
-      ctas: [{ route: 'contact', label: 'Contact the team' }, { route: 'apply', label: 'Book an intro call', ghost: true }],
+      heading: 'Talk to Ben about a structured recovery.',
+      body: 'Tell Ben about the injury and where you are in recovery, and he will explain how the program works alongside your medical care.',
+      ctas: [{ route: 'contact', label: 'Contact Ben' }, { route: 'apply', label: 'Book an intro call', ghost: true }],
     },
   },
 
@@ -911,7 +911,7 @@ export const content = {
     },
     answer: [
       'There are three ways to work with Ben Velazquez. The Executive Reset is a self-guided ELDOA and mobility program at $297 one-time. Core Executive Performance is $2,300 per month, billed monthly with a three-month minimum, with four virtual sessions, custom programming and bounded async access. Concierge Private Performance is $6,500 per month plus travel at cost, capped at 7 positions. Core and Concierge are both by application: Ben personally selects every client.',
-      'The Concierge track requires an in-person Performance Day first — a full-day evaluation and consultation from $3,000, one-time. Regardless of tier, every place on the team starts with a free 20-minute virtual intro call.',
+      'The Concierge track requires an in-person Performance Day first — a full-day evaluation and consultation from $3,000, one-time. Regardless of tier, working with Ben starts with a free 20-minute virtual intro call.',
     ],
     tiers: [
       {
@@ -993,7 +993,7 @@ export const content = {
       )}, one-time.</p>
 <p>A full day is what it takes to see how a body actually behaves rather than how it presents in a twenty-minute window: movement under fatigue, how you load in the afternoon versus the morning, and the patterns that only appear once you stop performing for the assessment.</p>`,
     },
-    note: 'Every place on the team begins with a free intro call.',
+    note: 'Working with Ben begins with a free intro call.',
     faqs: [
       {
         q: 'How much does it cost to work with Ben Velazquez?',
@@ -1190,7 +1190,7 @@ export const content = {
           },
           {
             q: 'Is the intro call really free?',
-            a: '<p>Yes. It is a genuine 20-minute assessment, and the takeaway plan is yours to keep regardless of whether you join the team.</p>',
+            a: '<p>Yes. It is a genuine 20-minute assessment, and the takeaway plan is yours to keep regardless of whether you go on to work with Ben.</p>',
           },
           {
             q: 'Do I work directly with Ben?',
@@ -1302,7 +1302,7 @@ export const content = {
     hero: {
       kicker: 'Free · By application',
       h1: 'Try out for a place on the Executive Roster.',
-      lede: 'Every place on the team starts the same way: a free 20-minute virtual intro call. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you join the team.',
+      lede: 'Working with Ben starts the same way: a free 20-minute virtual intro call. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you go on to work with Ben.',
       ctas: [],
     },
     answer: [
@@ -1395,7 +1395,7 @@ export const content = {
     hero: {
       kicker: 'Contact',
       h1: 'Get in touch.',
-      lede: 'For coaching inquiries, the concussion program, speaking, seminars or media — here is how to reach the team.',
+      lede: 'For coaching inquiries, the concussion program, speaking, seminars or media — here is how to reach Ben.',
       ctas: [APPLY_CTA],
     },
     answer: [
@@ -1405,6 +1405,7 @@ export const content = {
     facts: [
       { k: 'Coaching inquiries', v: '<a href="/apply/">Apply for a free intro call</a>' },
       { k: 'Email', v: `<a href="mailto:${site.email}">${site.email}</a>` },
+      { k: 'WhatsApp (international)', v: `<a href="${site.whatsappUrl}" rel="noopener" target="_blank">${site.whatsapp}</a>` },
       { k: 'Concussion program', v: '<a href="/concussion-recovery/">Exercise-based recovery</a>' },
       { k: 'Based in', v: 'New York City · Tampa · Puerto Rico' },
       { k: 'Availability', v: 'Virtual worldwide · in person NYC, Tampa & Puerto Rico' },
@@ -1425,7 +1426,7 @@ export const content = {
       },
       {
         q: 'Do you work with clients outside the United States?',
-        a: '<p>Yes. Virtual coaching is available worldwide, in English or Spanish.</p>',
+        a: `<p>Yes. Virtual coaching is available worldwide, in English or Spanish. International clients can also reach Ben on WhatsApp at <a href="${site.whatsappUrl}" rel="noopener" target="_blank">${site.whatsapp}</a>.</p>`,
       },
     ],
     related: [

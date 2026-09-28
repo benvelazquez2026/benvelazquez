@@ -49,6 +49,9 @@ export const site = {
 
   // Contact + social. Used by schema.org, the footer and the contact page.
   email: 'ben@benvelazquez.com',
+  // WhatsApp, for international (Puerto Rico, Latin America) clients.
+  whatsapp: '+1 813-678-6153',
+  whatsappUrl: 'https://wa.me/18136786153',
 
   // Form handler. The application form posts here directly — both via fetch
   // and, with JavaScript off, as a native form submit. Changing this needs a

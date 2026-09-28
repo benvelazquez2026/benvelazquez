@@ -1410,6 +1410,7 @@ export const content = {
     facts: [
       { k: 'Consultas de coaching', v: '<a href="/es/solicitar/">Solicita una llamada introductoria gratuita</a>' },
       { k: 'Correo', v: `<a href="mailto:${site.email}">${site.email}</a>` },
+      { k: 'WhatsApp (internacional)', v: `<a href="${site.whatsappUrl}" rel="noopener" target="_blank">${site.whatsapp}</a>` },
       { k: 'Programa de conmociones', v: '<a href="/es/recuperacion-de-conmociones/">Recuperación con ejercicio</a>' },
       { k: 'Con base en', v: 'Nueva York · Tampa · Puerto Rico' },
       { k: 'Disponibilidad', v: 'Virtual mundial · presencial en NYC, Tampa y Puerto Rico' },
