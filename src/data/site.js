@@ -95,7 +95,7 @@ export const site = {
     podcast: '#coming-soon',
     gtg: 'https://www.gtg.energy/discount/BenVGTG?redirect=/pages/gtg-energy-pouches',
     p2717: '#',
-    superpatch: '#',
+    superpatch: 'https://healthpro.superpatch.com/NHL4RR/2CTPL/',
   },
 
   // Videos are embedded through a click-to-load facade so that YouTube's
