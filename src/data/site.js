@@ -94,7 +94,7 @@ export const site = {
     // dialog (layout.js + site.js) instead of a player.
     podcast: '#coming-soon',
     gtg: 'https://www.gtg.energy/discount/BenVGTG?redirect=/pages/gtg-energy-pouches',
-    p2717: '#',
+    p2717: 'https://2717recovery.com/discount/BenVRecovery10',
     superpatch: 'https://healthpro.superpatch.com/NHL4RR/2CTPL/',
   },
 

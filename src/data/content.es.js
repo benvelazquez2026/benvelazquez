@@ -1517,14 +1517,12 @@ export const content = {
         logo: 'p2717',
         mark: '27:17',
         name: '27:17 Recovery',
-        tag: 'Vuelve pronto',
-        soldOut: true,
+        tag: 'Recuperación',
         cat: 'Crema de recuperación · péptido de cobre, árnica, MSM · apta para antidopaje',
         quote:
           '«La recuperación no es descanso: es rendimiento. 27:17 es el tópico en el que confío para ayudar al cuerpo a reconstruirse entre sesiones, y es lo bastante limpio para atletas con control antidopaje. Un básico de mi kit de recuperación.»',
-        cta: 'Avíseme cuando vuelva',
+        cta: 'Comprar 27:17 Recovery',
         href: site.links.p2717,
-        ghost: true,
       },
       {
         logo: 'sp',

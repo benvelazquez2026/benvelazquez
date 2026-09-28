@@ -1509,14 +1509,12 @@ export const content = {
         logo: 'p2717',
         mark: '27:17',
         name: '27:17 Recovery',
-        tag: 'Back soon',
-        soldOut: true,
+        tag: 'Recovery',
         cat: 'Performance recovery cream · copper peptide, arnica, MSM · drug-test safe',
         quote:
           '“Recovery isn’t rest — it’s performance. 27:17 is the topical I trust to help the body rebuild between sessions, and it’s clean enough for drug-tested athletes. A staple in my recovery toolkit.”',
-        cta: 'Get notified when it’s back',
+        cta: 'Shop 27:17 Recovery',
         href: site.links.p2717,
-        ghost: true,
       },
       {
         logo: 'sp',
