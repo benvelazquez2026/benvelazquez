@@ -93,7 +93,7 @@ export const site = {
     // The podcast has not launched: every podcast link opens the Coming soon
     // dialog (layout.js + site.js) instead of a player.
     podcast: '#coming-soon',
-    gtg: '#',
+    gtg: 'https://www.gtg.energy/discount/BenVGTG?redirect=/pages/gtg-energy-pouches',
     p2717: '#',
     superpatch: '#',
   },
