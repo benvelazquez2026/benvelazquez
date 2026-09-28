@@ -2023,6 +2023,21 @@ p {
   min-height: 110px;
   resize: vertical;
 }
+.apply-form .field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 14px;
+}
+@media (max-width: 520px) {
+  .apply-form .field-row {
+    grid-template-columns: 1fr;
+  }
+}
+.apply-form label .opt {
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--stone);
+}
 .apply-form .hp {
   position: absolute;
   left: -9999px;
@@ -2258,6 +2273,102 @@ p {
   font-size: 0.92rem;
 }
 
+/* Bespoke: the full-width tier above Concierge */
+.bespoke {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr auto;
+  gap: 28px 40px;
+  align-items: center;
+  padding: 32px 34px;
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: var(--bone);
+  border: 1px solid var(--signal);
+}
+.bespoke .step {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--signal);
+}
+.bespoke h3 {
+  margin: 8px 0 10px;
+}
+.bespoke .price {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--stone-light);
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.bespoke .desc {
+  color: var(--stone-light);
+  font-size: 0.95rem;
+}
+.bespoke ul {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: var(--bone-dim);
+}
+.bespoke li {
+  padding-left: 18px;
+  position: relative;
+}
+.bespoke li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 8px;
+  height: 2px;
+  background: var(--signal);
+}
+@media (max-width: 980px) {
+  .bespoke {
+    grid-template-columns: 1fr;
+  }
+  .bespoke .btn {
+    justify-self: start;
+  }
+}
+
+/* Coming soon dialog */
+.soon {
+  max-width: 460px;
+  width: calc(100% - 32px);
+  margin: auto;
+  padding: 34px;
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius);
+  background: var(--ink-soft);
+  color: var(--bone);
+}
+.soon::backdrop {
+  background: rgba(10, 11, 13, 0.72);
+}
+.soon:target {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  height: fit-content;
+}
+.soon .mono {
+  color: var(--signal);
+}
+.soon h2 {
+  margin: 10px 0 12px;
+}
+.soon p {
+  color: var(--stone-light);
+  margin-bottom: 24px;
+}
 .cta-band {
   background: var(--ink);
   border-top: 1px solid var(--line-dark);

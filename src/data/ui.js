@@ -18,6 +18,13 @@ export const ui = {
     emailLink: 'Email Ben',
     rssTitle: 'Ben Velazquez — Weekly Insights',
     ogAlt: 'Ben Velazquez — Performance Rehabilitation, New York City, Tampa and Puerto Rico',
+    soon: {
+      kicker: 'The Ben Velazquez Podcast',
+      heading: 'Coming soon.',
+      body: 'The first episodes are in production. They will be announced here and in the weekly insights.',
+      close: 'Close',
+      insights: 'Read the insights',
+    },
     nav: {
       home: 'Home',
       about: 'About',
@@ -77,6 +84,13 @@ export const ui = {
     emailLink: 'Escribir a Ben',
     rssTitle: 'Ben Velazquez — Insights semanales',
     ogAlt: 'Ben Velazquez — Rehabilitación de alto rendimiento, Nueva York, Tampa y Puerto Rico',
+    soon: {
+      kicker: 'El Podcast de Ben Velazquez',
+      heading: 'Muy pronto.',
+      body: 'Los primeros episodios están en producción. Los anunciaremos aquí y en los artículos semanales.',
+      close: 'Cerrar',
+      insights: 'Leer los artículos',
+    },
     nav: {
       home: 'Inicio',
       about: 'Sobre Ben',

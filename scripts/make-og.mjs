@@ -20,7 +20,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createRequire } from 'node:module';
 
 import { site, routes } from '../src/data/site.js';
-import { insights } from '../src/data/insights.js';
+import { allInsights as insights } from '../src/data/insights.js';
 import { content as contentEn } from '../src/data/content.en.js';
 import { content as contentEs } from '../src/data/content.es.js';
 import { plain, esc } from '../src/lib/html.js';

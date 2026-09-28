@@ -20,6 +20,20 @@
  *   npm run build:staging     # same thing, shorter
  */
 const PRODUCTION_ORIGIN = 'https://www.benvelazquez.com';
+
+/**
+ * The moment this build represents. Scheduled insights go live and the
+ * open-spots count rolls over based on it; the deploy workflow rebuilds
+ * every Monday and on the 1st of the month so both stay current.
+ * BUILD_DATE=2026-11-02 npm run build   previews a future build.
+ */
+export const BUILD_DATE = new Date(process.env.BUILD_DATE || Date.now());
+
+/** Open roster spots cycle 5 → 4 → 3 month by month (September 2026 = 5). */
+function openSpotsFor(date) {
+  const months = date.getUTCFullYear() * 12 + date.getUTCMonth() - (2026 * 12 + 8);
+  return [5, 4, 3][((months % 3) + 3) % 3];
+}
 const ORIGIN = (process.env.SITE_ORIGIN || PRODUCTION_ORIGIN).replace(/\/+$/, '');
 
 export const site = {
@@ -73,11 +87,9 @@ export const site = {
     beingMariano: 'https://www.amazon.com/BEING-Mariano-Rivera-Season-1/dp/B00G4B073O',
     concussionFoundation: 'https://concussionfoundation.org/',
     // Placeholders — swap for the live URLs when they are ready.
-    executiveReset: '#',
-    podcast: '#',
-    // Concussion page "Remote assessment": CLFC's self-assessment app. The
-    // results come to Ben by text and email for review.
-    remoteAssessment: '#',
+    // The podcast has not launched: every podcast link opens the Coming soon
+    // dialog (layout.js + site.js) instead of a player.
+    podcast: '#coming-soon',
     gtg: '#',
     p2717: '#',
     superpatch: '#',
@@ -111,7 +123,7 @@ export const site = {
   // Roster scarcity numbers surface in several places; keep them in one spot.
   roster: {
     conciergeSeats: 7,
-    openSpots: 5,
+    openSpots: openSpotsFor(BUILD_DATE),
   },
 
   pricing: {

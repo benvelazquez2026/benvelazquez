@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+  # Rebuild so scheduled insights publish on their date and the monthly
+  # open-spots count rolls over: every Monday, and on the 1st of each month.
+  schedule:
+    - cron: '0 11 * * 1'
+    - cron: '0 11 1 * *'
 
 concurrency:
   group: deploy-${{ github.ref }}

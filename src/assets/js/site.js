@@ -52,6 +52,30 @@
     }).observe(heroVideo);
   }
 
+  /* ---- Coming soon dialog ------------------------------------------------ */
+  // Every podcast link (nav, footer, related links, Listen buttons) opens the
+  // dialog until episodes exist.
+  var soon = document.getElementById('coming-soon');
+  if (soon && typeof soon.showModal === 'function') {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a');
+      if (!a) return;
+      if (a.hasAttribute('data-soon-close')) {
+        e.preventDefault();
+        soon.close();
+        return;
+      }
+      var path = a.getAttribute('href') || '';
+      if (path === '#coming-soon' || /^\/(es\/)?podcast\/?$/.test(path)) {
+        e.preventDefault();
+        soon.showModal();
+      }
+    });
+    soon.addEventListener('click', function (e) {
+      if (e.target === soon) soon.close(); // backdrop click
+    });
+  }
+
   /* ---- Reveal on scroll ------------------------------------------------- */
   var reveals = document.querySelectorAll('.reveal');
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -103,6 +127,13 @@
      failure the inline error tells the visitor to email instead, so a lead
      is never silently lost. */
   var form = document.getElementById('applyForm');
+  // ?interest=concussion (etc.) preselects the matching goal option.
+  var goal = document.getElementById('f-goal');
+  var interest = /[?&]interest=([a-z]+)/.exec(location.search);
+  if (goal && interest) {
+    var match = goal.querySelector('option[data-key="' + interest[1] + '"]');
+    if (match) goal.value = match.value;
+  }
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();

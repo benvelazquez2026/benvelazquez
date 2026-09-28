@@ -405,7 +405,7 @@ function llmsIndex() {
 - The Executive Reset — $${site.pricing.resetDisplay} one-time, self-guided ELDOA and mobility program
 - Core: Executive Performance — $${site.pricing.core.toLocaleString(
     'en-US',
-  )}/month, by application, quarterly commitment, 4 virtual sessions/month, custom programming, bounded async access, quarterly reassessment
+  )}/month, by application, billed monthly with a three-month minimum, 4 virtual sessions/month (30–45 min), custom programming, bounded async access, quarterly reassessment
 - Concierge: Private Performance — $${site.pricing.concierge.toLocaleString(
     'en-US',
   )}/month plus travel at cost, by application, capped at ${site.roster.conciergeSeats} positions, requires an in-person Performance Day from $${site.pricing.performanceDay.toLocaleString(

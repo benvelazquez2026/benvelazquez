@@ -24,6 +24,7 @@ import {
   videoGrid,
   cardGrid,
   tierGrid,
+  bespokeBand,
   ctaBand,
   relatedLinks,
   proofStrip,
@@ -158,6 +159,7 @@ ${cardGrid(c.who.cards, locale)}
 <div class="wrap">
 ${sectionHead({ kicker: c.programs.kicker, heading: esc(c.programs.heading), lede: esc(c.programs.lede) })}
 ${tierGrid(content.programs.tiers, locale)}
+${bespokeBand(content.programs.bespoke, locale)}
 <p class="reveal" style="text-align:center;margin-top:26px">
 <span class="signal">${esc(c.programs.note)}</span>
 </p>
@@ -521,6 +523,7 @@ ${answerSection(page, locale)}
 <section class="block" style="padding-top:0">
 <div class="wrap">
 ${tierGrid(page.tiers, locale, 2)}
+${bespokeBand(page.bespoke, locale)}
 <p class="reveal" style="text-align:center;margin-top:26px"><span class="signal">${esc(page.note)}</span></p>
 </div>
 </section>
@@ -725,6 +728,9 @@ ${page.cta ? ctaBand({ ...page.cta, locale }) : ''}`;
 /* Apply (form)                                                         */
 /* ------------------------------------------------------------------ */
 
+/** Stable keys for the goal options, so links can preselect one: /apply/?interest=concussion */
+const GOAL_KEYS = ['executive', 'athlete', 'concussion', 'bespoke', 'unsure'];
+
 export function buildApply({ locale, page }) {
   const f = page.form;
 
@@ -764,10 +770,30 @@ ${each(
 <label for="f-email">${esc(f.email)}</label>
 <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="${esc(f.emailPh)}">
 </div>
+<div class="field-row">
+<div class="field">
+<label for="f-phone">${esc(f.phone)} <span class="opt">${esc(f.optional)}</span></label>
+<input type="tel" id="f-phone" name="phone" autocomplete="tel" placeholder="${esc(f.phonePh)}">
+</div>
+<div class="field">
+<label for="f-whatsapp">WhatsApp <span class="opt">${esc(f.optional)}</span></label>
+<input type="tel" id="f-whatsapp" name="whatsapp" placeholder="${esc(f.phonePh)}">
+</div>
+</div>
+<div class="field">
+<label for="f-assistant">${esc(f.assistant)} <span class="opt">${esc(f.optional)}</span></label>
+<input type="email" id="f-assistant" name="assistant_email" placeholder="${esc(f.assistantPh)}">
+</div>
 <div class="field">
 <label for="f-goal">${esc(f.goal)}</label>
 <select id="f-goal" name="goal">
-${each(f.options, (o) => `<option value="${esc(o)}">${esc(o)}</option>`)}
+${each(f.options, (o, i) => `<option value="${esc(o)}" data-key="${esc(GOAL_KEYS[i] || '')}">${esc(o)}</option>`)}
+</select>
+</div>
+<div class="field">
+<label for="f-billing">${esc(f.billing)}</label>
+<select id="f-billing" name="billing">
+${each(f.billingOptions, (o) => `<option value="${esc(o)}">${esc(o)}</option>`)}
 </select>
 </div>
 <div class="field">

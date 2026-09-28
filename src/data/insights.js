@@ -9,9 +9,16 @@
  * Every post carries: an answer-first summary (`answer`), long-form `body`,
  * and its own `faqs` — so each article is independently competitive in
  * search and independently quotable by answer engines.
+ *
+ * Scheduling: posts dated in the future are written and committed ahead of
+ * time but stay hidden — no page, listing, feed or sitemap entry — until
+ * the build date passes their `date`. The deploy workflow rebuilds every
+ * Monday, so a post dated for a Monday goes live that morning.
  */
 
-export const insights = [
+import { BUILD_DATE } from './site.js';
+
+export const allInsights = [
   {
     slug: { en: 'treat-your-career-like-a-sport', es: 'trata-tu-carrera-como-un-deporte' },
     date: '2026-07-07',
@@ -404,3 +411,8 @@ export const insights = [
     },
   },
 ];
+
+/** Published posts only, newest first. Everything on the site uses this. */
+export const insights = allInsights
+  .filter((post) => new Date(`${post.date}T00:00:00Z`) <= BUILD_DATE)
+  .sort((a, b) => b.date.localeCompare(a.date));

@@ -169,7 +169,7 @@ export const content = {
         q: '¿Cuánto cuesta trabajar con Ben?',
         a: `<p>Hay tres niveles. El Executive Reset es un programa autoguiado de $${site.pricing.resetDisplay} en pago único. Core Executive Performance cuesta $${site.pricing.core.toLocaleString(
           'en-US',
-        )}/mes con compromiso trimestral. Concierge Private Performance cuesta $${site.pricing.concierge.toLocaleString(
+        )}/mes, con facturación mensual y un mínimo de tres meses. Concierge Private Performance cuesta $${site.pricing.concierge.toLocaleString(
           'en-US',
         )}/mes más viajes a costo, previa solicitud, limitado a ${site.roster.conciergeSeats} lugares, y comienza con un Performance Day obligatorio desde $${site.pricing.performanceDay.toLocaleString(
           'en-US',
@@ -206,12 +206,12 @@ export const content = {
     answerPhoto: { slug: 'executive-answer', width: 384, height: 384, alt: 'Un grupo de atletas de pie en un antiguo gimnasio iluminado por el sol que entra por altos ventanales' },
     answer: [
       'El coaching de rendimiento ejecutivo con Ben Velazquez es un programa privado y basado en la evaluación para profesionales sénior que viajan constantemente y pasan sentados la mayor parte del día. Combina descompresión vertebral con ELDOA, trabajo de fascia y programación de fuerza en una rutina que cabe en una habitación de hotel y en un hueco de quince minutos.',
-      'La membresía Core cuesta $2,300 al mes con compromiso trimestral e incluye cuatro sesiones virtuales, programación personalizada actualizada cada mes, acceso asincrónico acotado con respuesta en 24 horas en días hábiles y reevaluación trimestral. Los lugares son previa solicitud: Ben selecciona personalmente a cada cliente, y cada lugar empieza con una llamada introductoria gratuita de 20 minutos.',
+      'La membresía Core cuesta $2,300 al mes, con facturación mensual y un mínimo de tres meses, e incluye cuatro sesiones virtuales de 30 a 45 minutos, programación personalizada actualizada cada mes, acceso asincrónico acotado con respuesta en 24 horas en días hábiles y reevaluación trimestral. Los lugares son previa solicitud: Ben selecciona personalmente a cada cliente, y cada lugar empieza con una llamada introductoria gratuita de 20 minutos.',
     ],
     facts: [
-      { k: 'Formato', v: 'Virtual mundial · presencial en NYC, Tampa y Puerto Rico' },
+      { k: 'Formato', v: 'Virtual mundial · presencial donde usted esté o en las oficinas de Ben en NYC, Tampa y Puerto Rico' },
       { k: 'Inversión Core', v: '$2,300 / mes' },
-      { k: 'Compromiso', v: 'Trimestral' },
+      { k: 'Facturación', v: 'Mensual · mínimo de tres meses' },
       { k: 'Punto de entrada', v: 'Llamada introductoria gratuita (20 min)' },
       { k: 'Idiomas', v: 'Inglés · Español' },
       { k: 'Admisión', v: 'Previa solicitud · Ben selecciona a cada cliente' },
@@ -315,7 +315,27 @@ export const content = {
       },
       {
         q: '¿Hay un compromiso mínimo?',
-        a: '<p>Core funciona con compromiso trimestral. Es deliberado: el cambio estructural se mide en meses, y un ciclo más corto no daría tiempo suficiente para que el trabajo aparezca en la reevaluación.</p>',
+        a: '<p>Sí: tres meses. Core y Concierge se facturan mensualmente con un mínimo de tres meses. Es deliberado: el cambio estructural se mide en meses, y un ciclo más corto no daría tiempo suficiente para que el trabajo aparezca en la reevaluación. Después, usted decide si continúa.</p>',
+      },
+      {
+        q: '¿Cuánto dura cada sesión?',
+        a: '<p>Las sesiones virtuales duran de 30 a 45 minutos. Las sesiones presenciales duran una hora.</p>',
+      },
+      {
+        q: '¿Cómo funciona la facturación?',
+        a: '<p>Core y Concierge se facturan mensualmente, con un mínimo de tres meses. Al terminar los primeros tres meses, usted decide si continúa. Podemos facturarle a usted personalmente o a su empresa; indíquelo en la solicitud.</p>',
+      },
+      {
+        q: '¿Cuál es la política de cancelación?',
+        a: '<p>Las sesiones virtuales pueden moverse o cancelarse con 24 horas de antelación. Las sesiones y visitas presenciales requieren una semana de aviso.</p>',
+      },
+      {
+        q: '¿Dónde se realizan las sesiones presenciales?',
+        a: '<p>Donde le resulte más cómodo. Ben viaja hasta usted, o puede entrenar en sus oficinas de Nueva York, Tampa o Puerto Rico.</p>',
+      },
+      {
+        q: '¿Existe una opción más allá de Concierge?',
+        a: '<p>Sí. Los compromisos a medida se construyen por completo en torno a un solo cliente, tras una conversación: Ben viaja con usted, retiros e intensivos en el lugar, o programas para su familia o su equipo directivo, siempre con total confidencialidad. <a href="/es/solicitar/?interest=bespoke#applyForm">Iniciar la conversación</a>.</p>',
       },
       {
         q: '¿Puedo trabajar con Ben en español?',
@@ -480,7 +500,7 @@ export const content = {
       lede: 'Un enfoque integral y en equipo para la recuperación de conmociones cerebrales, centrado no solo en que regreses, sino en mantenerte ahí.',
       ctas: [
         { route: 'apply', label: 'Conoce el programa' },
-        { href: site.links.remoteAssessment, label: 'Evaluación remota', ghost: true },
+        { href: '/es/solicitar/?interest=concussion#applyForm', label: 'Evaluación remota', ghost: true },
       ],
     },
     answer: [
@@ -895,7 +915,7 @@ export const content = {
       ctas: [APPLY_CTA],
     },
     answer: [
-      'Hay tres formas de trabajar con Ben Velazquez. El Executive Reset es un programa autoguiado de ELDOA y movilidad por $297 en pago único. Core Executive Performance cuesta $2,300 al mes con compromiso trimestral, e incluye cuatro sesiones virtuales, programación personalizada y acceso asincrónico acotado. Concierge Private Performance cuesta $6,500 al mes más viajes a costo, limitado a 7 lugares. Core y Concierge son previa solicitud: Ben selecciona personalmente a cada cliente.',
+      'Hay tres formas de trabajar con Ben Velazquez. El Executive Reset es un programa autoguiado de ELDOA y movilidad por $297 en pago único. Core Executive Performance cuesta $2,300 al mes, con facturación mensual y un mínimo de tres meses, e incluye cuatro sesiones virtuales, programación personalizada y acceso asincrónico acotado. Concierge Private Performance cuesta $6,500 al mes más viajes a costo, limitado a 7 lugares. Core y Concierge son previa solicitud: Ben selecciona personalmente a cada cliente.',
       'El nivel Concierge requiere primero un Performance Day presencial: una evaluación y consulta de jornada completa desde $3,000, en pago único. Sea cual sea el nivel, cada lugar en el equipo empieza con una llamada introductoria virtual y gratuita de 20 minutos.',
     ],
     tiers: [
@@ -911,7 +931,7 @@ export const content = {
           'Tuyo para siempre',
         ],
         cta: 'Acceso inmediato',
-        href: site.links.executiveReset,
+        route: 'executive',
         ghost: true,
       },
       {
@@ -923,7 +943,7 @@ export const content = {
         desc: 'Los puntos de contacto justos y acceso real — hecho para el ejecutivo sin tiempo.',
         features: [
           'Evaluación completa (incluida en Core): análisis profundo de movimiento y postura',
-          '4 sesiones virtuales / mes — programación más coaching de ELDOA y rehabilitación',
+          '4 sesiones virtuales / mes (30–45 min) — programación más coaching de ELDOA y rehabilitación',
           'Diseño de programa personalizado, actualizado cada mes, que viaja contigo',
           'Acceso asincrónico acotado — revisiones por voz/texto, respuesta en 24 h en días hábiles',
           'Reevaluación y revisión de progreso trimestral',
@@ -932,7 +952,7 @@ export const content = {
         ],
         cta: 'Solicitar',
         route: 'apply',
-        fine: 'Previa solicitud · Compromiso trimestral. Ideal para ejecutivos que quieren resultados y acceso, no volumen de sesiones.',
+        fine: 'Previa solicitud · Facturación mensual, mínimo de tres meses. Ideal para ejecutivos que quieren resultados y acceso, no volumen de sesiones.',
       },
       {
         step: 'Concierge',
@@ -941,7 +961,8 @@ export const content = {
         desc: 'Máximo acceso. Presencial y virtual combinados — lo más parecido al apoyo que reciben los profesionales.',
         features: [
           'Todo lo de Core',
-          'Presencial y virtual, combinados',
+          'Presencial donde usted esté, o en las oficinas de Ben en NYC, Tampa o Puerto Rico — sesiones de una hora',
+          'Total discreción — confidencialidad y acuerdos de confidencialidad (NDA) como norma',
           'Hasta 8–12 puntos de contacto / mes, agenda prioritaria',
           'Programación ajustada en tiempo real según cambia tu semana',
           'Mayor integración con recuperación, sueño y energía',
@@ -955,6 +976,20 @@ export const content = {
         )}, pago único). Viajes facturados a costo cuando el trabajo es presencial: vuelos (business en trayectos de 3 h+), transporte terrestre y hotel.`,
       },
     ],
+    bespoke: {
+      step: 'Más allá de Concierge',
+      name: 'A medida',
+      price: 'Tras una conversación',
+      desc: 'Para cuando el trabajo tiene que ir a donde usted vaya. Construido por completo en torno a un solo cliente y, si lo desea, a las personas de su entorno.',
+      features: [
+        'Ben viaja con usted: de gira, en locación, en su casa',
+        'Retiros en el lugar y bloques intensivos de entrenamiento',
+        'Programas para su familia o su equipo directivo',
+        'Total discreción: confidencialidad y NDA como norma',
+      ],
+      cta: 'Iniciar la conversación',
+      href: '/es/solicitar/?interest=bespoke#applyForm',
+    },
     prereq: {
       kicker: 'Requisito obligatorio',
       heading: 'Performance Day ($3,000, solo Concierge)',
@@ -969,7 +1004,7 @@ export const content = {
         q: '¿Cuánto cuesta trabajar con Ben Velazquez?',
         a: `<p>El Executive Reset cuesta $${site.pricing.resetDisplay} en pago único. Core Executive Performance cuesta $${site.pricing.core.toLocaleString(
           'en-US',
-        )} al mes con compromiso trimestral. Concierge Private Performance cuesta $${site.pricing.concierge.toLocaleString(
+        )} al mes, con facturación mensual y un mínimo de tres meses. Concierge Private Performance cuesta $${site.pricing.concierge.toLocaleString(
           'en-US',
         )} al mes más viajes a costo, y requiere un Performance Day único desde $${site.pricing.performanceDay.toLocaleString(
           'en-US',
@@ -990,6 +1025,26 @@ export const content = {
       {
         q: '¿Los viajes están incluidos en el precio Concierge?',
         a: '<p>No. Cuando se requiere trabajo presencial, los viajes se facturan a costo: vuelos (clase business en trayectos de más de tres horas), transporte terrestre y hotel.</p>',
+      },
+      {
+        q: '¿Cuánto dura cada sesión?',
+        a: '<p>Las sesiones virtuales duran de 30 a 45 minutos. Las sesiones presenciales duran una hora.</p>',
+      },
+      {
+        q: '¿Cómo funciona la facturación?',
+        a: '<p>Core y Concierge se facturan mensualmente, con un mínimo de tres meses. Al terminar los primeros tres meses, usted decide si continúa. Podemos facturarle a usted personalmente o a su empresa; indíquelo en la solicitud.</p>',
+      },
+      {
+        q: '¿Cuál es la política de cancelación?',
+        a: '<p>Las sesiones virtuales pueden moverse o cancelarse con 24 horas de antelación. Las sesiones y visitas presenciales requieren una semana de aviso.</p>',
+      },
+      {
+        q: '¿Dónde se realizan las sesiones presenciales?',
+        a: '<p>Donde le resulte más cómodo. Ben viaja hasta usted, o puede entrenar en sus oficinas de Nueva York, Tampa o Puerto Rico.</p>',
+      },
+      {
+        q: '¿Existe una opción más allá de Concierge?',
+        a: '<p>Sí. Los compromisos a medida se construyen por completo en torno a un solo cliente, tras una conversación: Ben viaja con usted, retiros e intensivos en el lugar, o programas para su familia o su equipo directivo, siempre con total confidencialidad. <a href="/es/solicitar/?interest=bespoke#applyForm">Iniciar la conversación</a>.</p>',
       },
       {
         q: '¿Puedo cambiar de nivel más adelante?',
@@ -1156,7 +1211,7 @@ export const content = {
           },
           {
             q: '¿Para quién no es esto?',
-            a: '<p>Para quien busca volumen de sesiones en lugar de resultados, o una solución rápida. El cambio estructural se mide en meses, y por eso Core funciona con compromiso trimestral.</p>',
+            a: '<p>Para quien busca volumen de sesiones en lugar de resultados, o una solución rápida. El cambio estructural se mide en meses, y por eso Core tiene un mínimo de tres meses.</p>',
           },
         ],
       },
@@ -1167,7 +1222,7 @@ export const content = {
             q: '¿Cuánto cuestan los programas?',
             a: `<p>El Executive Reset cuesta $${site.pricing.resetDisplay} en pago único. Core Executive Performance cuesta $${site.pricing.core.toLocaleString(
               'en-US',
-            )}/mes con compromiso trimestral. Concierge Private Performance cuesta $${site.pricing.concierge.toLocaleString(
+            )}/mes, con facturación mensual y un mínimo de tres meses. Concierge Private Performance cuesta $${site.pricing.concierge.toLocaleString(
               'en-US',
             )}/mes más viajes a costo, previa solicitud, limitado a ${site.roster.conciergeSeats} lugares, y requiere un Performance Day único desde $${site.pricing.performanceDay.toLocaleString(
               'en-US',
@@ -1181,7 +1236,7 @@ export const content = {
           },
           {
             q: '¿Hay compromiso mínimo?',
-            a: '<p>Core funciona por trimestres. El cambio estructural tarda meses en aparecer en una reevaluación, y un ciclo más corto no le daría una prueba justa al trabajo.</p>',
+            a: '<p>Tres meses. Core se factura mensualmente con un mínimo de tres meses, porque el cambio estructural tarda meses en aparecer en una reevaluación. Después, usted decide si continúa.</p>',
           },
           {
             q: '¿Cuántas sesiones incluye?',
@@ -1282,12 +1337,21 @@ export const content = {
       email: 'Correo',
       emailPh: 'tu@empresa.com',
       goal: '¿Qué buscas?',
+      phone: 'Teléfono',
+      whatsapp: 'WhatsApp',
+      phonePh: '+1 555 123 4567',
+      optional: '(opcional)',
+      assistant: 'Correo de su asistente',
+      assistantPh: 'asistente@empresa.com',
       options: [
         'Rendimiento ejecutivo',
         'Rendimiento atlético y rehabilitación',
         'Recuperación de conmociones',
+        'Compromiso privado a medida',
         'Aún no estoy seguro',
       ],
+      billing: '¿A quién facturamos?',
+      billingOptions: ['A mí personalmente', 'A mi empresa'],
       message: 'Algo que quieras que Ben sepa',
       messagePh: 'Unas palabras sobre tus objetivos…',
       submit: 'Enviar mi solicitud',
@@ -1299,7 +1363,7 @@ export const content = {
     faqs: [
       {
         q: '¿Qué ocurre después de enviar mi solicitud?',
-        a: '<p>Recibirás respuesta con los siguientes pasos. Si parece encajar, reservamos la llamada introductoria virtual y gratuita de 20 minutos; si no encaja, te lo diremos directamente en lugar de dejarte esperando.</p>',
+        a: '<p>Recibirá una respuesta en un plazo de tres días hábiles. Si parece encajar, reservamos la llamada introductoria virtual y gratuita de 20 minutos; si no encaja, te lo diremos directamente en lugar de dejarte esperando.</p>',
       },
       {
         q: '¿La llamada introductoria es realmente gratuita?',

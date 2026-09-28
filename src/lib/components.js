@@ -284,6 +284,20 @@ ${tier.fine ? `<p class="fine">${tier.fine}</p>` : ''}
 </div>`;
 }
 
+/** Full-width offer beneath the tier ladder: the tier above Concierge. */
+export function bespokeBand(b, locale = 'en') {
+  if (!b) return '';
+  return `<article class="bespoke reveal">
+<div>
+<span class="step">${esc(b.step)}</span>
+<h3 class="h3">${esc(b.name)} <span class="price">${esc(b.price)}</span></h3>
+<p class="desc">${esc(b.desc)}</p>
+</div>
+<ul>${each(b.features, (f) => `<li>${esc(f)}</li>`)}</ul>
+<a class="btn btn-primary" href="${esc(b.href)}">${esc(b.cta)}</a>
+</article>`;
+}
+
 /** Closing conversion band, appended to nearly every page. */
 export function ctaBand({ kicker, heading, body, ctas, locale = 'en' }) {
   return `<section class="block cta-band">

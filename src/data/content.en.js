@@ -174,7 +174,7 @@ export const content = {
       },
       {
         q: 'What does it cost to work with Ben?',
-        a: `<p>There are three tiers. The Executive Reset is a self-guided program at $${site.pricing.resetDisplay} one-time. Core Executive Performance is $${site.pricing.core.toLocaleString('en-US')}/month on a quarterly commitment. Concierge Private Performance is $${site.pricing.concierge.toLocaleString('en-US')}/month plus travel at cost, by application, limited to ${site.roster.conciergeSeats} positions, and begins with a required Performance Day from $${site.pricing.performanceDay.toLocaleString('en-US')}. Full detail is on the <a href="/programs/">programs page</a>.</p>`,
+        a: `<p>There are three tiers. The Executive Reset is a self-guided program at $${site.pricing.resetDisplay} one-time. Core Executive Performance is $${site.pricing.core.toLocaleString('en-US')}/month, billed monthly with a three-month minimum. Concierge Private Performance is $${site.pricing.concierge.toLocaleString('en-US')}/month plus travel at cost, by application, limited to ${site.roster.conciergeSeats} positions, and begins with a required Performance Day from $${site.pricing.performanceDay.toLocaleString('en-US')}. Full detail is on the <a href="/programs/">programs page</a>.</p>`,
       },
     ],
     related: [
@@ -207,12 +207,12 @@ export const content = {
     answerPhoto: { slug: 'executive-answer', width: 384, height: 384, alt: 'A group of athletes standing in a sunlit old gymnasium, light streaming through tall arched windows' },
     answer: [
       'Executive performance coaching with Ben Velazquez is a private, assessment-led program for senior professionals who travel constantly and sit for most of the day. It combines ELDOA spinal decompression, fascia work and strength programming into a routine that fits a hotel room and a fifteen-minute gap.',
-      'Core membership is $2,300 per month on a quarterly commitment and includes four virtual sessions, custom programming refreshed monthly, bounded async access with a 24-hour weekday response, and quarterly reassessment. Places are by application: Ben personally selects every client, and each place begins with a free 20-minute intro call.',
+      'Core membership is $2,300 per month, billed monthly with a three-month minimum, and includes four 30–45 minute virtual sessions, custom programming refreshed monthly, bounded async access with a 24-hour weekday response, and quarterly reassessment. Places are by application: Ben personally selects every client, and each place begins with a free 20-minute intro call.',
     ],
     facts: [
-      { k: 'Format', v: 'Virtual worldwide · in person in NYC, Tampa & Puerto Rico' },
+      { k: 'Format', v: 'Virtual worldwide · in person at your location or Ben’s offices in NYC, Tampa & Puerto Rico' },
       { k: 'Core investment', v: '$2,300 / month' },
-      { k: 'Commitment', v: 'Quarterly' },
+      { k: 'Billing', v: 'Monthly · three-month minimum' },
       { k: 'Entry point', v: 'Free intro call (20 min)' },
       { k: 'Languages', v: 'English · Spanish' },
       { k: 'Admission', v: 'By application · Ben selects every client' },
@@ -316,7 +316,27 @@ export const content = {
       },
       {
         q: 'Is there a minimum commitment?',
-        a: '<p>Core runs on a quarterly commitment. That is deliberate: structural change is measured in months, and a shorter cycle would not give the work enough time to show up in the reassessment.</p>',
+        a: '<p>Yes: three months. Core and Concierge are billed monthly with a three-month minimum. That is deliberate — structural change is measured in months, and a shorter cycle would not give the work enough time to show up in the reassessment. After that, you choose whether to continue.</p>',
+      },
+      {
+        q: 'How long is each session?',
+        a: '<p>Virtual sessions run 30 to 45 minutes. In-person sessions are one hour.</p>',
+      },
+      {
+        q: 'How does billing work?',
+        a: '<p>Core and Concierge are billed monthly, with a three-month minimum. After the first three months you choose whether to continue. We can bill you personally or your company — just note which on the application.</p>',
+      },
+      {
+        q: 'What is the cancellation policy?',
+        a: '<p>Virtual sessions can be moved or cancelled with 24 hours’ notice. In-person sessions and visits need one week’s notice.</p>',
+      },
+      {
+        q: 'Where do in-person sessions take place?',
+        a: '<p>Wherever suits you. Ben travels to you, or you can train at his offices in New York City, Tampa or Puerto Rico.</p>',
+      },
+      {
+        q: 'Is there an option beyond Concierge?',
+        a: '<p>Yes. Bespoke engagements are built entirely around one client, by conversation: Ben travelling with you, on-site retreats and intensive blocks, or programs for your family or leadership team, all under complete confidentiality. <a href="/apply/?interest=bespoke#applyForm">Start the conversation</a>.</p>',
       },
       {
         q: 'Can I work with Ben in Spanish?',
@@ -479,7 +499,7 @@ export const content = {
       kicker: 'Concussion recovery · NYC · Tampa · Puerto Rico',
       h1: 'Exercise-based concussion solutions, from the onset of injury.',
       lede: 'A holistic, team-based approach to concussion recovery — focused not just on getting you back, but on keeping you there.',
-      ctas: [{ route: 'apply', label: 'Learn about the program' }, { href: site.links.remoteAssessment, label: 'Remote assessment', ghost: true }],
+      ctas: [{ route: 'apply', label: 'Learn about the program' }, { href: '/apply/?interest=concussion#applyForm', label: 'Remote assessment', ghost: true }],
     },
     answer: [
       'Exercise-based concussion recovery uses carefully progressed, sub-symptom-threshold physical activity as an active part of recovery, rather than treating extended complete rest as the default. It is delivered as part of a coordinated team that includes medical oversight.',
@@ -890,7 +910,7 @@ export const content = {
       ctas: [APPLY_CTA],
     },
     answer: [
-      'There are three ways to work with Ben Velazquez. The Executive Reset is a self-guided ELDOA and mobility program at $297 one-time. Core Executive Performance is $2,300 per month on a quarterly commitment, with four virtual sessions, custom programming and bounded async access. Concierge Private Performance is $6,500 per month plus travel at cost, capped at 7 positions. Core and Concierge are both by application: Ben personally selects every client.',
+      'There are three ways to work with Ben Velazquez. The Executive Reset is a self-guided ELDOA and mobility program at $297 one-time. Core Executive Performance is $2,300 per month, billed monthly with a three-month minimum, with four virtual sessions, custom programming and bounded async access. Concierge Private Performance is $6,500 per month plus travel at cost, capped at 7 positions. Core and Concierge are both by application: Ben personally selects every client.',
       'The Concierge track requires an in-person Performance Day first — a full-day evaluation and consultation from $3,000, one-time. Regardless of tier, every place on the team starts with a free 20-minute virtual intro call.',
     ],
     tiers: [
@@ -906,7 +926,7 @@ export const content = {
           'Yours to keep, permanently',
         ],
         cta: 'Get instant access',
-        href: site.links.executiveReset,
+        route: 'executive',
         ghost: true,
       },
       {
@@ -918,7 +938,7 @@ export const content = {
         desc: 'The right touchpoints and real access — built for the time-poor executive.',
         features: [
           'Full assessment (included in Core) — deep movement and postural assessment',
-          '4 virtual sessions / month — programming plus ELDOA and rehab coaching',
+          '4 virtual sessions / month (30–45 min) — programming plus ELDOA and rehab coaching',
           'Custom program design, refreshed monthly, that travels with you',
           'Bounded async access — voice/text form checks, 24h weekday response',
           'Quarterly re-assessment and progress review',
@@ -927,7 +947,7 @@ export const content = {
         ],
         cta: 'Apply',
         route: 'apply',
-        fine: 'By application · Quarterly commitment. Best for executives who want outcomes and access, not session volume.',
+        fine: 'By application · Billed monthly, three-month minimum. Best for executives who want outcomes and access, not session volume.',
       },
       {
         step: 'Concierge',
@@ -936,7 +956,8 @@ export const content = {
         desc: 'Maximum access. In-person and virtual combined — the closest thing to how pros are supported.',
         features: [
           'Everything in Core',
-          'In-person and virtual, combined',
+          'In person at your location, or at Ben’s offices in NYC, Tampa or Puerto Rico — one-hour sessions',
+          'Complete discretion — confidentiality and NDAs as standard',
           'Up to 8–12 touchpoints / month, priority scheduling',
           'Programming adjusted in real time as your week changes',
           'Deeper integration with recovery, sleep and energy',
@@ -950,6 +971,20 @@ export const content = {
         )}, one-time). Travel billed at cost when on-site: flights (business on 3h+), ground transport and hotel.`,
       },
     ],
+    bespoke: {
+      step: 'Beyond Concierge',
+      name: 'Bespoke',
+      price: 'By conversation',
+      desc: 'For when the work has to go wherever you go. Built entirely around one client — and, if you want, the people around you.',
+      features: [
+        'Ben travels with you — on the road, on location, at home',
+        'On-site retreats and intensive training blocks',
+        'Programs for your family or leadership team',
+        'Complete discretion — confidentiality and NDAs as standard',
+      ],
+      cta: 'Start the conversation',
+      href: '/apply/?interest=bespoke#applyForm',
+    },
     prereq: {
       kicker: 'Required prerequisite',
       heading: 'Performance Day ($3,000, Concierge only)',
@@ -964,7 +999,7 @@ export const content = {
         q: 'How much does it cost to work with Ben Velazquez?',
         a: `<p>The Executive Reset is $${site.pricing.resetDisplay} one-time. Core Executive Performance is $${site.pricing.core.toLocaleString(
           'en-US',
-        )} per month on a quarterly commitment. Concierge Private Performance is $${site.pricing.concierge.toLocaleString(
+        )} per month, billed monthly with a three-month minimum. Concierge Private Performance is $${site.pricing.concierge.toLocaleString(
           'en-US',
         )} per month plus travel at cost, and requires a one-time Performance Day from $${site.pricing.performanceDay.toLocaleString(
           'en-US',
@@ -985,6 +1020,26 @@ export const content = {
       {
         q: 'Is travel included in the Concierge price?',
         a: '<p>No. When on-site work is required, travel is billed at cost: flights (business class on journeys over three hours), ground transport and hotel.</p>',
+      },
+      {
+        q: 'How long is each session?',
+        a: '<p>Virtual sessions run 30 to 45 minutes. In-person sessions are one hour.</p>',
+      },
+      {
+        q: 'How does billing work?',
+        a: '<p>Core and Concierge are billed monthly, with a three-month minimum. After the first three months you choose whether to continue. We can bill you personally or your company — just note which on the application.</p>',
+      },
+      {
+        q: 'What is the cancellation policy?',
+        a: '<p>Virtual sessions can be moved or cancelled with 24 hours’ notice. In-person sessions and visits need one week’s notice.</p>',
+      },
+      {
+        q: 'Where do in-person sessions take place?',
+        a: '<p>Wherever suits you. Ben travels to you, or you can train at his offices in New York City, Tampa or Puerto Rico.</p>',
+      },
+      {
+        q: 'Is there an option beyond Concierge?',
+        a: '<p>Yes. Bespoke engagements are built entirely around one client, by conversation: Ben travelling with you, on-site retreats and intensive blocks, or programs for your family or leadership team, all under complete confidentiality. <a href="/apply/?interest=bespoke#applyForm">Start the conversation</a>.</p>',
       },
       {
         q: 'Can I switch tiers later?',
@@ -1151,7 +1206,7 @@ export const content = {
           },
           {
             q: 'Who is this not for?',
-            a: '<p>Anyone looking for session volume rather than outcomes, or for a quick fix. Structural change is measured in months, which is why Core runs on a quarterly commitment.</p>',
+            a: '<p>Anyone looking for session volume rather than outcomes, or for a quick fix. Structural change is measured in months, which is why Core has a three-month minimum.</p>',
           },
         ],
       },
@@ -1162,7 +1217,7 @@ export const content = {
             q: 'What do the programs cost?',
             a: `<p>The Executive Reset is $${site.pricing.resetDisplay} one-time. Core Executive Performance is $${site.pricing.core.toLocaleString(
               'en-US',
-            )}/month on a quarterly commitment. Concierge Private Performance is $${site.pricing.concierge.toLocaleString(
+            )}/month, billed monthly with a three-month minimum. Concierge Private Performance is $${site.pricing.concierge.toLocaleString(
               'en-US',
             )}/month plus travel at cost, by application, capped at ${site.roster.conciergeSeats} positions, and requires a one-time Performance Day from $${site.pricing.performanceDay.toLocaleString(
               'en-US',
@@ -1176,7 +1231,7 @@ export const content = {
           },
           {
             q: 'Is there a minimum commitment?',
-            a: '<p>Core runs quarterly. Structural change takes months to show up in a reassessment, and a shorter cycle would not give the work a fair test.</p>',
+            a: '<p>Three months. Core is billed monthly with a three-month minimum, because structural change takes months to show up in a reassessment. After that, you choose whether to continue.</p>',
           },
           {
             q: 'How many sessions do I get?',
@@ -1277,12 +1332,21 @@ export const content = {
       email: 'Email',
       emailPh: 'you@company.com',
       goal: 'What are you looking for?',
+      phone: 'Phone',
+      whatsapp: 'WhatsApp',
+      phonePh: '+1 555 123 4567',
+      optional: '(optional)',
+      assistant: 'Assistant’s email',
+      assistantPh: 'assistant@company.com',
       options: [
         'Executive performance',
         'Athletic performance & rehab',
         'Concussion recovery',
+        'Bespoke private engagement',
         'Not sure yet',
       ],
+      billing: 'Who should we bill?',
+      billingOptions: ['Me personally', 'My company'],
       message: 'Anything you’d like Ben to know',
       messagePh: 'A few words about your goals…',
       submit: 'Apply for my tryout',
@@ -1294,7 +1358,7 @@ export const content = {
     faqs: [
       {
         q: 'What happens after I apply?',
-        a: '<p>You will hear back with next steps. If it looks like a fit, we book the free 20-minute virtual intro call; if it is not, you will be told directly rather than left waiting.</p>',
+        a: '<p>You will hear back within three business days. If it looks like a fit, we book the free 20-minute virtual intro call; if it is not, you will be told directly rather than left waiting.</p>',
       },
       {
         q: 'Is the intro call really free?',

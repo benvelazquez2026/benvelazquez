@@ -116,6 +116,24 @@ ${col(t.footerHeadings.legal, footerNav.legal)}
 </footer>`;
 }
 
+/**
+ * "Coming soon" dialog for features that are not live yet (the podcast).
+ * site.js opens it modally from any podcast link; with JS off, links to
+ * #coming-soon still show it via :target.
+ */
+function soonDialog(locale) {
+  const s = ui[locale].soon;
+  return `<dialog id="coming-soon" class="soon" aria-labelledby="soon-h">
+<span class="mono">${esc(s.kicker)}</span>
+<h2 id="soon-h" class="h3">${esc(s.heading)}</h2>
+<p>${esc(s.body)}</p>
+<div class="hero-cta">
+<a href="${esc(pathFor('insights', locale))}" class="btn btn-primary">${esc(s.insights)}</a>
+<a href="#" class="btn btn-ghost" data-soon-close>${esc(s.close)}</a>
+</div>
+</dialog>`;
+}
+
 function breadcrumbHtml(trail, locale) {
   if (!trail || trail.length < 2) return '';
   const items = each(trail, (item, i) => {
@@ -254,6 +272,7 @@ ${breadcrumbHtml(breadcrumb, locale)}
 ${content}
 </main>
 ${footerHtml(locale)}
+${soonDialog(locale)}
 <script>${JS}</script>
 </body>
 </html>`;
