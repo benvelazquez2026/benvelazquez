@@ -8,7 +8,7 @@
 
 import { site } from './site.js';
 
-const APPLY_CTA = { route: 'apply', label: 'Reserva tu llamada introductoria gratuita' };
+const APPLY_CTA = { route: 'apply', label: 'Reserve su llamada introductoria gratuita' };
 const PROGRAMS_CTA = { route: 'programs', label: 'Ver los programas', ghost: true };
 
 export const content = {
@@ -75,7 +75,7 @@ export const content = {
         {
           idx: 'B',
           heading: 'Atletas',
-          body: 'Recupérate más rápido, muévete mejor y alarga tu carrera. Rehabilitación de rendimiento y prevención de lesiones según cómo funciona realmente tu cuerpo.',
+          body: 'Recupérese más rápido, muévase mejor y alargue su carrera. Rehabilitación de rendimiento y prevención de lesiones según cómo funciona realmente su cuerpo.',
           route: 'athletes',
           link: 'Rendimiento atlético →',
         },
@@ -90,9 +90,9 @@ export const content = {
     },
     programs: {
       kicker: '03 — Programas',
-      heading: 'Empieza donde estás. El acceso crece con el compromiso.',
+      heading: 'Empiece donde está. El acceso crece con el compromiso.',
       lede: 'Un camino claro desde un inicio autoguiado hasta el trabajo privado y directo. Los niveles superiores son intencionalmente limitados.',
-      note: 'Cada lugar en el equipo comienza con una llamada introductoria gratuita.',
+      note: 'Trabajar con Ben comienza con una llamada introductoria gratuita.',
     },
     method: {
       kicker: '04 — Método',
@@ -101,7 +101,7 @@ export const content = {
         {
           n: '01',
           h: 'Evaluar, no adivinar',
-          p: 'Cada programa parte de cómo tu cuerpo realmente se mueve, carga y se recupera — medido, no supuesto.',
+          p: 'Cada programa parte de cómo su cuerpo realmente se mueve, carga y se recupera — medido, no supuesto.',
         },
         {
           n: '02',
@@ -124,19 +124,19 @@ export const content = {
     },
     analysis: {
       kicker: 'Gratis · Previa solicitud',
-      heading: 'Solicita tu lugar en el Executive Roster.',
-      lede: 'Cada lugar en el equipo empieza igual: una llamada introductoria virtual de 20 minutos, gratuita. Encuentro qué está frenando tu cuerpo, y te vas con un plan claro para resolverlo, te unas o no al equipo.',
+      heading: 'Solicite su lugar en el Executive Roster.',
+      lede: 'Trabajar con Ben empieza siempre igual: una llamada introductoria virtual de 20 minutos, gratuita. Encuentro qué está frenando su cuerpo, y usted se va con un plan claro para resolverlo, trabaje o no con Ben después.',
       rows: [
-        { n: '01', b: 'La llamada', t: 'Una evaluación virtual enfocada de 20 minutos sobre cómo te mueves, cargas y te recuperas.' },
+        { n: '01', b: 'La llamada', t: 'Una evaluación virtual enfocada de 20 minutos sobre cómo se mueve, carga y se recupera.' },
         {
           n: '02',
-          b: 'Lo que te llevas',
-          t: 'Un resumen personalizado: las dos o tres cosas que más te limitan y por dónde empezar. Tuyo para siempre.',
+          b: 'Lo que usted se lleva',
+          t: 'Un resumen personalizado: las dos o tres cosas que más le limitan y por dónde empezar. Suyo para siempre.',
         },
-        { n: '03', b: 'La selección', t: 'Si encajas, se te ofrece uno de los pocos lugares disponibles en el roster.' },
+        { n: '03', b: 'La selección', t: 'Si encaja, se le ofrece uno de los pocos lugares disponibles en el roster.' },
       ],
       spots: `Lugares disponibles este mes: ${site.roster.openSpots}`,
-      cta: 'Solicita tu lugar',
+      cta: 'Solicite su lugar',
     },
     insights: {
       kicker: 'Insights semanales',
@@ -159,7 +159,7 @@ export const content = {
       },
       {
         q: '¿Cómo empiezo a trabajar con Ben?',
-        a: '<p>Toda colaboración empieza con una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un resumen personalizado de las dos o tres cosas que más te limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/solicitar/">Solicita tu llamada</a>.</p>',
+        a: '<p>Toda colaboración empieza con una llamada introductoria virtual y gratuita de 20 minutos. Usted se va con un resumen personalizado de las dos o tres cosas que más le limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/solicitar/">Solicite su llamada</a>.</p>',
       },
       {
         q: '¿En qué idiomas entrena Ben?',
@@ -184,8 +184,8 @@ export const content = {
     ],
     cta: {
       kicker: 'El primer paso',
-      heading: 'Cada lugar en el equipo empieza con una llamada introductoria gratuita.',
-      body: 'Veinte minutos, virtual, sin costo. Te vas con un plan que puedes usar, trabajemos juntos o no.',
+      heading: 'Trabajar con Ben empieza con una llamada introductoria gratuita.',
+      body: 'Veinte minutos, virtual, sin costo. Usted se va con un plan que puede usar, trabajemos juntos o no.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -195,12 +195,12 @@ export const content = {
     seo: {
       title: 'Coaching de Rendimiento Ejecutivo en NYC | Ben Velazquez',
       description:
-        'Coaching privado para ejecutivos sin tiempo: ELDOA, descompresión y programación de fuerza que viaja contigo. Nueva York, Tampa, Puerto Rico y virtual.',
+        'Coaching privado para ejecutivos sin tiempo: ELDOA, descompresión y programación de fuerza que viaja con usted. Nueva York, Tampa, Puerto Rico y virtual.',
     },
     hero: {
       kicker: 'Cupos abiertos · Roster limitado',
-      h1: 'Entrena como los profesionales, con una agenda que no se detiene.',
-      lede: 'Energía sostenida en semanas brutales. Libertad del dolor de espalda y cuello del escritorio y los asientos de avión. La misma rehabilitación de rendimiento que mantiene a los atletas profesionales en el campo, adaptada a cómo vives realmente.',
+      h1: 'Entrene como los profesionales, con una agenda que no se detiene.',
+      lede: 'Energía sostenida en semanas brutales. Libertad del dolor de espalda y cuello del escritorio y los asientos de avión. La misma rehabilitación de rendimiento que mantiene a los atletas profesionales en el campo, adaptada a cómo usted vive realmente.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
     answerPhoto: { slug: 'executive-answer', width: 384, height: 384, alt: 'Un grupo de atletas de pie en un antiguo gimnasio iluminado por el sol que entra por altos ventanales' },
@@ -222,8 +222,8 @@ export const content = {
       kicker: 'El problema',
       heading: 'Una hora de entrenamiento no puede con once horas en una silla.',
       body: `<p>La mayoría de los profesionales sénior no está falta de entrenamiento. Está mal recuperada y sobrecomprimida. Once horas al día encorvado frente a una pantalla, cien vuelos al año y el sueño tratado como la variable que cede primero.</p>
-<p>El cuerpo se adapta a la posición que sostiene más tiempo. Por eso el dolor postural rara vez responde a entrenar más fuerte: estás intentando ganarle a once horas con una, y la aritmética no funciona.</p>
-<p>La respuesta no es más volumen. Es precisión: identificar las dos o tres restricciones que realmente te limitan y luego interrumpir el patrón con la frecuencia suficiente para que el cuerpo deje de tratar una silla como su forma predeterminada.</p>`,
+<p>El cuerpo se adapta a la posición que sostiene más tiempo. Por eso el dolor postural rara vez responde a entrenar más fuerte: está intentando ganarle a once horas con una, y la aritmética no funciona.</p>
+<p>La respuesta no es más volumen. Es precisión: identificar las dos o tres restricciones que realmente le limitan y luego interrumpir el patrón con la frecuencia suficiente para que el cuerpo deje de tratar una silla como su forma predeterminada.</p>`,
     },
     outcomes: {
       kicker: 'Qué cambia',
@@ -242,11 +242,11 @@ export const content = {
         {
           idx: '03',
           heading: 'Una rutina que viaja',
-          body: 'Programación diseñada para una habitación de hotel y una maleta de mano. Si necesita gimnasio no la harás, así que no lo necesita.',
+          body: 'Programación diseñada para una habitación de hotel y una maleta de mano. Si necesita gimnasio no la hará, así que no lo necesita.',
         },
         {
           idx: '04',
-          heading: 'Rango que conservas',
+          heading: 'Rango que usted conserva',
           body: 'Movilidad construida con trabajo activo y cargado para que aguante bajo estrés, en lugar de estiramientos pasivos que se pierden el martes.',
         },
         {
@@ -263,22 +263,22 @@ export const content = {
     },
     how: {
       kicker: 'Cómo funciona',
-      heading: 'Cómo es un mes en el equipo.',
+      heading: 'Cómo es un mes trabajando con Ben.',
       steps: [
         {
           n: '01',
           h: 'Evaluación completa (incluida en Core)',
-          p: 'Una evaluación profunda de movimiento y postura establece la línea base: cómo te mueves, cargas y te recuperas, medido y no supuesto.',
+          p: 'Una evaluación profunda de movimiento y postura establece la línea base: cómo se mueve, carga y se recupera, medido y no supuesto.',
         },
         {
           n: '02',
           h: 'Cuatro sesiones virtuales',
-          p: 'Programación, ELDOA y coaching de rehabilitación, agendados según tu semana y no en un horario fijo.',
+          p: 'Programación, ELDOA y coaching de rehabilitación, agendados según su semana y no en un horario fijo.',
         },
         {
           n: '03',
           h: 'Programación que viaja',
-          p: 'Un programa personalizado actualizado cada mes, escrito para el equipamiento que realmente vas a tener.',
+          p: 'Un programa personalizado actualizado cada mes, escrito para el equipamiento que realmente va a tener.',
         },
         {
           n: '04',
@@ -299,11 +299,11 @@ export const content = {
       },
       {
         q: 'Viajo constantemente. ¿Eso lo hace inviable?',
-        a: '<p>Al contrario: las agendas con muchos viajes son justo el caso para el que se construyó este programa. La programación está escrita para funcionar en una habitación de hotel sin equipamiento y las sesiones son virtuales, así que el trabajo se mueve contigo.</p>',
+        a: '<p>Al contrario: las agendas con muchos viajes son justo el caso para el que se construyó este programa. La programación está escrita para funcionar en una habitación de hotel sin equipamiento y las sesiones son virtuales, así que el trabajo se mueve con usted.</p>',
       },
       {
         q: '¿Necesito estar ya en forma?',
-        a: '<p>No. El punto de partida es lo que muestre tu evaluación. Buena parte de los clientes ejecutivos empiezan con restricciones importantes y con años sin entrenar de forma constante.</p>',
+        a: '<p>No. El punto de partida es lo que muestre su evaluación. Buena parte de los clientes ejecutivos empiezan con restricciones importantes y con años sin entrenar de forma constante.</p>',
       },
       {
         q: '¿Cuál es la diferencia entre Core y Concierge?',
@@ -311,7 +311,7 @@ export const content = {
       },
       {
         q: '¿Puedo empezar primero por mi cuenta?',
-        a: `<p>Sí. El Executive Reset es un programa autoguiado de ELDOA y movilidad para profesionales que pasan el día sentados y viajan mucho: de diez a quince minutos al día, sin equipo y tuyo para siempre. Es un pago único de $${site.pricing.resetDisplay}, sin necesidad de solicitud. <a href="/es/programas/">Ver todos los programas</a>.</p>`,
+        a: `<p>Sí. El Executive Reset es un programa autoguiado de ELDOA y movilidad para profesionales que pasan el día sentados y viajan mucho: de diez a quince minutos al día, sin equipo y suyo para siempre. Es un pago único de $${site.pricing.resetDisplay}, sin necesidad de solicitud. <a href="/es/programas/">Ver todos los programas</a>.</p>`,
       },
       {
         q: '¿Hay un compromiso mínimo?',
@@ -350,12 +350,12 @@ export const content = {
       { route: 'programs', label: 'Precios', title: 'Programas y niveles de membresía' },
       { route: 'eldoa', label: 'La práctica', title: 'Qué es ELDOA y cómo funciona' },
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
+      { route: 'apply', label: 'Empiece aquí', title: 'Reserve su llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'Roster limitado',
-      heading: 'Solicita tu lugar en el Executive Roster.',
-      body: `Una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un plan que puedes usar, te unas o no. ${site.roster.openSpots} lugares abiertos este mes.`,
+      heading: 'Solicite su lugar en el Executive Roster.',
+      body: `Una llamada introductoria virtual y gratuita de 20 minutos. Usted se va con un plan que puede usar, trabaje o no con Ben. ${site.roster.openSpots} lugares abiertos este mes.`,
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -378,8 +378,8 @@ export const content = {
       },
       kicker: 'Atletas · Profesionales y en desarrollo',
       h1: 'Recupérate más rápido, muévete mejor, alarga la carrera.',
-      lede: 'Rehabilitación de rendimiento y prevención de lesiones basadas en cómo funciona realmente tu cuerpo — el enfoque que ha mantenido en el campo a atletas de la NFL, la NHL y la MLB.',
-      ctas: [{ route: 'apply', label: 'Comienza tu evaluación' }, PROGRAMS_CTA],
+      lede: 'Rehabilitación de rendimiento y prevención de lesiones basadas en cómo funciona realmente su cuerpo — el enfoque que ha mantenido en el campo a atletas de la NFL, la NHL y la MLB.',
+      ctas: [{ route: 'apply', label: 'Comience su evaluación' }, PROGRAMS_CTA],
     },
     answerPhoto: { slug: 'athletes-answer', widths: [600, 880], width: 880, height: 1100, display: 440, alt: 'Pitcher con uniforme a rayas completando un lanzamiento, con la pierna trasera en alto, frente a un estadio lleno' },
     answer: [
@@ -434,7 +434,7 @@ export const content = {
         {
           idx: '06',
           heading: 'Protocolos de conmoción',
-          body: 'Soluciones de ejercicio para conmociones desde el inicio de la lesión, coordinadas con tu equipo médico.',
+          body: 'Soluciones de ejercicio para conmociones desde el inicio de la lesión, coordinadas con su equipo médico.',
         },
       ],
     },
@@ -444,7 +444,7 @@ export const content = {
         a: '<p>Es la etapa entre la rehabilitación clínica y el entrenamiento de rendimiento deportivo. Primero restaura el equilibrio estructural, la calidad del tejido y las opciones de movimiento; después reconstruye fuerza, potencia y capacidad específica del deporte sobre un cuerpo capaz de expresarlas con seguridad.</p>',
       },
       {
-        q: '¿Trabajas con atletas que no son profesionales?',
+        q: '¿Trabaja con atletas que no son profesionales?',
         a: '<p>Sí. Atletas en desarrollo, universitarios y máster trabajan con el mismo método basado en la evaluación. Lo que cambia es la programación y el volumen, no el estándar de atención.</p>',
       },
       {
@@ -452,7 +452,7 @@ export const content = {
         a: '<p>Sí, y normalmente así ocurre. El trabajo está diseñado para complementar el programa del equipo, no para competir con él, y coordino con el cuerpo técnico cuando el atleta así lo desea.</p>',
       },
       {
-        q: '¿Sustituyes a mi fisioterapeuta?',
+        q: '¿Sustituye a mi fisioterapeuta?',
         a: '<p>No. La rehabilitación de rendimiento acompaña a la atención clínica, no la reemplaza. También coordino el acceso a una red verificada de profesionales de fisioterapia, nutrición y medicina cuando un cliente lo necesita.</p>',
       },
       {
@@ -471,10 +471,10 @@ export const content = {
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
     ],
     cta: {
-      kicker: 'Empieza aquí',
+      kicker: 'Empiece aquí',
       heading: 'Cada programa empieza con una evaluación.',
-      body: 'Una llamada introductoria virtual y gratuita de 20 minutos sobre cómo te mueves, cargas y te recuperas, y un plan claro sobre qué atender primero.',
-      ctas: [{ route: 'apply', label: 'Comienza tu evaluación' }, PROGRAMS_CTA],
+      body: 'Una llamada introductoria virtual y gratuita de 20 minutos sobre cómo se mueve, carga y se recupera, y un plan claro sobre qué atender primero.',
+      ctas: [{ route: 'apply', label: 'Comience su evaluación' }, PROGRAMS_CTA],
     },
   },
 
@@ -497,9 +497,9 @@ export const content = {
       },
       kicker: 'Recuperación de conmociones · NYC · Tampa · Puerto Rico',
       h1: 'Soluciones de ejercicio para conmociones, desde el inicio de la lesión.',
-      lede: 'Un enfoque integral y en equipo para la recuperación de conmociones cerebrales, centrado no solo en que regreses, sino en mantenerte ahí.',
+      lede: 'Un enfoque integral y en equipo para la recuperación de conmociones cerebrales, centrado no solo en que regrese, sino en mantenerle ahí.',
       ctas: [
-        { route: 'apply', label: 'Conoce el programa' },
+        { route: 'apply', label: 'Conozca el programa' },
         { href: '/es/solicitar/?interest=concussion#applyForm', label: 'Evaluación remota', ghost: true },
       ],
     },
@@ -518,7 +518,7 @@ export const content = {
     medical: {
       heading: 'Una nota importante sobre la atención médica',
       body: `<p>La conmoción cerebral es una condición médica. Nada en esta página es consejo médico, y este programa no sustituye la evaluación, el diagnóstico ni el alta por parte de un médico cualificado.</p>
-<p>El trabajo de conmociones basado en ejercicio se entrega como una parte de un equipo coordinado, junto a tus profesionales médicos, no en su lugar. Si has sufrido un golpe en la cabeza, acude primero a un médico. Si presentas dolor de cabeza que empeora, vómitos repetidos, convulsiones, debilidad o entumecimiento, o confusión o somnolencia crecientes, busca atención de urgencia de inmediato.</p>`,
+<p>El trabajo de conmociones basado en ejercicio se entrega como una parte de un equipo coordinado, junto a sus profesionales médicos, no en su lugar. Si ha sufrido un golpe en la cabeza, acuda primero a un médico. Si presenta dolor de cabeza que empeora, vómitos repetidos, convulsiones, debilidad o entumecimiento, o confusión o somnolencia crecientes, busque atención de urgencia de inmediato.</p>`,
     },
     approach: {
       photo: {
@@ -548,7 +548,7 @@ export const content = {
       },
       {
         q: '¿Cuándo puede empezar el ejercicio tras una conmoción?',
-        a: '<p>Es una decisión médica, caso por caso, con tu médico. La práctica actual suele favorecer introducir actividad ligera y controlada antes de lo que permitía el antiguo modelo de reposo completo, pero el momento concreto depende de la persona y de su cuadro clínico.</p>',
+        a: '<p>Es una decisión médica, caso por caso, con su médico. La práctica actual suele favorecer introducir actividad ligera y controlada antes de lo que permitía el antiguo modelo de reposo completo, pero el momento concreto depende de la persona y de su cuadro clínico.</p>',
       },
       {
         q: '¿Para quién es el programa?',
@@ -556,7 +556,7 @@ export const content = {
       },
       {
         q: '¿Quién dirige el programa de conmociones?',
-        a: `<p>Ben Velazquez dirige el programa personalmente. Es un experto reconocido en soluciones de ejercicio para conmociones y coordina un equipo multidisciplinar en torno a cada caso, trabajando junto a tu médico y apoyándose en su red verificada de profesionales de fisioterapia y medicina cuando la recuperación lo requiere. Puedes contactarlo en <a href="mailto:${site.email}">${site.email}</a>.</p>`,
+        a: `<p>Ben Velazquez dirige el programa personalmente. Es un experto reconocido en soluciones de ejercicio para conmociones y coordina un equipo multidisciplinar en torno a cada caso, trabajando junto a su médico y apoyándose en su red verificada de profesionales de fisioterapia y medicina cuando la recuperación lo requiere. Puede contactarlo en <a href="mailto:${site.email}">${site.email}</a>.</p>`,
       },
       {
         q: '¿Qué significa «no solo el regreso, sino mantenerte ahí»?',
@@ -567,14 +567,14 @@ export const content = {
       { route: 'athletes', label: 'Atletas', title: 'Rehabilitación de rendimiento' },
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
       { route: 'results', label: 'Pruebas', title: 'Testimonios y respaldos' },
-      { route: 'contact', label: 'Contacto', title: 'Habla con el equipo' },
+      { route: 'contact', label: 'Contacto', title: 'Hable con Ben' },
     ],
     cta: {
-      kicker: 'Trabaja con Ben',
-      heading: 'Habla con el equipo sobre una recuperación estructurada.',
-      body: 'Cuéntanos sobre la lesión y en qué punto de la recuperación estás, y te explicaremos cómo funciona el programa junto a tu atención médica.',
+      kicker: 'Trabaje con Ben',
+      heading: 'Hable con Ben sobre una recuperación estructurada.',
+      body: 'Cuéntele a Ben sobre la lesión y en qué punto de la recuperación está, y él le explicará cómo funciona el programa junto a su atención médica.',
       ctas: [
-        { route: 'contact', label: 'Contactar al equipo' },
+        { route: 'contact', label: 'Contactar a Ben' },
         { route: 'apply', label: 'Reservar una llamada introductoria', ghost: true },
       ],
     },
@@ -590,7 +590,7 @@ export const content = {
     hero: {
       kicker: 'La práctica',
       h1: 'ELDOA: la práctica diaria por la que juran los atletas de élite.',
-      lede: 'Un sistema de posturas precisas y autoadministradas que descomprimen un segmento vertebral concreto a la vez, usando únicamente tu propia tensión muscular.',
+      lede: 'Un sistema de posturas precisas y autoadministradas que descomprimen un segmento vertebral concreto a la vez, usando únicamente su propia tensión muscular.',
       ctas: [APPLY_CTA, { route: 'method', label: 'Ver el método', ghost: true }],
     },
     answer: [
@@ -607,13 +607,13 @@ export const content = {
     ],
     explainer: {
       kicker: 'Cómo funciona',
-      heading: 'Un segmento a la vez, con tu propia tensión.',
-      body: `<p>La mayoría del estiramiento es regional. Estiras «los isquiotibiales» o «la zona lumbar», y el rango que ganas se reparte entre los segmentos que ya eran más móviles, que normalmente no son los que lo necesitaban.</p>
-<p>ELDOA invierte eso. Cada postura se construye de forma que las cadenas fasciales por encima y por debajo de un segmento elegido queden bajo tensión simultáneamente, creando una descoaptación —espacio— en ese nivel concreto. La posición es precisa, la tensión la generas tú en lugar de aplicarla un terapeuta, y el mantenimiento suele rondar el minuto.</p>
+      heading: 'Un segmento a la vez, con su propia tensión.',
+      body: `<p>La mayoría del estiramiento es regional. Usted estira «los isquiotibiales» o «la zona lumbar», y el rango que gana se reparte entre los segmentos que ya eran más móviles, que normalmente no son los que lo necesitaban.</p>
+<p>ELDOA invierte eso. Cada postura se construye de forma que las cadenas fasciales por encima y por debajo de un segmento elegido queden bajo tensión simultáneamente, creando una descoaptación —espacio— en ese nivel concreto. La posición es precisa, la tensión la genera usted en lugar de aplicarla un terapeuta, y el mantenimiento suele rondar el minuto.</p>
 <h3>Por qué importa la especificidad</h3>
 <p>Si una evaluación muestra que la restricción está en L5–S1, el trabajo general de movilidad lumbar moverá sobre todo los niveles que ya se mueven. Apuntar al segmento realmente restringido es la diferencia entre sentirse más suelto una hora y cambiar algo que se sostiene.</p>
 <h3>Por qué pertenece a la conversación fascial</h3>
-<p>La fascia es continua. Responde a lo que le pides de forma repetida, y por eso once horas al día en una silla son un estímulo de entrenamiento real, y por eso un contraestímulo tiene que ser igual de específico. Mi contribución a <em>Fascia: Clinical Applications for Health and Human Performance</em> sale directamente de este trabajo.</p>
+<p>La fascia es continua. Responde a lo que usted le pide de forma repetida, y por eso once horas al día en una silla son un estímulo de entrenamiento real, y por eso un contraestímulo tiene que ser igual de específico. Mi contribución a <em>Fascia: Clinical Applications for Health and Human Performance</em> sale directamente de este trabajo.</p>
 <h3>Por qué los atletas se quedan con ello</h3>
 <p>No requiere equipamiento, cabe en una habitación de hotel, lleva de diez a quince minutos y puede hacerse a diario sin añadir un costo de recuperación significativo. Para un atleta dentro de una temporada congestionada, esa combinación es rara.</p>`,
     },
@@ -646,7 +646,7 @@ export const content = {
     faqs: [
       {
         q: '¿Qué significa ELDOA?',
-        a: '<p>ELDOA es un acrónimo francés: Étirements Longitudinaux avec Décoaptation Ostéo-Articulaire — estiramientos longitudinales con descoaptación osteoarticular. En la práctica significa crear espacio en una articulación o segmento vertebral concreto usando tu propia tensión muscular.</p>',
+        a: '<p>ELDOA es un acrónimo francés: Étirements Longitudinaux avec Décoaptation Ostéo-Articulaire — estiramientos longitudinales con descoaptación osteoarticular. En la práctica significa crear espacio en una articulación o segmento vertebral concreto usando su propia tensión muscular.</p>',
       },
       {
         q: '¿En qué se diferencia ELDOA del yoga o del estiramiento normal?',
@@ -654,7 +654,7 @@ export const content = {
       },
       {
         q: '¿Cuánto dura una sesión de ELDOA?',
-        a: '<p>Una práctica diaria suele ser de diez a quince minutos: unas pocas posturas de aproximadamente un minuto cada una. La prescripción depende de lo que muestre tu evaluación.</p>',
+        a: '<p>Una práctica diaria suele ser de diez a quince minutos: unas pocas posturas de aproximadamente un minuto cada una. La prescripción depende de lo que muestre su evaluación.</p>',
       },
       {
         q: '¿Con qué frecuencia debo practicar ELDOA?',
@@ -666,7 +666,7 @@ export const content = {
       },
       {
         q: '¿Puedo aprender ELDOA con videos?',
-        a: '<p>Puedes aprender las formas con video, pero el valor está en la precisión y en elegir las posturas correctas para tus restricciones. Aquí el acompañamiento importa más que en la mayoría del trabajo de movilidad, porque una postura mantenida ligeramente mal apunta a un segmento distinto del que pretendías.</p>',
+        a: '<p>Puede aprender las formas con video, pero el valor está en la precisión y en elegir las posturas correctas para sus restricciones. Aquí el acompañamiento importa más que en la mayoría del trabajo de movilidad, porque una postura mantenida ligeramente mal apunta a un segmento distinto del que pretendía.</p>',
       },
       {
         q: '¿Cuánto tardo en notar la diferencia?',
@@ -674,19 +674,19 @@ export const content = {
       },
       {
         q: '¿Dónde puedo aprender ELDOA en Nueva York?',
-        a: '<p>ELDOA es parte central de cada programa que escribo, tanto para atletas como para ejecutivos, presencial en NYC, Tampa y Puerto Rico, o virtual. Toda colaboración empieza con una llamada introductoria gratuita de 20 minutos, que es lo que determina qué posturas necesitas realmente.</p>',
+        a: '<p>ELDOA es parte central de cada programa que escribo, tanto para atletas como para ejecutivos, presencial en NYC, Tampa y Puerto Rico, o virtual. Toda colaboración empieza con una llamada introductoria gratuita de 20 minutos, que es lo que determina qué posturas necesita realmente.</p>',
       },
     ],
     related: [
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
       { route: 'executive', label: 'Para ejecutivos', title: 'Coaching de rendimiento ejecutivo' },
       { route: 'athletes', label: 'Para atletas', title: 'Rehabilitación de rendimiento' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
+      { route: 'apply', label: 'Empiece aquí', title: 'Reserve su llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'Apréndelo bien',
-      heading: 'Las posturas correctas dependen de lo que encuentre tu evaluación.',
-      body: 'Una llamada introductoria gratuita de 20 minutos identifica los segmentos que realmente te limitan, y qué posturas de ELDOA merecen tus diez minutos diarios.',
+      heading: 'Las posturas correctas dependen de lo que encuentre su evaluación.',
+      body: 'Una llamada introductoria gratuita de 20 minutos identifica los segmentos que realmente le limitan, y qué posturas de ELDOA merecen sus diez minutos diarios.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -705,11 +705,11 @@ export const content = {
       },
       kicker: 'El método',
       h1: 'La mayoría del entrenamiento desgasta el cuerpo. Esto lo reconstruye.',
-      lede: 'Tres principios, aplicados en orden, tanto si eres un atleta profesional en temporada congestionada como un ejecutivo en su cuarto vuelo de la semana.',
+      lede: 'Tres principios, aplicados en orden, tanto si es un atleta profesional en temporada congestionada como un ejecutivo en su cuarto vuelo de la semana.',
       ctas: [APPLY_CTA, { route: 'eldoa', label: '¿Qué es ELDOA?', ghost: true }],
     },
     answer: [
-      'El método tiene tres etapas, aplicadas estrictamente en orden. Primero, evaluar: cada programa parte de datos medidos sobre cómo tu cuerpo se mueve, carga y se recupera, no de suposiciones. Segundo, descomprimir: ELDOA y trabajo de fascia atienden las restricciones concretas que encontró la evaluación. Tercero, construir: la fuerza y las cualidades de rendimiento se añaden sobre una estructura capaz de expresarlas.',
+      'El método tiene tres etapas, aplicadas estrictamente en orden. Primero, evaluar: cada programa parte de datos medidos sobre cómo su cuerpo se mueve, carga y se recupera, no de suposiciones. Segundo, descomprimir: ELDOA y trabajo de fascia atienden las restricciones concretas que encontró la evaluación. Tercero, construir: la fuerza y las cualidades de rendimiento se añaden sobre una estructura capaz de expresarlas.',
       'El orden es lo esencial. Añadir carga a una estructura desequilibrada refuerza el desequilibrio. Primero el equilibrio estructural; después las cualidades de rendimiento.',
     ],
     steps: {
@@ -719,7 +719,7 @@ export const content = {
         {
           n: '01',
           h: 'Evaluar, no adivinar',
-          p: 'Una evaluación profunda de movimiento y postura establece qué está realmente restringido, qué lado compensa y cómo te recuperas. Dos personas con síntomas idénticos necesitan con frecuencia programas opuestos, y por eso nada empieza antes de esto.',
+          p: 'Una evaluación profunda de movimiento y postura establece qué está realmente restringido, qué lado compensa y cómo se recupera. Dos personas con síntomas idénticos necesitan con frecuencia programas opuestos, y por eso nada empieza antes de esto.',
         },
         {
           n: '02',
@@ -740,7 +740,7 @@ export const content = {
         {
           idx: '01',
           heading: 'El deporte es deporte. El deporte no es salud.',
-          body: 'Competir y estar sano son objetivos distintos. El trabajo de un preparador físico es llevar primero un atleta sano al campo; el rendimiento es lo que construyes encima.',
+          body: 'Competir y estar sano son objetivos distintos. El trabajo de un preparador físico es llevar primero un atleta sano al campo; el rendimiento es lo que se construye encima.',
         },
         {
           idx: '02',
@@ -772,7 +772,7 @@ export const content = {
     faqs: [
       {
         q: '¿Qué ocurre en la evaluación?',
-        a: '<p>Una valoración estructurada de cómo te mueves, cómo cargas y cómo te recuperas: postura, rango de movimiento, patrones de movimiento, compensaciones e historial de entrenamiento y lesiones. Produce la línea base contra la que se mide todo lo demás.</p>',
+        a: '<p>Una valoración estructurada de cómo se mueve, cómo carga y cómo se recupera: postura, rango de movimiento, patrones de movimiento, compensaciones e historial de entrenamiento y lesiones. Produce la línea base contra la que se mide todo lo demás.</p>',
       },
       {
         q: '¿Por qué importa tanto el orden?',
@@ -795,12 +795,12 @@ export const content = {
       { route: 'eldoa', label: 'La práctica', title: 'Qué es ELDOA y cómo funciona' },
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
       { route: 'programs', label: 'Precios', title: 'Programas y niveles de membresía' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
+      { route: 'apply', label: 'Empiece aquí', title: 'Reserve su llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'Etapa uno',
-      heading: 'Empieza con la evaluación. Esa parte es gratuita.',
-      body: 'Veinte minutos, virtual. Te vas con las dos o tres cosas que más te limitan y por dónde empezar.',
+      heading: 'Empiece con la evaluación. Esa parte es gratuita.',
+      body: 'Veinte minutos, virtual. Usted se va con las dos o tres cosas que más le limitan y por dónde empezar.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -848,11 +848,11 @@ export const content = {
 <h2>Los atletas</h2>
 <p>En veinte años ese enfoque me ha llevado a salas de pesas con atletas de la NFL, la NHL y la MLB —Christian McCaffrey, Derek Carr, Connor McDavid, Max Domi y Jesús Luzardo entre ellos— y al documental <em>Being: Mariano</em> con Mariano Rivera. Los deportes difieren enormemente. El orden de operaciones no.</p>
 <h2>La ciencia</h2>
-<p>La fascia es el hilo conductor. Es continua, se adapta a lo que le pides de forma repetida y explica por qué el trabajo localizado y específico supera al entrenamiento general de movilidad para la mayoría de los problemas que la gente me trae. Ese trabajo condujo a mi contribución a <em>Fascia: Clinical Applications for Health and Human Performance</em>, y es la razón por la que ELDOA está en el centro de casi todos los programas que escribo.</p>
+<p>La fascia es el hilo conductor. Es continua, se adapta a lo que se le pide de forma repetida y explica por qué el trabajo localizado y específico supera al entrenamiento general de movilidad para la mayoría de los problemas que la gente me trae. Ese trabajo condujo a mi contribución a <em>Fascia: Clinical Applications for Health and Human Performance</em>, y es la razón por la que ELDOA está en el centro de casi todos los programas que escribo.</p>
 <h2>Conmociones</h2>
 <p>Trabajo en soluciones de ejercicio para conmociones desde el inicio de la lesión. Tim Fleiszer, Director Ejecutivo de Concussion Legacy Foundation Canada, y yo llevamos más de 15 años trabajando juntos, incluido el trabajo con personal militar a través del programa Operation Brain Health.</p>
 <h2>Enseñanza</h2>
-<p>Más de mil profesionales han pasado por mis seminarios. Enseñar afina el trabajo: no puedes despachar un principio con vaguedades ante una sala de profesionales que lo aplicarán el lunes.</p>
+<p>Más de mil profesionales han pasado por mis seminarios. Enseñar afina el trabajo: no se puede despachar un principio con vaguedades ante una sala de profesionales que lo aplicarán el lunes.</p>
 <h2>Ejecutivos</h2>
 <p>Los métodos que mantienen a un atleta profesional en el campo resultan trasladables casi directamente a personas que se sientan once horas y vuelan cien veces al año. La misma compresión, los mismos patrones de compensación, menos tiempo de recuperación y mucho menos apoyo. Por eso existe el Executive Roster, y por eso se mantiene pequeño.</p>`,
     },
@@ -891,12 +891,12 @@ export const content = {
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
       { route: 'results', label: 'Pruebas', title: 'Testimonios y respaldos' },
       { route: 'podcast', label: 'Escuchar', title: 'El Podcast de Ben Velazquez' },
-      { route: 'contact', label: 'Contacto', title: 'Ponte en contacto' },
+      { route: 'contact', label: 'Contacto', title: 'Póngase en contacto' },
     ],
     cta: {
       kicker: 'Trabajemos juntos',
       heading: 'Toda colaboración empieza igual.',
-      body: 'Una llamada introductoria virtual y gratuita de 20 minutos, y un plan que te quedas, trabajemos juntos o no.',
+      body: 'Una llamada introductoria virtual y gratuita de 20 minutos, y un plan que usted conserva, trabajemos juntos o no.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -910,25 +910,25 @@ export const content = {
     },
     hero: {
       kicker: 'Programas',
-      h1: 'Empieza donde estás. El acceso crece con el compromiso.',
+      h1: 'Empiece donde está. El acceso crece con el compromiso.',
       lede: 'Un camino claro desde un inicio autoguiado hasta el trabajo privado y directo. Los niveles superiores son intencionalmente limitados, y cada lugar comienza con una llamada introductoria gratuita.',
       ctas: [APPLY_CTA],
     },
     answer: [
       'Hay tres formas de trabajar con Ben Velazquez. El Executive Reset es un programa autoguiado de ELDOA y movilidad por $297 en pago único. Core Executive Performance cuesta $2,300 al mes, con facturación mensual y un mínimo de tres meses, e incluye cuatro sesiones virtuales, programación personalizada y acceso asincrónico acotado. Concierge Private Performance cuesta $6,500 al mes más viajes a costo, limitado a 7 lugares. Core y Concierge son previa solicitud: Ben selecciona personalmente a cada cliente.',
-      'El nivel Concierge requiere primero un Performance Day presencial: una evaluación y consulta de jornada completa desde $3,000, en pago único. Sea cual sea el nivel, cada lugar en el equipo empieza con una llamada introductoria virtual y gratuita de 20 minutos.',
+      'El nivel Concierge requiere primero un Performance Day presencial: una evaluación y consulta de jornada completa desde $3,000, en pago único. Sea cual sea el nivel, trabajar con Ben empieza con una llamada introductoria virtual y gratuita de 20 minutos.',
     ],
     tiers: [
       {
         step: 'Inicio',
         name: 'The Executive Reset',
         price: `$${site.pricing.resetDisplay} <small>pago único</small>`,
-        desc: 'Programa autoguiado de ELDOA y movilidad para profesionales de escritorio que viajan mucho. Empieza en minutos.',
+        desc: 'Programa autoguiado de ELDOA y movilidad para profesionales de escritorio que viajan mucho. Empiece en minutos.',
         features: [
           'Secuencias autoguiadas de ELDOA y movilidad',
           'Diseñado para habitaciones de hotel y espacios pequeños — sin equipamiento',
           'De diez a quince minutos al día',
-          'Tuyo para siempre',
+          'Suyo para siempre',
         ],
         cta: 'Acceso inmediato',
         route: 'executive',
@@ -944,7 +944,7 @@ export const content = {
         features: [
           'Evaluación completa (incluida en Core): análisis profundo de movimiento y postura',
           '4 sesiones virtuales / mes (30–45 min) — programación más coaching de ELDOA y rehabilitación',
-          'Diseño de programa personalizado, actualizado cada mes, que viaja contigo',
+          'Diseño de programa personalizado, actualizado cada mes, que viaja con usted',
           'Acceso asincrónico acotado — revisiones por voz/texto, respuesta en 24 h en días hábiles',
           'Reevaluación y revisión de progreso trimestral',
           'Acceso coordinado a la red verificada de Ben — nutrición, fisioterapia, medicina',
@@ -964,7 +964,7 @@ export const content = {
           'Presencial donde usted esté, o en las oficinas de Ben en NYC, Tampa o Puerto Rico — sesiones de una hora',
           'Total discreción — confidencialidad y acuerdos de confidencialidad (NDA) como norma',
           'Hasta 8–12 puntos de contacto / mes, agenda prioritaria',
-          'Programación ajustada en tiempo real según cambia tu semana',
+          'Programación ajustada en tiempo real según cambia su semana',
           'Mayor integración con recuperación, sueño y energía',
           'Acceso directo bajo demanda, dentro de horarios acordados',
         ],
@@ -996,9 +996,9 @@ export const content = {
       body: `<p>Cada lugar Concierge comienza con una evaluación y consulta presencial de jornada completa — desde $${site.pricing.performanceDay.toLocaleString(
         'en-US',
       )}, en pago único.</p>
-<p>Una jornada completa es lo que hace falta para ver cómo se comporta realmente un cuerpo, y no cómo se presenta en una ventana de veinte minutos: el movimiento bajo fatiga, cómo cargas por la tarde frente a por la mañana, y los patrones que solo aparecen cuando dejas de actuar para la evaluación.</p>`,
+<p>Una jornada completa es lo que hace falta para ver cómo se comporta realmente un cuerpo, y no cómo se presenta en una ventana de veinte minutos: el movimiento bajo fatiga, cómo carga por la tarde frente a por la mañana, y los patrones que solo aparecen cuando deja de actuar para la evaluación.</p>`,
     },
-    note: 'Cada lugar en el equipo comienza con una llamada introductoria gratuita.',
+    note: 'Trabajar con Ben comienza con una llamada introductoria gratuita.',
     faqs: [
       {
         q: '¿Cuánto cuesta trabajar con Ben Velazquez?',
@@ -1012,7 +1012,7 @@ export const content = {
       },
       {
         q: '¿Qué incluye la llamada introductoria gratuita?',
-        a: '<p>Una evaluación virtual enfocada de 20 minutos sobre cómo te mueves, cargas y te recuperas, y un resumen personalizado de las dos o tres cosas que más te limitan y por dónde empezar. Es genuinamente gratuito y te lo quedas trabajemos juntos o no.</p>',
+        a: '<p>Una evaluación virtual enfocada de 20 minutos sobre cómo se mueve, carga y se recupera, y un resumen personalizado de las dos o tres cosas que más le limitan y por dónde empezar. Es genuinamente gratuita y usted la conserva, trabajemos juntos o no.</p>',
       },
       {
         q: '¿Por qué el roster Concierge está limitado a 7?',
@@ -1020,7 +1020,7 @@ export const content = {
       },
       {
         q: '¿Qué significa «acceso asincrónico acotado»?',
-        a: '<p>Entre sesiones puedes enviar revisiones de técnica y preguntas por voz o texto, con respuesta en 24 horas en días hábiles. Es acotado y no ilimitado a propósito: eso es lo que mantiene real el tiempo de respuesta.</p>',
+        a: '<p>Entre sesiones puede enviar revisiones de técnica y preguntas por voz o texto, con respuesta en 24 horas en días hábiles. Es acotado y no ilimitado a propósito: eso es lo que mantiene real el tiempo de respuesta.</p>',
       },
       {
         q: '¿Los viajes están incluidos en el precio Concierge?',
@@ -1048,10 +1048,10 @@ export const content = {
       },
       {
         q: '¿Puedo cambiar de nivel más adelante?',
-        a: '<p>Sí. Muchos miembros empiezan en Core y pasan a Concierge cuando una temporada o una agenda exige más acceso. Pasar a Concierge requiere el Performance Day si aún no lo has hecho.</p>',
+        a: '<p>Sí. Muchos miembros empiezan en Core y pasan a Concierge cuando una temporada o una agenda exige más acceso. Pasar a Concierge requiere el Performance Day si aún no lo ha hecho.</p>',
       },
       {
-        q: '¿Ofreces sesiones sueltas?',
+        q: '¿Ofrece sesiones sueltas?',
         a: '<p>No de forma habitual. El cambio estructural se mide en meses, y una sola sesión no puede entregarlo. El Executive Reset existe como un punto de partida autoguiado real para quien no está listo para un compromiso mensual.</p>',
       },
     ],
@@ -1059,7 +1059,7 @@ export const content = {
       { route: 'executive', label: 'Para ejecutivos', title: 'Qué implica el coaching ejecutivo' },
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
       { route: 'faq', label: 'Preguntas', title: 'Preguntas frecuentes' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
+      { route: 'apply', label: 'Empiece aquí', title: 'Reserve su llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'La forma de entrar',
@@ -1113,12 +1113,12 @@ export const content = {
       { route: 'athletes', label: 'Para atletas', title: 'Rehabilitación de rendimiento' },
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
       { route: 'concussion', label: 'Conmociones', title: 'Recuperación con base en el ejercicio' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
+      { route: 'apply', label: 'Empiece aquí', title: 'Reserve su llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'El primer paso',
-      heading: 'El mismo estándar de atención, sea cual sea tu profesión.',
-      body: 'Una llamada introductoria virtual y gratuita de 20 minutos, y un plan que te quedas, trabajemos juntos o no.',
+      heading: 'El mismo estándar de atención, sea cual sea su profesión.',
+      body: 'Una llamada introductoria virtual y gratuita de 20 minutos, y un plan que usted conserva, trabajemos juntos o no.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -1143,7 +1143,7 @@ export const content = {
     faqs: [
       {
         q: '¿Con qué frecuencia se publican nuevos insights?',
-        a: '<p>Casi todas las semanas. Cada uno es un texto breve y autocontenido sobre una única pregunta práctica.</p>',
+        a: '<p>Cada semana. Cada uno es un texto breve y autocontenido sobre una única pregunta práctica.</p>',
       },
       {
         q: '¿Hay feed RSS?',
@@ -1158,12 +1158,12 @@ export const content = {
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
       { route: 'eldoa', label: 'La práctica', title: 'Qué es ELDOA y cómo funciona' },
       { route: 'podcast', label: 'Escuchar', title: 'El Podcast de Ben Velazquez' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
+      { route: 'apply', label: 'Empiece aquí', title: 'Reserve su llamada introductoria gratuita' },
     ],
     cta: {
       kicker: 'Llévalo a la práctica',
       heading: 'Leer sobre esto solo llega hasta cierto punto.',
-      body: 'Una llamada introductoria gratuita de 20 minutos te dice cuáles de estas ideas aplican realmente a tu cuerpo, y en qué orden.',
+      body: 'Una llamada introductoria gratuita de 20 minutos le dice cuáles de estas ideas aplican realmente a su cuerpo, y en qué orden.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -1191,11 +1191,11 @@ export const content = {
         faqs: [
           {
             q: '¿Cómo empiezo a trabajar con Ben Velazquez?',
-            a: '<p>Toda colaboración empieza con una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un resumen personalizado de las dos o tres cosas que más te limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/solicitar/">Solicítalo aquí</a>.</p>',
+            a: '<p>Toda colaboración empieza con una llamada introductoria virtual y gratuita de 20 minutos. Usted se va con un resumen personalizado de las dos o tres cosas que más le limitan y por dónde empezar, trabajemos juntos o no. <a href="/es/solicitar/">Solicítela aquí</a>.</p>',
           },
           {
             q: '¿La llamada introductoria es realmente gratuita?',
-            a: '<p>Sí. Es una evaluación real de 20 minutos, y el plan que te llevas es tuyo, te unas o no al equipo.</p>',
+            a: '<p>Sí. Es una evaluación real de 20 minutos, y el plan que usted se lleva es suyo, trabaje o no con Ben después.</p>',
           },
           {
             q: '¿Trabajo directamente con Ben?',
@@ -1206,7 +1206,7 @@ export const content = {
             a: '<p>Sí. La mayor parte del trabajo ejecutivo es virtual y viaja con el cliente. El trabajo presencial está disponible en Nueva York, Tampa y Puerto Rico, y es parte obligatoria del nivel Concierge.</p>',
           },
           {
-            q: '¿En qué idiomas trabajas?',
+            q: '¿En qué idiomas trabaja Ben?',
             a: '<p>Inglés y español: sesiones, programación y materiales escritos en cualquiera de los dos.</p>',
           },
           {
@@ -1253,7 +1253,7 @@ export const content = {
           },
           {
             q: '¿Qué es ELDOA?',
-            a: '<p>ELDOA — Étirements Longitudinaux avec Décoaptation Ostéo-Articulaire — es un sistema de posturas autoadministradas que crean espacio en una articulación o segmento vertebral concreto usando tu propia tensión muscular. <a href="/es/eldoa/">Explicación completa aquí</a>.</p>',
+            a: '<p>ELDOA — Étirements Longitudinaux avec Décoaptation Ostéo-Articulaire — es un sistema de posturas autoadministradas que crean espacio en una articulación o segmento vertebral concreto usando su propia tensión muscular. <a href="/es/eldoa/">Explicación completa aquí</a>.</p>',
           },
           {
             q: '¿Esto es fisioterapia?',
@@ -1287,12 +1287,12 @@ export const content = {
       { route: 'programs', label: 'Precios', title: 'Programas y niveles de membresía' },
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
       { route: 'eldoa', label: 'La práctica', title: 'Qué es ELDOA y cómo funciona' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
+      { route: 'apply', label: 'Empiece aquí', title: 'Reserve su llamada introductoria gratuita' },
     ],
     cta: {
-      kicker: '¿Aún lo estás pensando?',
+      kicker: '¿Aún lo está pensando?',
       heading: 'La llamada introductoria responde más de lo que puede una página.',
-      body: 'Veinte minutos, virtual, gratis. Te vas con un plan que puedes usar de cualquier manera.',
+      body: 'Veinte minutos, virtual, gratis. Usted se va con un plan que puede usar de cualquier manera.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -1302,41 +1302,41 @@ export const content = {
     seo: {
       title: 'Llamada Introductoria Gratuita (20 min) | Ben Velazquez',
       description:
-        'Solicita una llamada introductoria virtual y gratuita de 20 minutos. Te vas con un plan personalizado, te unas o no al Executive Roster.',
+        'Solicite una llamada introductoria virtual y gratuita de 20 minutos. Se lleva un plan personalizado, se una o no al Executive Roster.',
     },
     hero: {
       kicker: 'Gratis · Previa solicitud',
-      h1: 'Solicita tu lugar en el Executive Roster.',
-      lede: 'Cada lugar en el equipo empieza igual: una llamada introductoria virtual de 20 minutos, gratuita. Encuentro qué está frenando tu cuerpo, y te vas con un plan claro para resolverlo, te unas o no al equipo.',
+      h1: 'Solicite su lugar en el Executive Roster.',
+      lede: 'Trabajar con Ben empieza siempre igual: una llamada introductoria virtual de 20 minutos, gratuita. Encuentro qué está frenando su cuerpo, y usted se va con un plan claro para resolverlo, trabaje o no con Ben después.',
       ctas: [],
     },
     answer: [
-      'La llamada introductoria es una evaluación virtual gratuita de 20 minutos sobre cómo te mueves, cargas y te recuperas. Te vas con un resumen personalizado de las dos o tres cosas que más te limitan y por dónde empezar, tuyo, trabajemos juntos o no.',
-      `Si encajas, se te ofrece uno de los pocos lugares disponibles en el roster. Este mes hay ${site.roster.openSpots} lugares abiertos. Disponible en inglés o español.`,
+      'La llamada introductoria es una evaluación virtual gratuita de 20 minutos sobre cómo se mueve, carga y se recupera. Usted se va con un resumen personalizado de las dos o tres cosas que más le limitan y por dónde empezar, suyo, trabajemos juntos o no.',
+      `Si encaja, se le ofrece uno de los pocos lugares disponibles en el roster. Este mes hay ${site.roster.openSpots} lugares abiertos. Disponible en inglés o español.`,
     ],
     steps: [
-      { n: '01', b: 'La llamada', t: 'Una evaluación virtual enfocada de 20 minutos sobre cómo te mueves, cargas y te recuperas.' },
+      { n: '01', b: 'La llamada', t: 'Una evaluación virtual enfocada de 20 minutos sobre cómo se mueve, carga y se recupera.' },
       {
         n: '02',
-        b: 'Lo que te llevas',
-        t: 'Un resumen personalizado: las dos o tres cosas que más te limitan y por dónde empezar. Tuyo para siempre.',
+        b: 'Lo que usted se lleva',
+        t: 'Un resumen personalizado: las dos o tres cosas que más le limitan y por dónde empezar. Suyo para siempre.',
       },
-      { n: '03', b: 'La selección', t: 'Si encajas, se te ofrece uno de los pocos lugares disponibles en el roster.' },
+      { n: '03', b: 'La selección', t: 'Si encaja, se le ofrece uno de los pocos lugares disponibles en el roster.' },
     ],
     list: [
-      { b: 'Es una evaluación de verdad.', t: 'Te vas con un plan que puedes usar, aunque no trabajemos juntos.' },
-      { b: 'Hecho a tu medida.', t: 'Virtual, presencial o ambos — en inglés o español.' },
+      { b: 'Es una evaluación de verdad.', t: 'Usted se va con un plan que puede usar, aunque no trabajemos juntos.' },
+      { b: 'Hecho a su medida.', t: 'Virtual, presencial o ambos — en inglés o español.' },
       { b: 'Roster limitado.', t: 'Solo acepto a un número reducido de ejecutivos a la vez.' },
     ],
     form: {
-      heading: 'Solicita tu lugar',
+      heading: 'Solicite su lugar',
       // Asunto del correo que entrega Formspree.
       subject: 'Nueva solicitud — llamada introductoria',
       name: 'Nombre',
-      namePh: 'Tu nombre',
+      namePh: 'Su nombre',
       email: 'Correo',
-      emailPh: 'tu@empresa.com',
-      goal: '¿Qué buscas?',
+      emailPh: 'usted@empresa.com',
+      goal: '¿Qué busca?',
       phone: 'Teléfono',
       whatsapp: 'WhatsApp',
       phonePh: '+1 555 123 4567',
@@ -1352,26 +1352,26 @@ export const content = {
       ],
       billing: '¿A quién facturamos?',
       billingOptions: ['A mí personalmente', 'A mi empresa'],
-      message: 'Algo que quieras que Ben sepa',
-      messagePh: 'Unas palabras sobre tus objetivos…',
+      message: 'Algo que quiera que Ben sepa',
+      messagePh: 'Unas palabras sobre sus objetivos…',
       submit: 'Enviar mi solicitud',
       sending: 'Enviando…',
-      ok: 'Gracias — tu solicitud está enviada. Si encajas, te contactaremos para reservar tu llamada introductoria.',
-      err: `Algo falló al enviar. Escribe directamente a ${site.email} y lo retomamos desde ahí.`,
-      note: 'Tus datos se usan únicamente para organizar tu llamada introductoria. Sin listas, sin compartir.',
+      ok: 'Gracias — su solicitud está enviada. Si encaja, le contactaremos para reservar su llamada introductoria.',
+      err: `Algo falló al enviar. Escriba directamente a ${site.email} y lo retomamos desde ahí.`,
+      note: 'Sus datos se usan únicamente para organizar su llamada introductoria. Sin listas, sin compartir.',
     },
     faqs: [
       {
         q: '¿Qué ocurre después de enviar mi solicitud?',
-        a: '<p>Recibirá una respuesta en un plazo de tres días hábiles. Si parece encajar, reservamos la llamada introductoria virtual y gratuita de 20 minutos; si no encaja, te lo diremos directamente en lugar de dejarte esperando.</p>',
+        a: '<p>Recibirá una respuesta en un plazo de tres días hábiles. Si parece encajar, reservamos la llamada introductoria virtual y gratuita de 20 minutos; si no encaja, se lo diremos directamente en lugar de dejarle esperando.</p>',
       },
       {
         q: '¿La llamada introductoria es realmente gratuita?',
-        a: '<p>Sí. Es una evaluación real y el plan que te llevas es tuyo, decidas lo que decidas después.</p>',
+        a: '<p>Sí. Es una evaluación real y el plan que usted se lleva es suyo, decida lo que decida después.</p>',
       },
       {
         q: '¿Necesito equipamiento o un espacio concreto para la llamada?',
-        a: '<p>No, solo espacio suficiente en el suelo para ponerte de pie y moverte un poco, y una cámara que te vea. Sin equipamiento.</p>',
+        a: '<p>No, solo espacio suficiente en el suelo para ponerse de pie y moverse un poco, y una cámara que le vea. Sin equipamiento.</p>',
       },
       {
         q: '¿La llamada introductoria puede hacerse en español?',
@@ -1379,7 +1379,7 @@ export const content = {
       },
       {
         q: '¿Y si no soy ejecutivo?',
-        a: '<p>La misma llamada introductoria es el punto de entrada para atletas y para personas en recuperación de conmociones. Selecciona la opción que corresponda en el formulario.</p>',
+        a: '<p>La misma llamada introductoria es el punto de entrada para atletas y para personas en recuperación de conmociones. Seleccione la opción que corresponda en el formulario.</p>',
       },
     ],
     related: [
@@ -1395,20 +1395,20 @@ export const content = {
     seo: {
       title: 'Contactar a Ben Velazquez — Rehabilitación NYC',
       description:
-        'Ponte en contacto con Ben Velazquez: coaching, programa de conmociones, conferencias y prensa. NYC, Tampa, Puerto Rico y virtual, en inglés o español.',
+        'Póngase en contacto con Ben Velazquez: coaching, programa de conmociones, conferencias y prensa. NYC, Tampa, Puerto Rico y virtual, en inglés o español.',
     },
     hero: {
       kicker: 'Contacto',
-      h1: 'Ponte en contacto.',
-      lede: 'Para consultas de coaching, el programa de conmociones, conferencias, seminarios o prensa — así puedes contactar al equipo.',
+      h1: 'Póngase en contacto.',
+      lede: 'Para consultas de coaching, el programa de conmociones, conferencias, seminarios o prensa — así puede contactar a Ben.',
       ctas: [APPLY_CTA],
     },
     answer: [
-      `La vía más rápida para consultas de coaching es la solicitud de la llamada introductoria gratuita. Para todo lo demás —el programa de conmociones, conferencias, seminarios, prensa o alianzas— escribe a ${site.email}.`,
+      `La vía más rápida para consultas de coaching es la solicitud de la llamada introductoria gratuita. Para todo lo demás —el programa de conmociones, conferencias, seminarios, prensa o alianzas— escriba a ${site.email}.`,
       'Ben tiene su base en Nueva York, Tampa y Puerto Rico, y trabaja virtualmente en todo el mundo, en inglés o español.',
     ],
     facts: [
-      { k: 'Consultas de coaching', v: '<a href="/es/solicitar/">Solicita una llamada introductoria gratuita</a>' },
+      { k: 'Consultas de coaching', v: '<a href="/es/solicitar/">Solicite una llamada introductoria gratuita</a>' },
       { k: 'Correo', v: `<a href="mailto:${site.email}">${site.email}</a>` },
       { k: 'WhatsApp (internacional)', v: `<a href="${site.whatsappUrl}" rel="noopener" target="_blank">${site.whatsapp}</a>` },
       { k: 'Programa de conmociones', v: '<a href="/es/recuperacion-de-conmociones/">Recuperación con ejercicio</a>' },
@@ -1422,20 +1422,20 @@ export const content = {
         a: '<p>Para coaching, la <a href="/es/solicitar/">solicitud de llamada introductoria</a>: entra directamente en la cola de admisión. Para cualquier otra cosa, el correo es la vía más rápida.</p>',
       },
       {
-        q: '¿Aceptas conferencias o seminarios?',
-        a: `<p>Sí. Más de 1,000 profesionales se han formado en los seminarios de Ben. Escribe a <a href="mailto:${site.email}">${site.email}</a> con fechas, público y formato.</p>`,
+        q: '¿Acepta conferencias o seminarios?',
+        a: `<p>Sí. Más de 1,000 profesionales se han formado en los seminarios de Ben. Escriba a <a href="mailto:${site.email}">${site.email}</a> con fechas, público y formato.</p>`,
       },
       {
         q: '¿Cómo pregunto por el programa de conmociones?',
-        a: `<p>Escribe a <a href="mailto:${site.email}">${site.email}</a> e indica que tu consulta es sobre el programa de conmociones.</p>`,
+        a: `<p>Escriba a <a href="mailto:${site.email}">${site.email}</a> e indique que su consulta es sobre el programa de conmociones.</p>`,
       },
       {
-        q: '¿Trabajas con clientes fuera de Estados Unidos?',
-        a: '<p>Sí. El coaching virtual está disponible en todo el mundo, en inglés o español.</p>',
+        q: '¿Trabaja con clientes fuera de Estados Unidos?',
+        a: `<p>Sí. El coaching virtual está disponible en todo el mundo, en inglés o español. Los clientes internacionales también pueden contactar a Ben por WhatsApp al <a href="${site.whatsappUrl}" rel="noopener" target="_blank">${site.whatsapp}</a>.</p>`,
       },
     ],
     related: [
-      { route: 'apply', label: 'Coaching', title: 'Reserva tu llamada introductoria gratuita' },
+      { route: 'apply', label: 'Coaching', title: 'Reserve su llamada introductoria gratuita' },
       { route: 'concussion', label: 'Conmociones', title: 'Recuperación con base en el ejercicio' },
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
       { route: 'faq', label: 'Preguntas', title: 'Preguntas frecuentes' },
@@ -1473,14 +1473,14 @@ export const content = {
       },
       {
         q: '¿Cómo puedo proponer un invitado o participar?',
-        a: `<p>Escribe a <a href="mailto:${site.email}">${site.email}</a> con una nota breve sobre el tema y por qué encaja.</p>`,
+        a: `<p>Escriba a <a href="mailto:${site.email}">${site.email}</a> con una nota breve sobre el tema y por qué encaja.</p>`,
       },
     ],
     related: [
       { route: 'insights', label: 'Lectura', title: 'Insights semanales' },
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
-      { route: 'apply', label: 'Empieza aquí', title: 'Reserva tu llamada introductoria gratuita' },
+      { route: 'apply', label: 'Empiece aquí', title: 'Reserve su llamada introductoria gratuita' },
     ],
   },
 
@@ -1494,12 +1494,12 @@ export const content = {
     hero: {
       kicker: 'Lo que uso',
       h1: 'Los productos que de verdad uso.',
-      lede: 'Una lista breve de cosas que uso yo mismo y recomiendo a quienes entreno. Te he conseguido acceso directo.',
+      lede: 'Una lista breve de cosas que uso yo mismo y recomiendo a quienes entreno. Le he conseguido acceso directo.',
       ctas: [],
     },
     answer: [
       'Esta página lista los productos que Ben Velazquez usa personalmente y recomienda a sus clientes: las bolsitas nootrópicas sin nicotina GTG Energy, la crema de recuperación 27:17 Recovery y los wearables vibrotáctiles sin fármacos Super Patch.',
-      'Se trata de relaciones de afiliación: Ben puede recibir una comisión por las compras hechas a través de estos enlaces, sin costo adicional para ti. Los productos están listados porque los usa, no por la comisión.',
+      'Se trata de relaciones de afiliación: Ben puede recibir una comisión por las compras hechas a través de estos enlaces, sin costo adicional para usted. Los productos están listados porque los usa, no por la comisión.',
     ],
     partners: [
       {
@@ -1522,7 +1522,7 @@ export const content = {
         cat: 'Crema de recuperación · péptido de cobre, árnica, MSM · apta para antidopaje',
         quote:
           '«La recuperación no es descanso: es rendimiento. 27:17 es el tópico en el que confío para ayudar al cuerpo a reconstruirse entre sesiones, y es lo bastante limpio para atletas con control antidopaje. Un básico de mi kit de recuperación.»',
-        cta: 'Avísame cuando vuelva',
+        cta: 'Avíseme cuando vuelva',
         href: site.links.p2717,
         ghost: true,
       },
@@ -1539,18 +1539,18 @@ export const content = {
       },
     ],
     disclosure:
-      'Aviso: puedo recibir una comisión por las compras hechas a través de estos enlaces, sin costo adicional para ti. Solo listo productos que uso yo mismo.',
+      'Aviso: puedo recibir una comisión por las compras hechas a través de estos enlaces, sin costo adicional para usted. Solo listo productos que uso yo mismo.',
     faqs: [
       {
-        q: '¿Recibes una comisión por estos productos?',
-        a: '<p>Sí, por algunos, sin costo adicional para ti. Cada producto listado es uno que Ben usa él mismo: la comisión no determina qué aparece aquí. Consulta la <a href="/es/divulgacion-de-afiliados/">divulgación de afiliados completa</a>.</p>',
+        q: '¿Recibe una comisión por estos productos?',
+        a: '<p>Sí, por algunos, sin costo adicional para usted. Cada producto listado es uno que Ben usa él mismo: la comisión no determina qué aparece aquí. Consulte la <a href="/es/divulgacion-de-afiliados/">divulgación de afiliados completa</a>.</p>',
       },
       {
         q: '¿Son seguros estos productos para atletas con control antidopaje?',
         a: '<p>27:17 Recovery está formulado para ser apto en controles antidopaje, y Super Patch es un wearable vibrotáctil sin fármacos, sin nada que detectar. Las bolsitas GTG Energy no contienen nicotina. Los atletas sujetos a controles deben verificar siempre cualquier producto contra la lista vigente de su federación antes de usarlo.</p>',
       },
       {
-        q: '¿Los suplementos forman parte de tus programas?',
+        q: '¿Los suplementos forman parte de sus programas?',
         a: '<p>No. La programación se construye sobre evaluación, descompresión y entrenamiento. Estas son herramientas que algunos clientes encuentran útiles, no un componente del método.</p>',
       },
       {
@@ -1571,22 +1571,22 @@ export const content = {
     seo: {
       title: 'Política de Privacidad | Ben Velazquez',
       description:
-        'Cómo benvelazquez.com recopila, usa y protege tu información. Qué guardamos, qué nunca hacemos y cómo eliminar tus datos.',
+        'Cómo benvelazquez.com recopila, usa y protege su información. Qué guardamos, qué nunca hacemos y cómo eliminar sus datos.',
     },
     hero: { kicker: 'Legal', h1: 'Política de privacidad', lede: 'Última actualización: julio de 2026.', ctas: [] },
-    body: `<p>Este sitio es operado por Ben Velazquez. Esta política explica qué información se recopila, por qué, y qué puedes hacer al respecto. Está escrita para leerse, no para sobrevivirla.</p>
+    body: `<p>Este sitio es operado por Ben Velazquez. Esta política explica qué información se recopila, por qué, y qué puede hacer al respecto. Está escrita para leerse, no para sobrevivirla.</p>
 <h2>Qué se recopila</h2>
-<p>La única información que se recopila es la que escribes en el formulario de solicitud o de contacto: tu nombre, tu correo electrónico, la opción que seleccionas y el mensaje que redactes. No se solicita ni se almacena nada más.</p>
+<p>La única información que se recopila es la que usted escribe en el formulario de solicitud o de contacto: su nombre, su correo electrónico, la opción que selecciona y el mensaje que redacte. No se solicita ni se almacena nada más.</p>
 <h2>Para qué se usa</h2>
-<p>Únicamente para responder a tu consulta y, cuando corresponda, organizar tu llamada introductoria. Tus datos no se venden, alquilan ni comparten con terceros con fines de marketing. Enviar el formulario no te añade a ninguna lista de correo.</p>
+<p>Únicamente para responder a su consulta y, cuando corresponda, organizar su llamada introductoria. Sus datos no se venden, alquilan ni comparten con terceros con fines de marketing. Enviar el formulario no le añade a ninguna lista de correo.</p>
 <h2>Analítica y seguimiento</h2>
-<p>Este sitio no usa cookies publicitarias, ni píxeles de seguimiento de terceros, ni perfilado entre sitios. La plataforma de alojamiento puede recopilar estadísticas de tráfico agregadas y anónimas con fines operativos; no te identifican.</p>
+<p>Este sitio no usa cookies publicitarias, ni píxeles de seguimiento de terceros, ni perfilado entre sitios. La plataforma de alojamiento puede recopilar estadísticas de tráfico agregadas y anónimas con fines operativos; no le identifican.</p>
 <h2>Contenido incrustado de terceros</h2>
-<p>Los videos de este sitio se cargan tras una portada con clic para reproducir. YouTube no recibe datos tuyos a menos que pulses reproducir de forma activa. Los enlaces a productos de socios llevan a sitios externos con sus propias políticas.</p>
+<p>Los videos de este sitio se cargan tras una portada con clic para reproducir. YouTube no recibe datos suyos a menos que pulse reproducir de forma activa. Los enlaces a productos de socios llevan a sitios externos con sus propias políticas.</p>
 <h2>Conservación de datos</h2>
 <p>Los datos de una consulta se conservan solo el tiempo necesario para atenderla y gestionar cualquier colaboración resultante.</p>
-<h2>Tus derechos</h2>
-<p>Puedes preguntar qué información se guarda sobre ti, pedir que se corrija o pedir que se elimine, en cualquier momento. Escribe a ${site.email} y se tramitará.</p>
+<h2>Sus derechos</h2>
+<p>Puede preguntar qué información se guarda sobre usted, pedir que se corrija o pedir que se elimine, en cualquier momento. Escriba a ${site.email} y se tramitará.</p>
 <h2>Cambios</h2>
 <p>Si esta política cambia de forma sustancial, la fecha del encabezado cambiará con ella.</p>
 <h2>Contacto</h2>
@@ -1602,16 +1602,16 @@ export const content = {
     hero: { kicker: 'Legal', h1: 'Términos de uso', lede: 'Última actualización: julio de 2026.', ctas: [] },
     body: `<h2>Aviso médico y de salud</h2>
 <p>El contenido de este sitio se ofrece con fines informativos y educativos generales. No es consejo médico y no crea una relación profesional–paciente. No sustituye la evaluación, el diagnóstico ni el tratamiento por parte de un profesional sanitario cualificado.</p>
-<p>Consulta siempre a un médico antes de comenzar, modificar o interrumpir cualquier programa de ejercicio, rehabilitación o nutrición, especialmente si tienes una lesión, una condición diagnosticada o estás en recuperación de una conmoción cerebral.</p>
-<p><strong>La conmoción cerebral es una condición médica.</strong> Nada en este sitio sustituye la evaluación, el diagnóstico ni el alta médica. Si tras un golpe en la cabeza presentas dolor de cabeza que empeora, vómitos repetidos, convulsiones, debilidad o entumecimiento, o confusión o somnolencia crecientes, busca atención de urgencia de inmediato.</p>
+<p>Consulte siempre a un médico antes de comenzar, modificar o interrumpir cualquier programa de ejercicio, rehabilitación o nutrición, especialmente si tiene una lesión, una condición diagnosticada o está en recuperación de una conmoción cerebral.</p>
+<p><strong>La conmoción cerebral es una condición médica.</strong> Nada en este sitio sustituye la evaluación, el diagnóstico ni el alta médica. Si tras un golpe en la cabeza presenta dolor de cabeza que empeora, vómitos repetidos, convulsiones, debilidad o entumecimiento, o confusión o somnolencia crecientes, busque atención de urgencia de inmediato.</p>
 <h2>Sin garantía de resultados</h2>
 <p>Los testimonios de este sitio describen la experiencia de las personas nombradas que los facilitaron. Los resultados individuales varían según el historial de entrenamiento, la adherencia, el estado médico y muchos otros factores. Nada aquí promete un resultado concreto.</p>
 <h2>Uso de este sitio</h2>
-<p>Puedes leer, compartir y enlazar este sitio libremente. El contenido, los textos y el diseño son propiedad de Ben Velazquez y no pueden reproducirse comercialmente sin autorización.</p>
+<p>Puede leer, compartir y enlazar este sitio libremente. El contenido, los textos y el diseño son propiedad de Ben Velazquez y no pueden reproducirse comercialmente sin autorización.</p>
 <h2>Enlaces externos</h2>
 <p>Los enlaces a sitios de terceros, incluidos productos de socios, se ofrecen por comodidad. Esos sitios se rigen por sus propios términos y políticas y no están bajo el control de este sitio.</p>
 <h2>Relaciones de afiliación</h2>
-<p>Algunos enlaces salientes a productos son enlaces de afiliado. Consulta la <a href="/es/divulgacion-de-afiliados/">divulgación de afiliados</a>.</p>
+<p>Algunos enlaces salientes a productos son enlaces de afiliado. Consulte la <a href="/es/divulgacion-de-afiliados/">divulgación de afiliados</a>.</p>
 <h2>Precios</h2>
 <p>Los precios mostrados en este sitio son los vigentes en el momento de su publicación y pueden cambiar. Los términos aplicables a cualquier colaboración son los confirmados por escrito en el momento de la contratación.</p>
 <h2>Contacto</h2>
@@ -1625,7 +1625,7 @@ export const content = {
         'Divulgación completa de las relaciones de afiliación en benvelazquez.com: qué enlaces generan comisión y cómo se eligen los productos.',
     },
     hero: { kicker: 'Legal', h1: 'Divulgación de afiliados', lede: 'Última actualización: julio de 2026.', ctas: [] },
-    body: `<p>Algunos enlaces de este sitio —principalmente en la página <a href="/es/lo-que-uso/">Lo que uso</a>— son enlaces de afiliado. Si compras a través de uno, puedo recibir una comisión. A ti no te cuesta nada extra.</p>
+    body: `<p>Algunos enlaces de este sitio —principalmente en la página <a href="/es/lo-que-uso/">Lo que uso</a>— son enlaces de afiliado. Si compra a través de uno, puedo recibir una comisión. A usted no le cuesta nada extra.</p>
 <h2>Cómo se listan los productos</h2>
 <p>Un producto aparece en este sitio porque lo uso yo mismo y lo recomiendo a quienes entreno. La relación comercial sigue a la recomendación; no la crea. Si dejo de usar algo, sale de la página.</p>
 <h2>Relaciones actuales</h2>
@@ -1637,9 +1637,9 @@ export const content = {
 <h2>Qué no se ve afectado</h2>
 <p>Ninguna recomendación de coaching, diseño de programa ni hallazgo de evaluación está influido por una relación comercial. Los suplementos y productos no son un componente del método; son herramientas que algunos clientes encuentran útiles.</p>
 <h2>Atletas sujetos a control antidopaje</h2>
-<p>Si compites bajo normativa antidopaje, verifica cualquier producto contra la lista vigente de tu federación antes de usarlo, con independencia de cómo se describa aquí o en cualquier otro sitio. La responsabilidad por lo que hay en tu cuerpo es siempre tuya.</p>
+<p>Si compite bajo normativa antidopaje, verifique cualquier producto contra la lista vigente de su federación antes de usarlo, con independencia de cómo se describa aquí o en cualquier otro sitio. La responsabilidad por lo que hay en su cuerpo es siempre suya.</p>
 <h2>Preguntas</h2>
-<p>Escribe a ${site.email}.</p>`,
+<p>Escriba a ${site.email}.</p>`,
   },
 
   /* ====================================================================== */

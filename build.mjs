@@ -638,6 +638,8 @@ write(
 /es/index.html                 /es/                       301
 /es/aplicar                    /es/solicitar/             301
 /es/aplicar/                   /es/solicitar/             301
+/es/insights/trata-tu-carrera-como-un-deporte/   /es/insights/trate-su-carrera-como-un-deporte/   301
+/es/insights/tu-silla-deshace-tu-entrenamiento/  /es/insights/su-silla-deshace-su-entrenamiento/  301
 `,
 );
 

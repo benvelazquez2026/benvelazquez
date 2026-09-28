@@ -20,13 +20,13 @@ import { BUILD_DATE } from './site.js';
 
 export const allInsights = [
   {
-    slug: { en: 'treat-your-career-like-a-sport', es: 'trata-tu-carrera-como-un-deporte' },
+    slug: { en: 'treat-your-career-like-a-sport', es: 'trate-su-carrera-como-un-deporte' },
     date: '2026-07-07',
     updated: '2026-07-07',
     tag: { en: 'Longevity', es: 'Longevidad' },
     title: {
       en: 'Treat your career like a sport',
-      es: 'Trata tu carrera como un deporte',
+      es: 'Trate su carrera como un deporte',
     },
     summary: {
       en: 'Elite athletes periodize, recover and protect the body that earns them a living. Executives rarely do — and pay for it in their fifties. Here is how to apply an athlete’s training calendar to a career.',
@@ -68,20 +68,20 @@ export const allInsights = [
       es: `<p>He pasado veinte años rodeado de personas cuyo cuerpo es su medio de vida. Lo que más sorprende a los ejecutivos, cuando se sientan conmigo por primera vez, es lo poco que un atleta profesional pasa realmente a máximo esfuerzo.</p>
 <h2>Nadie compite doce meses</h2>
 <p>Un centro de la NHL no patina con intensidad de playoffs en julio. Un pitcher abridor no lanza bullpens al máximo en enero. El calendario se divide de forma deliberada: una pretemporada donde se reconstruye la estructura, una fase donde se eleva la capacidad, una temporada donde el trabajo pasa casi por completo al mantenimiento y la recuperación, y un descanso real al final.</p>
-<p>Esa estructura no es un lujo. Es el mecanismo. La adaptación ocurre en la ventana de recuperación, no en la sesión. Si eliminas la ventana de recuperación, eliminas la adaptación: te queda fatiga acumulada que parece esfuerzo y no produce nada.</p>
+<p>Esa estructura no es un lujo. Es el mecanismo. La adaptación ocurre en la ventana de recuperación, no en la sesión. Si elimina la ventana de recuperación, elimina la adaptación: le queda fatiga acumulada que parece esfuerzo y no produce nada.</p>
 <h2>El ejecutivo vive una sola fase durante treinta años</h2>
-<p>Ahora mira cómo funciona realmente un profesional sénior. Cada trimestre es una fase de competencia. No hay pretemporada, no hay descarga, no hay valle planificado. Los viajes son constantes, el sueño es la primera variable que se sacrifica y el entrenamiento —si ocurre— se comprime en los treinta minutos que sobreviven a la agenda.</p>
+<p>Ahora mire cómo funciona realmente un profesional sénior. Cada trimestre es una fase de competencia. No hay pretemporada, no hay descarga, no hay valle planificado. Los viajes son constantes, el sueño es la primera variable que se sacrifica y el entrenamiento —si ocurre— se comprime en los treinta minutos que sobreviven a la agenda.</p>
 <p>Al cuerpo no le importa que esto sea normal en el sector. Responde igual que el cuerpo de un atleta ante una temporada sin descanso: la calidad del tejido se degrada, las opciones de movimiento se estrechan y, con el tiempo, algo que llevaba años compensando en silencio cede. Normalmente una zona lumbar. A menudo un cuello. Rara vez una sorpresa, visto en retrospectiva.</p>
 <h2>Cómo se ve realmente periodizar una carrera</h2>
-<h3>1. Integra bloques de baja intensidad en el año, a propósito</h3>
-<p>No vacaciones en las que respondes correos desde otro huso horario, sino períodos reales de carga reducida. Dos o tres semanas, dos o tres veces al año, donde el volumen de entrenamiento baja, los viajes son deliberadamente más ligeros y el cuerpo recibe una ventana para consolidar. Los atletas lo llaman descarga. Es lo menos glamuroso y lo más fiable de esta página.</p>
-<h3>2. Agenda la recuperación como trabajo, no como premio</h3>
-<p>El sueño, la descompresión y la movilidad no son lo que haces cuando terminas lo importante. Para un atleta profesional <em>son</em> lo importante: la sesión es solo el estímulo. Si el trabajo de movilidad solo ocurre cuando el día sale bien, ocurrirá cuatro veces al mes, y cuatro veces al mes no cambia nada.</p>
-<h3>3. Mide en décadas</h3>
-<p>La pregunta correcta no es «¿puedo sostener este trimestre?». Cualquiera sostiene un trimestre. La pregunta es si la forma en que entrenas, viajas y duermes ahora mismo es algo que podrías mantener otros veinte años y seguir lúcido, móvil y sin dolor al final. Si la respuesta honesta es no, el plan no es un plan. Es una cuenta atrás.</p>
+<h3>1. Integre bloques de baja intensidad en el año, a propósito</h3>
+<p>No vacaciones en las que responde correos desde otro huso horario, sino períodos reales de carga reducida. Dos o tres semanas, dos o tres veces al año, donde el volumen de entrenamiento baja, los viajes son deliberadamente más ligeros y el cuerpo recibe una ventana para consolidar. Los atletas lo llaman descarga. Es lo menos glamuroso y lo más fiable de esta página.</p>
+<h3>2. Agende la recuperación como trabajo, no como premio</h3>
+<p>El sueño, la descompresión y la movilidad no son lo que hace cuando termina lo importante. Para un atleta profesional <em>son</em> lo importante: la sesión es solo el estímulo. Si el trabajo de movilidad solo ocurre cuando el día sale bien, ocurrirá cuatro veces al mes, y cuatro veces al mes no cambia nada.</p>
+<h3>3. Mida en décadas</h3>
+<p>La pregunta correcta no es «¿puedo sostener este trimestre?». Cualquiera sostiene un trimestre. La pregunta es si la forma en que entrena, viaja y duerme ahora mismo es algo que podría mantener otros veinte años y seguir lúcido, móvil y sin dolor al final. Si la respuesta honesta es no, el plan no es un plan. Es una cuenta atrás.</p>
 <h2>El intercambio que nadie quiere oír</h2>
 <p>Periodizar una carrera significa aceptar algo menos de producción en algunos meses a cambio de una pista de aterrizaje mucho más larga. Todos los atletas con los que he trabajado han hecho ese intercambio, la mayoría a regañadientes, y ninguno se arrepiente. Los que lo rechazaron son aquellos cuya carrera terminó pronto: no por falta de talento, sino porque el cuerpo dejó de cooperar antes que la ambición.</p>
-<p>Tu carrera es más larga que una carrera deportiva. El argumento para tratarla como tal es más fuerte, no más débil.</p>`,
+<p>Su carrera es más larga que una carrera deportiva. El argumento para tratarla como tal es más fuerte, no más débil.</p>`,
     },
     faqs: {
       en: [
@@ -105,11 +105,11 @@ export const allInsights = [
         },
         {
           q: '¿Cuántas semanas de baja intensidad debo planificar al año?',
-          a: '<p>Un punto de partida razonable es una semana de carga reducida cada seis u ocho semanas, más dos períodos más largos de dos o tres semanas. El número exacto depende de tu historial de entrenamiento, del volumen de viajes y de la calidad del sueño, que es justo lo que establece un análisis de necesidades.</p>',
+          a: '<p>Un punto de partida razonable es una semana de carga reducida cada seis u ocho semanas, más dos períodos más largos de dos o tres semanas. El número exacto depende de su historial de entrenamiento, del volumen de viajes y de la calidad del sueño, que es justo lo que establece un análisis de necesidades.</p>',
         },
         {
           q: '¿Entrenar menos no me hará perder progreso?',
-          a: '<p>No. La adaptación se consolida durante la recuperación, no durante la sesión. Las semanas de carga reducida preservan el entrenamiento que ya hiciste y permiten que el cuerpo lo exprese. Los atletas pierden mucho más por fatiga acumulada y lesiones que por una descarga planificada.</p>',
+          a: '<p>No. La adaptación se consolida durante la recuperación, no durante la sesión. Las semanas de carga reducida preservan el entrenamiento que ya hizo y permiten que el cuerpo lo exprese. Los atletas pierden mucho más por fatiga acumulada y lesiones que por una descarga planificada.</p>',
         },
       ],
     },
@@ -126,12 +126,12 @@ export const allInsights = [
     },
     summary: {
       en: 'A long flight is hours in the worst posture you own, followed by a bed that isn’t yours. You can’t skip the travel — but ten focused minutes on landing undoes most of the damage before it settles in.',
-      es: 'Un vuelo largo son horas en la peor postura que tienes, seguidas de una cama que no es la tuya. No puedes evitar viajar, pero diez minutos enfocados al aterrizar deshacen casi todo el daño antes de que se instale.',
+      es: 'Un vuelo largo son horas en la peor postura que tiene, seguidas de una cama que no es la suya. No puede evitar viajar, pero diez minutos enfocados al aterrizar deshacen casi todo el daño antes de que se instale.',
     },
     /* Meta description — deliberately shorter than `summary`, which is the card excerpt. */
     meta: {
       en: 'A long flight is hours in the worst posture you own. Ten focused minutes on landing undoes most of the damage before it settles in. Here’s the routine.',
-      es: 'Un vuelo largo son horas en la peor postura que tienes. Diez minutos al aterrizar deshacen casi todo el daño antes de que se instale. Esta es la rutina.',
+      es: 'Un vuelo largo son horas en la peor postura que tiene. Diez minutos al aterrizar deshacen casi todo el daño antes de que se instale. Esta es la rutina.',
     },
     answer: {
       en: [
@@ -140,7 +140,7 @@ export const allInsights = [
       ],
       es: [
         'Los vuelos largos comprimen la columna, acortan los flexores de la cadera y mantienen el cuello en flexión durante horas. El daño no es el vuelo en sí: es que la mayoría pasa del asiento al escritorio sin interrumpir nunca la posición.',
-        'Una rutina de diez minutos al aterrizar —descompresión de la columna, apertura de cadera y unos minutos caminando antes de volver a sentarte— revierte la mayor parte. Hecha con constancia, es la diferencia entre llegar funcional y llegar rígido.',
+        'Una rutina de diez minutos al aterrizar —descompresión de la columna, apertura de cadera y unos minutos caminando antes de volver a sentarse— revierte la mayor parte. Hecha con constancia, es la diferencia entre llegar funcional y llegar rígido.',
       ],
     },
     body: {
@@ -163,19 +163,19 @@ export const allInsights = [
       es: `<p>Los atletas con los que trabajo vuelan más que casi nadie. Temporadas de ochenta y dos partidos, dobles jornadas en husos horarios distintos, vuelos chárter que aterrizan a las tres de la madrugada. Han resuelto el problema del viaje por necesidad, y la solución se traslada directamente a cualquiera cuya agenda parezca un horario de aerolínea.</p>
 <h2>Qué hace realmente un vuelo largo</h2>
 <p>Seis horas en un asiento de turista, o incluso de business, son seis horas de compresión axial sobre una columna que no tiene ocasión de descargar. Las caderas permanecen en flexión todo el tiempo, lo que acorta progresivamente los flexores e inclina la pelvis. La cabeza queda por delante de los hombros —sobre un portátil, un libro o una pantalla— lo que carga la columna cervical con varias veces el peso de la propia cabeza.</p>
-<p>Nada de eso es catastrófico por sí solo. El cuerpo tolera mucho. El problema es lo que viene después: aterrizas, subes a un coche, vas a un hotel y te sientas en un escritorio. La posición nunca se interrumpe. Lo que eran seis horas se convierte en catorce, y el tejido empieza a aceptar esa forma como la predeterminada.</p>
+<p>Nada de eso es catastrófico por sí solo. El cuerpo tolera mucho. El problema es lo que viene después: aterriza, sube a un coche, va a un hotel y se sienta en un escritorio. La posición nunca se interrumpe. Lo que eran seis horas se convierte en catorce, y el tejido empieza a aceptar esa forma como la predeterminada.</p>
 <h2>Los diez minutos que importan</h2>
 <p>La intervención no es complicada, y no es un entrenamiento. Es una interrupción deliberada.</p>
-<h3>Descomprime la columna</h3>
-<p>Lo más valioso que puedes hacer tras un vuelo es crear espacio donde el vuelo creó compresión. Las posturas ELDOA están construidas exactamente para esto: cada una apunta a un segmento vertebral concreto y crea espacio en él mediante tu propia tensión muscular. Tres o cuatro minutos, en el suelo de un hotel, sin material.</p>
-<h3>Abre las caderas</h3>
-<p>Horas de flexión necesitan un contrapeso activo, no un estiramiento pasivo que sostienes mientras miras el móvil. El trabajo de extensión de cadera, cargado y controlado, le recuerda al cuerpo que esa posición existe y recupera el rango que acabas de ceder durante seis horas.</p>
-<h3>Camina antes de volver a sentarte</h3>
+<h3>Descomprima la columna</h3>
+<p>Lo más valioso que puede hacer tras un vuelo es crear espacio donde el vuelo creó compresión. Las posturas ELDOA están construidas exactamente para esto: cada una apunta a un segmento vertebral concreto y crea espacio en él mediante su propia tensión muscular. Tres o cuatro minutos, en el suelo de un hotel, sin material.</p>
+<h3>Abra las caderas</h3>
+<p>Horas de flexión necesitan un contrapeso activo, no un estiramiento pasivo que sostiene mientras mira el móvil. El trabajo de extensión de cadera, cargado y controlado, le recuerda al cuerpo que esa posición existe y recupera el rango que acaba de ceder durante seis horas.</p>
+<h3>Camine antes de volver a sentarse</h3>
 <p>Diez minutos de pie antes de la primera reunión o de la primera sesión en el escritorio del hotel. No es ejercicio: es circulación y un reinicio del patrón postural antes de que se endurezca.</p>
-<h2>Hazlo al aterrizar, no mañana</h2>
-<p>El momento importa más que la duración. Diez minutos dentro de la hora siguiente al aterrizaje valen bastante más que cuarenta minutos la tarde siguiente, porque estás interrumpiendo el patrón antes de que el tejido se adapte a él. Los que mejor viajan lo tratan como la aduana: un paso inevitable entre el avión y el resto del viaje.</p>
+<h2>Hágalo al aterrizar, no mañana</h2>
+<p>El momento importa más que la duración. Diez minutos dentro de la hora siguiente al aterrizaje valen bastante más que cuarenta minutos la tarde siguiente, porque está interrumpiendo el patrón antes de que el tejido se adapte a él. Los que mejor viajan lo tratan como la aduana: un paso inevitable entre el avión y el resto del viaje.</p>
 <h2>La versión que sobrevive a una agenda real</h2>
-<p>Cualquier rutina que exija material, un gimnasio o treinta minutos libres no sobrevivirá a una semana real de viajes. Por eso el programa que escribo para clientes que viajan cabe en una habitación de hotel, no necesita más que espacio en el suelo y dura diez minutos. Una rutina que de verdad haces al cuarenta por ciento de calidad gana a una perfecta que te saltas.</p>`,
+<p>Cualquier rutina que exija material, un gimnasio o treinta minutos libres no sobrevivirá a una semana real de viajes. Por eso el programa que escribo para clientes que viajan cabe en una habitación de hotel, no necesita más que espacio en el suelo y dura diez minutos. Una rutina que de verdad hace al cuarenta por ciento de calidad gana a una perfecta que se salta.</p>`,
     },
     faqs: {
       en: [
@@ -195,7 +195,7 @@ export const allInsights = [
       es: [
         {
           q: '¿Qué debo hacer durante el vuelo?',
-          a: '<p>Levántate y camina una vez por hora si el vuelo lo permite, mantén la pantalla a la altura de los ojos en lugar de en el regazo y evita dormir con el cuello sin apoyo y rotado. Esto reduce la carga, pero no sustituye la rutina al aterrizar.</p>',
+          a: '<p>Levántese y camine una vez por hora si el vuelo lo permite, mantenga la pantalla a la altura de los ojos en lugar de en el regazo y evite dormir con el cuello sin apoyo y rotado. Esto reduce la carga, pero no sustituye la rutina al aterrizar.</p>',
         },
         {
           q: '¿La rutina necesita material?',
@@ -203,7 +203,7 @@ export const allInsights = [
         },
         {
           q: '¿Cuánto tiempo después de aterrizar debo hacerla?',
-          a: '<p>Dentro de la primera hora, antes de volver a sentarte. Interrumpir el patrón pronto vale más que hacer una sesión más larga al día siguiente.</p>',
+          a: '<p>Dentro de la primera hora, antes de volver a sentarse. Interrumpir el patrón pronto vale más que hacer una sesión más larga al día siguiente.</p>',
         },
       ],
     },
@@ -220,7 +220,7 @@ export const allInsights = [
     },
     summary: {
       en: 'The executives who last aren’t the ones who train hardest — they’re the ones who recover on purpose. Recovery is a trainable skill with inputs you can control, not a reward for finishing the work.',
-      es: 'Los ejecutivos que duran no son los que entrenan más fuerte, sino los que se recuperan a propósito. La recuperación es una habilidad entrenable con variables que puedes controlar, no un premio por terminar el trabajo.',
+      es: 'Los ejecutivos que duran no son los que entrenan más fuerte, sino los que se recuperan a propósito. La recuperación es una habilidad entrenable con variables que usted puede controlar, no un premio por terminar el trabajo.',
     },
     /* Meta description — deliberately shorter than `summary`, which is the card excerpt. */
     meta: {
@@ -234,7 +234,7 @@ export const allInsights = [
       ],
       es: [
         'La recuperación no es la ausencia de trabajo. Es un proceso activo y entrenable con variables concretas: arquitectura del sueño, mecánica respiratoria, calidad del tejido y tono parasimpático. Cada una puede mejorarse de forma deliberada, y cada una se degrada si se deja al azar.',
-        'Tratar la recuperación como una habilidad significa agendarla, medirla y progresarla igual que progresarías un levantamiento, en lugar de asumir que ocurre sola cuando te detienes.',
+        'Tratar la recuperación como una habilidad significa agendarla, medirla y progresarla igual que progresaría un levantamiento, en lugar de asumir que ocurre sola cuando se detiene.',
       ],
     },
     body: {
@@ -255,7 +255,7 @@ export const allInsights = [
 <h2>The debt metaphor is literal</h2>
 <p>The body genuinely does keep a ledger. Under-recovery shows up first as stiffness and poor sleep, then as a nagging injury that will not resolve, then as the thing that takes you out for three months. By the time it is a diagnosis, it has usually been an unpaid debt for years.</p>
 <p>Build it in, or the body collects with interest.</p>`,
-      es: `<p>Pregunta a la mayoría qué es la recuperación y describirán una ausencia: no entrenar, no trabajar, sentarse. Esa definición es la razón por la que tanta gente capaz y disciplinada está crónicamente mal recuperada. Están esperando a que la recuperación les ocurra.</p>
+      es: `<p>Pregunte a la mayoría qué es la recuperación y describirán una ausencia: no entrenar, no trabajar, sentarse. Esa definición es la razón por la que tanta gente capaz y disciplinada está crónicamente mal recuperada. Están esperando a que la recuperación les ocurra.</p>
 <h2>La recuperación tiene variables</h2>
 <p>En un entorno profesional, la recuperación se gestiona con la misma actividad que el entrenamiento. Hay cuatro variables que trabajo con cada cliente, y ninguna es pasiva.</p>
 <h3>Arquitectura del sueño, no horas de sueño</h3>
@@ -263,15 +263,15 @@ export const allInsights = [
 <h3>Mecánica respiratoria</h3>
 <p>Las personas bajo presión sostenida respiran de forma superficial y alta, lo que mantiene el sistema nervioso en un estado simpático de bajo grado todo el día. Restaurar la mecánica diafragmática es genuinamente entrenable, lleva unos minutos al día y cambia la velocidad con la que el cuerpo baja de revoluciones tras el estrés.</p>
 <h3>Calidad del tejido</h3>
-<p>La fascia responde a lo que le pides de forma repetida. Estar sentado once horas al día es una petición, y el cuerpo la atiende. El trabajo de descompresión y el estiramiento miofascial son la forma de hacer una petición contraria, y por eso ELDOA está en el centro del trabajo de recuperación que prescribo.</p>
+<p>La fascia responde a lo que usted le pide de forma repetida. Estar sentado once horas al día es una petición, y el cuerpo la atiende. El trabajo de descompresión y el estiramiento miofascial son la forma de hacer una petición contraria, y por eso ELDOA está en el centro del trabajo de recuperación que prescribo.</p>
 <h3>Tono parasimpático</h3>
 <p>La capacidad de pasar de alto rendimiento a descanso real es entrenable. Quien nunca la practica se queda medio activado toda la tarde, duerme mal y empieza el día siguiente con un déficit que se acumula.</p>
 <h2>Por qué los más trabajadores se recuperan peor</h2>
 <p>Hay un patrón que veo constantemente. Las personas con más disciplina la aplican toda a la producción y ninguna a la recuperación, porque recuperarse se siente como lo contrario de la disciplina. Así que el entrenamiento es excelente, la dieta es excelente, y el cuerpo sigue rompiéndose, porque la única variable que consolida todas las demás nunca tuvo un hueco en el calendario.</p>
 <p>La solución no es trabajar menos. Es mover la recuperación de la categoría «premio» a la categoría «trabajo». Algo que aparece en la agenda, tiene un protocolo definido y no se cancela cuando la semana se complica.</p>
 <h2>La metáfora de la deuda es literal</h2>
-<p>El cuerpo lleva una contabilidad real. La falta de recuperación aparece primero como rigidez y mal sueño, después como una lesión persistente que no termina de resolverse, y después como aquello que te deja fuera tres meses. Cuando ya es un diagnóstico, normalmente lleva años siendo una deuda impagada.</p>
-<p>Intégrala, o el cuerpo la cobrará con intereses.</p>`,
+<p>El cuerpo lleva una contabilidad real. La falta de recuperación aparece primero como rigidez y mal sueño, después como una lesión persistente que no termina de resolverse, y después como aquello que le deja fuera tres meses. Cuando ya es un diagnóstico, normalmente lleva años siendo una deuda impagada.</p>
+<p>Intégrela, o el cuerpo la cobrará con intereses.</p>`,
     },
     faqs: {
       en: [
@@ -295,7 +295,7 @@ export const allInsights = [
         },
         {
           q: '¿Merecen la pena los wearables de recuperación?',
-          a: '<p>Son útiles para detectar tendencias, sobre todo el horario de sueño y la deriva de la frecuencia cardíaca en reposo. Son mucho menos útiles como veredicto diario. Trata la tendencia semanal como señal y la puntuación diaria como ruido.</p>',
+          a: '<p>Son útiles para detectar tendencias, sobre todo el horario de sueño y la deriva de la frecuencia cardíaca en reposo. Son mucho menos útiles como veredicto diario. Trate la tendencia semanal como señal y la puntuación diaria como ruido.</p>',
         },
         {
           q: '¿Cuál es el cambio de mayor valor?',
@@ -306,13 +306,13 @@ export const allInsights = [
   },
 
   {
-    slug: { en: 'your-chair-is-undoing-your-training', es: 'tu-silla-deshace-tu-entrenamiento' },
+    slug: { en: 'your-chair-is-undoing-your-training', es: 'su-silla-deshace-su-entrenamiento' },
     date: '2026-06-16',
     updated: '2026-06-16',
     tag: { en: 'Posture', es: 'Postura' },
     title: {
       en: 'Your chair is undoing your training',
-      es: 'Tu silla está deshaciendo tu entrenamiento',
+      es: 'Su silla está deshaciendo su entrenamiento',
     },
     summary: {
       en: 'Eleven hours a day folded over a screen teaches the body one shape. One workout cannot outvote eleven hours — but a ninety-minute reset can.',
@@ -358,26 +358,26 @@ export const allInsights = [
 <p>Your chair is a training stimulus whether you intend it or not. The only question is whether anything is competing with it.</p>`,
       es: `<p>Esta es la conversación más frecuente que tengo con clientes ejecutivos, y suele empezar con frustración: «entreno cinco días a la semana y la espalda me sigue doliendo». Casi siempre es así. El entrenamiento no es el problema, y más entrenamiento no es la solución.</p>
 <h2>Para la postura, la duración gana a la intensidad</h2>
-<p>El tejido se adapta al estímulo sostenido. Una hora de entrenamiento bien programado es una señal fuerte, pero once horas de flexión torácica, cabeza adelantada y flexión de cadera son una señal mucho más larga. El cuerpo no está confundido sobre qué instrucción seguir: sigue la que repites todo el día.</p>
-<p>Por eso el dolor postural rara vez responde a «entrena más fuerte». Estás intentando ganarle a once horas con una, y la aritmética no funciona.</p>
+<p>El tejido se adapta al estímulo sostenido. Una hora de entrenamiento bien programado es una señal fuerte, pero once horas de flexión torácica, cabeza adelantada y flexión de cadera son una señal mucho más larga. El cuerpo no está confundido sobre qué instrucción seguir: sigue la que usted repite todo el día.</p>
+<p>Por eso el dolor postural rara vez responde a «entrena más fuerte». Está intentando ganarle a once horas con una, y la aritmética no funciona.</p>
 <h2>Qué produce realmente estar once horas sentado</h2>
 <ul>
 <li><strong>Compresión en la columna lumbar</strong>: la carga sentado supera a la de estar de pie, y los discos no tienen ventana de descarga.</li>
-<li><strong>Flexores de cadera acortados y pelvis inclinada</strong>: lo que cambia cómo te pones de pie, caminas y levantas peso mucho después de dejar la silla.</li>
+<li><strong>Flexores de cadera acortados y pelvis inclinada</strong>: lo que cambia cómo se pone de pie, camina y levanta peso mucho después de dejar la silla.</li>
 <li><strong>Cabeza adelantada</strong>: cada centímetro hacia delante multiplica la carga efectiva sobre la columna cervical y sobre los músculos que la sostienen.</li>
 <li><strong>Menor deslizamiento fascial</strong>: el tejido conectivo que no recorre su rango pierde capacidad de moverse, que es lo que significa realmente «rigidez».</li>
 </ul>
 <h2>La regla de los noventa minutos</h2>
-<p>La solución es la frecuencia. Cada noventa minutos, interrumpe la forma:</p>
+<p>La solución es la frecuencia. Cada noventa minutos, interrumpa la forma:</p>
 <ol>
-<li><strong>Levántate y descomprime.</strong> De sesenta a noventa segundos de una postura de descompresión dirigida crean espacio donde estar sentado creó compresión.</li>
-<li><strong>Abre las caderas.</strong> Extensión activa, no un estiramiento pasivo: hay que recordarle al cuerpo que ese rango existe bajo control.</li>
-<li><strong>Reajusta cabeza y hombros.</strong> Diez segundos llevando la cabeza atrás sobre los hombros, repetidos a menudo, hacen más que una sola sesión larga.</li>
+<li><strong>Levántese y descomprima.</strong> De sesenta a noventa segundos de una postura de descompresión dirigida crean espacio donde estar sentado creó compresión.</li>
+<li><strong>Abra las caderas.</strong> Extensión activa, no un estiramiento pasivo: hay que recordarle al cuerpo que ese rango existe bajo control.</li>
+<li><strong>Reajuste cabeza y hombros.</strong> Diez segundos llevando la cabeza atrás sobre los hombros, repetidos a menudo, hacen más que una sola sesión larga.</li>
 </ol>
 <p>Coste total: unos dos minutos, cinco o seis veces al día. No es un programa de entrenamiento, ni pretende serlo. Es una interrupción: lo que impide que once horas sean once horas ininterrumpidas.</p>
 <h2>Los pequeños reinicios ganan a las grandes correcciones</h2>
 <p>Cuando un problema postural duele lo suficiente como para pedir cita, normalmente lleva años desarrollándose, y deshacerlo lleva meses. Quienes nunca llegan ahí no son los que tienen el mejor programa de entrenamiento. Son los que nunca dejaron que la posición se acumulara.</p>
-<p>Tu silla es un estímulo de entrenamiento, lo pretendas o no. La única pregunta es si algo está compitiendo con ella.</p>`,
+<p>Su silla es un estímulo de entrenamiento, lo pretenda o no. La única pregunta es si algo está compitiendo con ella.</p>`,
     },
     faqs: {
       en: [
@@ -405,7 +405,7 @@ export const allInsights = [
         },
         {
           q: '¿Cuánto tardan los reinicios en notarse?',
-          a: '<p>La mayoría nota menos rigidez al final del día en una o dos semanas. El cambio estructural —cómo te pones de pie y te mueves por defecto— tarda más, normalmente de dos a tres meses de práctica constante.</p>',
+          a: '<p>La mayoría nota menos rigidez al final del día en una o dos semanas. El cambio estructural —cómo se pone de pie y se mueve por defecto— tarda más, normalmente de dos a tres meses de práctica constante.</p>',
         },
       ],
     },

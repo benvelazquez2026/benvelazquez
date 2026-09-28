@@ -77,7 +77,7 @@ export const quotes = [
     role: { en: 'Running Back · NFL', es: 'Running Back · NFL' },
     text: {
       en: '“The details in his programming take you from good to great. One of the best tools in my toolbox.”',
-      es: '“El detalle de su programación te lleva de bueno a excelente. Una de las mejores herramientas que tengo.”',
+      es: '“El detalle de su programación le lleva de bueno a excelente. Una de las mejores herramientas que tengo.”',
     },
   },
   {
