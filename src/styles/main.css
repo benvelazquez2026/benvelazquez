@@ -1553,6 +1553,17 @@ p {
   height: auto;
   border-radius: var(--radius);
 }
+/* Blended: no frame; the edges dissolve into the section background. */
+.side-photo.is-blend img {
+  border-radius: 0;
+  /* Soft fade on every edge, widest on the left where it meets the text. */
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 24%, #000 90%, transparent 100%),
+    linear-gradient(to bottom, transparent 0, #000 9%, #000 84%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent 0, #000 24%, #000 90%, transparent 100%),
+    linear-gradient(to bottom, transparent 0, #000 9%, #000 84%, transparent 100%);
+  mask-composite: intersect;
+}
 .side-zoom {
   display: block;
   cursor: zoom-in;

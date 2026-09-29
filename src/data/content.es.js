@@ -916,6 +916,7 @@ export const content = {
       lede: 'Un camino claro desde un inicio autoguiado hasta el trabajo privado y directo. Los niveles superiores son intencionalmente limitados, y cada lugar comienza con una llamada introductoria gratuita.',
       ctas: [APPLY_CTA],
     },
+    answerPhoto: { slug: 'programs-answer', width: 564, height: 564, display: 460, blend: true, alt: 'El Pensador de Rodin sobre una red luminosa de neuronas' },
     answer: [
       'Hay tres formas de trabajar con Ben Velazquez. El Executive Reset es un programa autoguiado de ELDOA y movilidad por $297 en pago único. Core Executive Performance cuesta $2,300 al mes, con facturación mensual y un mínimo de tres meses, e incluye cuatro sesiones virtuales, programación personalizada y acceso asincrónico acotado. Concierge Private Performance cuesta $6,500 al mes más viajes a costo, limitado a 7 lugares. Core y Concierge son previa solicitud: Ben selecciona personalmente a cada cliente.',
       'El nivel Concierge requiere primero un Performance Day presencial: una evaluación y consulta de jornada completa desde $3,000, en pago único. Sea cual sea el nivel, trabajar con Ben empieza con una llamada introductoria virtual y gratuita de 20 minutos.',

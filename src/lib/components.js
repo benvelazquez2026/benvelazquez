@@ -61,7 +61,7 @@ ${heroPhoto({ ...poster, position: null, alt: '' }).replace('<picture class="her
  * width); `zoom` links to the largest JPEG so a diagram can be read full
  * size; `caption` adds a figcaption (e.g. a credit).
  */
-export function sidePhoto({ slug, width, height, alt, widths = [width], display = width, zoom = false, caption }) {
+export function sidePhoto({ slug, width, height, alt, widths = [width], display = width, zoom = false, caption, blend = false }) {
   const set = (ext) => widths.map((w) => `/img/${slug}-${w}.${ext} ${w}w`).join(', ');
   const sizes = `(min-width: 861px) ${display}px, 100vw`;
   const img = `<picture>
@@ -72,7 +72,7 @@ export function sidePhoto({ slug, width, height, alt, widths = [width], display 
   )}" loading="lazy" decoding="async">
 </picture>`;
   const max = widths[widths.length - 1];
-  return `<figure class="side-photo reveal">
+  return `<figure class="${blend ? 'side-photo is-blend reveal' : 'side-photo reveal'}">
 ${zoom ? `<a class="side-zoom" href="/img/${slug}-${max}.jpg">${img}</a>` : img}
 ${caption ? `<figcaption>${esc(caption)}</figcaption>` : ''}
 </figure>`;

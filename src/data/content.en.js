@@ -911,6 +911,7 @@ export const content = {
       lede: 'A clear path from a self-guided start to direct, private work. The top tiers are intentionally limited — and every place begins with a free intro call.',
       ctas: [APPLY_CTA],
     },
+    answerPhoto: { slug: 'programs-answer', width: 564, height: 564, display: 460, blend: true, alt: 'Rodin’s The Thinker against a glowing network of neurons' },
     answer: [
       'There are three ways to work with Ben Velazquez. The Executive Reset is a self-guided ELDOA and mobility program at $297 one-time. Core Executive Performance is $2,300 per month, billed monthly with a three-month minimum, with four virtual sessions, custom programming and bounded async access. Concierge Private Performance is $6,500 per month plus travel at cost, capped at 7 positions. Core and Concierge are both by application: Ben personally selects every client.',
       'The Concierge track requires an in-person Performance Day first — a full-day evaluation and consultation from $3,000, one-time. Regardless of tier, working with Ben starts with a free 20-minute virtual intro call.',
