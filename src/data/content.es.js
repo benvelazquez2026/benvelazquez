@@ -517,6 +517,7 @@ export const content = {
       { k: 'Idiomas', v: 'Inglés · Español' },
     ],
     medical: {
+      photo: { slug: 'concussion-medical', widths: [700, 1000, 1340], width: 1340, height: 1460, display: 420, alt: 'Ben Velazquez de rodillas junto a un cliente acostado de lado sobre una colchoneta, guiando una posición de movilidad supervisada' },
       heading: 'Una nota importante sobre la atención médica',
       body: `<p>La conmoción cerebral es una condición médica. Nada en esta página es consejo médico, y este programa no sustituye la evaluación, el diagnóstico ni el alta por parte de un médico cualificado.</p>
 <p>El trabajo de conmociones basado en ejercicio se entrega como una parte de un equipo coordinado, junto a sus profesionales médicos, no en su lugar. Si ha sufrido un golpe en la cabeza, acuda primero a un médico. Si presenta dolor de cabeza que empeora, vómitos repetidos, convulsiones, debilidad o entumecimiento, o confusión o somnolencia crecientes, busque atención de urgencia de inmediato.</p>`,

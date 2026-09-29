@@ -337,11 +337,14 @@ ${proseWithPhoto(page.problem.body, page.problem.photo)}
 ${
   page.medical
     ? `<section class="block-tight on-bone">
-<div class="wrap">
+<div class="${page.medical.photo ? 'wrap split-media' : 'wrap'}"${
+        page.medical.photo ? ` style="--media-w:${page.medical.photo.display}px"` : ''
+      }>
 <div class="answer-block reveal" role="note">
 <span class="mono">${esc(page.medical.heading)}</span>
 ${page.medical.body}
 </div>
+${page.medical.photo ? sidePhoto(page.medical.photo) : ''}
 </div>
 </section>`
     : ''

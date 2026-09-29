@@ -515,6 +515,7 @@ export const content = {
       { k: 'Languages', v: 'English · Spanish' },
     ],
     medical: {
+      photo: { slug: 'concussion-medical', widths: [700, 1000, 1340], width: 1340, height: 1460, display: 420, alt: 'Ben Velazquez kneeling beside a client lying on his side on a mat, guiding a supervised mobility position' },
       heading: 'An important note on medical care',
       body: `<p>Concussion is a medical condition. Nothing on this page is medical advice, and this program does not replace assessment, diagnosis or clearance by a qualified physician.</p>
 <p>Exercise-based concussion work is delivered as one part of a coordinated team, alongside your medical providers — not instead of them. If you have sustained a head injury, see a physician first. If you are experiencing worsening headache, repeated vomiting, seizures, weakness or numbness, increasing confusion or drowsiness, seek emergency care immediately.</p>`,
