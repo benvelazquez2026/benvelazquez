@@ -500,7 +500,7 @@ export const content = {
       kicker: 'Concussion recovery · NYC · Tampa · Puerto Rico',
       h1: 'Exercise-based concussion solutions, from the onset of injury.',
       lede: 'A holistic, team-based approach to concussion recovery — focused not just on getting you back, but on keeping you there.',
-      ctas: [{ route: 'apply', label: 'Learn about the program' }, { href: '/apply/?interest=concussion#applyForm', label: 'Remote assessment', ghost: true }],
+      ctas: [{ route: 'apply', label: 'Learn about the program' }, { href: site.links.remoteAssessment, label: 'Remote assessment', ghost: true }],
     },
     answer: [
       'Exercise-based concussion recovery uses carefully progressed, sub-symptom-threshold physical activity as an active part of recovery, rather than treating extended complete rest as the default. It is delivered as part of a coordinated team that includes medical oversight.',

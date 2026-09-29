@@ -501,7 +501,7 @@ export const content = {
       lede: 'Un enfoque integral y en equipo para la recuperación de conmociones cerebrales, centrado no solo en que regrese, sino en mantenerle ahí.',
       ctas: [
         { route: 'apply', label: 'Conozca el programa' },
-        { href: '/es/solicitar/?interest=concussion#applyForm', label: 'Evaluación remota', ghost: true },
+        { href: site.links.remoteAssessment, label: 'Evaluación remota', ghost: true },
       ],
     },
     answer: [

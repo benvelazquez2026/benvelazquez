@@ -95,6 +95,10 @@ export const site = {
     podcast: '#coming-soon',
     gtg: 'https://www.gtg.energy/discount/BenVGTG?redirect=/pages/gtg-energy-pouches',
     p2717: 'https://2717recovery.com/discount/BenVRecovery10',
+    // Concussion page "Remote assessment": a virtual self-assessment hosted by
+    // Parados; results are emailed to Ben for review. Preliminary preview
+    // link — swap for the production form URL when Parados issues it.
+    remoteAssessment: 'https://preview.parados.app/submit/b8544471-c123-4fd6-be96-9398edd7aca3',
     superpatch: 'https://healthpro.superpatch.com/NHL4RR/2CTPL/',
   },
 
