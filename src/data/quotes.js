@@ -27,10 +27,11 @@ export const quotes = [
     // Shown beside the quote on the home page (public/img/results-fleiszer-*).
     photo: {
       slug: 'fleiszer',
-      widths: [480, 624],
+      widths: [357],
+      ratio: 446 / 357,
       alt: {
-        en: 'Hamilton Tiger-Cats defensive lineman celebrating with both arms raised',
-        es: 'Liniero defensivo de los Hamilton Tiger-Cats celebrando con los brazos en alto',
+        en: 'Edmonton Eskimos linebacker, number 34, rushing off the line during a game',
+        es: 'Linebacker de los Edmonton Eskimos, número 34, arrancando desde la línea durante un partido',
       },
     },
     role: {
