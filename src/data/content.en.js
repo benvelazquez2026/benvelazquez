@@ -404,6 +404,7 @@ export const content = {
 <p>So the order matters. First, correct what isn’t right. Tune the engine. Structural balance is the priority. Only then do we shift gears and focus on the qualities needed to raise performance.</p>`,
     },
     outcomes: {
+      photo: { slug: 'athletes-work', width: 644, height: 930, display: 380, alt: 'Montreal Alouettes player, number 34, walking onto the field in a red and blue jersey' },
       kicker: 'The work',
       heading: 'What athletes work on with Ben.',
       cards: [

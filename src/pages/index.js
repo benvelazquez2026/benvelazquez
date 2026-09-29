@@ -370,8 +370,18 @@ ${
   page.outcomes
     ? `<section class="block on-bone">
 <div class="wrap">
+${
+  page.outcomes.photo
+    ? `<div class="media-rail" style="--media-w:${page.outcomes.photo.display}px">
+${sidePhoto(page.outcomes.photo)}
+<div>
 ${sectionHead({ kicker: page.outcomes.kicker, heading: esc(page.outcomes.heading) })}
 ${cardGrid(page.outcomes.cards, locale)}
+</div>
+</div>`
+    : `${sectionHead({ kicker: page.outcomes.kicker, heading: esc(page.outcomes.heading) })}
+${cardGrid(page.outcomes.cards, locale)}`
+}
 </div>
 </section>`
     : ''

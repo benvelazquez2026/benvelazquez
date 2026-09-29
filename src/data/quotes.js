@@ -30,8 +30,8 @@ export const quotes = [
       widths: [357],
       ratio: 446 / 357,
       alt: {
-        en: 'Edmonton Eskimos linebacker, number 34, rushing off the line during a game',
-        es: 'Linebacker de los Edmonton Eskimos, número 34, arrancando desde la línea durante un partido',
+        en: 'Tim Fleiszer, number 34 for the Edmonton Eskimos, rushing off the line during a game',
+        es: 'Tim Fleiszer, número 34 de los Edmonton Eskimos, arrancando desde la línea durante un partido',
       },
     },
     role: {

@@ -1506,6 +1506,37 @@ p {
 .side-photo {
   margin: 0;
 }
+/* Tall photo in its own column beside a heading + card grid; it stays in
+   view while the cards scroll past. */
+.media-rail {
+  display: grid;
+  grid-template-columns: minmax(0, var(--media-w, 380px)) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+.media-rail > .side-photo {
+  position: sticky;
+  top: 96px;
+}
+.media-rail .card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+@media (max-width: 900px) {
+  .media-rail {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .media-rail > .side-photo {
+    position: static;
+    max-width: 420px;
+  }
+  .media-rail > .side-photo img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+}
+
 /* Section heading beside a photo: keep the usual gap before the cards. */
 .who-head {
   margin-bottom: 44px;

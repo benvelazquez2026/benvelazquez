@@ -403,6 +403,7 @@ export const content = {
 <p>Por eso el orden importa. Primero, corregir lo que no está bien. Poner el motor a punto. El equilibrio estructural es la prioridad. Solo entonces cambiamos de marcha hacia las cualidades que elevan el rendimiento.</p>`,
     },
     outcomes: {
+      photo: { slug: 'athletes-work', width: 644, height: 930, display: 380, alt: 'Jugador de los Montreal Alouettes, número 34, entrando al campo con camiseta roja y azul' },
       kicker: 'El trabajo',
       heading: 'En qué trabajan los atletas con Ben.',
       cards: [
