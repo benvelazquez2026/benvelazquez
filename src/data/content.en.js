@@ -41,7 +41,7 @@ export const content = {
     ],
     proofLabel: 'Trusted by elite performers',
     answer: [
-      'Ben Velazquez is a performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico, with more than 20 years working with elite performers, including athletes across the NFL, NHL and MLB. He is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>, a licensed Soma-Therapist and a Certified Strength &amp; Conditioning Specialist.',
+      'Ben Velazquez is a performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico, with more than 20 years working with elite performers, including athletes across the NFL, NHL and MLB. He is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>, a licensed Soma-Therapist, a Posturologist and a Certified Strength &amp; Conditioning Specialist.',
       'He works with three groups: professional and developing athletes, time-poor executives, and people recovering from concussion. Every engagement begins with a free 20-minute intro call, and work is delivered virtually worldwide or in person in New York City, Tampa and Puerto Rico, in English or Spanish.',
     ],
     philosophy: {

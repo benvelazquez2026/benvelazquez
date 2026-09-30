@@ -389,7 +389,7 @@ function llmsIndex() {
 ## Key facts
 
 - Name: Ben Velazquez
-- Role: Performance rehabilitation specialist, strength and conditioning coach
+- Role: Performance rehabilitation specialist, posturologist, strength and conditioning coach
 - Location: New York City, NY; Tampa, FL; Puerto Rico
 - Serves: Worldwide (virtual); New York City, Tampa and Puerto Rico (in person)
 - Languages: English, Spanish

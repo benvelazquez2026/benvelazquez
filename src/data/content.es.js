@@ -34,7 +34,7 @@ export const content = {
     ],
     proofLabel: 'La confianza de la élite',
     answer: [
-      'Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, Tampa y Puerto Rico, con más de 20 años trabajando con atletas de élite, incluidos deportistas de la NFL, la NHL y la MLB. Es coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em>, Soma-Terapeuta licenciado y Especialista Certificado en Fuerza y Acondicionamiento.',
+      'Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, Tampa y Puerto Rico, con más de 20 años trabajando con atletas de élite, incluidos deportistas de la NFL, la NHL y la MLB. Es coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em>, Soma-Terapeuta licenciado, Posturólogo y Especialista Certificado en Fuerza y Acondicionamiento.',
       'Trabaja con tres grupos: atletas profesionales y en desarrollo, ejecutivos con poco tiempo, y personas en recuperación de conmociones cerebrales. Cada colaboración empieza con una llamada introductoria gratuita de 20 minutos, en línea a nivel mundial o presencial en Nueva York, Tampa y Puerto Rico, en inglés o español.',
     ],
     philosophy: {
