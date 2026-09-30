@@ -1243,6 +1243,60 @@ p {
   font-size: 1.5rem;
   color: var(--bone);
 }
+/* Portrait with a quote: the photo fills the panel and fades to ink at the
+   foot, where the quote sits; it eases in as the section scrolls into view. */
+.method-visual.has-quote {
+  margin: 0;
+  padding: 34px;
+}
+.method-visual.has-quote picture {
+  position: absolute;
+  inset: 0;
+}
+.method-visual.has-quote img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;
+  filter: saturate(0.85);
+  transform: scale(1.04);
+  transition: transform 1.6s var(--ease), opacity 1.2s var(--ease);
+  opacity: 0;
+}
+.method-visual.has-quote.in img,
+.no-js .method-visual.has-quote img {
+  opacity: 1;
+  transform: none;
+}
+.method-visual.has-quote::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20, 22, 26, 0.1) 0%, rgba(20, 22, 26, 0.15) 45%, rgba(20, 22, 26, 0.85) 78%, var(--ink) 100%);
+}
+.method-visual.has-quote .vlabel {
+  z-index: 2;
+}
+.method-visual.has-quote blockquote p {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.12;
+  color: var(--bone);
+  margin-bottom: 10px;
+}
+.method-visual.has-quote .mono {
+  color: var(--signal);
+  margin: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .method-visual.has-quote img {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* With a photo: image on top, the label becomes a caption strip below it. */
 .method-visual.has-photo {
   aspect-ratio: auto;

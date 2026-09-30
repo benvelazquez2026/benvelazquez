@@ -123,6 +123,7 @@ export const content = {
       ],
       vlabel: 'Performance · measured',
       vbig: 'Precision over intensity.',
+      quote: { text: '“You are your best therapist.”', by: 'Dr. Guy Voyer', alt: 'Dr. Guy Voyer, creator of ELDOA, speaking on stage' },
     },
     credentials: {
       kicker: 'Credentials & recognition',

@@ -116,6 +116,7 @@ export const content = {
       ],
       vlabel: 'Rendimiento · medido',
       vbig: 'Precisión sobre intensidad.',
+      quote: { text: '“Usted es su mejor terapeuta.”', by: 'Dr. Guy Voyer', alt: 'El Dr. Guy Voyer, creador de ELDOA, hablando en un escenario' },
     },
     credentials: {
       kicker: 'Credenciales y reconocimiento',

@@ -183,13 +183,27 @@ ${each(
     t.nav.method,
   )} →</a></p>
 </div>
-<div class="method-visual reveal">
+${
+  c.method.quote
+    ? `<figure class="method-visual has-quote reveal">
+<picture>
+<source type="image/avif" srcset="/img/home-voyer-600.avif">
+<source type="image/webp" srcset="/img/home-voyer-600.webp">
+<img src="/img/home-voyer-600.jpg" width="600" height="600" alt="${esc(c.method.quote.alt)}" loading="lazy" decoding="async">
+</picture>
+<figcaption class="vlabel">
+<blockquote><p>${esc(c.method.quote.text)}</p></blockquote>
+<span class="mono">— ${esc(c.method.quote.by)}</span>
+</figcaption>
+</figure>`
+    : `<div class="method-visual reveal">
 <div class="scan"></div><div class="ring"></div>
 <div class="vlabel">
 <span class="mono">${esc(c.method.vlabel)}</span>
 <strong>${esc(c.method.vbig)}</strong>
 </div>
-</div>
+</div>`
+}
 </div>
 </section>
 
