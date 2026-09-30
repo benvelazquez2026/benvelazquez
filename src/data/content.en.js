@@ -821,13 +821,13 @@ export const content = {
       },
       kicker: 'About',
       h1: 'Twenty years in the room where careers are protected.',
-      lede: 'Performance rehabilitation specialist, strength coach, published author on fascia, and a recognized expert in exercise-based concussion solutions — based in New York City, Tampa and Puerto Rico, working in English and Spanish.',
+      lede: 'Performance rehabilitation specialist, posturologist, strength coach, published author on fascia, and a recognized expert in exercise-based concussion solutions — based in New York City, Tampa and Puerto Rico, working in English and Spanish.',
       ctas: [APPLY_CTA, { route: 'method', label: 'The method', ghost: true }],
     },
     answerPhoto: { slug: 'about-answer', widths: [600, 900, 1200], width: 1200, height: 1500, display: 440, alt: 'Private training studio with a boxing ring, dumbbell racks, benches and an orange sprint track' },
     answer: [
       'Ben Velazquez is a performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico, with more than 20 years working with elite performers. He has worked with athletes across the NFL, NHL and MLB, has trained over 1,000 professionals through his seminars, and is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.',
-      'He is a licensed Soma-Therapist, a Certified Strength &amp; Conditioning Specialist (CSCS), an ACSM Exercise Specialist and an ISSA Sports Performance Nutritionist, and a member of the NSCA, ACSM and ISSA. He coaches in English and Spanish, virtually worldwide and in person in New York City, Tampa and Puerto Rico.',
+      'He is a licensed Soma-Therapist, a Posturologist, a Certified Strength &amp; Conditioning Specialist (CSCS), an ACSM Exercise Specialist and an ISSA Sports Performance Nutritionist, and a member of the NSCA, ACSM and ISSA. He coaches in English and Spanish, virtually worldwide and in person in New York City, Tampa and Puerto Rico.',
     ],
     facts: [
       { k: 'Based in', v: 'New York City · Tampa · Puerto Rico' },
@@ -861,7 +861,7 @@ export const content = {
     faqs: [
       {
         q: 'What are Ben Velazquez’s qualifications?',
-        a: '<p>Licensed Soma-Therapist (Performance Physical Therapy), Certified Strength &amp; Conditioning Specialist (CSCS), ACSM Exercise Specialist and ISSA Sports Performance Nutritionist. He is a member of the NSCA, ACSM and ISSA, and a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.</p>',
+        a: '<p>Licensed Soma-Therapist (Performance Physical Therapy), Posturologist, Certified Strength &amp; Conditioning Specialist (CSCS), ACSM Exercise Specialist and ISSA Sports Performance Nutritionist. He is a member of the NSCA, ACSM and ISSA, and a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.</p>',
       },
       {
         q: 'Which professional athletes has Ben worked with?',
@@ -1665,6 +1665,7 @@ export const credentialsCopy = {
   credsTag: 'Credentials',
   creds: [
     'Licensed Soma-Therapist (Performance Physical Therapy)',
+    'Posturologist',
     'Certified Strength & Conditioning Specialist (CSCS)',
     'ACSM Exercise Specialist',
     'ISSA Sports Performance Nutritionist',

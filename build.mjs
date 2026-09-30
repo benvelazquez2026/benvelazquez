@@ -393,7 +393,7 @@ function llmsIndex() {
 - Location: New York City, NY; Tampa, FL; Puerto Rico
 - Serves: Worldwide (virtual); New York City, Tampa and Puerto Rico (in person)
 - Languages: English, Spanish
-- Credentials: Licensed Soma-Therapist; Certified Strength & Conditioning Specialist (CSCS); ACSM Exercise Specialist; ISSA Sports Performance Nutritionist; member of NSCA, ACSM, ISSA
+- Credentials: Licensed Soma-Therapist; Posturologist; Certified Strength & Conditioning Specialist (CSCS); ACSM Exercise Specialist; ISSA Sports Performance Nutritionist; member of NSCA, ACSM, ISSA
 - Published: Co-contributing author, "Fascia: Clinical Applications for Health and Human Performance"
 - Known for: ELDOA, fascia work, assessment-led performance rehabilitation, exercise-based concussion recovery
 - Athletes worked with: Christian McCaffrey (NFL), Derek Carr (NFL), Connor McDavid (NHL), Max Domi (NHL), Jesús Luzardo (MLB); appeared in "Being: Mariano" (FOX Sports)
