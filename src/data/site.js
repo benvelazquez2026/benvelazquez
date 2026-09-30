@@ -172,7 +172,7 @@ export const routes = [
   },
   { key: 'programs', path: { en: 'programs', es: 'programas' }, priority: 0.95, changefreq: 'monthly' },
   { key: 'results', path: { en: 'results', es: 'resultados' }, priority: 0.8, changefreq: 'monthly' },
-  { key: 'insights', path: { en: 'insights', es: 'insights' }, priority: 0.8, changefreq: 'weekly' },
+  { key: 'insights', path: { en: 'insights', es: 'perspectivas' }, priority: 0.8, changefreq: 'weekly' },
   { key: 'faq', path: { en: 'faq', es: 'preguntas-frecuentes' }, priority: 0.8, changefreq: 'monthly' },
   { key: 'apply', path: { en: 'apply', es: 'solicitar' }, priority: 0.9, changefreq: 'monthly' },
   { key: 'contact', path: { en: 'contact', es: 'contacto' }, priority: 0.7, changefreq: 'yearly' },

@@ -631,7 +631,7 @@ ${pageTail(page, locale)}`;
       {
         '@type': 'Blog',
         '@id': `${url}#blog`,
-        name: locale === 'es' ? 'Insights semanales' : 'Weekly Insights',
+        name: locale === 'es' ? 'Perspectivas semanales' : 'Weekly Insights',
         description: plain(page.hero.lede),
         url,
         inLanguage: locale === 'es' ? 'es' : 'en-US',
@@ -779,7 +779,7 @@ ${each(
   )}
 <div class="an-scarcity" style="margin-bottom:0"><span class="mono">${
     locale === 'es'
-      ? `Lugares disponibles este mes: ${site.roster.openSpots}`
+      ? `Lugares disponibles en la plantilla del equipo este mes: ${site.roster.openSpots}`
       : `Roster spots open this month: ${site.roster.openSpots}`
   }</span></div>
 </div>

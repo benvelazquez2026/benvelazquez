@@ -527,7 +527,7 @@ function feed(locale) {
 <title>${esc(t.rssTitle)}</title>
 <link>${esc(urlFor('insights', locale))}</link>
 <atom:link href="${esc(absolute(self))}" rel="self" type="application/rss+xml"/>
-<description>${esc(contentEn.insights.seo.description)}</description>
+<description>${esc((locale === 'es' ? contentEs : contentEn).insights.seo.description)}</description>
 <language>${locale === 'es' ? 'es' : 'en-us'}</language>
 <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
 <copyright>© ${new Date().getFullYear()} ${esc(site.name)}</copyright>
@@ -638,8 +638,10 @@ write(
 /es/index.html                 /es/                       301
 /es/aplicar                    /es/solicitar/             301
 /es/aplicar/                   /es/solicitar/             301
-/es/insights/trata-tu-carrera-como-un-deporte/   /es/insights/trate-su-carrera-como-un-deporte/   301
-/es/insights/tu-silla-deshace-tu-entrenamiento/  /es/insights/su-silla-deshace-su-entrenamiento/  301
+/es/insights/trata-tu-carrera-como-un-deporte/   /es/perspectivas/trate-su-carrera-como-un-deporte/   301
+/es/insights/tu-silla-deshace-tu-entrenamiento/  /es/perspectivas/su-silla-deshace-su-entrenamiento/  301
+/es/insights                   /es/perspectivas/          301
+/es/insights/*                 /es/perspectivas/:splat    301
 `,
 );
 

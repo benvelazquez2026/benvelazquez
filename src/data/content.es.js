@@ -125,7 +125,7 @@ export const content = {
     },
     analysis: {
       kicker: 'Gratis · Previa solicitud',
-      heading: 'Solicite su lugar en el Executive Roster.',
+      heading: 'Solicite su lugar en la Plantilla del Equipo Ejecutivo.',
       lede: 'Trabajar con Ben empieza siempre igual: una llamada introductoria virtual de 20 minutos, gratuita. Encuentro qué está frenando su cuerpo, y usted se va con un plan claro para resolverlo, trabaje o no con Ben después.',
       rows: [
         { n: '01', b: 'La llamada', t: 'Una evaluación virtual enfocada de 20 minutos sobre cómo se mueve, carga y se recupera.' },
@@ -134,16 +134,16 @@ export const content = {
           b: 'Lo que usted se lleva',
           t: 'Un resumen personalizado: las dos o tres cosas que más le limitan y por dónde empezar. Suyo para siempre.',
         },
-        { n: '03', b: 'La selección', t: 'Si encaja, se le ofrece uno de los pocos lugares disponibles en el roster.' },
+        { n: '03', b: 'La selección', t: 'Si encaja, se le ofrece uno de los pocos lugares disponibles en la plantilla del equipo.' },
       ],
-      spots: `Lugares disponibles este mes: ${site.roster.openSpots}`,
+      spots: `Lugares disponibles en la plantilla del equipo este mes: ${site.roster.openSpots}`,
       cta: 'Solicite su lugar',
     },
     insights: {
-      kicker: 'Insights semanales',
+      kicker: 'Perspectivas semanales',
       heading: 'Notas desde la cancha.',
       lede: 'Ideas breves y prácticas sobre rendimiento, recuperación y longevidad — una nueva casi cada semana.',
-      all: 'Todos los insights →',
+      all: 'Todas las perspectivas →',
     },
     faqs: [
       {
@@ -199,7 +199,7 @@ export const content = {
         'Coaching privado para ejecutivos sin tiempo: ELDOA, descompresión y programación de fuerza que viaja con usted. Nueva York, Tampa, Puerto Rico y virtual.',
     },
     hero: {
-      kicker: 'Cupos abiertos · Roster limitado',
+      kicker: 'Cupos abiertos · Plantilla limitada',
       h1: 'Entrene como los profesionales, con una agenda que no se detiene.',
       lede: 'Energía sostenida en semanas brutales. Libertad del dolor de espalda y cuello del escritorio y los asientos de avión. La misma rehabilitación de rendimiento que mantiene a los atletas profesionales en el campo, adaptada a cómo usted vive realmente.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
@@ -344,7 +344,7 @@ export const content = {
       },
       {
         q: '¿Trabajo directamente con Ben o con alguien de su equipo?',
-        a: '<p>Directamente con Ben. Por eso el roster está limitado: el nivel Concierge admite solo siete lugares y la entrada a Core es deliberadamente pequeña.</p>',
+        a: '<p>Directamente con Ben. Por eso la plantilla del equipo está limitada: el nivel Concierge admite solo siete lugares y la entrada a Core es deliberadamente pequeña.</p>',
       },
     ],
     related: [
@@ -354,9 +354,9 @@ export const content = {
       { route: 'apply', label: 'Empiece aquí', title: 'Reserve su llamada introductoria gratuita' },
     ],
     cta: {
-      kicker: 'Roster limitado',
-      heading: 'Solicite su lugar en el Executive Roster.',
-      body: `Una llamada introductoria virtual y gratuita de 20 minutos. Usted se va con un plan que puede usar, trabaje o no con Ben. ${site.roster.openSpots} lugares abiertos este mes.`,
+      kicker: 'Plantilla limitada',
+      heading: 'Solicite su lugar en la Plantilla del Equipo Ejecutivo.',
+      body: `Una llamada introductoria virtual y gratuita de 20 minutos. Usted se va con un plan que puede usar, trabaje o no con Ben. ${site.roster.openSpots} lugares abiertos en la plantilla del equipo este mes.`,
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -858,7 +858,7 @@ export const content = {
 <h2>Enseñanza</h2>
 <p>Más de mil profesionales han pasado por mis seminarios. Enseñar afina el trabajo: no se puede despachar un principio con vaguedades ante una sala de profesionales que lo aplicarán el lunes.</p>
 <h2>Ejecutivos</h2>
-<p>Los métodos que mantienen a un atleta profesional en el campo resultan trasladables casi directamente a personas que se sientan once horas y vuelan cien veces al año. La misma compresión, los mismos patrones de compensación, menos tiempo de recuperación y mucho menos apoyo. Por eso existe el Executive Roster, y por eso se mantiene pequeño.</p>`,
+<p>Los métodos que mantienen a un atleta profesional en el campo resultan trasladables casi directamente a personas que se sientan once horas y vuelan cien veces al año. La misma compresión, los mismos patrones de compensación, menos tiempo de recuperación y mucho menos apoyo. Por eso existe la Plantilla del Equipo Ejecutivo, y por eso se mantiene pequeña.</p>`,
     },
     credentials: {
       kicker: 'Credenciales y reconocimiento',
@@ -908,7 +908,7 @@ export const content = {
   /* ====================================================================== */
   programs: {
     seo: {
-      title: 'Programas y Precios — Executive Roster | Ben Velazquez',
+      title: 'Programas y Precios — Plantilla Ejecutiva | Ben Velazquez',
       description:
         'Tres formas de trabajar con Ben Velazquez: Executive Reset ($297), Core Executive Performance ($2,300/mes) y Concierge Private Performance previa solicitud.',
     },
@@ -1020,7 +1020,7 @@ export const content = {
         a: '<p>Una evaluación virtual enfocada de 20 minutos sobre cómo se mueve, carga y se recupera, y un resumen personalizado de las dos o tres cosas que más le limitan y por dónde empezar. Es genuinamente gratuita y usted la conserva, trabajemos juntos o no.</p>',
       },
       {
-        q: '¿Por qué el roster Concierge está limitado a 7?',
+        q: '¿Por qué la plantilla Concierge está limitada a 7?',
         a: '<p>Porque implica trabajo presencial, cambios de programación en tiempo real y acceso directo bajo demanda dentro de horarios acordados. Más allá de siete lugares, el nivel de acceso que define ese nivel deja de ser entregable.</p>',
       },
       {
@@ -1069,7 +1069,7 @@ export const content = {
     cta: {
       kicker: 'La forma de entrar',
       heading: 'Todos los niveles empiezan con la misma llamada introductoria gratuita.',
-      body: `Veinte minutos, virtual, sin costo ni compromiso. ${site.roster.openSpots} lugares abiertos este mes.`,
+      body: `Veinte minutos, virtual, sin costo ni compromiso. ${site.roster.openSpots} lugares abiertos en la plantilla del equipo este mes.`,
       ctas: [APPLY_CTA],
     },
   },
@@ -1131,23 +1131,23 @@ export const content = {
   /* ====================================================================== */
   insights: {
     seo: {
-      title: 'Insights Semanales sobre Rendimiento | Ben Velazquez',
+      title: 'Perspectivas Semanales sobre Rendimiento | Ben Velazquez',
       description:
         'Textos breves y prácticos sobre rendimiento, recuperación, postura y longevidad de un coach con 20+ años junto a atletas de élite. Uno nuevo casi cada semana.',
     },
     hero: {
-      kicker: 'Insights semanales',
+      kicker: 'Perspectivas semanales',
       h1: 'Notas desde la cancha.',
       lede: 'Ideas breves y prácticas sobre rendimiento, recuperación y longevidad — una nueva casi cada semana.',
       ctas: [APPLY_CTA],
     },
     answer: [
-      'Insights Semanales es una serie de formato breve sobre rendimiento, recuperación, postura y longevidad, escrita desde veinte años de trabajo con atletas profesionales y ejecutivos. Cada texto toma una sola pregunta práctica y la responde directamente.',
-      'Se publican nuevos insights casi todas las semanas, en inglés y español, con feed RSS para ambos idiomas.',
+      'Perspectivas Semanales es una serie de formato breve sobre rendimiento, recuperación, postura y longevidad, escrita desde veinte años de trabajo con atletas profesionales y ejecutivos. Cada texto toma una sola pregunta práctica y la responde directamente.',
+      'Se publican nuevas perspectivas casi todas las semanas, en inglés y español, con feed RSS para ambos idiomas.',
     ],
     faqs: [
       {
-        q: '¿Con qué frecuencia se publican nuevos insights?',
+        q: '¿Con qué frecuencia se publican nuevas perspectivas?',
         a: '<p>Cada semana. Cada uno es un texto breve y autocontenido sobre una única pregunta práctica.</p>',
       },
       {
@@ -1155,8 +1155,8 @@ export const content = {
         a: '<p>Sí — <a href="/es/feed.xml">/es/feed.xml</a> para español y <a href="/feed.xml">/feed.xml</a> para inglés.</p>',
       },
       {
-        q: '¿Los insights están disponibles en inglés?',
-        a: '<p>Sí. Cada insight se publica en español e inglés.</p>',
+        q: '¿Las perspectivas están disponibles en inglés?',
+        a: '<p>Sí. Cada perspectiva se publica en español e inglés.</p>',
       },
     ],
     related: [
@@ -1204,7 +1204,7 @@ export const content = {
           },
           {
             q: '¿Trabajo directamente con Ben?',
-            a: '<p>Sí. Por eso el roster está limitado: Concierge admite solo 7 lugares y la entrada a Core es deliberadamente pequeña.</p>',
+            a: '<p>Sí. Por eso la plantilla del equipo está limitada: Concierge admite solo 7 lugares y la entrada a Core es deliberadamente pequeña.</p>',
           },
           {
             q: '¿El trabajo puede hacerse a distancia?',
@@ -1307,17 +1307,17 @@ export const content = {
     seo: {
       title: 'Llamada Introductoria Gratuita (20 min) | Ben Velazquez',
       description:
-        'Solicite una llamada introductoria virtual y gratuita de 20 minutos. Se lleva un plan personalizado, se una o no al Executive Roster.',
+        'Solicite una llamada introductoria virtual y gratuita de 20 minutos. Se lleva un plan personalizado, se una o no a la Plantilla del Equipo Ejecutivo.',
     },
     hero: {
       kicker: 'Gratis · Previa solicitud',
-      h1: 'Solicite su lugar en el Executive Roster.',
+      h1: 'Solicite su lugar en la Plantilla del Equipo Ejecutivo.',
       lede: 'Trabajar con Ben empieza siempre igual: una llamada introductoria virtual de 20 minutos, gratuita. Encuentro qué está frenando su cuerpo, y usted se va con un plan claro para resolverlo, trabaje o no con Ben después.',
       ctas: [],
     },
     answer: [
       'La llamada introductoria es una evaluación virtual gratuita de 20 minutos sobre cómo se mueve, carga y se recupera. Usted se va con un resumen personalizado de las dos o tres cosas que más le limitan y por dónde empezar, suyo, trabajemos juntos o no.',
-      `Si encaja, se le ofrece uno de los pocos lugares disponibles en el roster. Este mes hay ${site.roster.openSpots} lugares abiertos. Disponible en inglés o español.`,
+      `Si encaja, se le ofrece uno de los pocos lugares disponibles en la plantilla del equipo. Este mes hay ${site.roster.openSpots} lugares abiertos. Disponible en inglés o español.`,
     ],
     steps: [
       { n: '01', b: 'La llamada', t: 'Una evaluación virtual enfocada de 20 minutos sobre cómo se mueve, carga y se recupera.' },
@@ -1326,12 +1326,12 @@ export const content = {
         b: 'Lo que usted se lleva',
         t: 'Un resumen personalizado: las dos o tres cosas que más le limitan y por dónde empezar. Suyo para siempre.',
       },
-      { n: '03', b: 'La selección', t: 'Si encaja, se le ofrece uno de los pocos lugares disponibles en el roster.' },
+      { n: '03', b: 'La selección', t: 'Si encaja, se le ofrece uno de los pocos lugares disponibles en la plantilla del equipo.' },
     ],
     list: [
       { b: 'Es una evaluación de verdad.', t: 'Usted se va con un plan que puede usar, aunque no trabajemos juntos.' },
       { b: 'Hecho a su medida.', t: 'Virtual, presencial o ambos — en inglés o español.' },
-      { b: 'Roster limitado.', t: 'Solo acepto a un número reducido de ejecutivos a la vez.' },
+      { b: 'Plantilla limitada.', t: 'Solo acepto a un número reducido de ejecutivos a la vez.' },
     ],
     form: {
       heading: 'Solicite su lugar',
@@ -1460,7 +1460,7 @@ export const content = {
       lede: 'Conversaciones sobre rendimiento, recuperación y longevidad con quienes viven en la cima.',
       ctas: [
         { href: site.links.podcast, label: 'Escuchar ahora' },
-        { route: 'insights', label: 'Leer los insights', ghost: true },
+        { route: 'insights', label: 'Leer las perspectivas', ghost: true },
       ],
     },
     answer: [
@@ -1482,7 +1482,7 @@ export const content = {
       },
     ],
     related: [
-      { route: 'insights', label: 'Lectura', title: 'Insights semanales' },
+      { route: 'insights', label: 'Lectura', title: 'Perspectivas semanales' },
       { route: 'about', label: 'Trayectoria', title: 'Sobre Ben Velazquez' },
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
       { route: 'apply', label: 'Empiece aquí', title: 'Reserve su llamada introductoria gratuita' },
@@ -1565,7 +1565,7 @@ export const content = {
       { route: 'disclosure', label: 'Legal', title: 'Divulgación de afiliados completa' },
       { route: 'method', label: 'El método', title: 'Evaluar, descomprimir, construir para durar' },
       { route: 'programs', label: 'Precios', title: 'Programas y niveles de membresía' },
-      { route: 'insights', label: 'Lectura', title: 'Insights semanales' },
+      { route: 'insights', label: 'Lectura', title: 'Perspectivas semanales' },
     ],
   },
 
@@ -1649,7 +1649,7 @@ export const content = {
   notFound: {
     seo: {
       title: 'Página no encontrada | Ben Velazquez',
-      description: 'Esa página no existe. Aquí están los lugares más útiles a los que ir: programas, el método, coaching ejecutivo y los insights semanales.',
+      description: 'Esa página no existe. Aquí están los lugares más útiles a los que ir: programas, el método, coaching ejecutivo y las perspectivas semanales.',
     },
     hero: {
       kicker: 'Error 404',
@@ -1661,7 +1661,7 @@ export const content = {
       { route: 'executive', label: 'Para ejecutivos', title: 'Coaching de rendimiento ejecutivo' },
       { route: 'athletes', label: 'Para atletas', title: 'Rehabilitación de rendimiento' },
       { route: 'programs', label: 'Precios', title: 'Programas y niveles de membresía' },
-      { route: 'insights', label: 'Lectura', title: 'Insights semanales' },
+      { route: 'insights', label: 'Lectura', title: 'Perspectivas semanales' },
     ],
   },
 };
