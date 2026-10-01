@@ -142,7 +142,7 @@ export const content = {
     insights: {
       kicker: 'Perspectivas semanales',
       heading: 'Notas desde la cancha.',
-      lede: 'Ideas breves y prácticas sobre rendimiento, recuperación y longevidad — una nueva casi cada semana.',
+      lede: 'Ideas breves y prácticas sobre rendimiento, recuperación y longevidad — una nueva cada semana.',
       all: 'Todas las perspectivas →',
     },
     faqs: [
@@ -1133,17 +1133,17 @@ export const content = {
     seo: {
       title: 'Perspectivas Semanales sobre Rendimiento | Ben Velazquez',
       description:
-        'Textos breves y prácticos sobre rendimiento, recuperación, postura y longevidad de un coach con 20+ años junto a atletas de élite. Uno nuevo casi cada semana.',
+        'Textos breves y prácticos sobre rendimiento, recuperación, postura y longevidad de un coach con 20+ años junto a atletas de élite. Uno nuevo cada semana.',
     },
     hero: {
       kicker: 'Perspectivas semanales',
       h1: 'Notas desde la cancha.',
-      lede: 'Ideas breves y prácticas sobre rendimiento, recuperación y longevidad — una nueva casi cada semana.',
+      lede: 'Ideas breves y prácticas sobre rendimiento, recuperación y longevidad — una nueva cada semana.',
       ctas: [APPLY_CTA],
     },
     answer: [
       'Perspectivas Semanales es una serie de formato breve sobre rendimiento, recuperación, postura y longevidad, escrita desde veinte años de trabajo con atletas profesionales y ejecutivos. Cada texto toma una sola pregunta práctica y la responde directamente.',
-      'Se publican nuevas perspectivas casi todas las semanas, en inglés y español, con feed RSS para ambos idiomas.',
+      'Se publican nuevas perspectivas cada semana, en inglés y español, con feed RSS para ambos idiomas.',
     ],
     faqs: [
       {

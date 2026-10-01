@@ -149,7 +149,7 @@ export const content = {
     insights: {
       kicker: 'Weekly insights',
       heading: 'Notes from the field.',
-      lede: 'Short, practical thoughts on performance, recovery, and longevity — a new one most weeks.',
+      lede: 'Short, practical thoughts on performance, recovery, and longevity — a new one every week.',
       all: 'All insights →',
     },
     faqs: [
@@ -1128,17 +1128,17 @@ export const content = {
     seo: {
       title: 'Weekly Insights on Performance & Longevity | Ben Velazquez',
       description:
-        'Short, practical writing on performance, recovery, posture and longevity from a coach who has spent 20+ years with elite athletes. A new insight most weeks.',
+        'Short, practical writing on performance, recovery, posture and longevity from a coach who has spent 20+ years with elite athletes. A new insight every week.',
     },
     hero: {
       kicker: 'Weekly insights',
       h1: 'Notes from the field.',
-      lede: 'Short, practical thoughts on performance, recovery, and longevity — a new one most weeks.',
+      lede: 'Short, practical thoughts on performance, recovery, and longevity — a new one every week.',
       ctas: [APPLY_CTA],
     },
     answer: [
       'Weekly Insights is a short-form series on performance, recovery, posture and longevity, written from twenty years of work with professional athletes and executives. Each piece takes a single practical question and answers it directly.',
-      'New insights are published most weeks and are available in English and Spanish, with an RSS feed for both.',
+      'New insights are published every week and are available in English and Spanish, with an RSS feed for both.',
     ],
     faqs: [
       {

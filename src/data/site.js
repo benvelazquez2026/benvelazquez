@@ -24,7 +24,7 @@ const PRODUCTION_ORIGIN = 'https://www.benvelazquez.com';
 /**
  * The moment this build represents. Scheduled insights go live and the
  * open-spots count rolls over based on it; the deploy workflow rebuilds
- * every Monday and on the 1st of the month so both stay current.
+ * every day so both stay current.
  * BUILD_DATE=2026-11-02 npm run build   previews a future build.
  */
 export const BUILD_DATE = new Date(process.env.BUILD_DATE || Date.now());
