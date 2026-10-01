@@ -432,7 +432,7 @@ export const content = {
         {
           idx: '05',
           heading: 'Career extension',
-          body: 'The training decisions that determine whether the last four years of a career are productive or lost to management.',
+          body: 'The attention paid to training, recovery and recuperation will often determine whether the professional athlete can extend their career beyond the norm, add value and receive a new contract.',
         },
         {
           idx: '06',
@@ -863,7 +863,7 @@ export const content = {
     faqs: [
       {
         q: 'What are Ben Velazquez’s qualifications?',
-        a: '<p>Licensed Soma-Therapist (Performance Physical Therapy), Posturologist, Certified Strength &amp; Conditioning Specialist (CSCS), ACSM Exercise Specialist and ISSA Sports Performance Nutritionist. He is a member of the NSCA, ACSM and ISSA, and a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.</p>',
+        a: '<p>Licensed Soma-Therapist (Performance Physical Therapy), Posturologist, Certified Strength &amp; Conditioning Specialist (CSCS), ACSM Exercise Specialist and ISSA Sports Performance Nutritionist. He studied posturology under Dr. Bernard Bricot, is a member of the NSCA, ACSM and ISSA, and a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.</p>',
       },
       {
         q: 'Which professional athletes has Ben worked with?',
@@ -964,7 +964,7 @@ export const content = {
           'In person at your location, or at Ben’s offices in NYC, Tampa or Puerto Rico — one-hour sessions',
           'Complete discretion — confidentiality and NDAs as standard',
           'Up to 8–12 touchpoints / month, priority scheduling',
-          'Programming adjusted in real time as your week changes',
+          'Custom program design, adjusted in real time as your week changes',
           'Deeper integration with recovery, sleep and energy',
           'Direct on-call access, within agreed hours',
         ],
@@ -1455,6 +1455,7 @@ export const content = {
       lede: 'Conversations on performance, recovery, and longevity with the people who live at the top.',
       ctas: [{ href: site.links.podcast, label: 'Listen now' }, { route: 'insights', label: 'Read the insights', ghost: true }],
     },
+    note: 'Stay tuned — episodes are on the way.',
     answer: [
       'The Ben Velazquez Podcast features conversations on performance, recovery and longevity with athletes, practitioners and executives operating at the highest level.',
       'It is hosted by Ben Velazquez, a performance rehabilitation specialist in New York City, Tampa and Puerto Rico, with more than 20 years working with athletes across the NFL, NHL and MLB.',
@@ -1667,7 +1668,7 @@ export const credentialsCopy = {
   credsTag: 'Credentials',
   creds: [
     'Licensed Soma-Therapist (Performance Physical Therapy)',
-    'Posturologist',
+    'Posturologist, trained under Dr. Bernard Bricot',
     'Certified Strength & Conditioning Specialist (CSCS)',
     'ACSM Exercise Specialist',
     'ISSA Sports Performance Nutritionist',

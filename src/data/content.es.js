@@ -431,7 +431,7 @@ export const content = {
         {
           idx: '05',
           heading: 'Extensión de carrera',
-          body: 'Las decisiones de entrenamiento que determinan si los últimos cuatro años de una carrera son productivos o se pierden en gestión de molestias.',
+          body: 'La atención dedicada al entrenamiento, la recuperación y el descanso suele determinar si el atleta profesional puede alargar su carrera más allá de lo normal, aportar valor y conseguir un nuevo contrato.',
         },
         {
           idx: '06',
@@ -868,7 +868,7 @@ export const content = {
     faqs: [
       {
         q: '¿Cuáles son las cualificaciones de Ben Velazquez?',
-        a: '<p>Soma-Terapeuta licenciado (fisioterapia de rendimiento), Posturólogo, Especialista Certificado en Fuerza y Acondicionamiento (CSCS), Especialista en Ejercicio ACSM y Nutricionista de Rendimiento Deportivo ISSA. Es miembro de NSCA, ACSM e ISSA, y coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em>.</p>',
+        a: '<p>Soma-Terapeuta licenciado (fisioterapia de rendimiento), Posturólogo, Especialista Certificado en Fuerza y Acondicionamiento (CSCS), Especialista en Ejercicio ACSM y Nutricionista de Rendimiento Deportivo ISSA. Estudió posturología con el Dr. Bernard Bricot, es miembro de NSCA, ACSM e ISSA, y coautor colaborador de <em>Fascia: Clinical Applications for Health and Human Performance</em>.</p>',
       },
       {
         q: '¿Con qué atletas profesionales ha trabajado Ben?',
@@ -969,7 +969,7 @@ export const content = {
           'Presencial donde usted esté, o en las oficinas de Ben en NYC, Tampa o Puerto Rico — sesiones de una hora',
           'Total discreción — confidencialidad y acuerdos de confidencialidad (NDA) como norma',
           'Hasta 8–12 puntos de contacto / mes, agenda prioritaria',
-          'Programación ajustada en tiempo real según cambia su semana',
+          'Diseño de programa personalizado, ajustado en tiempo real según cambia su semana',
           'Mayor integración con recuperación, sueño y energía',
           'Acceso directo bajo demanda, dentro de horarios acordados',
         ],
@@ -1463,6 +1463,7 @@ export const content = {
         { route: 'insights', label: 'Leer las perspectivas', ghost: true },
       ],
     },
+    note: 'Manténgase atento: los episodios están en camino.',
     answer: [
       'El Podcast de Ben Velazquez presenta conversaciones sobre rendimiento, recuperación y longevidad con atletas, profesionales y ejecutivos que operan al más alto nivel.',
       'Lo presenta Ben Velazquez, especialista en rehabilitación de alto rendimiento en Nueva York, Tampa y Puerto Rico, con más de 20 años trabajando con atletas de la NFL, la NHL y la MLB.',
@@ -1675,7 +1676,7 @@ export const credentialsCopy = {
   credsTag: 'Credenciales',
   creds: [
     'Soma-Terapeuta licenciado (fisioterapia de rendimiento)',
-    'Posturólogo',
+    'Posturólogo, formado con el Dr. Bernard Bricot',
     'Especialista certificado en fuerza y acondicionamiento (CSCS)',
     'Especialista en ejercicio ACSM',
     'Nutricionista de rendimiento deportivo ISSA',
