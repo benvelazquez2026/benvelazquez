@@ -1136,6 +1136,15 @@ export const content = {
         'Textos breves y prácticos sobre rendimiento, recuperación, postura y longevidad de un coach con 20+ años junto a atletas de élite. Uno nuevo cada semana.',
     },
     hero: {
+      photo: {
+        slug: 'hero-insights',
+        widths: [560, 736],
+        width: 736,
+        height: 736,
+        position: '62% 50%',
+        narrow: true,
+        alt: 'Un gimnasio de estilo clásico con paredes de ladrillo, un gran reloj de pared, discos de pesas y ventanales en arco',
+      },
       kicker: 'Perspectivas semanales',
       h1: 'Notas desde la cancha.',
       lede: 'Ideas breves y prácticas sobre rendimiento, recuperación y longevidad — una nueva cada semana.',

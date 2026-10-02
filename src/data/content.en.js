@@ -1131,6 +1131,15 @@ export const content = {
         'Short, practical writing on performance, recovery, posture and longevity from a coach who has spent 20+ years with elite athletes. A new insight every week.',
     },
     hero: {
+      photo: {
+        slug: 'hero-insights',
+        widths: [560, 736],
+        width: 736,
+        height: 736,
+        position: '62% 50%',
+        narrow: true,
+        alt: 'A vintage-style gym with exposed brick, a large wall clock, plate racks and arched windows',
+      },
       kicker: 'Weekly insights',
       h1: 'Notes from the field.',
       lede: 'Short, practical thoughts on performance, recovery, and longevity — a new one every week.',
