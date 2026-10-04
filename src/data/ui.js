@@ -25,6 +25,13 @@ export const ui = {
       close: 'Close',
       insights: 'Read the insights',
     },
+    soonAssessment: {
+      kicker: 'Remote assessment',
+      heading: 'Coming soon.',
+      body: 'The remote posture and movement assessment is in its final stages. In the meantime, book a free intro call and Ben will assess you directly.',
+      close: 'Close',
+      cta: 'Book your free intro call',
+    },
     nav: {
       home: 'Home',
       about: 'About',
@@ -90,6 +97,13 @@ export const ui = {
       body: 'Los primeros episodios están en producción. Los anunciaremos aquí y en las perspectivas semanales.',
       close: 'Cerrar',
       insights: 'Leer las perspectivas',
+    },
+    soonAssessment: {
+      kicker: 'Evaluación remota',
+      heading: 'Muy pronto.',
+      body: 'La evaluación remota de postura y movimiento está en su fase final. Mientras tanto, reserve una llamada introductoria gratuita y Ben le evaluará directamente.',
+      close: 'Cerrar',
+      cta: 'Reserve su llamada gratuita',
     },
     nav: {
       home: 'Inicio',

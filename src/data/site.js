@@ -61,14 +61,14 @@ export const site = {
   social: [
     'https://www.instagram.com/benvelazqueznyc/',
     'https://www.linkedin.com/in/benvelazqueznyc/',
-    'https://twitter.com/benvelazqueznyc',
+    'https://x.com/whatsgoodbenv',
   ],
   socialLabels: {
     Instagram: 'https://www.instagram.com/benvelazqueznyc/',
     LinkedIn: 'https://www.linkedin.com/in/benvelazqueznyc/',
-    'Twitter / X': 'https://twitter.com/benvelazqueznyc',
+    X: 'https://x.com/whatsgoodbenv',
   },
-  twitterHandle: '@benvelazqueznyc',
+  twitterHandle: '@whatsgoodbenv',
 
   // Service area. Ben works with clients in NYC and travels; there is no
   // walk-in address published, so schema uses areaServed rather than a
@@ -95,10 +95,10 @@ export const site = {
     podcast: '#coming-soon',
     gtg: 'https://www.gtg.energy/discount/BenVGTG?redirect=/pages/gtg-energy-pouches',
     p2717: 'https://2717recovery.com/discount/BenVRecovery10',
-    // Concussion page "Remote assessment": a virtual self-assessment hosted by
-    // Parados; results are emailed to Ben for review. Preliminary preview
-    // link — swap for the production form URL when Parados issues it.
-    remoteAssessment: 'https://preview.parados.app/submit/b8544471-c123-4fd6-be96-9398edd7aca3',
+    // Concussion page "Remote assessment": opens a coming-soon dialog until
+    // the Parados self-assessment is live. Preview form, for when it is:
+    // https://preview.parados.app/submit/b8544471-c123-4fd6-be96-9398edd7aca3
+    remoteAssessment: '#coming-soon-assessment',
     superpatch: 'https://healthpro.superpatch.com/NHL4RR/2CTPL/',
   },
 

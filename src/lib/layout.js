@@ -119,21 +119,29 @@ ${col(t.footerHeadings.legal, footerNav.legal)}
 }
 
 /**
- * "Coming soon" dialog for features that are not live yet (the podcast).
- * site.js opens it modally from any podcast link; with JS off, links to
- * #coming-soon still show it via :target.
+ * "Coming soon" dialogs for features that are not live yet: the podcast
+ * (#coming-soon) and the remote assessment (#coming-soon-assessment).
+ * site.js opens them modally from any link to their id (and any podcast
+ * link); with JS off, the links still show them via :target.
  */
-function soonDialog(locale) {
-  const s = ui[locale].soon;
-  return `<dialog id="coming-soon" class="soon" aria-labelledby="soon-h">
+function soonDialog(id, s, cta) {
+  return `<dialog id="${id}" class="soon" aria-labelledby="${id}-h">
 <span class="mono">${esc(s.kicker)}</span>
-<h2 id="soon-h" class="h3">${esc(s.heading)}</h2>
+<h2 id="${id}-h" class="h3">${esc(s.heading)}</h2>
 <p>${esc(s.body)}</p>
 <div class="hero-cta">
-<a href="${esc(pathFor('insights', locale))}" class="btn btn-primary">${esc(s.insights)}</a>
+<a href="${esc(cta.href)}" class="btn btn-primary">${esc(cta.label)}</a>
 <a href="#" class="btn btn-ghost" data-soon-close>${esc(s.close)}</a>
 </div>
 </dialog>`;
+}
+
+function soonDialogs(locale) {
+  const { soon, soonAssessment } = ui[locale];
+  return [
+    soonDialog('coming-soon', soon, { href: pathFor('insights', locale), label: soon.insights }),
+    soonDialog('coming-soon-assessment', soonAssessment, { href: pathFor('apply', locale), label: soonAssessment.cta }),
+  ].join('\n');
 }
 
 function breadcrumbHtml(trail, locale) {
@@ -274,7 +282,7 @@ ${breadcrumbHtml(breadcrumb, locale)}
 ${content}
 </main>
 ${footerHtml(locale)}
-${soonDialog(locale)}
+${soonDialogs(locale)}
 <script>${JS}</script>
 </body>
 </html>`;

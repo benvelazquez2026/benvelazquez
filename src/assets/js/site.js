@@ -52,27 +52,31 @@
     }).observe(heroVideo);
   }
 
-  /* ---- Coming soon dialog ------------------------------------------------ */
+  /* ---- Coming soon dialogs ----------------------------------------------- */
   // Every podcast link (nav, footer, related links, Listen buttons) opens the
-  // dialog until episodes exist.
-  var soon = document.getElementById('coming-soon');
-  if (soon && typeof soon.showModal === 'function') {
+  // podcast dialog until episodes exist; links to #coming-soon-* open theirs.
+  var soons = document.querySelectorAll('dialog.soon');
+  if (soons.length && typeof soons[0].showModal === 'function') {
     document.addEventListener('click', function (e) {
       var a = e.target.closest('a');
       if (!a) return;
       if (a.hasAttribute('data-soon-close')) {
         e.preventDefault();
-        soon.close();
+        a.closest('dialog').close();
         return;
       }
       var path = a.getAttribute('href') || '';
-      if (path === '#coming-soon' || /^\/(es\/)?podcast\/?$/.test(path)) {
+      var id = /^\/(es\/)?podcast\/?$/.test(path) ? 'coming-soon' : /^#coming-soon(-[a-z]+)?$/.test(path) ? path.slice(1) : '';
+      var dlg = id && document.getElementById(id);
+      if (dlg) {
         e.preventDefault();
-        soon.showModal();
+        dlg.showModal();
       }
     });
-    soon.addEventListener('click', function (e) {
-      if (e.target === soon) soon.close(); // backdrop click
+    soons.forEach(function (dlg) {
+      dlg.addEventListener('click', function (e) {
+        if (e.target === dlg) dlg.close(); // backdrop click
+      });
     });
   }
 
