@@ -18,9 +18,80 @@ ${lede ? `<p>${lede}</p>` : ''}
 </div>`;
 }
 
-/** Interior page hero. */
-export function pageHero({ kicker, heading, lede, ctas = [], locale = 'en' }) {
-  return `<section class="page-hero">
+/**
+ * Full-bleed hero background photo (see .hero-photo in main.css). Files live
+ * in public/img as `${slug}-${width}.{avif,webp,jpg}`. It is the LCP image,
+ * so it loads eagerly at high priority.
+ */
+export function heroPhoto({ slug, widths, width, height, alt, position, narrow = false }) {
+  // `narrow` gives a portrait a slimmer desktop panel, so the crop is not all face.
+  const sizes = narrow ? '(min-width: 901px) 44vw, 100vw' : '(min-width: 901px) 60vw, 100vw';
+  const set = (ext) => widths.map((w) => `/img/${slug}-${w}.${ext} ${w}w`).join(', ');
+  const style = position ? ` style="--photo-pos:${esc(position)}"` : '';
+  return `<picture class="${narrow ? 'hero-photo is-narrow' : 'hero-photo'}"${style}>
+<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
+<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">
+<img src="/img/${slug}-${widths[0]}.jpg" srcset="${set('jpg')}" sizes="${sizes}" width="${width}" height="${height}" alt="${esc(
+    alt,
+  )}" fetchpriority="high" decoding="async">
+</picture>`;
+}
+
+/**
+ * Muted, looping background video over a poster photo. Expects a VP9 .webm
+ * next to the .mp4 (H.264) at `src`; browsers fetch only the first they can play. Purely decorative,
+ * so it is hidden from assistive tech. There is no `autoplay` attribute:
+ * site.js starts it only when it is on screen and the visitor has not asked
+ * for reduced motion or data saving; everyone else keeps the poster.
+ */
+export function heroVideo({ src, poster }) {
+  const style = poster.position ? ` style="--photo-pos:${esc(poster.position)}"` : '';
+  return `<div class="hero-photo hero-video"${style} aria-hidden="true">
+${heroPhoto({ ...poster, position: null, alt: '' }).replace('<picture class="hero-photo"', '<picture')}
+<video muted loop playsinline preload="none" disablepictureinpicture data-hero-video><source src="${esc(
+    src.replace(/\.mp4$/, '.webm'),
+  )}" type="video/webm"><source src="${esc(src)}" type="video/mp4"></video>
+</div>`;
+}
+
+/**
+ * A photo or diagram set beside a block of prose (see .split-media). Never
+ * upscaled: files are `${slug}-${w}.{avif,webp,jpg}` for each of `widths`
+ * (default: just `width`). `display` caps the column (default: native
+ * width); `zoom` links to the largest JPEG so a diagram can be read full
+ * size; `caption` adds a figcaption (e.g. a credit).
+ */
+export function sidePhoto({ slug, width, height, alt, widths = [width], display = width, zoom = false, caption, blend = false }) {
+  const set = (ext) => widths.map((w) => `/img/${slug}-${w}.${ext} ${w}w`).join(', ');
+  const sizes = `(min-width: 861px) ${display}px, 100vw`;
+  const img = `<picture>
+<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
+<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">
+<img src="/img/${slug}-${widths[0]}.jpg" srcset="${set('jpg')}" sizes="${sizes}" width="${width}" height="${height}" alt="${esc(
+    alt,
+  )}" loading="lazy" decoding="async">
+</picture>`;
+  const max = widths[widths.length - 1];
+  return `<figure class="${blend ? 'side-photo is-blend reveal' : 'side-photo reveal'}">
+${zoom ? `<a class="side-zoom" href="/img/${slug}-${max}.jpg">${img}</a>` : img}
+${caption ? `<figcaption>${esc(caption)}</figcaption>` : ''}
+</figure>`;
+}
+
+/** Prose, with an optional side photo (`photo` as for sidePhoto). */
+export function proseWithPhoto(body, photo) {
+  if (!photo) return `<div class="prose reveal">${body}</div>`;
+  return `<div class="split-media" style="--media-w:${photo.display || photo.width}px">
+<div class="prose reveal">${body}</div>
+${sidePhoto(photo)}
+</div>`;
+}
+
+/** Interior page hero, optionally over a background photo or video. */
+export function pageHero({ kicker, heading, lede, ctas = [], photo, video, locale = 'en' }) {
+  const media = video ? heroVideo(video) : photo ? heroPhoto(photo) : '';
+  return `<section class="${media ? 'page-hero has-photo' : 'page-hero'}">
+${media}
 <div class="wrap">
 <span class="mono eyebrow">${esc(kicker)}</span>
 <h1 class="h1">${heading}</h1>
@@ -88,16 +159,62 @@ ${each(
 }
 
 /** Testimonial grid. `featured` quotes span the full width. */
-export function quoteGrid(quotes, locale = 'en') {
+export function quoteGrid(quotes, locale = 'en', { photos = false } = {}) {
+  // Featured and photo cards span both columns. If that leaves an odd number
+  // of half-width cards, the last one spans too, so no row is left half empty.
+  const full = (q) => q.featured || (photos && q.photo);
+  const halves = quotes.filter((q) => !full(q));
+  const orphan = halves.length % 2 ? halves[halves.length - 1] : null;
+  const photoCards = photos ? quotes.filter((q) => q.photo) : [];
   return `<div class="quotes reveal">
-${each(
-  quotes,
-  (q) => `<figure class="${cx('quote', q.featured && 'featured')}">
+${each(quotes, (q) => {
+  const photo = photos && q.photo;
+  const right = photo && photoCards.indexOf(q) % 2 === 1;
+  const max = photo ? photo.widths[photo.widths.length - 1] : 0;
+  const style = photo && photo.wide ? ` style="--photo-w:${max}px;--photo-ar:${1 / photo.ratio}"` : '';
+  const body = `<blockquote><p>${q.text[locale]}</p></blockquote>
+<figcaption>${esc(q.name)}<span>${q.role[locale]}</span></figcaption>`;
+  return `<figure class="${cx(
+    'quote',
+    q.featured && 'featured',
+    photo && 'has-photo',
+    photo && photo.wide && 'photo-wide',
+    right && 'photo-right',
+    q === orphan && 'span-all',
+  )}"${style}>
+${photo ? `${quotePhoto(photo, locale)}<div class="quote-body">${body}</div>` : body}
+</figure>`;
+})}
+</div>`;
+}
+
+/**
+ * Testimonial photo, served as AVIF/WebP/JPEG from public/img. Portrait
+ * (4:5) by default; `ratio` (height / width) and `wide` for landscape shots.
+ */
+function quotePhoto({ slug, widths, alt, ratio = 5 / 4, wide = false }, locale) {
+  const set = (ext) => widths.map((w) => `/img/results-${slug}-${w}.${ext} ${w}w`).join(', ');
+  const sizes = wide ? `(min-width: 701px) ${Math.min(640, widths[widths.length - 1])}px, 100vw` : '(min-width: 701px) 360px, 100vw';
+  const max = widths[widths.length - 1];
+  return `<picture class="quote-photo">
+<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
+<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">
+<img src="/img/results-${slug}-${widths[0]}.jpg" srcset="${set('jpg')}" sizes="${sizes}" width="${max}" height="${Math.round(
+    max * ratio,
+  )}" alt="${esc(alt[locale])}" loading="lazy" decoding="async">
+</picture>`;
+}
+
+/** One testimonial set large, as a full-width pull quote. */
+export function pullQuote(q, locale = 'en') {
+  return `<section class="block pull-quote-band">
+<div class="wrap">
+<figure class="pull-quote reveal">
 <blockquote><p>${q.text[locale]}</p></blockquote>
 <figcaption>${esc(q.name)}<span>${q.role[locale]}</span></figcaption>
-</figure>`,
-)}
-</div>`;
+</figure>
+</div>
+</section>`;
 }
 
 /** Click-to-load video grid — no third-party JS until the visitor asks. */
@@ -165,6 +282,20 @@ ${tier.fine ? `<p class="fine">${tier.fine}</p>` : ''}
 </article>`,
 )}
 </div>`;
+}
+
+/** Full-width offer beneath the tier ladder: the tier above Concierge. */
+export function bespokeBand(b, locale = 'en') {
+  if (!b) return '';
+  return `<article class="bespoke reveal">
+<div>
+<span class="step">${esc(b.step)}</span>
+<h3 class="h3">${esc(b.name)} <span class="price">${esc(b.price)}</span></h3>
+<p class="desc">${esc(b.desc)}</p>
+</div>
+<ul>${each(b.features, (f) => `<li>${esc(f)}</li>`)}</ul>
+<a class="btn btn-primary" href="${esc(b.href)}">${esc(b.cta)}</a>
+</article>`;
 }
 
 /** Closing conversion band, appended to nearly every page. */

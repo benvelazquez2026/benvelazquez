@@ -338,8 +338,30 @@ p {
   text-decoration: none;
   white-space: nowrap;
 }
-.wordmark span {
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.wordmark .logo {
+  flex: none;
+  width: 42px;
+  height: 29px;
+}
+.wordmark-text span {
   color: var(--signal);
+}
+@media (max-width: 520px) {
+  .wordmark-text {
+    display: none;
+  }
+}
+.logo-foot {
+  display: block;
+  width: 70px;
+  height: 48px;
+  margin-bottom: 16px;
+  color: var(--bone);
 }
 .nav-links {
   display: flex;
@@ -567,6 +589,105 @@ p {
   height: 140%;
   background: radial-gradient(closest-side, rgba(31, 157, 118, 0.16), transparent 70%);
   pointer-events: none;
+}
+/* The photo sits in the right of the hero on desktop, Ben's face in the
+   open space above the stats. On narrow screens it becomes a band across
+   the top and the copy starts below his face. Gradients fade it into the
+   ink so the text keeps its contrast. */
+.hero-photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  pointer-events: none;
+}
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--photo-pos, 50% 60%);
+}
+.hero-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, var(--ink) 0%, rgba(20, 22, 26, 0.55) 30%, rgba(20, 22, 26, 0.1) 60%, rgba(20, 22, 26, 0.3) 100%),
+    linear-gradient(180deg, rgba(20, 22, 26, 0.2) 0%, transparent 30%, rgba(20, 22, 26, 0.82) 62%, var(--ink) 100%);
+}
+/* Background video: fades in over its poster once it is actually playing. */
+.hero-video picture,
+.hero-video video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-video video {
+  object-fit: cover;
+  object-position: var(--photo-pos, 50% 35%);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.hero-video video.is-playing {
+  opacity: 1;
+}
+.hero-photo.is-narrow {
+  width: 44%;
+}
+@media (max-width: 900px) {
+  .hero-photo.is-narrow {
+    width: 100%;
+  }
+}
+/* Interior heroes: the photo sits under the content, never in the flow. */
+.page-hero > .hero-photo {
+  position: absolute;
+  z-index: 0;
+}
+/* Interior heroes are shorter, so fade the bottom later to keep the subject. */
+.page-hero .hero-photo::after {
+  background:
+    linear-gradient(90deg, var(--ink) 0%, rgba(20, 22, 26, 0.55) 30%, rgba(20, 22, 26, 0.1) 60%, rgba(20, 22, 26, 0.3) 100%),
+    linear-gradient(180deg, rgba(20, 22, 26, 0.2) 0%, transparent 30%, transparent 70%, var(--ink) 100%);
+}
+@media (max-width: 900px) {
+  .hero {
+    padding-top: min(82vw, 400px);
+  }
+  .page-hero.has-photo {
+    padding-top: min(56vw, 360px);
+  }
+  .page-hero.has-photo .hero-photo {
+    height: min(80vw, 520px);
+  }
+  .page-hero .hero-photo::after {
+    background: linear-gradient(
+      180deg,
+      rgba(20, 22, 26, 0.15) 0%,
+      transparent 25%,
+      rgba(20, 22, 26, 0.8) 62%,
+      var(--ink) 88%
+    );
+  }
+  .hero-photo {
+    bottom: auto;
+    width: 100%;
+    height: min(128vw, 620px);
+  }
+  .hero-photo img {
+    object-position: var(--photo-pos, 50% 32%);
+  }
+  .hero-photo::after {
+    background: linear-gradient(
+      180deg,
+      rgba(20, 22, 26, 0.15) 0%,
+      transparent 25%,
+      rgba(20, 22, 26, 0.7) 60%,
+      var(--ink) 88%
+    );
+  }
 }
 .hero-grid {
   display: grid;
@@ -919,9 +1040,119 @@ p {
 .quote.featured p {
   font-size: 1.4rem;
 }
+/* Quote with a photo: photo beside the quote, alternating sides (quoteGrid
+   sets .photo-right on every second photo card). */
+.quotes {
+  grid-auto-flow: row dense;
+}
+.quote.has-photo {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  padding: 0;
+}
+.quote.has-photo.photo-right {
+  grid-template-columns: 1fr 360px;
+}
+.quote.has-photo.photo-right .quote-photo {
+  order: 2;
+}
+.quote-photo {
+  position: relative;
+  min-height: 450px;
+  background: var(--ink-soft);
+}
+.quote-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+.quote-body {
+  padding: 34px;
+  align-self: center;
+}
+.quote.has-photo,
+.quote.span-all {
+  grid-column: 1 / -1;
+}
+/* Landscape photo: a wide panel at the photo's own shape (--photo-ar), never
+   wider than the file itself (--photo-w), so small images are not upscaled. */
+.quote.has-photo.photo-wide {
+  grid-template-columns: min(58%, var(--photo-w)) 1fr;
+}
+.quote.has-photo.photo-wide.photo-right {
+  grid-template-columns: 1fr min(58%, var(--photo-w));
+}
+.photo-wide .quote-photo {
+  min-height: 0;
+  aspect-ratio: var(--photo-ar);
+  align-self: center;
+}
+.photo-wide .quote-photo img {
+  object-position: 50% 30%;
+}
+@media (max-width: 700px) {
+  .quote.has-photo,
+  .quote.has-photo.photo-right,
+  .quote.has-photo.photo-wide,
+  .quote.has-photo.photo-wide.photo-right {
+    grid-template-columns: 1fr;
+  }
+  .quote.has-photo.photo-right .quote-photo {
+    order: 0;
+  }
+  .quote-photo {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+    max-height: 480px;
+  }
+  .photo-wide .quote-photo {
+    aspect-ratio: var(--photo-ar);
+  }
+}
 @media (max-width: 700px) {
   .quote.featured p {
     font-size: 1.26rem;
+  }
+}
+
+/* Executive pull quote: one testimonial, set large. */
+.pull-quote-band {
+  padding-top: 0;
+}
+.pull-quote {
+  margin: 0;
+  max-width: 62rem;
+  padding: 8px 0 8px 34px;
+  border-left: 3px solid var(--signal);
+}
+.pull-quote p {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.45rem, 2.6vw, 2.15rem);
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  color: var(--bone);
+  margin-bottom: 24px;
+}
+.pull-quote figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--signal);
+}
+.pull-quote figcaption span {
+  display: block;
+  margin-top: 4px;
+  color: var(--stone);
+  letter-spacing: 0.08em;
+}
+@media (max-width: 640px) {
+  .pull-quote {
+    padding-left: 20px;
   }
 }
 
@@ -1011,6 +1242,77 @@ p {
   font-weight: 800;
   font-size: 1.5rem;
   color: var(--bone);
+}
+/* Portrait with a quote: the photo fills the panel and fades to ink at the
+   foot, where the quote sits; it eases in as the section scrolls into view. */
+.method-visual.has-quote {
+  margin: 0;
+  padding: 34px;
+}
+.method-visual.has-quote picture {
+  position: absolute;
+  inset: 0;
+}
+.method-visual.has-quote img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;
+  filter: saturate(0.85);
+  transform: scale(1.04);
+  transition: transform 1.6s var(--ease), opacity 1.2s var(--ease);
+  opacity: 0;
+}
+.method-visual.has-quote.in img,
+.no-js .method-visual.has-quote img {
+  opacity: 1;
+  transform: none;
+}
+.method-visual.has-quote::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20, 22, 26, 0.1) 0%, rgba(20, 22, 26, 0.15) 45%, rgba(20, 22, 26, 0.85) 78%, var(--ink) 100%);
+}
+.method-visual.has-quote .vlabel {
+  z-index: 2;
+}
+.method-visual.has-quote blockquote p {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.12;
+  color: var(--bone);
+  margin-bottom: 10px;
+}
+.method-visual.has-quote .mono {
+  color: var(--signal);
+  margin: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .method-visual.has-quote img {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* With a photo: image on top, the label becomes a caption strip below it. */
+.method-visual.has-photo {
+  aspect-ratio: auto;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.method-visual.has-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 1260;
+  object-fit: cover;
+}
+.method-visual.has-photo .vlabel {
+  padding: 22px 26px 24px;
 }
 
 /* --------------------------------------------------------------------------
@@ -1247,6 +1549,96 @@ p {
   line-height: 1.75;
   color: var(--bone-dim);
 }
+/* Prose with a photo beside it. The photo is capped at its native size,
+   passed in as --media-w. */
+.split-media {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, var(--media-w, 366px));
+  gap: 54px;
+  align-items: center;
+}
+.side-photo {
+  margin: 0;
+}
+/* Tall photo in its own column beside a heading + card grid; it stays in
+   view while the cards scroll past. */
+.media-rail {
+  display: grid;
+  grid-template-columns: minmax(0, var(--media-w, 380px)) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+.media-rail > .side-photo {
+  position: sticky;
+  top: 96px;
+}
+.media-rail .card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+@media (max-width: 900px) {
+  .media-rail {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .media-rail > .side-photo {
+    position: static;
+    max-width: 420px;
+  }
+  .media-rail > .side-photo img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+}
+
+/* Section heading beside a photo: keep the usual gap before the cards. */
+.who-head {
+  margin-bottom: 44px;
+}
+.who-head .sec-head {
+  margin-bottom: 0;
+}
+.split-media > .answer-block {
+  margin-bottom: 0;
+}
+.side-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+/* Blended: no frame; the edges dissolve into the section background. */
+.side-photo.is-blend img {
+  border-radius: 0;
+  /* Soft fade on every edge, widest on the left where it meets the text. */
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 24%, #000 90%, transparent 100%),
+    linear-gradient(to bottom, transparent 0, #000 9%, #000 84%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent 0, #000 24%, #000 90%, transparent 100%),
+    linear-gradient(to bottom, transparent 0, #000 9%, #000 84%, transparent 100%);
+  mask-composite: intersect;
+}
+.side-zoom {
+  display: block;
+  cursor: zoom-in;
+}
+.side-photo figcaption {
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+@media (max-width: 860px) {
+  .split-media {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .side-photo {
+    max-width: var(--media-w, 366px);
+  }
+}
 .on-bone .prose {
   color: var(--slate);
 }
@@ -1349,6 +1741,30 @@ p {
 .insight:hover {
   transform: translateY(-3px);
   box-shadow: 0 18px 40px -24px rgba(15, 92, 68, 0.5);
+}
+.insight-photo {
+  display: block;
+  margin: -26px -26px 20px;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  background: var(--ink);
+}
+.insight-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--photo-pos, 50% 50%);
+  transition: transform 0.5s var(--ease);
+}
+.insight:hover .insight-photo img {
+  transform: scale(1.035);
+}
+@media (prefers-reduced-motion: reduce) {
+  .insight:hover .insight-photo img {
+    transform: none;
+  }
 }
 .insight-meta {
   display: flex;
@@ -1727,6 +2143,21 @@ p {
   min-height: 110px;
   resize: vertical;
 }
+.apply-form .field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 14px;
+}
+@media (max-width: 520px) {
+  .apply-form .field-row {
+    grid-template-columns: 1fr;
+  }
+}
+.apply-form label .opt {
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--stone);
+}
 .apply-form .hp {
   position: absolute;
   left: -9999px;
@@ -1962,8 +2393,104 @@ p {
   font-size: 0.92rem;
 }
 
-.cta-band {
+/* Bespoke: the full-width tier above Concierge */
+.bespoke {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr auto;
+  gap: 28px 40px;
+  align-items: center;
+  padding: 32px 34px;
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: var(--bone);
+  border: 1px solid var(--signal);
+}
+.bespoke .step {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--signal);
+}
+.bespoke h3 {
+  margin: 8px 0 10px;
+}
+.bespoke .price {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--stone-light);
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.bespoke .desc {
+  color: var(--stone-light);
+  font-size: 0.95rem;
+}
+.bespoke ul {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: var(--bone-dim);
+}
+.bespoke li {
+  padding-left: 18px;
+  position: relative;
+}
+.bespoke li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 8px;
+  height: 2px;
+  background: var(--signal);
+}
+@media (max-width: 980px) {
+  .bespoke {
+    grid-template-columns: 1fr;
+  }
+  .bespoke .btn {
+    justify-self: start;
+  }
+}
+
+/* Coming soon dialog */
+.soon {
+  max-width: 460px;
+  width: calc(100% - 32px);
+  margin: auto;
+  padding: 34px;
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius);
   background: var(--ink-soft);
+  color: var(--bone);
+}
+.soon::backdrop {
+  background: rgba(10, 11, 13, 0.72);
+}
+.soon:target {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  height: fit-content;
+}
+.soon .mono {
+  color: var(--signal);
+}
+.soon h2 {
+  margin: 10px 0 12px;
+}
+.soon p {
+  color: var(--stone-light);
+  margin-bottom: 24px;
+}
+.cta-band {
+  background: var(--ink);
   border-top: 1px solid var(--line-dark);
   border-bottom: 1px solid var(--line-dark);
   text-align: center;

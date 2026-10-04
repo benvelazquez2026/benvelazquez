@@ -17,9 +17,14 @@ import {
   factList,
   faqSection,
   quoteGrid,
+  pullQuote,
+  heroPhoto,
+  proseWithPhoto,
+  sidePhoto,
   videoGrid,
   cardGrid,
   tierGrid,
+  bespokeBand,
   ctaBand,
   relatedLinks,
   proofStrip,
@@ -40,11 +45,20 @@ import {
 /** Wrap the answer block + optional fact list in a section. */
 function answerSection(page, locale, { onBone = false } = {}) {
   if (!page.answer) return '';
+  const body = `${answerBlock({ paragraphs: page.answer, locale })}
+${page.facts ? factList(page.facts, locale) : ''}`;
+  const photo = page.answerPhoto;
   return `<section class="block-tight ${onBone ? 'on-bone' : ''}">
-<div class="wrap">
-${answerBlock({ paragraphs: page.answer, locale })}
-${page.facts ? factList(page.facts, locale) : ''}
-</div>
+${
+  photo
+    ? `<div class="wrap split-media" style="--media-w:${photo.display || photo.width}px">
+<div>${body}</div>
+${sidePhoto(photo)}
+</div>`
+    : `<div class="wrap">
+${body}
+</div>`
+}
 </section>`;
 }
 
@@ -74,6 +88,7 @@ export function buildHome({ locale, content, credentialsCopy }) {
   const url = urlFor('home', locale);
 
   const html = `<section class="hero">
+${heroPhoto({ slug: 'hero-ben', widths: [750, 1100, 1500], width: 1500, height: 2000, alt: c.hero.imageAlt })}
 <div class="wrap hero-grid">
 <div class="reveal">
 <span class="mono eyebrow">${esc(c.hero.kicker)}</span>
@@ -96,8 +111,9 @@ ${each(
 ${proofStrip(c.proofLabel, proofNames)}
 
 <section class="block-tight">
-<div class="wrap">
+<div class="wrap split-media" style="--media-w:${c.answerPhoto.width}px">
 ${answerBlock({ paragraphs: c.answer, locale })}
+${sidePhoto(c.answerPhoto)}
 </div>
 </section>
 
@@ -115,7 +131,7 @@ ${answerBlock({ paragraphs: c.answer, locale })}
 <section class="block" id="results">
 <div class="wrap">
 ${sectionHead({ kicker: c.results.kicker, heading: esc(c.results.heading) })}
-${quoteGrid(quotes, locale)}
+${quoteGrid(quotes, locale, { photos: true })}
 <p class="reveal" style="margin-top:26px">
 <a class="arrow-link" href="${esc(pathFor('results', locale))}">${esc(t.nav.results)} →</a>
 </p>
@@ -131,7 +147,10 @@ ${videoGrid(site.videos, locale)}
 
 <section class="block on-bone" id="who">
 <div class="wrap">
+<div class="split-media who-head" style="--media-w:${c.who.photo.display}px">
 ${sectionHead({ kicker: c.who.kicker, heading: esc(c.who.heading), lede: esc(c.who.lede) })}
+${sidePhoto(c.who.photo)}
+</div>
 ${cardGrid(c.who.cards, locale)}
 </div>
 </section>
@@ -140,6 +159,7 @@ ${cardGrid(c.who.cards, locale)}
 <div class="wrap">
 ${sectionHead({ kicker: c.programs.kicker, heading: esc(c.programs.heading), lede: esc(c.programs.lede) })}
 ${tierGrid(content.programs.tiers, locale)}
+${bespokeBand(content.programs.bespoke, locale)}
 <p class="reveal" style="text-align:center;margin-top:26px">
 <span class="signal">${esc(c.programs.note)}</span>
 </p>
@@ -163,13 +183,27 @@ ${each(
     t.nav.method,
   )} →</a></p>
 </div>
-<div class="method-visual reveal">
+${
+  c.method.quote
+    ? `<figure class="method-visual has-quote reveal">
+<picture>
+<source type="image/avif" srcset="/img/home-voyer-600.avif">
+<source type="image/webp" srcset="/img/home-voyer-600.webp">
+<img src="/img/home-voyer-600.jpg" width="600" height="600" alt="${esc(c.method.quote.alt)}" loading="lazy" decoding="async">
+</picture>
+<figcaption class="vlabel">
+<blockquote><p>${esc(c.method.quote.text)}</p></blockquote>
+<span class="mono">— ${esc(c.method.quote.by)}</span>
+</figcaption>
+</figure>`
+    : `<div class="method-visual reveal">
 <div class="scan"></div><div class="ring"></div>
 <div class="vlabel">
 <span class="mono">${esc(c.method.vlabel)}</span>
 <strong>${esc(c.method.vbig)}</strong>
 </div>
-</div>
+</div>`
+}
 </div>
 </section>
 
@@ -279,7 +313,8 @@ function insightCards(items, locale, level = 3) {
   return `<div class="insight-list reveal">
 ${each(items, (post) => {
     const href = `${pathFor('insights', locale)}${post.slug[locale]}/`;
-    return `<article class="insight">
+    return `<article class="${post.photo ? 'insight has-photo' : 'insight'}">
+${post.photo ? insightThumb(post.photo, href) : ''}
 <div class="insight-meta">
 <time class="mono" datetime="${esc(post.date)}">${esc(formatDate(post.date, locale))}</time>
 <span class="insight-tag">${esc(post.tag[locale])}</span>
@@ -292,6 +327,21 @@ ${each(items, (post) => {
 </div>`;
 }
 
+/**
+ * Card photo. Decorative (the title below is the real link), so it is kept
+ * out of the tab order and hidden from assistive tech.
+ */
+function insightThumb(photo, href) {
+  const set = (ext) => photo.widths.map((w) => `/img/${photo.slug}-${w}.${ext} ${w}w`).join(', ');
+  const sizes = '(min-width: 1200px) 380px, (min-width: 700px) 50vw, 100vw';
+  const style = photo.position ? ` style="--photo-pos:${esc(photo.position)}"` : '';
+  return `<a class="insight-photo" href="${esc(href)}" tabindex="-1" aria-hidden="true"${style}><picture>
+<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
+<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">
+<img src="/img/${photo.slug}-${photo.widths[0]}.jpg" srcset="${set('jpg')}" sizes="${sizes}" width="${photo.width}" height="${photo.height}" alt="" loading="lazy" decoding="async">
+</picture></a>`;
+}
+
 /* ------------------------------------------------------------------ */
 /* Generic marketing page (executive, athletes, concussion, eldoa…)      */
 /* ------------------------------------------------------------------ */
@@ -299,15 +349,17 @@ ${each(items, (post) => {
 export function buildStandardPage({ locale, key, page, content, extraSections = '' }) {
   const url = urlFor(key, locale);
 
+  const testimonial = page.testimonial && quotes.find((q) => q.id === page.testimonial);
   const html = `${pageHero({ ...page.hero, heading: page.hero.h1, lede: esc(page.hero.lede), locale })}
 <div class="ticks"></div>
 ${answerSection(page, locale)}
+${testimonial ? pullQuote(testimonial, locale) : ''}
 ${
   page.problem
     ? `<section class="block on-bone">
 <div class="wrap">
 ${sectionHead({ kicker: page.problem.kicker, heading: esc(page.problem.heading) })}
-<div class="prose reveal">${page.problem.body}</div>
+${proseWithPhoto(page.problem.body, page.problem.photo)}
 </div>
 </section>`
     : ''
@@ -315,11 +367,14 @@ ${sectionHead({ kicker: page.problem.kicker, heading: esc(page.problem.heading) 
 ${
   page.medical
     ? `<section class="block-tight on-bone">
-<div class="wrap">
+<div class="${page.medical.photo ? 'wrap split-media' : 'wrap'}"${
+        page.medical.photo ? ` style="--media-w:${page.medical.photo.display}px"` : ''
+      }>
 <div class="answer-block reveal" role="note">
 <span class="mono">${esc(page.medical.heading)}</span>
 ${page.medical.body}
 </div>
+${page.medical.photo ? sidePhoto(page.medical.photo) : ''}
 </div>
 </section>`
     : ''
@@ -329,7 +384,7 @@ ${
     ? `<section class="block">
 <div class="wrap">
 ${sectionHead({ kicker: page.approach.kicker, heading: esc(page.approach.heading) })}
-<div class="prose reveal">${page.approach.body}</div>
+${proseWithPhoto(page.approach.body, page.approach.photo)}
 </div>
 </section>`
     : ''
@@ -348,8 +403,18 @@ ${
   page.outcomes
     ? `<section class="block on-bone">
 <div class="wrap">
+${
+  page.outcomes.photo
+    ? `<div class="media-rail" style="--media-w:${page.outcomes.photo.display}px">
+${sidePhoto(page.outcomes.photo)}
+<div>
 ${sectionHead({ kicker: page.outcomes.kicker, heading: esc(page.outcomes.heading) })}
 ${cardGrid(page.outcomes.cards, locale)}
+</div>
+</div>`
+    : `${sectionHead({ kicker: page.outcomes.kicker, heading: esc(page.outcomes.heading) })}
+${cardGrid(page.outcomes.cards, locale)}`
+}
 </div>
 </section>`
     : ''
@@ -404,6 +469,10 @@ ${pageTail(page, locale)}`;
 /* Method                                                               */
 /* ------------------------------------------------------------------ */
 
+/** "In practice" photo beside the method steps (public/img/method-practice-*). */
+const PRACTICE_SIZES = '(min-width: 861px) 540px, 100vw';
+const practiceSet = (ext) => [600, 900, 1200].map((w) => `/img/method-practice-${w}.${ext} ${w}w`).join(', ');
+
 export function buildMethod({ locale, page }) {
   const html = `${pageHero({ ...page.hero, heading: page.hero.h1, lede: esc(page.hero.lede), locale })}
 <div class="ticks"></div>
@@ -422,13 +491,21 @@ ${each(
 )}
 </ul>
 </div>
-<div class="method-visual reveal">
-<div class="scan"></div><div class="ring"></div>
-<div class="vlabel">
+<figure class="method-visual has-photo reveal">
+<picture>
+<source type="image/avif" srcset="${practiceSet('avif')}" sizes="${PRACTICE_SIZES}">
+<source type="image/webp" srcset="${practiceSet('webp')}" sizes="${PRACTICE_SIZES}">
+<img src="/img/method-practice-900.jpg" srcset="${practiceSet('jpg')}" sizes="${PRACTICE_SIZES}" width="1200" height="1260" alt="${
+    locale === 'es'
+      ? 'Ben Velazquez guía a un cliente sentado en una colchoneta en una postura con los brazos por encima de la cabeza'
+      : 'Ben Velazquez guiding a client seated on a mat through an overhead-reach posture'
+  }" loading="lazy" decoding="async">
+</picture>
+<figcaption class="vlabel">
 <span class="mono">${locale === 'es' ? 'Rendimiento · medido' : 'Performance · measured'}</span>
 <strong>${locale === 'es' ? 'Precisión sobre intensidad.' : 'Precision over intensity.'}</strong>
-</div>
-</div>
+</figcaption>
+</figure>
 </div>
 </section>
 <section class="block">
@@ -489,6 +566,7 @@ ${answerSection(page, locale)}
 <section class="block" style="padding-top:0">
 <div class="wrap">
 ${tierGrid(page.tiers, locale, 2)}
+${bespokeBand(page.bespoke, locale)}
 <p class="reveal" style="text-align:center;margin-top:26px"><span class="signal">${esc(page.note)}</span></p>
 </div>
 </section>
@@ -506,7 +584,7 @@ ${pageTail(page, locale)}`;
     schema: [
       serviceEntity({
         url,
-        name: locale === 'en' ? 'Executive Team membership' : 'Membresía del Executive Team',
+        name: locale === 'en' ? 'Executive Roster membership' : 'Membresía del Executive Roster',
         description: plain(page.answer[0]),
         serviceType: locale === 'en' ? 'Performance coaching' : 'Coaching de rendimiento',
         locale,
@@ -569,7 +647,7 @@ ${pageTail(page, locale)}`;
       {
         '@type': 'Blog',
         '@id': `${url}#blog`,
-        name: locale === 'es' ? 'Insights semanales' : 'Weekly Insights',
+        name: locale === 'es' ? 'Perspectivas semanales' : 'Weekly Insights',
         description: plain(page.hero.lede),
         url,
         inLanguage: locale === 'es' ? 'es' : 'en-US',
@@ -598,8 +676,10 @@ export function buildInsightPost({ locale, post, page }) {
 
   const others = insights.filter((p) => p.slug[locale] !== post.slug[locale]).slice(0, 3);
 
+  const photo = post.photo && heroPhoto({ ...post.photo, alt: post.photo.alt[locale], narrow: true });
   const html = `<article>
-<section class="page-hero">
+<section class="${photo ? 'page-hero has-photo' : 'page-hero'}">
+${photo || ''}
 <div class="wrap">
 <span class="mono eyebrow">${esc(post.tag[locale])}</span>
 <h1 class="h1">${esc(post.title[locale])}</h1>
@@ -651,6 +731,7 @@ ${ctaBand({ ...page.cta, locale })}`;
         locale,
         section: post.tag[locale],
         body: plain(post.body[locale]),
+        image: `/img/og-insight-${post.slug[locale]}.jpg`,
       }),
     ],
   };
@@ -693,6 +774,9 @@ ${page.cta ? ctaBand({ ...page.cta, locale }) : ''}`;
 /* Apply (form)                                                         */
 /* ------------------------------------------------------------------ */
 
+/** Stable keys for the goal options, so links can preselect one: /apply/?interest=concussion */
+const GOAL_KEYS = ['executive', 'athlete', 'concussion', 'bespoke', 'unsure'];
+
 export function buildApply({ locale, page }) {
   const f = page.form;
 
@@ -714,7 +798,7 @@ ${each(
   )}
 <div class="an-scarcity" style="margin-bottom:0"><span class="mono">${
     locale === 'es'
-      ? `Lugares disponibles este mes: ${site.roster.openSpots}`
+      ? `Lugares disponibles en la plantilla del equipo este mes: ${site.roster.openSpots}`
       : `Roster spots open this month: ${site.roster.openSpots}`
   }</span></div>
 </div>
@@ -732,10 +816,30 @@ ${each(
 <label for="f-email">${esc(f.email)}</label>
 <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="${esc(f.emailPh)}">
 </div>
+<div class="field-row">
+<div class="field">
+<label for="f-phone">${esc(f.phone)} <span class="opt">${esc(f.optional)}</span></label>
+<input type="tel" id="f-phone" name="phone" autocomplete="tel" placeholder="${esc(f.phonePh)}">
+</div>
+<div class="field">
+<label for="f-whatsapp">WhatsApp <span class="opt">${esc(f.optional)}</span></label>
+<input type="tel" id="f-whatsapp" name="whatsapp" placeholder="${esc(f.phonePh)}">
+</div>
+</div>
+<div class="field">
+<label for="f-assistant">${esc(f.assistant)} <span class="opt">${esc(f.optional)}</span></label>
+<input type="email" id="f-assistant" name="assistant_email" placeholder="${esc(f.assistantPh)}">
+</div>
 <div class="field">
 <label for="f-goal">${esc(f.goal)}</label>
 <select id="f-goal" name="goal">
-${each(f.options, (o) => `<option value="${esc(o)}">${esc(o)}</option>`)}
+${each(f.options, (o, i) => `<option value="${esc(o)}" data-key="${esc(GOAL_KEYS[i] || '')}">${esc(o)}</option>`)}
+</select>
+</div>
+<div class="field">
+<label for="f-billing">${esc(f.billing)}</label>
+<select id="f-billing" name="billing">
+${each(f.billingOptions, (o) => `<option value="${esc(o)}">${esc(o)}</option>`)}
 </select>
 </div>
 <div class="field">
@@ -804,6 +908,7 @@ ${answerSection(page, locale)}
 </div>
 <a href="${esc(site.links.podcast)}" class="btn btn-ghost">${esc(page.hero.ctas[0].label)}</a>
 </div>
+<p class="reveal" style="text-align:center;margin-top:26px"><span class="signal">${esc(page.note)}</span></p>
 </div>
 </section>
 ${pageTail(page, locale)}`;

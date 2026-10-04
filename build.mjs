@@ -384,20 +384,20 @@ function llmsIndex() {
     : '';
   return `${stagingBanner}# Ben Velazquez
 
-> Performance rehabilitation specialist and strength coach in New York City. 20+ years with elite performers including athletes across the NFL, NHL and MLB. Co-contributing author of "Fascia: Clinical Applications for Health and Human Performance". Recognised expert in exercise-based concussion solutions. Coaches in English and Spanish, virtually worldwide and in person in NYC.
+> Performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico. 20+ years with elite performers including athletes across the NFL, NHL and MLB. Co-contributing author of "Fascia: Clinical Applications for Health and Human Performance". Recognized expert in exercise-based concussion solutions. Coaches in English and Spanish, virtually worldwide and in person in NYC, Tampa and Puerto Rico.
 
 ## Key facts
 
 - Name: Ben Velazquez
-- Role: Performance rehabilitation specialist, strength and conditioning coach
-- Location: New York City, NY, United States
-- Serves: Worldwide (virtual), New York City (in person)
+- Role: Performance rehabilitation specialist, posturologist, strength and conditioning coach
+- Location: New York City, NY; Tampa, FL; Puerto Rico
+- Serves: Worldwide (virtual); New York City, Tampa and Puerto Rico (in person)
 - Languages: English, Spanish
-- Credentials: Licensed Soma-Therapist; Certified Strength & Conditioning Specialist (CSCS); ACSM Exercise Specialist; ISSA Sports Performance Nutritionist; member of NSCA, ACSM, ISSA
+- Credentials: Licensed Soma-Therapist; Posturologist; Certified Strength & Conditioning Specialist (CSCS); ACSM Exercise Specialist; ISSA Sports Performance Nutritionist; member of NSCA, ACSM, ISSA
 - Published: Co-contributing author, "Fascia: Clinical Applications for Health and Human Performance"
-- Known for: ELDOA, fascial work, assessment-led performance rehabilitation, exercise-based concussion recovery
+- Known for: ELDOA, fascia work, assessment-led performance rehabilitation, exercise-based concussion recovery
 - Athletes worked with: Christian McCaffrey (NFL), Derek Carr (NFL), Connor McDavid (NHL), Max Domi (NHL), Jesús Luzardo (MLB); appeared in "Being: Mariano" (FOX Sports)
-- Entry point: free 20-minute virtual Performance Needs Analysis
+- Entry point: free 20-minute virtual intro call
 - Contact: ${site.email}
 
 ## Programs and pricing (USD)
@@ -405,7 +405,7 @@ function llmsIndex() {
 - The Executive Reset — $${site.pricing.resetDisplay} one-time, self-guided ELDOA and mobility program
 - Core: Executive Performance — $${site.pricing.core.toLocaleString(
     'en-US',
-  )}/month, quarterly commitment, 4 virtual sessions/month, custom programming, bounded async access, quarterly reassessment
+  )}/month, by application, billed monthly with a three-month minimum, 4 virtual sessions/month (30–45 min), custom programming, bounded async access, quarterly reassessment
 - Concierge: Private Performance — $${site.pricing.concierge.toLocaleString(
     'en-US',
   )}/month plus travel at cost, by application, capped at ${site.roster.conciergeSeats} positions, requires an in-person Performance Day from $${site.pricing.performanceDay.toLocaleString(
@@ -440,7 +440,7 @@ function llmsFull() {
     ``,
     `Source: ${site.origin}`,
     `Generated: ${BUILD_DATE}`,
-    `Licence: content © ${new Date().getFullYear()} Ben Velazquez. Quotation with attribution to ${site.origin} is welcome.`,
+    `License: content © ${new Date().getFullYear()} Ben Velazquez. Quotation with attribution to ${site.origin} is welcome.`,
     ``,
   ];
 
@@ -527,7 +527,7 @@ function feed(locale) {
 <title>${esc(t.rssTitle)}</title>
 <link>${esc(urlFor('insights', locale))}</link>
 <atom:link href="${esc(absolute(self))}" rel="self" type="application/rss+xml"/>
-<description>${esc(contentEn.insights.seo.description)}</description>
+<description>${esc((locale === 'es' ? contentEs : contentEn).insights.seo.description)}</description>
 <language>${locale === 'es' ? 'es' : 'en-us'}</language>
 <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
 <copyright>© ${new Date().getFullYear()} ${esc(site.name)}</copyright>
@@ -596,6 +596,9 @@ write(
 /img/*
   Cache-Control: public, max-age=31536000, immutable
 
+/video/*
+  Cache-Control: public, max-age=31536000, immutable
+
 # HTML: always revalidate so content edits go live immediately.
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
@@ -622,6 +625,11 @@ write(
   `# Legacy / convenience paths → canonical URLs. 301 keeps link equity.
 /index.html                    /                          301
 /home                          /                          301
+# Old Squarespace pages (www.benvelazquez.com/sitemap.xml, Oct 2026).
+/virtualconsultation           /apply/                    301
+/take-action                   /apply/                    301
+/partnerships                  /what-i-use/               301
+/cart                          /                          301
 /eldoa-nyc                     /eldoa/                    301
 /executive                     /executive-performance/    301
 /executives                    /executive-performance/    301
@@ -633,6 +641,12 @@ write(
 /testimonials                  /results/                  301
 /concussion                    /concussion-recovery/      301
 /es/index.html                 /es/                       301
+/es/aplicar                    /es/solicitar/             301
+/es/aplicar/                   /es/solicitar/             301
+/es/insights/trata-tu-carrera-como-un-deporte/   /es/perspectivas/trate-su-carrera-como-un-deporte/   301
+/es/insights/tu-silla-deshace-tu-entrenamiento/  /es/perspectivas/su-silla-deshace-su-entrenamiento/  301
+/es/insights                   /es/perspectivas/          301
+/es/insights/*                 /es/perspectivas/:splat    301
 `,
 );
 

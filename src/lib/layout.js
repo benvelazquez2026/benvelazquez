@@ -9,6 +9,7 @@ import { fileURLToPath } from 'node:url';
 import { site, routes, primaryNav, footerNav, pathFor, urlFor, absolute } from '../data/site.js';
 import { esc, each, jsonLd, minify, clamp } from './html.js';
 import { ui } from '../data/ui.js';
+import { logoSvg } from '../data/logo.js';
 
 const CSS = readFileSync(fileURLToPath(new URL('../styles/main.css', import.meta.url)), 'utf8');
 const JS = readFileSync(fileURLToPath(new URL('../assets/js/site.js', import.meta.url)), 'utf8');
@@ -55,9 +56,9 @@ function headerHtml(locale, activeKey, alts) {
 
   return `<header class="site-header">
 <div class="wrap bar">
-<a href="${esc(pathFor('home', locale))}" class="wordmark" aria-label="${esc(t.homeLabel)}">${esc(
+<a href="${esc(pathFor('home', locale))}" class="wordmark" aria-label="${esc(t.homeLabel)}">${logoSvg()}<span class="wordmark-text">${esc(
     site.brand,
-  )}<span>.</span></a>
+  )}<span>.</span></span></a>
 <nav id="nav" class="nav-links-wrap" aria-label="${esc(t.primaryNavLabel)}">
 <ul class="nav-links" id="navList">${navItems}</ul>
 </nav>
@@ -91,6 +92,7 @@ function footerHtml(locale) {
 <div class="wrap">
 <div class="foot-grid">
 <div class="foot-brand">
+${logoSvg({ className: 'logo logo-foot' })}
 <h2>${esc(site.brand)}<span class="signal">.</span></h2>
 <span class="mono">${esc(t.footerTag)}</span>
 <p>${esc(t.footerBlurb)}</p>
@@ -100,7 +102,9 @@ ${col(t.footerHeadings.explore, footerNav.explore)}
 ${col(t.footerHeadings.company, footerNav.company)}
 <div class="foot-col">
 <h3>${esc(t.footerHeadings.connect)}</h3>
-<ul>${socialLinks}<li><a href="mailto:${esc(site.email)}">${esc(t.emailLink)}</a></li></ul>
+<ul>${socialLinks}<li><a href="${esc(site.whatsappUrl)}" rel="noopener" target="_blank">WhatsApp<span class="visually-hidden"> ${esc(
+    t.newWindow,
+  )}</span></a></li><li><a href="mailto:${esc(site.email)}">${esc(t.emailLink)}</a></li></ul>
 </div>
 </div>
 <div class="foot-grid" style="margin-bottom:26px">
@@ -112,6 +116,32 @@ ${col(t.footerHeadings.legal, footerNav.legal)}
 </div>
 </div>
 </footer>`;
+}
+
+/**
+ * "Coming soon" dialogs for features that are not live yet: the podcast
+ * (#coming-soon) and the remote assessment (#coming-soon-assessment).
+ * site.js opens them modally from any link to their id (and any podcast
+ * link); with JS off, the links still show them via :target.
+ */
+function soonDialog(id, s, cta) {
+  return `<dialog id="${id}" class="soon" aria-labelledby="${id}-h">
+<span class="mono">${esc(s.kicker)}</span>
+<h2 id="${id}-h" class="h3">${esc(s.heading)}</h2>
+<p>${esc(s.body)}</p>
+<div class="hero-cta">
+<a href="${esc(cta.href)}" class="btn btn-primary">${esc(cta.label)}</a>
+<a href="#" class="btn btn-ghost" data-soon-close>${esc(s.close)}</a>
+</div>
+</dialog>`;
+}
+
+function soonDialogs(locale) {
+  const { soon, soonAssessment } = ui[locale];
+  return [
+    soonDialog('coming-soon', soon, { href: pathFor('insights', locale), label: soon.insights }),
+    soonDialog('coming-soon-assessment', soonAssessment, { href: pathFor('apply', locale), label: soonAssessment.cta }),
+  ].join('\n');
 }
 
 function breadcrumbHtml(trail, locale) {
@@ -194,26 +224,31 @@ ${
 ${blockIndexing ? '' : hreflangTags}
 ${blockIndexing || !xDefault ? '' : `<link rel="alternate" hreflang="x-default" href="${esc(xDefault.url)}">`}
 <meta name="author" content="${esc(site.name)}">
+<meta name="application-name" content="${esc(site.name)}">
+<meta name="apple-mobile-web-app-title" content="${esc(site.name)}">
 <meta name="theme-color" content="#14161a">
 <meta name="color-scheme" content="dark light">
 <meta name="format-detection" content="telephone=no">
 
 <meta property="og:type" content="${esc(ogType)}">
 <meta property="og:site_name" content="${esc(site.name)}">
-<meta property="og:locale" content="${locale === 'es' ? 'es_ES' : 'en_US'}">
+<meta property="og:locale" content="${locale === 'es' ? 'es_PR' : 'en_US'}">
 ${each(
   alts.filter((a) => a.locale !== locale),
-  (a) => `<meta property="og:locale:alternate" content="${a.locale === 'es' ? 'es_ES' : 'en_US'}">`,
+  (a) => `<meta property="og:locale:alternate" content="${a.locale === 'es' ? 'es_PR' : 'en_US'}">`,
 )}
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${esc(url)}">
 <meta property="og:image" content="${esc(ogImage)}">
+<meta property="og:image:secure_url" content="${esc(ogImage)}">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="${esc(t.ogAlt)}">
 ${publishedTime ? `<meta property="article:published_time" content="${esc(publishedTime)}">` : ''}
 ${modifiedTime ? `<meta property="article:modified_time" content="${esc(modifiedTime)}">` : ''}
+${ogType === 'article' ? `<meta property="article:author" content="${esc(urlFor('about', locale))}">` : ''}
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="${esc(site.twitterHandle)}">
@@ -221,6 +256,7 @@ ${modifiedTime ? `<meta property="article:modified_time" content="${esc(modified
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(desc)}">
 <meta name="twitter:image" content="${esc(ogImage)}">
+<meta name="twitter:image:alt" content="${esc(t.ogAlt)}">
 
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
@@ -246,6 +282,7 @@ ${breadcrumbHtml(breadcrumb, locale)}
 ${content}
 </main>
 ${footerHtml(locale)}
+${soonDialogs(locale)}
 <script>${JS}</script>
 </body>
 </html>`;

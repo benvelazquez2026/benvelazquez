@@ -20,6 +20,20 @@
  *   npm run build:staging     # same thing, shorter
  */
 const PRODUCTION_ORIGIN = 'https://www.benvelazquez.com';
+
+/**
+ * The moment this build represents. Scheduled insights go live and the
+ * open-spots count rolls over based on it; the deploy workflow rebuilds
+ * every day so both stay current.
+ * BUILD_DATE=2026-11-02 npm run build   previews a future build.
+ */
+export const BUILD_DATE = new Date(process.env.BUILD_DATE || Date.now());
+
+/** Open roster spots cycle 5 → 4 → 3 month by month (September 2026 = 5). */
+function openSpotsFor(date) {
+  const months = date.getUTCFullYear() * 12 + date.getUTCMonth() - (2026 * 12 + 8);
+  return [5, 4, 3][((months % 3) + 3) % 3];
+}
 const ORIGIN = (process.env.SITE_ORIGIN || PRODUCTION_ORIGIN).replace(/\/+$/, '');
 
 export const site = {
@@ -35,6 +49,9 @@ export const site = {
 
   // Contact + social. Used by schema.org, the footer and the contact page.
   email: 'ben@benvelazquez.com',
+  // WhatsApp, for international (Puerto Rico, Latin America) clients.
+  whatsapp: '+1 813-678-6153',
+  whatsappUrl: 'https://wa.me/18136786153',
 
   // Form handler. The application form posts here directly — both via fetch
   // and, with JavaScript off, as a native form submit. Changing this needs a
@@ -44,14 +61,16 @@ export const site = {
   social: [
     'https://www.instagram.com/benvelazqueznyc/',
     'https://www.linkedin.com/in/benvelazqueznyc/',
-    'https://twitter.com/benvelazqueznyc',
+    'https://x.com/whatsgoodbenv',
+    'https://www.facebook.com/benvny/',
   ],
   socialLabels: {
     Instagram: 'https://www.instagram.com/benvelazqueznyc/',
     LinkedIn: 'https://www.linkedin.com/in/benvelazqueznyc/',
-    'Twitter / X': 'https://twitter.com/benvelazqueznyc',
+    X: 'https://x.com/whatsgoodbenv',
+    Facebook: 'https://www.facebook.com/benvny/',
   },
-  twitterHandle: '@benvelazqueznyc',
+  twitterHandle: '@whatsgoodbenv',
 
   // Service area. Ben works with clients in NYC and travels; there is no
   // walk-in address published, so schema uses areaServed rather than a
@@ -73,11 +92,16 @@ export const site = {
     beingMariano: 'https://www.amazon.com/BEING-Mariano-Rivera-Season-1/dp/B00G4B073O',
     concussionFoundation: 'https://concussionfoundation.org/',
     // Placeholders — swap for the live URLs when they are ready.
-    executiveReset: '#',
-    podcast: '#',
-    gtg: '#',
-    p2717: '#',
-    superpatch: '#',
+    // The podcast has not launched: every podcast link opens the Coming soon
+    // dialog (layout.js + site.js) instead of a player.
+    podcast: '#coming-soon',
+    gtg: 'https://www.gtg.energy/discount/BenVGTG?redirect=/pages/gtg-energy-pouches',
+    p2717: 'https://2717recovery.com/discount/BenVRecovery10',
+    // Concussion page "Remote assessment": opens a coming-soon dialog until
+    // the Parados self-assessment is live. Preview form, for when it is:
+    // https://preview.parados.app/submit/b8544471-c123-4fd6-be96-9398edd7aca3
+    remoteAssessment: '#coming-soon-assessment',
+    superpatch: 'https://healthpro.superpatch.com/NHL4RR/2CTPL/',
   },
 
   // Videos are embedded through a click-to-load facade so that YouTube's
@@ -88,7 +112,7 @@ export const site = {
       name: { en: 'Performance work with the world’s best', es: 'Trabajo de rendimiento con el mejor del mundo' },
       tag: 'NHL · Connor McDavid',
       description: {
-        en: 'Ben Velazquez leading a performance rehabilitation session with NHL centre Connor McDavid.',
+        en: 'Ben Velazquez leading a performance rehabilitation session with NHL center Connor McDavid.',
         es: 'Ben Velazquez dirigiendo una sesión de rehabilitación de rendimiento con el centro de la NHL Connor McDavid.',
       },
       uploadDate: '2023-08-14',
@@ -108,7 +132,7 @@ export const site = {
   // Roster scarcity numbers surface in several places; keep them in one spot.
   roster: {
     conciergeSeats: 7,
-    openSpots: 5,
+    openSpots: openSpotsFor(BUILD_DATE),
   },
 
   pricing: {
@@ -150,9 +174,9 @@ export const routes = [
   },
   { key: 'programs', path: { en: 'programs', es: 'programas' }, priority: 0.95, changefreq: 'monthly' },
   { key: 'results', path: { en: 'results', es: 'resultados' }, priority: 0.8, changefreq: 'monthly' },
-  { key: 'insights', path: { en: 'insights', es: 'insights' }, priority: 0.8, changefreq: 'weekly' },
+  { key: 'insights', path: { en: 'insights', es: 'perspectivas' }, priority: 0.8, changefreq: 'weekly' },
   { key: 'faq', path: { en: 'faq', es: 'preguntas-frecuentes' }, priority: 0.8, changefreq: 'monthly' },
-  { key: 'apply', path: { en: 'apply', es: 'aplicar' }, priority: 0.9, changefreq: 'monthly' },
+  { key: 'apply', path: { en: 'apply', es: 'solicitar' }, priority: 0.9, changefreq: 'monthly' },
   { key: 'contact', path: { en: 'contact', es: 'contacto' }, priority: 0.7, changefreq: 'yearly' },
   { key: 'podcast', path: { en: 'podcast', es: 'podcast' }, priority: 0.6, changefreq: 'monthly' },
   { key: 'whatIUse', path: { en: 'what-i-use', es: 'lo-que-uso' }, priority: 0.6, changefreq: 'monthly' },

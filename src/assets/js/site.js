@@ -29,6 +29,57 @@
     });
   }
 
+  /* ---- Hero background video ------------------------------------------- */
+  // Plays only while on screen, and never for reduced motion or Save-Data.
+  var heroVideo = document.querySelector('[data-hero-video]');
+  var saveData = navigator.connection && navigator.connection.saveData;
+  if (
+    heroVideo &&
+    'IntersectionObserver' in window &&
+    !window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
+    !saveData
+  ) {
+    heroVideo.addEventListener('playing', function () {
+      heroVideo.classList.add('is-playing');
+    });
+    new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) {
+        var p = heroVideo.play();
+        if (p && p.catch) p.catch(function () {});
+      } else {
+        heroVideo.pause();
+      }
+    }).observe(heroVideo);
+  }
+
+  /* ---- Coming soon dialogs ----------------------------------------------- */
+  // Every podcast link (nav, footer, related links, Listen buttons) opens the
+  // podcast dialog until episodes exist; links to #coming-soon-* open theirs.
+  var soons = document.querySelectorAll('dialog.soon');
+  if (soons.length && typeof soons[0].showModal === 'function') {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a');
+      if (!a) return;
+      if (a.hasAttribute('data-soon-close')) {
+        e.preventDefault();
+        a.closest('dialog').close();
+        return;
+      }
+      var path = a.getAttribute('href') || '';
+      var id = /^\/(es\/)?podcast\/?$/.test(path) ? 'coming-soon' : /^#coming-soon(-[a-z]+)?$/.test(path) ? path.slice(1) : '';
+      var dlg = id && document.getElementById(id);
+      if (dlg) {
+        e.preventDefault();
+        dlg.showModal();
+      }
+    });
+    soons.forEach(function (dlg) {
+      dlg.addEventListener('click', function (e) {
+        if (e.target === dlg) dlg.close(); // backdrop click
+      });
+    });
+  }
+
   /* ---- Reveal on scroll ------------------------------------------------- */
   var reveals = document.querySelectorAll('.reveal');
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -80,6 +131,13 @@
      failure the inline error tells the visitor to email instead, so a lead
      is never silently lost. */
   var form = document.getElementById('applyForm');
+  // ?interest=concussion (etc.) preselects the matching goal option.
+  var goal = document.getElementById('f-goal');
+  var interest = /[?&]interest=([a-z]+)/.exec(location.search);
+  if (goal && interest) {
+    var match = goal.querySelector('option[data-key="' + interest[1] + '"]');
+    if (match) goal.value = match.value;
+  }
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();

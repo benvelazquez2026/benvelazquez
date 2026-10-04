@@ -23,8 +23,8 @@ export const ID = {
 /** The Person entity — the anchor for E-E-A-T and for AI entity resolution. */
 export function personEntity(locale = 'en') {
   const bio = {
-    en: 'Ben Velazquez is a New York City performance rehabilitation specialist and strength coach with over 20 years working with elite performers, including athletes across the NFL, NHL and MLB. He is a co-contributing author of "Fascia: Clinical Applications for Health and Human Performance", a licensed Soma-Therapist and a Certified Strength & Conditioning Specialist, and a recognised expert in exercise-based concussion solutions.',
-    es: 'Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, con más de 20 años trabajando con atletas de élite de la NFL, la NHL y la MLB. Es coautor colaborador de "Fascia: Clinical Applications for Health and Human Performance", Soma-Terapeuta licenciado y Especialista Certificado en Fuerza y Acondicionamiento, y un experto reconocido en soluciones de ejercicio para conmociones cerebrales.',
+    en: 'Ben Velazquez is a performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico, with over 20 years working with elite performers, including athletes across the NFL, NHL and MLB. He is a co-contributing author of "Fascia: Clinical Applications for Health and Human Performance", a licensed Soma-Therapist, a Posturologist and a Certified Strength & Conditioning Specialist, and a recognized expert in exercise-based concussion solutions.',
+    es: 'Ben Velazquez es especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, Tampa y Puerto Rico, con más de 20 años trabajando con atletas de élite de la NFL, la NHL y la MLB. Es coautor colaborador de "Fascia: Clinical Applications for Health and Human Performance", Soma-Terapeuta licenciado, Posturólogo y Especialista Certificado en Fuerza y Acondicionamiento, y un experto reconocido en soluciones de ejercicio para conmociones cerebrales.',
   };
 
   return {
@@ -36,12 +36,12 @@ export function personEntity(locale = 'en') {
     description: bio[locale],
     disambiguatingDescription:
       locale === 'en'
-        ? 'Performance rehabilitation specialist and strength coach in New York City.'
-        : 'Especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York.',
+        ? 'Performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico.'
+        : 'Especialista en rehabilitación de alto rendimiento y preparador físico en Nueva York, Tampa y Puerto Rico.',
     jobTitle:
       locale === 'en'
-        ? ['Performance Rehabilitation Specialist', 'Strength and Conditioning Coach']
-        : ['Especialista en Rehabilitación de Alto Rendimiento', 'Preparador Físico'],
+        ? ['Performance Rehabilitation Specialist', 'Posturologist', 'Strength and Conditioning Coach']
+        : ['Especialista en Rehabilitación de Alto Rendimiento', 'Posturólogo', 'Preparador Físico'],
     image: absolute('/img/og-default.jpg'),
     email: `mailto:${site.email}`,
     sameAs: [...site.social, site.links.stack],
@@ -63,6 +63,7 @@ export function personEntity(locale = 'en') {
     ],
     hasCredential: [
       credential('Licensed Soma-Therapist (Performance Physical Therapy)'),
+      credential('Posturologist'),
       credential('Certified Strength & Conditioning Specialist (CSCS)'),
       credential('ACSM Exercise Specialist'),
       credential('ISSA Sports Performance Nutritionist'),
@@ -103,10 +104,16 @@ export function businessEntity(locale = 'en') {
     url: site.origin + (locale === 'en' ? '/' : '/es/'),
     description:
       locale === 'en'
-        ? 'Performance rehabilitation, ELDOA and strength coaching in New York City for professional athletes, executives and people recovering from concussion. Available virtually worldwide and in person in NYC.'
-        : 'Rehabilitación de alto rendimiento, ELDOA y preparación física en Nueva York para atletas profesionales, ejecutivos y personas en recuperación de conmociones cerebrales. Disponible en línea a nivel mundial y presencial en NYC.',
+        ? 'Performance rehabilitation, ELDOA and strength coaching in New York City, Tampa and Puerto Rico for professional athletes, executives and people recovering from concussion. Available virtually worldwide and in person in NYC, Tampa and Puerto Rico.'
+        : 'Rehabilitación de alto rendimiento, ELDOA y preparación física en Nueva York, Tampa y Puerto Rico para atletas profesionales, ejecutivos y personas en recuperación de conmociones cerebrales. Disponible en línea a nivel mundial y presencial en NYC, Tampa y Puerto Rico.',
     image: absolute('/img/og-default.jpg'),
-    logo: absolute('/icons/icon-512.png'),
+    logo: {
+      '@type': 'ImageObject',
+      url: absolute('/icons/icon-512.png'),
+      width: 512,
+      height: 512,
+      caption: site.name,
+    },
     email: `mailto:${site.email}`,
     founder: { '@id': ID.person },
     employee: { '@id': ID.person },
@@ -128,6 +135,9 @@ export function businessEntity(locale = 'en') {
     areaServed: [
       { '@type': 'City', name: 'New York City' },
       { '@type': 'State', name: 'New York' },
+      { '@type': 'City', name: 'Tampa' },
+      { '@type': 'State', name: 'Florida' },
+      { '@type': 'Place', name: 'Puerto Rico' },
       { '@type': 'Country', name: 'United States' },
       { '@type': 'Place', name: 'Worldwide (virtual)' },
     ],
@@ -146,8 +156,8 @@ export function websiteEntity(locale = 'en') {
     name: 'Ben Velazquez',
     description:
       locale === 'en'
-        ? 'Performance rehabilitation, ELDOA and executive performance coaching with Ben Velazquez, NYC.'
-        : 'Rehabilitación de alto rendimiento, ELDOA y coaching de rendimiento ejecutivo con Ben Velazquez, NYC.',
+        ? 'Performance rehabilitation, ELDOA and executive performance coaching with Ben Velazquez — NYC, Tampa and Puerto Rico.'
+        : 'Rehabilitación de alto rendimiento, ELDOA y coaching de rendimiento ejecutivo con Ben Velazquez — NYC, Tampa y Puerto Rico.',
     inLanguage: ['en-US', 'es'],
     publisher: { '@id': ID.business },
     copyrightHolder: { '@id': ID.person },
@@ -223,6 +233,8 @@ export function serviceEntity({ url, name, description, serviceType, locale, off
     provider: { '@id': ID.business },
     areaServed: [
       { '@type': 'City', name: 'New York City' },
+      { '@type': 'City', name: 'Tampa' },
+      { '@type': 'Place', name: 'Puerto Rico' },
       { '@type': 'Place', name: 'Worldwide (virtual)' },
     ],
     availableChannel: {
@@ -253,7 +265,7 @@ export function serviceEntity({ url, name, description, serviceType, locale, off
 }
 
 /** Article entity for an insight post. */
-export function articleEntity({ url, headline, description, datePublished, dateModified, locale, section, body }) {
+export function articleEntity({ url, headline, description, datePublished, dateModified, locale, section, body, image }) {
   return {
     '@type': 'BlogPosting',
     '@id': `${url}#article`,
@@ -267,7 +279,7 @@ export function articleEntity({ url, headline, description, datePublished, dateM
     author: { '@id': ID.person },
     publisher: { '@id': ID.business },
     mainEntityOfPage: { '@id': `${url}#webpage` },
-    image: absolute('/img/og-default.jpg'),
+    image: absolute(image || '/img/og-default.jpg'),
     isAccessibleForFree: true,
   };
 }

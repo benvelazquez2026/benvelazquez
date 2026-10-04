@@ -20,10 +20,11 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createRequire } from 'node:module';
 
 import { site, routes } from '../src/data/site.js';
-import { insights } from '../src/data/insights.js';
+import { allInsights as insights } from '../src/data/insights.js';
 import { content as contentEn } from '../src/data/content.en.js';
 import { content as contentEs } from '../src/data/content.es.js';
 import { plain, esc } from '../src/lib/html.js';
+import { LOGO_PATH, LOGO_WIDTH, LOGO_HEIGHT, logoSvg } from '../src/data/logo.js';
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const OUT_IMG = join(ROOT, 'public', 'img');
@@ -57,15 +58,24 @@ const MONO = fontData('space-mono-400-latin.woff2');
 const LOCALE_CONTENT = { en: contentEn, es: contentEs };
 
 const STRAP = {
-  en: 'Performance Rehabilitation · NYC',
-  es: 'Rehabilitación de Alto Rendimiento · NYC',
+  en: 'Performance Rehab · NYC · Tampa · Puerto Rico',
+  es: 'Rehabilitación · NYC · Tampa · Puerto Rico',
 };
 const FOOT = {
-  en: 'NFL · NHL · MLB · 20+ years · ELDOA & fascial work',
-  es: 'NFL · NHL · MLB · 20+ años · ELDOA y trabajo fascial',
+  en: 'NFL · NHL · MLB · 20+ years · ELDOA & fascia work',
+  es: 'NFL · NHL · MLB · 20+ años · ELDOA y trabajo de fascia',
 };
 
-function cardHtml({ kicker, title, locale }) {
+/** An article's own photo, inlined, for the right-hand side of its card. */
+function photoLayer(photo) {
+  if (!photo) return '';
+  const file = join(OUT_IMG, `${photo.slug}-${photo.widths[photo.widths.length - 1]}.jpg`);
+  const data = readFileSync(file).toString('base64');
+  return `<div class="photo" style="background-image:url(data:image/jpeg;base64,${data});background-position:${photo.position || '50% 50%'}"></div>`;
+}
+
+function cardHtml({ kicker, title, locale, photo }) {
+  const size = photo ? (title.length > 60 ? 50 : title.length > 36 ? 60 : 70) : title.length > 74 ? 58 : title.length > 46 ? 70 : 82;
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{font-family:B;src:url(data:font/woff2;base64,${BRICOLAGE}) format('woff2');font-weight:200 800}
 @font-face{font-family:H;src:url(data:font/woff2;base64,${HANKEN}) format('woff2');font-weight:100 900}
@@ -78,7 +88,8 @@ body{width:1200px;height:630px;background:#14161A;font-family:H,sans-serif;color
 .ticks{position:absolute;left:0;right:0;bottom:0;height:18px;
   background-image:repeating-linear-gradient(90deg,rgba(239,237,226,.16) 0 1px,transparent 1px 28px)}
 .top{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2}
-.mark{font-family:B;font-weight:800;font-size:26px;letter-spacing:.02em}
+.mark{display:flex;align-items:center;gap:18px;font-family:B;font-weight:800;font-size:26px;letter-spacing:.02em}
+.mark svg{width:81px;height:56px;color:#EFEBE2}
 .mark i{color:#1F9D76;font-style:normal}
 .strap{font-family:M;font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:#8C8980}
 .mid{position:relative;z-index:2;max-width:940px}
@@ -86,30 +97,51 @@ body{width:1200px;height:630px;background:#14161A;font-family:H,sans-serif;color
   display:flex;align-items:center;gap:14px;margin-bottom:22px}
 .kicker::before{content:"";width:40px;height:2px;background:#1F9D76}
 h1{font-family:B;font-weight:800;letter-spacing:-.025em;line-height:1.03;
-  font-size:${title.length > 74 ? 58 : title.length > 46 ? 70 : 82}px}
+  font-size:${size}px}
+.photo{position:absolute;top:0;right:0;bottom:0;width:56%;background-size:cover}
+.photo::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,#14161A 0%,rgba(20,22,26,.72) 22%,rgba(20,22,26,.12) 58%,rgba(20,22,26,.25) 100%),
+  linear-gradient(180deg,rgba(20,22,26,.35) 0%,transparent 28%,transparent 70%,rgba(20,22,26,.8) 100%)}
+.has-photo .mid{max-width:640px}
+.has-photo .strap{display:none}
 .foot{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2;
   border-top:1px solid rgba(239,237,226,.16);padding-top:26px}
 .foot span{font-family:M;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:#B7B3A9}
 .dot{width:10px;height:10px;border-radius:50%;background:#1F9D76;display:inline-block;margin-right:12px;
   vertical-align:middle}
-</style></head><body>
-<div class="glow"></div>
-<div class="top"><div class="mark">BEN VELAZQUEZ<i>.</i></div><div class="strap">${esc(STRAP[locale])}</div></div>
+</style></head><body${photo ? ' class="has-photo"' : ''}>
+${photo ? photoLayer(photo) : '<div class="glow"></div>'}
+<div class="top"><div class="mark">${logoSvg()}<span>BEN VELAZQUEZ<i>.</i></span></div><div class="strap">${esc(STRAP[locale])}</div></div>
 <div class="mid"><div class="kicker">${esc(kicker)}</div><h1>${esc(title)}</h1></div>
 <div class="foot"><span><i class="dot"></i>${esc(FOOT[locale])}</span><span>benvelazquez.com</span></div>
 <div class="ticks"></div>
 </body></html>`;
 }
 
+/**
+ * The app icon / favicon: the logo, white on the brand ink, centred in a
+ * square. Written to public/icons/icon.svg and rasterised from there.
+ */
+function iconSvg() {
+  const side = LOGO_WIDTH + 100;
+  const dx = (side - LOGO_WIDTH) / 2;
+  const dy = (side - LOGO_HEIGHT) / 2;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${side} ${side}" role="img" aria-label="Ben Velazquez">
+  <title>Ben Velazquez</title>
+  <rect width="${side}" height="${side}" fill="#14161A"/>
+  <path transform="translate(${dx} ${dy})" fill="#FFFFFF" fill-rule="evenodd" d="${LOGO_PATH}"/>
+</svg>
+`;
+}
+
 function iconHtml(size, maskable) {
-  const svg = readFileSync(join(OUT_ICON, 'icon.svg'), 'utf8');
+  // Maskable icons get cropped to a circle; keep the logo inside the safe zone.
   const pad = maskable ? size * 0.14 : 0;
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 *{margin:0;padding:0}
 body{width:${size}px;height:${size}px;background:#14161A;display:flex;align-items:center;justify-content:center}
 svg{width:${size - pad * 2}px;height:${size - pad * 2}px}
-${maskable ? 'body{border-radius:0}svg rect:first-of-type{rx:0}' : ''}
-</style></head><body>${svg}</body></html>`;
+</style></head><body>${iconSvg()}</body></html>`;
 }
 
 /** Trim a headline to something that reads well at OG size. */
@@ -138,6 +170,7 @@ for (const locale of site.locales) {
       kicker: post.tag[locale],
       title: ogTitle(post.title[locale]),
       locale,
+      photo: post.photo,
     });
   }
 }
@@ -145,13 +178,19 @@ for (const locale of site.locales) {
 // The fallback image, used anywhere a page-specific one is missing.
 targets.unshift({
   file: 'og-default.jpg',
-  kicker: 'NYC · Performance Rehabilitation',
+  kicker: 'NYC · Tampa · Puerto Rico · Performance Rehabilitation',
   title: 'The coach the world’s best athletes fly in to see.',
   locale: 'en',
 });
 
 mkdirSync(OUT_IMG, { recursive: true });
 mkdirSync(OUT_ICON, { recursive: true });
+writeFileSync(join(OUT_ICON, 'icon.svg'), iconSvg());
+// The bare logo (white, transparent background) for press and embeds.
+writeFileSync(
+  join(OUT_ICON, 'logo.svg'),
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${LOGO_WIDTH} ${LOGO_HEIGHT}" role="img" aria-label="Ben Velazquez"><title>Ben Velazquez</title><path fill="#FFFFFF" fill-rule="evenodd" d="${LOGO_PATH}"/></svg>\n`,
+);
 
 const browser = await chromium.launch({
   executablePath: existsSync('/opt/pw-browsers/chromium') ? undefined : undefined,

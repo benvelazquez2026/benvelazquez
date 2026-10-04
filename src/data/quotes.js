@@ -6,9 +6,34 @@
 
 export const quotes = [
   {
+    // Executive client. Leads the home and results grids, and is the
+    // pull quote on the executive page (content.*.js -> executive.testimonial).
+    id: 'meringoff',
+    name: 'Stephen Meringoff',
+    featured: true,
+    role: {
+      en: 'Executive client · Trained with Ben for 20+ years',
+      es: 'Cliente ejecutivo · Entrena con Ben desde hace más de 20 años',
+    },
+    text: {
+      en: '“Ben has been my personal trainer for over 20 years. He has keen intuition and an encyclopedic knowledge of the human body. He is an absolute savant at working remotely, a skill that very few trainers have been able to develop. At 82 years of age, I feel 20 years younger than that, in no small part due to Ben.”',
+      es: '“Ben ha sido mi entrenador personal durante más de 20 años. Tiene una intuición aguda y un conocimiento enciclopédico del cuerpo humano. Es un verdadero genio trabajando a distancia, una habilidad que muy pocos entrenadores han logrado desarrollar. A mis 82 años, me siento 20 años más joven, en gran parte gracias a Ben.”',
+    },
+  },
+  {
     id: 'fleiszer',
     name: 'Tim Fleiszer',
     featured: true,
+    // Shown beside the quote on the home page (public/img/results-fleiszer-*).
+    photo: {
+      slug: 'fleiszer',
+      widths: [357],
+      ratio: 446 / 357,
+      alt: {
+        en: 'Tim Fleiszer, number 34 for the Edmonton Eskimos, rushing off the line during a game',
+        es: 'Tim Fleiszer, número 34 de los Edmonton Eskimos, arrancando desde la línea durante un partido',
+      },
+    },
     role: {
       en: 'Executive Director, Concussion Legacy Foundation Canada · 4× Grey Cup Champion',
       es: 'Director Ejecutivo, Concussion Legacy Foundation Canada · 4× campeón de la Grey Cup',
@@ -22,6 +47,14 @@ export const quotes = [
     id: 'luzardo',
     name: 'Jesús Luzardo',
     featured: true,
+    photo: {
+      slug: 'luzardo',
+      widths: [480, 720, 960],
+      alt: {
+        en: 'Philadelphia Phillies pitcher following through on a pitch',
+        es: 'Pitcher de los Philadelphia Phillies completando un lanzamiento',
+      },
+    },
     role: { en: 'Starting Pitcher · Philadelphia', es: 'Pitcher abridor · Philadelphia' },
     text: {
       en: '“Thanks to working with Ben, I’ve felt at my best physically over these last two years. Feeling what needs to get fixed and how to fix it quickly is something I’ve come to learn in that time. Getting the body into the proper form to perform at the level I want is tough for many athletes — and working with Ben has made it easier for me to do that.”',
@@ -31,10 +64,21 @@ export const quotes = [
   {
     id: 'mccaffrey',
     name: 'Christian McCaffrey',
+    // Landscape: the outstretched arms are the shot, so it gets a wide panel.
+    photo: {
+      slug: 'mccaffrey',
+      widths: [700, 1300],
+      ratio: 1288 / 2000,
+      wide: true,
+      alt: {
+        en: 'Christian McCaffrey celebrating with his arms spread wide, ball in one hand',
+        es: 'Christian McCaffrey celebrando con los brazos abiertos y el balón en una mano',
+      },
+    },
     role: { en: 'Running Back · NFL', es: 'Running Back · NFL' },
     text: {
       en: '“The details in his programming take you from good to great. One of the best tools in my toolbox.”',
-      es: '“El detalle de su programación te lleva de bueno a excelente. Una de las mejores herramientas que tengo.”',
+      es: '“El detalle de su programación le lleva de bueno a excelente. Una de las mejores herramientas que tengo.”',
     },
   },
   {
@@ -49,6 +93,16 @@ export const quotes = [
   {
     id: 'carr',
     name: 'Derek Carr',
+    photo: {
+      slug: 'carr',
+      widths: [474],
+      ratio: 266 / 474,
+      wide: true,
+      alt: {
+        en: 'Derek Carr in a Las Vegas Raiders jersey pumping his fist on the field',
+        es: 'Derek Carr con la camiseta de los Las Vegas Raiders celebrando con el puño en el campo',
+      },
+    },
     role: { en: 'Quarterback · NFL', es: 'Quarterback · NFL' },
     text: {
       en: '“Working with Ben has been a game changer for me.”',

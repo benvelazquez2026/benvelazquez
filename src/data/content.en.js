@@ -15,7 +15,7 @@
 
 import { site } from './site.js';
 
-const APPLY_CTA = { route: 'apply', label: 'Book your free analysis' };
+const APPLY_CTA = { route: 'apply', label: 'Book your free intro call' };
 const PROGRAMS_CTA = { route: 'programs', label: 'See the programs', ghost: true };
 
 export const content = {
@@ -24,12 +24,14 @@ export const content = {
     seo: {
       title: 'Ben Velazquez | Performance Rehabilitation & ELDOA, NYC',
       description:
-        'Performance rehabilitation, ELDOA and strength coaching in NYC. Trusted by NFL, NHL and MLB athletes — now taking a limited number of executive clients.',
+        'Performance rehab, ELDOA and strength coaching in NYC, Tampa and Puerto Rico. Trusted by NFL, NHL and MLB athletes — now taking executive clients.',
     },
+    answerPhoto: { slug: 'home-answer', width: 474, height: 592, alt: 'New York Yankees pitcher in pinstripes striding into a pitch' },
     hero: {
-      kicker: 'NYC · Performance Rehabilitation',
+      imageAlt: 'Ben Velazquez ringside at an open-air boxing gym',
+      kicker: 'NYC · Tampa · Puerto Rico · Performance Rehabilitation',
       h1: 'The coach the world’s best athletes <span class="signal">fly in to see.</span>',
-      lede: 'Award-winning performance rehabilitation and a recognised expert in concussion exercise solutions — now taking a limited number of executive clients.',
+      lede: 'Award-winning performance rehabilitation and a recognized expert in concussion exercise solutions — now taking a limited number of executive clients.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
     stats: [
@@ -39,8 +41,8 @@ export const content = {
     ],
     proofLabel: 'Trusted by elite performers',
     answer: [
-      'Ben Velazquez is a New York City performance rehabilitation specialist and strength coach with more than 20 years working with elite performers, including athletes across the NFL, NHL and MLB. He is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>, a licensed Soma-Therapist and a Certified Strength &amp; Conditioning Specialist.',
-      'He works with three groups: professional and developing athletes, time-poor executives, and people recovering from concussion. Every engagement begins with a free 20-minute Performance Needs Analysis, and work is delivered virtually worldwide or in person in New York City, in English or Spanish.',
+      'Ben Velazquez is a performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico, with more than 20 years working with elite performers, including athletes across the NFL, NHL and MLB. He is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>, a licensed Soma-Therapist, a Posturologist and a Certified Strength &amp; Conditioning Specialist.',
+      'He works with three groups: professional and developing athletes, time-poor executives, and people recovering from concussion. Every engagement begins with a free 20-minute intro call, and work is delivered virtually worldwide or in person in New York City, Tampa and Puerto Rico, in English or Spanish.',
     ],
     philosophy: {
       kicker: 'Philosophy',
@@ -63,6 +65,7 @@ export const content = {
       lede: 'A look at the training itself — starting with sessions alongside Connor McDavid.',
     },
     who: {
+      photo: { slug: 'home-who', widths: [740, 1100, 1480], width: 1480, height: 1110, display: 560, alt: 'Detroit Red Wings player on the ice in a red home jersey, stick in hand' },
       kicker: '02 — Who I work with',
       heading: 'Three kinds of people. One standard of care.',
       lede: 'The same methods that keep professional athletes at the top now work for the leaders who run the rest of the world.',
@@ -96,7 +99,7 @@ export const content = {
       kicker: '03 — Programs',
       heading: 'Start where you are. Access scales with commitment.',
       lede: 'A clear path from a self-guided start to direct, private work. The top tiers are intentionally limited.',
-      note: 'Every place on the team begins with a free Performance Needs Analysis.',
+      note: 'Working with Ben begins with a free intro call.',
     },
     method: {
       kicker: '04 — Method',
@@ -109,8 +112,8 @@ export const content = {
         },
         {
           n: '02',
-          h: 'ELDOA &amp; fascial work',
-          p: 'Targeted self-normalising postures that decompress the spine and joints — the daily practice elite athletes swear by.',
+          h: 'ELDOA &amp; fascia work',
+          p: 'Targeted self-normalizing postures that decompress the spine and joints — the daily practice elite athletes swear by.',
         },
         {
           n: '03',
@@ -120,22 +123,23 @@ export const content = {
       ],
       vlabel: 'Performance · measured',
       vbig: 'Precision over intensity.',
+      quote: { text: '“You are your best therapist.”', by: 'Dr. Guy Voyer', alt: 'Dr. Guy Voyer, creator of ELDOA, speaking on stage' },
     },
     credentials: {
       kicker: 'Credentials & recognition',
       heading: 'Credentialed. Published. Trusted at the top.',
-      lede: 'Award-winning and nationally recognised — grounded in the science, not just the reps.',
+      lede: 'Award-winning and nationally recognized — grounded in the science, not just the reps.',
     },
     analysis: {
       kicker: 'Free · By application',
-      heading: 'Try out for a place on the Executive Team.',
-      lede: 'Every place on the team starts the same way: a free 20-minute virtual Performance Needs Analysis. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you join the team.',
+      heading: 'Try out for a place on the Executive Roster.',
+      lede: 'Working with Ben starts the same way: a free 20-minute virtual intro call. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you go on to work with Ben.',
       rows: [
-        { n: '01', b: 'The analysis', t: 'A focused 20-minute virtual assessment of how you move, load, and recover.' },
+        { n: '01', b: 'The intro call', t: 'A focused 20-minute virtual assessment of how you move, load, and recover.' },
         {
           n: '02',
           b: 'Your takeaway',
-          t: 'A personalised snapshot: the two or three things most limiting you, and where to start. Yours to keep.',
+          t: 'A personalized snapshot: the two or three things most limiting you, and where to start. Yours to keep.',
         },
         { n: '03', b: 'The tryout', t: 'If it’s a fit, you’re offered one of a limited number of positions on the roster.' },
       ],
@@ -145,13 +149,13 @@ export const content = {
     insights: {
       kicker: 'Weekly insights',
       heading: 'Notes from the field.',
-      lede: 'Short, practical thoughts on performance, recovery, and longevity — a new one most weeks.',
+      lede: 'Short, practical thoughts on performance, recovery, and longevity — a new one every week.',
       all: 'All insights →',
     },
     faqs: [
       {
         q: 'Who is Ben Velazquez?',
-        a: '<p>Ben Velazquez is a performance rehabilitation specialist and strength coach based in New York City, with more than 20 years working with elite performers. He has worked with athletes across the NFL, NHL and MLB, is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>, and is a recognised expert in exercise-based concussion solutions.</p>',
+        a: '<p>Ben Velazquez is a performance rehabilitation specialist and strength coach based in New York City, Tampa and Puerto Rico, with more than 20 years working with elite performers. He has worked with athletes across the NFL, NHL and MLB, is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>, and is a recognized expert in exercise-based concussion solutions.</p>',
       },
       {
         q: 'Who does Ben work with?',
@@ -159,11 +163,11 @@ export const content = {
       },
       {
         q: 'Does Ben work with clients remotely?',
-        a: '<p>Yes. Most executive work is delivered virtually and travels with the client. In-person work in New York City is available through the Concierge track, which begins with a full-day in-person Performance Day.</p>',
+        a: '<p>Yes. Most executive work is delivered virtually and travels with the client. In-person work in New York City, Tampa and Puerto Rico is available through the Concierge track, which begins with a full-day in-person Performance Day.</p>',
       },
       {
         q: 'How do I start working with Ben?',
-        a: `<p>Every engagement begins with a free 20-minute virtual Performance Needs Analysis. You leave with a personalised snapshot of the two or three things most limiting you and where to start — whether or not you go on to work together. <a href="/apply/">Apply for your analysis</a>.</p>`,
+        a: `<p>Every engagement begins with a free 20-minute virtual intro call. You leave with a personalized snapshot of the two or three things most limiting you and where to start — whether or not you go on to work together. <a href="/apply/">Apply for your intro call</a>.</p>`,
       },
       {
         q: 'What languages does Ben coach in?',
@@ -171,7 +175,7 @@ export const content = {
       },
       {
         q: 'What does it cost to work with Ben?',
-        a: `<p>There are three tiers. The Executive Reset is a self-guided program at $${site.pricing.resetDisplay} one-time. Core Executive Performance is $${site.pricing.core.toLocaleString('en-US')}/month on a quarterly commitment. Concierge Private Performance is $${site.pricing.concierge.toLocaleString('en-US')}/month by application, limited to ${site.roster.conciergeSeats} positions, and begins with a required Performance Day from $${site.pricing.performanceDay.toLocaleString('en-US')}. Full detail is on the <a href="/programs/">programs page</a>.</p>`,
+        a: `<p>There are three tiers. The Executive Reset is a self-guided program at $${site.pricing.resetDisplay} one-time. Core Executive Performance is $${site.pricing.core.toLocaleString('en-US')}/month, billed monthly with a three-month minimum. Concierge Private Performance is $${site.pricing.concierge.toLocaleString('en-US')}/month plus travel at cost, by application, limited to ${site.roster.conciergeSeats} positions, and begins with a required Performance Day from $${site.pricing.performanceDay.toLocaleString('en-US')}. Full detail is on the <a href="/programs/">programs page</a>.</p>`,
       },
     ],
     related: [
@@ -182,7 +186,7 @@ export const content = {
     ],
     cta: {
       kicker: 'The tryout',
-      heading: 'Every place on the team starts with a free analysis.',
+      heading: 'Working with Ben starts with a free intro call.',
       body: 'Twenty minutes, virtual, no cost. You leave with a plan you can use — whether or not we work together.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
@@ -193,7 +197,7 @@ export const content = {
     seo: {
       title: 'Executive Performance Coaching in NYC | Ben Velazquez',
       description:
-        'Private performance coaching for time-poor executives: ELDOA, decompression and strength programming that travels with you. NYC and virtual worldwide.',
+        'Private performance coaching for time-poor executives: ELDOA, decompression and strength work that travels with you. NYC, Tampa, Puerto Rico and virtual.',
     },
     hero: {
       kicker: 'Now open · Limited roster',
@@ -201,24 +205,27 @@ export const content = {
       lede: 'Sustained energy through brutal weeks. Freedom from the back and neck pain of desks and plane seats. The same performance rehabilitation that keeps professional athletes on the field, built for the way you actually live.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
+    answerPhoto: { slug: 'executive-answer', width: 384, height: 384, alt: 'A group of athletes standing in a sunlit old gymnasium, light streaming through tall arched windows' },
     answer: [
-      'Executive performance coaching with Ben Velazquez is a private, assessment-led program for senior professionals who travel constantly and sit for most of the day. It combines ELDOA spinal decompression, fascial work and strength programming into a routine that fits a hotel room and a fifteen-minute gap.',
-      'Core membership is $2,300 per month on a quarterly commitment and includes four virtual sessions, custom programming refreshed monthly, bounded async access with a 24-hour weekday response, and quarterly reassessment. Every place begins with a free 20-minute Performance Needs Analysis.',
+      'Executive performance coaching with Ben Velazquez is a private, assessment-led program for senior professionals who travel constantly and sit for most of the day. It combines ELDOA spinal decompression, fascia work and strength programming into a routine that fits a hotel room and a fifteen-minute gap.',
+      'Core membership is $2,300 per month, billed monthly with a three-month minimum, and includes four 30–45 minute virtual sessions, custom programming refreshed monthly, bounded async access with a 24-hour weekday response, and quarterly reassessment. Places are by application: Ben personally selects every client, and each place begins with a free 20-minute intro call.',
     ],
     facts: [
-      { k: 'Format', v: 'Virtual worldwide · in person in NYC' },
+      { k: 'Format', v: 'Virtual worldwide · in person at your location or Ben’s offices in NYC, Tampa & Puerto Rico' },
       { k: 'Core investment', v: '$2,300 / month' },
-      { k: 'Commitment', v: 'Quarterly' },
-      { k: 'Entry point', v: 'Free 20-min needs analysis' },
+      { k: 'Billing', v: 'Monthly · three-month minimum' },
+      { k: 'Entry point', v: 'Free intro call (20 min)' },
       { k: 'Languages', v: 'English · Spanish' },
-      { k: 'Concierge roster', v: '7 positions, by application' },
+      { k: 'Admission', v: 'By application · Ben selects every client' },
     ],
+    testimonial: 'meringoff',
     problem: {
+      photo: { slug: 'executive-problem', width: 534, height: 667, alt: 'Three people lying on mats with their legs raised straight up a wall, arms extended' },
       kicker: 'The problem',
       heading: 'One hour of training cannot outvote eleven hours in a chair.',
       body: `<p>Most senior professionals are not under-trained. They are under-recovered and over-compressed. Eleven hours a day folded over a screen, a hundred flights a year, and sleep treated as the variable that gives way first.</p>
 <p>The body adapts to whatever position it holds longest. That is why postural pain so rarely responds to training harder — you are trying to outvote eleven hours with one, and the arithmetic does not work.</p>
-<p>The answer is not more volume. It is precision: identifying the two or three restrictions actually limiting you, then interrupting the pattern often enough that the body stops treating a chair as its default shape.</p>`,
+<p>The answer is not more volume. It is precision: identifying the two or three restrictions that actually limit you, then interrupting the pattern often enough that the body stops treating a chair as its default shape.</p>`,
     },
     outcomes: {
       kicker: 'What changes',
@@ -247,7 +254,7 @@ export const content = {
         {
           idx: '05',
           heading: 'A body that lasts the career',
-          body: 'Periodised across the year the way an athlete’s is, so capacity is measured in decades rather than quarters.',
+          body: 'Periodized across the year the way an athlete’s is, so capacity is measured in decades rather than quarters.',
         },
         {
           idx: '06',
@@ -258,11 +265,11 @@ export const content = {
     },
     how: {
       kicker: 'How it runs',
-      heading: 'What a month on the team looks like.',
+      heading: 'What a month working with Ben looks like.',
       steps: [
         {
           n: '01',
-          h: 'Full needs analysis',
+          h: 'Full assessment (included in Core)',
           p: 'A deep movement and postural assessment establishes the baseline — how you move, load and recover, measured rather than assumed.',
         },
         {
@@ -302,11 +309,35 @@ export const content = {
       },
       {
         q: 'What is the difference between Core and Concierge?',
-        a: '<p>Core is virtual, four sessions a month, at $2,300/month. Concierge combines in-person and virtual with 8–12 touchpoints a month, priority scheduling and direct on-call access within agreed hours, at $6,500/month plus travel at cost. Concierge is by application only, capped at 7 positions, and begins with a required in-person Performance Day from $3,000.</p>',
+        a: '<p>Core is virtual, four sessions a month, at $2,300/month. Concierge combines in-person and virtual with 8–12 touchpoints a month, priority scheduling and direct on-call access within agreed hours, at $6,500/month plus travel at cost. Concierge is capped at 7 positions and begins with a required in-person Performance Day from $3,000. Both are by application — Ben personally selects every client.</p>',
+      },
+      {
+        q: 'Is there a way to start on my own first?',
+        a: `<p>Yes. The Executive Reset is a self-guided ELDOA and mobility program built for desk-bound, travel-heavy professionals: ten to fifteen minutes a day, no equipment, and yours to keep. It is a $${site.pricing.resetDisplay} one-time fee, with no application needed. <a href="/programs/">See all programs</a>.</p>`,
       },
       {
         q: 'Is there a minimum commitment?',
-        a: '<p>Core runs on a quarterly commitment. That is deliberate: structural change is measured in months, and a shorter cycle would not give the work enough time to show up in the reassessment.</p>',
+        a: '<p>Yes: three months. Core and Concierge are billed monthly with a three-month minimum. That is deliberate — structural change is measured in months, and a shorter cycle would not give the work enough time to show up in the reassessment. After that, you choose whether to continue.</p>',
+      },
+      {
+        q: 'How long is each session?',
+        a: '<p>Virtual sessions run 30 to 45 minutes. In-person sessions are one hour.</p>',
+      },
+      {
+        q: 'How does billing work?',
+        a: '<p>Core and Concierge are billed monthly, with a three-month minimum. After the first three months you choose whether to continue. We can bill you personally or your company — just note which on the application.</p>',
+      },
+      {
+        q: 'What is the cancellation policy?',
+        a: '<p>Virtual sessions can be moved or cancelled with 24 hours’ notice. In-person sessions and visits need one week’s notice.</p>',
+      },
+      {
+        q: 'Where do in-person sessions take place?',
+        a: '<p>Wherever suits you. Ben travels to you, or you can train at his offices in New York City, Tampa or Puerto Rico.</p>',
+      },
+      {
+        q: 'Is there an option beyond Concierge?',
+        a: '<p>Yes. Bespoke engagements are built entirely around one client, by conversation: Ben travelling with you, on-site retreats and intensive blocks, or programs for your family or leadership team, all under complete confidentiality. <a href="/apply/?interest=bespoke#applyForm">Start the conversation</a>.</p>',
       },
       {
         q: 'Can I work with Ben in Spanish?',
@@ -321,12 +352,12 @@ export const content = {
       { route: 'programs', label: 'Pricing', title: 'Programs and membership tiers' },
       { route: 'eldoa', label: 'The practice', title: 'What ELDOA is and how it works' },
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'Limited roster',
-      heading: 'Try out for a place on the Executive Team.',
-      body: `A free 20-minute virtual analysis. You leave with a plan you can use, whether or not you join. ${site.roster.openSpots} spots open this month.`,
+      heading: 'Try out for a place on the Executive Roster.',
+      body: `A free 20-minute virtual intro call. You leave with a plan you can use, whether or not you join. ${site.roster.openSpots} spots open this month.`,
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -336,34 +367,45 @@ export const content = {
     seo: {
       title: 'Performance Rehabilitation for Athletes | Ben Velazquez',
       description:
-        'Performance rehabilitation, injury prevention and return-to-play programming for pro and developing athletes. NFL, NHL and MLB experience. NYC and virtual.',
+        'Performance rehab, injury prevention and return-to-play programming for pro and developing athletes. NFL, NHL and MLB. NYC, Tampa, Puerto Rico and virtual.',
     },
     hero: {
+      photo: {
+        slug: 'hero-athletes',
+        widths: [800, 1179],
+        width: 1179,
+        height: 782,
+        position: '46% 58%',
+        alt: 'Phillies pitcher in his leg kick on the mound in front of a packed crowd',
+      },
       kicker: 'Athletes · Professional & developing',
       h1: 'Recover faster, move better, extend the career.',
       lede: 'Performance rehabilitation and injury prevention built around how your body actually works — the approach that has kept athletes across the NFL, NHL and MLB on the field.',
       ctas: [{ route: 'apply', label: 'Start your assessment' }, PROGRAMS_CTA],
     },
+    answerPhoto: { slug: 'athletes-answer', widths: [600, 880], width: 880, height: 1100, display: 440, alt: 'Pitcher in a pinstriped uniform following through on a pitch, back leg kicked high, in front of a packed stadium' },
     answer: [
       'Performance rehabilitation is the work that sits between physiotherapy and strength and conditioning: restoring structural balance and tissue quality first, then building the qualities a sport actually demands. It is what keeps an athlete available rather than merely cleared.',
-      'Ben Velazquez has spent more than 20 years doing this with athletes across the NFL, NHL and MLB. Every program begins with a movement and postural assessment, uses ELDOA and fascial work to address what the assessment finds, and only then progresses to performance qualities.',
+      'Ben Velazquez has spent more than 20 years doing this with athletes across the NFL, NHL and MLB. Every program begins with a movement and postural assessment, uses ELDOA and fascia work to address what the assessment finds, and only then progresses to performance qualities.',
     ],
     facts: [
       { k: 'Leagues', v: 'NFL · NHL · MLB' },
       { k: 'Experience', v: '20+ years with elite performers' },
-      { k: 'Core practice', v: 'ELDOA · fascial work · strength' },
-      { k: 'Format', v: 'In person in NYC · virtual worldwide' },
+      { k: 'Core practice', v: 'ELDOA · fascia work · strength' },
+      { k: 'Format', v: 'In person in NYC, Tampa & Puerto Rico · virtual worldwide' },
       { k: 'Also serves', v: 'Developing and collegiate athletes' },
       { k: 'Languages', v: 'English · Spanish' },
     ],
     problem: {
+      photo: { slug: 'athletes-cleared', width: 366, height: 366, alt: 'Stanford football player, number 95, pointing downfield during a game' },
       kicker: 'The gap',
       heading: 'Cleared to play is not the same as ready to play.',
-      body: `<p>Rehabilitation usually ends when the pain does. That is the moment most athletes get handed back to a strength programme — with the compensation patterns that caused the injury still fully intact.</p>
+      body: `<p>Rehabilitation usually ends when the pain does. That is the moment most athletes get handed back to a strength program — with the compensation patterns that caused the injury still fully intact.</p>
 <p>The line between therapist and strength coach has always been blurred. Today more than ever. The athletes who stay available are the ones whose structural work and performance work are not two separate conversations.</p>
 <p>So the order matters. First, correct what isn’t right. Tune the engine. Structural balance is the priority. Only then do we shift gears and focus on the qualities needed to raise performance.</p>`,
     },
     outcomes: {
+      photo: { slug: 'athletes-work', width: 644, height: 930, display: 380, alt: 'Montreal Alouettes player, number 34, walking onto the field in a red and blue jersey' },
       kicker: 'The work',
       heading: 'What athletes work on with Ben.',
       cards: [
@@ -390,7 +432,7 @@ export const content = {
         {
           idx: '05',
           heading: 'Career extension',
-          body: 'The training decisions that determine whether the last four years of a career are productive or lost to management.',
+          body: 'The attention paid to training, recovery and recuperation will often determine whether the professional athlete can extend their career beyond the norm, add value and receive a new contract.',
         },
         {
           idx: '06',
@@ -410,7 +452,7 @@ export const content = {
       },
       {
         q: 'Can this work alongside my team’s strength staff?',
-        a: '<p>Yes, and it usually does. The work is designed to complement a team programme rather than compete with it, and I coordinate with team staff where the athlete wants that.</p>',
+        a: '<p>Yes, and it usually does. The work is designed to complement a team program rather than compete with it, and I coordinate with team staff where the athlete wants that.</p>',
       },
       {
         q: 'Do you replace my physiotherapist?',
@@ -422,7 +464,7 @@ export const content = {
       },
       {
         q: 'Is the work available remotely?',
-        a: '<p>Yes. Virtual programming and coaching is available worldwide, which is how most in-season work is delivered. In-person work is available in New York City.</p>',
+        a: '<p>Yes. Virtual programming and coaching is available worldwide, which is how most in-season work is delivered. In-person work is available in New York City, Tampa and Puerto Rico.</p>',
       },
     ],
     related: [
@@ -434,7 +476,7 @@ export const content = {
     cta: {
       kicker: 'Start here',
       heading: 'Every program starts with an assessment.',
-      body: 'A free 20-minute virtual analysis of how you move, load and recover — and a clear plan for what to address first.',
+      body: 'A free 20-minute virtual intro call of how you move, load and recover — and a clear plan for what to address first.',
       ctas: [{ route: 'apply', label: 'Start your assessment' }, PROGRAMS_CTA],
     },
   },
@@ -444,17 +486,26 @@ export const content = {
     seo: {
       title: 'Exercise-Based Concussion Recovery | Ben Velazquez',
       description:
-        'Exercise-based concussion solutions from the onset of injury with Ben Velazquez, NYC. A team focused not just on return, but on keeping you there.',
+        'Exercise-based concussion solutions from the onset of injury with Ben Velazquez in NYC, Tampa and Puerto Rico. Focused on return, and on keeping you there.',
     },
     hero: {
-      kicker: 'Concussion recovery · NYC',
+      photo: {
+        slug: 'hero-concussion',
+        widths: [750, 1125],
+        width: 1125,
+        height: 1515,
+        position: '55% 18%',
+        narrow: true,
+        alt: 'A coach guiding a client through a kneeling overhead-reach posture on a mat',
+      },
+      kicker: 'Concussion recovery · NYC · Tampa · Puerto Rico',
       h1: 'Exercise-based concussion solutions, from the onset of injury.',
       lede: 'A holistic, team-based approach to concussion recovery — focused not just on getting you back, but on keeping you there.',
-      ctas: [{ route: 'apply', label: 'Learn about the program' }, { route: 'contact', label: 'Get in touch', ghost: true }],
+      ctas: [{ route: 'apply', label: 'Learn about the program' }, { href: site.links.remoteAssessment, label: 'Remote assessment', ghost: true }],
     },
     answer: [
       'Exercise-based concussion recovery uses carefully progressed, sub-symptom-threshold physical activity as an active part of recovery, rather than treating extended complete rest as the default. It is delivered as part of a coordinated team that includes medical oversight.',
-      'Ben Velazquez is a recognised expert in concussion exercise solutions and leads the program himself. Tim Fleiszer, Executive Director of Concussion Legacy Foundation Canada, has worked with Ben for more than 15 years, including with military personnel through the Operation Brain Health program.',
+      'Ben Velazquez is a recognized expert in concussion exercise solutions and leads the program himself. For over 15 years, Ben has worked with the Concussion Legacy Foundation Canada, its Executive Director Tim Fleiszer, and military personnel through the foundation’s Operation Brain Health program.',
     ],
     facts: [
       { k: 'Delivered by', v: 'Ben Velazquez' },
@@ -465,11 +516,22 @@ export const content = {
       { k: 'Languages', v: 'English · Spanish' },
     ],
     medical: {
+      photo: { slug: 'concussion-medical', widths: [700, 1000, 1340], width: 1340, height: 1460, display: 420, alt: 'Ben Velazquez kneeling beside a client lying on his side on a mat, guiding a supervised mobility position' },
       heading: 'An important note on medical care',
       body: `<p>Concussion is a medical condition. Nothing on this page is medical advice, and this program does not replace assessment, diagnosis or clearance by a qualified physician.</p>
 <p>Exercise-based concussion work is delivered as one part of a coordinated team, alongside your medical providers — not instead of them. If you have sustained a head injury, see a physician first. If you are experiencing worsening headache, repeated vomiting, seizures, weakness or numbness, increasing confusion or drowsiness, seek emergency care immediately.</p>`,
     },
     approach: {
+      photo: {
+        slug: 'concussion-posture-gait',
+        widths: [700, 1386],
+        width: 1386,
+        height: 1382,
+        display: 520,
+        zoom: true,
+        caption: 'General schema of posture–gait control · Diagram: PosturePro · Click to enlarge',
+        alt: 'Diagram, general schema of posture and gait control: sensory signals feed the cerebral cortex, limbic system and basal ganglia, which act through the thalamus, cerebellum and brainstem on the spinal locomotor network, combining voluntary, emotional and automatic movement.',
+      },
       kicker: 'The approach',
       heading: 'Why exercise, and why early.',
       body: `<p>The old default for concussion was complete rest until symptoms resolved. Practice has moved on considerably. Carefully dosed, sub-symptom-threshold activity, introduced under supervision and progressed on evidence rather than on a calendar, is now a central part of how concussion is managed.</p>
@@ -487,7 +549,7 @@ export const content = {
       },
       {
         q: 'When can exercise start after a concussion?',
-        a: '<p>That is a medical decision, made case by case with your physician. Current practice generally favours introducing light, controlled activity earlier than the older complete-rest model allowed, but the specific timing depends on the individual and their clinical picture.</p>',
+        a: '<p>That is a medical decision, made case by case with your physician. Current practice generally favors introducing light, controlled activity earlier than the older complete-rest model allowed, but the specific timing depends on the individual and their clinical picture.</p>',
       },
       {
         q: 'Who is the program for?',
@@ -495,24 +557,24 @@ export const content = {
       },
       {
         q: 'Who delivers the concussion program?',
-        a: `<p>Ben Velazquez leads the program directly. He is a recognised expert in exercise-based concussion solutions and coordinates a multi-disciplinary team around each case — working alongside your physician, and drawing on his vetted network of physiotherapy and medical professionals where a recovery needs it. You can reach him at <a href="mailto:${site.email}">${site.email}</a>.</p>`,
+        a: `<p>Ben Velazquez leads the program directly. He is a recognized expert in exercise-based concussion solutions and coordinates a multi-disciplinary team around each case — working alongside your physician, and drawing on his vetted network of physiotherapy and medical professionals where a recovery needs it. You can reach him at <a href="mailto:${site.email}">${site.email}</a>.</p>`,
       },
       {
         q: 'What does “not just return — but keeping you there” mean?',
-        a: '<p>Returning once is the easier half. The harder half is reducing the likelihood of a repeat injury and managing the load that follows a return, which is where a structured programme matters most.</p>',
+        a: '<p>Returning once is the easier half. The harder half is reducing the likelihood of a repeat injury and managing the load that follows a return, which is where a structured program matters most.</p>',
       },
     ],
     related: [
       { route: 'athletes', label: 'Athletes', title: 'Performance rehabilitation for athletes' },
       { route: 'about', label: 'Background', title: 'About Ben Velazquez' },
       { route: 'results', label: 'Proof', title: 'Endorsements and testimonials' },
-      { route: 'contact', label: 'Contact', title: 'Get in touch with the team' },
+      { route: 'contact', label: 'Contact', title: 'Get in touch with Ben' },
     ],
     cta: {
       kicker: 'Work with Ben',
-      heading: 'Talk to the team about a structured recovery.',
-      body: 'Tell us about the injury and where you are in recovery, and we will explain how the program works alongside your medical care.',
-      ctas: [{ route: 'contact', label: 'Contact the team' }, { route: 'apply', label: 'Book an analysis', ghost: true }],
+      heading: 'Talk to Ben about a structured recovery.',
+      body: 'Tell Ben about the injury and where you are in recovery, and he will explain how the program works alongside your medical care.',
+      ctas: [{ route: 'contact', label: 'Contact Ben' }, { route: 'apply', label: 'Book an intro call', ghost: true }],
     },
   },
 
@@ -521,7 +583,7 @@ export const content = {
     seo: {
       title: 'ELDOA in NYC — What It Is and How It Works | Ben Velazquez',
       description:
-        'ELDOA is a system of self-normalising postures that create space in one spinal segment. What it is, what it does, who it helps, and how to learn it properly.',
+        'ELDOA is a system of self-normalizing postures that create space in one spinal segment. What it is, what it does, who it helps, and how to learn it properly.',
     },
     hero: {
       kicker: 'The practice',
@@ -531,7 +593,7 @@ export const content = {
     },
     answer: [
       'ELDOA (Étirements Longitudinaux avec Décoaptation Ostéo-Articulaire) is a system of self-administered postures designed to create space in one specific joint or spinal segment. Each posture uses the practitioner’s own muscular tension and fascial lines to decoapt a targeted level — most commonly a vertebral segment such as L5–S1.',
-      'It is not general stretching. Every posture targets a named segment, is held for about a minute in a precise position, and is chosen based on what an assessment found. Practised consistently, athletes report reduced compression-related pain, improved range of motion and better recovery between sessions.',
+      'It is not general stretching. Every posture targets a named segment, is held for about a minute in a precise position, and is chosen based on what an assessment found. Practiced consistently, athletes report reduced compression-related pain, improved range of motion and better recovery between sessions.',
     ],
     facts: [
       { k: 'Full name', v: 'Étirements Longitudinaux avec Décoaptation Ostéo-Articulaire' },
@@ -575,7 +637,7 @@ export const content = {
         {
           idx: '04',
           heading: 'People with recurring back or neck pain',
-          body: 'Where the restriction is compression-related and localised, targeting the segment beats general mobility work.',
+          body: 'Where the restriction is compression-related and localized, targeting the segment beats general mobility work.',
         },
       ],
     },
@@ -593,7 +655,7 @@ export const content = {
         a: '<p>A daily practice is usually ten to fifteen minutes — a handful of postures at roughly a minute each. The prescription depends on what your assessment shows.</p>',
       },
       {
-        q: 'How often should I practise ELDOA?',
+        q: 'How often should I practice ELDOA?',
         a: '<p>Daily practice is where the results come from. Because it does not add meaningful recovery cost, it can be done every day, including in-season and on travel days.</p>',
       },
       {
@@ -610,19 +672,19 @@ export const content = {
       },
       {
         q: 'Where can I learn ELDOA in New York City?',
-        a: '<p>ELDOA is a core part of every program I write, for athletes and executives alike, delivered in person in NYC or virtually. Every engagement starts with a free 20-minute Performance Needs Analysis, which is what determines which postures you actually need.</p>',
+        a: '<p>ELDOA is a core part of every program I write, for athletes and executives alike, delivered in person in NYC, Tampa and Puerto Rico, or virtually. Every engagement starts with a free 20-minute intro call, which is what determines which postures you actually need.</p>',
       },
     ],
     related: [
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
       { route: 'executive', label: 'For executives', title: 'Executive performance coaching' },
       { route: 'athletes', label: 'For athletes', title: 'Performance rehabilitation' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'Learn it properly',
       heading: 'The right postures depend on what your assessment finds.',
-      body: 'A free 20-minute analysis identifies the segments actually limiting you — and which ELDOA postures are worth your ten minutes a day.',
+      body: 'A free 20-minute intro call identifies the segments actually limiting you — and which ELDOA postures are worth your ten minutes a day.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -635,13 +697,17 @@ export const content = {
         'Most training breaks the body down. This builds it back up. The three-part method behind 20+ years of performance rehabilitation with elite athletes.',
     },
     hero: {
+      video: {
+        src: '/video/method-hero.mp4',
+        poster: { slug: 'hero-method', widths: [720], width: 720, height: 720, position: '50% 4%' },
+      },
       kicker: 'The method',
       h1: 'Most training breaks the body down. This builds it back up.',
       lede: 'Three principles, applied in order, whether you are a professional athlete in a congested season or an executive on your fourth flight of the week.',
       ctas: [APPLY_CTA, { route: 'eldoa', label: 'What is ELDOA?', ghost: true }],
     },
     answer: [
-      'The method has three stages, applied strictly in order. First, assess — every program starts from measured data on how your body moves, loads and recovers, not from assumption. Second, decompress — ELDOA and fascial work address the specific restrictions the assessment found. Third, build — strength and performance qualities are added on top of a structure that can express them.',
+      'The method has three stages, applied strictly in order. First, assess — every program starts from measured data on how your body moves, loads and recovers, not from assumption. Second, decompress — ELDOA and fascia work address the specific restrictions the assessment found. Third, build — strength and performance qualities are added on top of a structure that can express them.',
       'The order is the point. Adding load to an unbalanced structure makes the imbalance stronger. Structural balance comes first; performance qualities come second.',
     ],
     steps: {
@@ -655,8 +721,8 @@ export const content = {
         },
         {
           n: '02',
-          h: 'ELDOA &amp; fascial work',
-          p: 'Targeted self-normalising postures that decompress a named spinal segment or joint, chosen from what the assessment found. This is the daily practice: ten to fifteen minutes, no equipment, done anywhere.',
+          h: 'ELDOA &amp; fascia work',
+          p: 'Targeted self-normalizing postures that decompress a named spinal segment or joint, chosen from what the assessment found. This is the daily practice: ten to fifteen minutes, no equipment, done anywhere.',
         },
         {
           n: '03',
@@ -727,7 +793,7 @@ export const content = {
       { route: 'eldoa', label: 'The practice', title: 'What ELDOA is and how it works' },
       { route: 'about', label: 'Background', title: 'About Ben Velazquez' },
       { route: 'programs', label: 'Pricing', title: 'Programs and membership tiers' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'Stage one',
@@ -742,20 +808,30 @@ export const content = {
     seo: {
       title: 'About Ben Velazquez — NYC Performance Rehab Specialist',
       description:
-        'Performance rehabilitation specialist and strength coach in NYC. 20+ years with NFL, NHL and MLB athletes, fascia author and concussion exercise expert.',
+        'Performance rehab specialist and strength coach in NYC, Tampa and Puerto Rico. 20+ years with NFL, NHL and MLB athletes; fascia author, concussion expert.',
     },
     hero: {
+      photo: {
+        slug: 'hero-about',
+        widths: [800, 1200, 1600],
+        width: 1600,
+        height: 2000,
+        position: '50% 18%',
+        narrow: true,
+        alt: 'Portrait of Ben Velazquez smiling, arms folded on a table',
+      },
       kicker: 'About',
       h1: 'Twenty years in the room where careers are protected.',
-      lede: 'Performance rehabilitation specialist, strength coach, published author on fascia, and a recognised expert in exercise-based concussion solutions — based in New York City, working in English and Spanish.',
+      lede: 'Performance rehabilitation specialist, posturologist, strength coach, published author on fascia, and a recognized expert in exercise-based concussion solutions — based in New York City, Tampa and Puerto Rico, working in English and Spanish.',
       ctas: [APPLY_CTA, { route: 'method', label: 'The method', ghost: true }],
     },
+    answerPhoto: { slug: 'about-answer', widths: [600, 900, 1200], width: 1200, height: 1500, display: 440, alt: 'Private training studio with a boxing ring, dumbbell racks, benches and an orange sprint track' },
     answer: [
-      'Ben Velazquez is a New York City performance rehabilitation specialist and strength coach with more than 20 years working with elite performers. He has worked with athletes across the NFL, NHL and MLB, has trained over 1,000 professionals through his seminars, and is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.',
-      'He is a licensed Soma-Therapist, a Certified Strength &amp; Conditioning Specialist (CSCS), an ACSM Exercise Specialist and an ISSA Sports Performance Nutritionist, and a member of the NSCA, ACSM and ISSA. He coaches in English and Spanish, virtually worldwide and in person in New York City.',
+      'Ben Velazquez is a performance rehabilitation specialist and strength coach in New York City, Tampa and Puerto Rico, with more than 20 years working with elite performers. He has worked with athletes across the NFL, NHL and MLB, has trained over 1,000 professionals through his seminars, and is a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.',
+      'He is a licensed Soma-Therapist, a Posturologist, a Certified Strength &amp; Conditioning Specialist (CSCS), an ACSM Exercise Specialist and an ISSA Sports Performance Nutritionist, and a member of the NSCA, ACSM and ISSA. He coaches in English and Spanish, virtually worldwide and in person in New York City, Tampa and Puerto Rico.',
     ],
     facts: [
-      { k: 'Based in', v: 'New York City' },
+      { k: 'Based in', v: 'New York City · Tampa · Puerto Rico' },
       { k: 'Experience', v: '20+ years with elite performers' },
       { k: 'Leagues', v: 'NFL · NHL · MLB' },
       { k: 'Seminars', v: '1,000+ professionals trained' },
@@ -770,23 +846,24 @@ export const content = {
 <h2>The athletes</h2>
 <p>Over twenty years that approach has taken me into weight rooms with athletes across the NFL, NHL and MLB — Christian McCaffrey, Derek Carr, Connor McDavid, Max Domi, Jesús Luzardo among them — and into the documentary <em>Being: Mariano</em> with Mariano Rivera. The sports differ enormously. The order of operations does not.</p>
 <h2>The science</h2>
-<p>Fascia is the throughline. It is continuous, it adapts to whatever you repeatedly ask of it, and it explains why localised, specific work outperforms general mobility training for most of the problems people actually bring me. That work led to my contribution to <em>Fascia: Clinical Applications for Health and Human Performance</em>, and it is why ELDOA sits at the centre of nearly every program I write.</p>
+<p>Fascia is the throughline. It is continuous, it adapts to whatever you repeatedly ask of it, and it explains why localized, specific work outperforms general mobility training for most of the problems people actually bring me. That work led to my contribution to <em>Fascia: Clinical Applications for Health and Human Performance</em>, and it is why ELDOA sits at the center of nearly every program I write.</p>
+<p>It is also why I think in terms of <strong>biotensegrity</strong>. The term describes the body as a tension-based structure: bones do not stack like bricks, they are held within a continuous web of fascia, muscle and ligament, and the balance of tension in that web is what gives the body its shape and stability. Load one part and the whole network responds. ELDOA works with that principle rather than against it. Each posture sets precise tension through the fascial chains above and below a single segment, and that balanced pull is what opens space at the joint — a local result, produced by organizing the whole system.</p>
 <h2>Concussion</h2>
 <p>I work on exercise-based concussion solutions from the onset of injury. Tim Fleiszer, Executive Director of Concussion Legacy Foundation Canada, and I have worked together for more than 15 years, including with military personnel through the Operation Brain Health program.</p>
 <h2>Teaching</h2>
 <p>More than a thousand professionals have come through my seminars. Teaching sharpens the work: you cannot hand-wave a principle to a room of practitioners who will apply it on Monday.</p>
 <h2>Executives</h2>
-<p>The methods that keep a professional athlete on the field turn out to transfer almost directly to people who sit for eleven hours and fly a hundred times a year. Same compression, same compensation patterns, less recovery time and far less support. That is why the Executive Team exists, and why the roster is small.</p>`,
+<p>The methods that keep a professional athlete on the field turn out to transfer almost directly to people who sit for eleven hours and fly a hundred times a year. Same compression, same compensation patterns, less recovery time and far less support. That is why the Executive Roster exists, and why it is kept small.</p>`,
     },
     credentials: {
       kicker: 'Credentials & recognition',
       heading: 'Credentialed. Published. Trusted at the top.',
-      lede: 'Award-winning and nationally recognised — grounded in the science, not just the reps.',
+      lede: 'Award-winning and nationally recognized — grounded in the science, not just the reps.',
     },
     faqs: [
       {
         q: 'What are Ben Velazquez’s qualifications?',
-        a: '<p>Licensed Soma-Therapist (Performance Physical Therapy), Certified Strength &amp; Conditioning Specialist (CSCS), ACSM Exercise Specialist and ISSA Sports Performance Nutritionist. He is a member of the NSCA, ACSM and ISSA, and a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.</p>',
+        a: '<p>Licensed Soma-Therapist (Performance Physical Therapy), Posturologist, Certified Strength &amp; Conditioning Specialist (CSCS), ACSM Exercise Specialist and ISSA Sports Performance Nutritionist. He studied posturology under Dr. Bernard Bricot, is a member of the NSCA, ACSM and ISSA, and a co-contributing author of <em>Fascia: Clinical Applications for Health and Human Performance</em>.</p>',
       },
       {
         q: 'Which professional athletes has Ben worked with?',
@@ -794,7 +871,7 @@ export const content = {
       },
       {
         q: 'Where is Ben Velazquez based?',
-        a: '<p>New York City. In-person work is available in NYC, and virtual coaching is available worldwide.</p>',
+        a: '<p>New York City, Tampa and Puerto Rico. In-person work is available in all three, and virtual coaching is available worldwide.</p>',
       },
       {
         q: 'What book has Ben contributed to?',
@@ -818,7 +895,7 @@ export const content = {
     cta: {
       kicker: 'Work together',
       heading: 'Every engagement starts the same way.',
-      body: 'A free 20-minute virtual Performance Needs Analysis — and a plan you keep, whether or not we work together.',
+      body: 'A free 20-minute virtual intro call — and a plan you keep, whether or not we work together.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -826,19 +903,20 @@ export const content = {
   /* ====================================================================== */
   programs: {
     seo: {
-      title: 'Programs & Pricing — Executive Team | Ben Velazquez',
+      title: 'Programs & Pricing — Executive Roster | Ben Velazquez',
       description:
         'Three ways to work with Ben Velazquez: the $297 Executive Reset, Core Executive Performance at $2,300/mo, and Concierge Private Performance by application.',
     },
     hero: {
       kicker: 'Programs',
       h1: 'Start where you are. Access scales with commitment.',
-      lede: 'A clear path from a self-guided start to direct, private work. The top tiers are intentionally limited — and every place begins with a free Performance Needs Analysis.',
+      lede: 'A clear path from a self-guided start to direct, private work. The top tiers are intentionally limited — and every place begins with a free intro call.',
       ctas: [APPLY_CTA],
     },
+    answerPhoto: { slug: 'programs-answer', width: 564, height: 564, display: 460, blend: true, alt: 'Rodin’s The Thinker against a glowing network of neurons' },
     answer: [
-      'There are three ways to work with Ben Velazquez. The Executive Reset is a self-guided ELDOA and mobility program at $297 one-time. Core Executive Performance is $2,300 per month on a quarterly commitment, with four virtual sessions, custom programming and bounded async access. Concierge Private Performance is $6,500 per month plus travel at cost, by application only, capped at 7 positions.',
-      'The Concierge track requires an in-person Performance Day first — a full-day evaluation and consultation from $3,000, one-time. Regardless of tier, every place on the team starts with a free 20-minute virtual Performance Needs Analysis.',
+      'There are three ways to work with Ben Velazquez. The Executive Reset is a self-guided ELDOA and mobility program at $297 one-time. Core Executive Performance is $2,300 per month, billed monthly with a three-month minimum, with four virtual sessions, custom programming and bounded async access. Concierge Private Performance is $6,500 per month plus travel at cost, capped at 7 positions. Core and Concierge are both by application: Ben personally selects every client.',
+      'The Concierge track requires an in-person Performance Day first — a full-day evaluation and consultation from $3,000, one-time. Regardless of tier, working with Ben starts with a free 20-minute virtual intro call.',
     ],
     tiers: [
       {
@@ -853,7 +931,7 @@ export const content = {
           'Yours to keep, permanently',
         ],
         cta: 'Get instant access',
-        href: site.links.executiveReset,
+        route: 'executive',
         ghost: true,
       },
       {
@@ -864,8 +942,8 @@ export const content = {
         price: `$${site.pricing.core.toLocaleString('en-US')} <small>/ month</small>`,
         desc: 'The right touchpoints and real access — built for the time-poor executive.',
         features: [
-          'Full Performance Needs Analysis + deep movement and postural assessment',
-          '4 virtual sessions / month — programming plus ELDOA and rehab coaching',
+          'Full assessment (included in Core) — deep movement and postural assessment',
+          '4 virtual sessions / month (30–45 min) — programming plus ELDOA and rehab coaching',
           'Custom program design, refreshed monthly, that travels with you',
           'Bounded async access — voice/text form checks, 24h weekday response',
           'Quarterly re-assessment and progress review',
@@ -874,7 +952,7 @@ export const content = {
         ],
         cta: 'Apply',
         route: 'apply',
-        fine: 'Quarterly commitment. Best for executives who want outcomes and access, not session volume.',
+        fine: 'By application · Billed monthly, three-month minimum. Best for executives who want outcomes and access, not session volume.',
       },
       {
         step: 'Concierge',
@@ -883,9 +961,10 @@ export const content = {
         desc: 'Maximum access. In-person and virtual combined — the closest thing to how pros are supported.',
         features: [
           'Everything in Core',
-          'In-person and virtual, combined',
+          'In person at your location, or at Ben’s offices in NYC, Tampa or Puerto Rico — one-hour sessions',
+          'Complete discretion — confidentiality and NDAs as standard',
           'Up to 8–12 touchpoints / month, priority scheduling',
-          'Programming adjusted in real time as your week changes',
+          'Custom program design, adjusted in real time as your week changes',
           'Deeper integration with recovery, sleep and energy',
           'Direct on-call access, within agreed hours',
         ],
@@ -897,29 +976,43 @@ export const content = {
         )}, one-time). Travel billed at cost when on-site: flights (business on 3h+), ground transport and hotel.`,
       },
     ],
+    bespoke: {
+      step: 'Beyond Concierge',
+      name: 'Bespoke',
+      price: 'By conversation',
+      desc: 'For when the work has to go wherever you go. Built entirely around one client — and, if you want, the people around you.',
+      features: [
+        'Ben travels with you — on the road, on location, at home',
+        'On-site retreats and intensive training blocks',
+        'Programs for your family or leadership team',
+        'Complete discretion — confidentiality and NDAs as standard',
+      ],
+      cta: 'Start the conversation',
+      href: '/apply/?interest=bespoke#applyForm',
+    },
     prereq: {
       kicker: 'Required prerequisite',
-      heading: 'The Performance Day',
+      heading: 'Performance Day ($3,000, Concierge only)',
       body: `<p>Every Concierge place begins with a full-day, in-person evaluation and consultation — from $${site.pricing.performanceDay.toLocaleString(
         'en-US',
       )}, one-time.</p>
 <p>A full day is what it takes to see how a body actually behaves rather than how it presents in a twenty-minute window: movement under fatigue, how you load in the afternoon versus the morning, and the patterns that only appear once you stop performing for the assessment.</p>`,
     },
-    note: 'Every place on the team begins with a free Performance Needs Analysis.',
+    note: 'Working with Ben begins with a free intro call.',
     faqs: [
       {
         q: 'How much does it cost to work with Ben Velazquez?',
         a: `<p>The Executive Reset is $${site.pricing.resetDisplay} one-time. Core Executive Performance is $${site.pricing.core.toLocaleString(
           'en-US',
-        )} per month on a quarterly commitment. Concierge Private Performance is $${site.pricing.concierge.toLocaleString(
+        )} per month, billed monthly with a three-month minimum. Concierge Private Performance is $${site.pricing.concierge.toLocaleString(
           'en-US',
         )} per month plus travel at cost, and requires a one-time Performance Day from $${site.pricing.performanceDay.toLocaleString(
           'en-US',
         )}.</p>`,
       },
       {
-        q: 'What is included in the free Performance Needs Analysis?',
-        a: '<p>A focused 20-minute virtual assessment of how you move, load and recover, and a personalised snapshot of the two or three things most limiting you and where to start. It is genuinely free and yours to keep whether or not you go on to work together.</p>',
+        q: 'What is included in the free intro call?',
+        a: '<p>A focused 20-minute virtual assessment of how you move, load and recover, and a personalized snapshot of the two or three things most limiting you and where to start. It is genuinely free and yours to keep whether or not you go on to work together.</p>',
       },
       {
         q: 'Why is the Concierge roster capped at 7?',
@@ -934,6 +1027,26 @@ export const content = {
         a: '<p>No. When on-site work is required, travel is billed at cost: flights (business class on journeys over three hours), ground transport and hotel.</p>',
       },
       {
+        q: 'How long is each session?',
+        a: '<p>Virtual sessions run 30 to 45 minutes. In-person sessions are one hour.</p>',
+      },
+      {
+        q: 'How does billing work?',
+        a: '<p>Core and Concierge are billed monthly, with a three-month minimum. After the first three months you choose whether to continue. We can bill you personally or your company — just note which on the application.</p>',
+      },
+      {
+        q: 'What is the cancellation policy?',
+        a: '<p>Virtual sessions can be moved or cancelled with 24 hours’ notice. In-person sessions and visits need one week’s notice.</p>',
+      },
+      {
+        q: 'Where do in-person sessions take place?',
+        a: '<p>Wherever suits you. Ben travels to you, or you can train at his offices in New York City, Tampa or Puerto Rico.</p>',
+      },
+      {
+        q: 'Is there an option beyond Concierge?',
+        a: '<p>Yes. Bespoke engagements are built entirely around one client, by conversation: Ben travelling with you, on-site retreats and intensive blocks, or programs for your family or leadership team, all under complete confidentiality. <a href="/apply/?interest=bespoke#applyForm">Start the conversation</a>.</p>',
+      },
+      {
         q: 'Can I switch tiers later?',
         a: '<p>Yes. Many members start on Core and move to Concierge when a season or a schedule demands more access. Moving to Concierge requires the Performance Day if you have not already done one.</p>',
       },
@@ -946,11 +1059,11 @@ export const content = {
       { route: 'executive', label: 'For executives', title: 'What executive coaching involves' },
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
       { route: 'faq', label: 'Questions', title: 'Frequently asked questions' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'The way in',
-      heading: 'Every tier starts with the same free analysis.',
+      heading: 'Every tier starts with the same free intro call.',
       body: `Twenty minutes, virtual, no cost, no obligation. ${site.roster.openSpots} roster spots open this month.`,
       ctas: [APPLY_CTA],
     },
@@ -993,19 +1106,19 @@ export const content = {
       },
       {
         q: 'Can I speak to a current client?',
-        a: '<p>Where a client has agreed to it, introductions can sometimes be arranged after a needs analysis. Client confidentiality means this is never assumed.</p>',
+        a: '<p>Where a client has agreed to it, introductions can sometimes be arranged after an intro call. Client confidentiality means this is never assumed.</p>',
       },
     ],
     related: [
       { route: 'athletes', label: 'For athletes', title: 'Performance rehabilitation' },
       { route: 'about', label: 'Background', title: 'About Ben Velazquez' },
       { route: 'concussion', label: 'Concussion', title: 'Exercise-based concussion recovery' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'The tryout',
       heading: 'The same standard of care, whatever you do for a living.',
-      body: 'A free 20-minute virtual analysis, and a plan you keep whether or not we work together.',
+      body: 'A free 20-minute virtual intro call, and a plan you keep whether or not we work together.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -1015,17 +1128,26 @@ export const content = {
     seo: {
       title: 'Weekly Insights on Performance & Longevity | Ben Velazquez',
       description:
-        'Short, practical writing on performance, recovery, posture and longevity from a coach who has spent 20+ years with elite athletes. A new insight most weeks.',
+        'Short, practical writing on performance, recovery, posture and longevity from a coach who has spent 20+ years with elite athletes. A new insight every week.',
     },
     hero: {
+      photo: {
+        slug: 'hero-insights',
+        widths: [560, 736],
+        width: 736,
+        height: 736,
+        position: '62% 50%',
+        narrow: true,
+        alt: 'A vintage-style gym with exposed brick, a large wall clock, plate racks and arched windows',
+      },
       kicker: 'Weekly insights',
       h1: 'Notes from the field.',
-      lede: 'Short, practical thoughts on performance, recovery, and longevity — a new one most weeks.',
+      lede: 'Short, practical thoughts on performance, recovery, and longevity — a new one every week.',
       ctas: [APPLY_CTA],
     },
     answer: [
       'Weekly Insights is a short-form series on performance, recovery, posture and longevity, written from twenty years of work with professional athletes and executives. Each piece takes a single practical question and answers it directly.',
-      'New insights are published most weeks and are available in English and Spanish, with an RSS feed for both.',
+      'New insights are published every week and are available in English and Spanish, with an RSS feed for both.',
     ],
     faqs: [
       {
@@ -1045,12 +1167,12 @@ export const content = {
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
       { route: 'eldoa', label: 'The practice', title: 'What ELDOA is and how it works' },
       { route: 'podcast', label: 'Listen', title: 'The Ben Velazquez Podcast' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'Put it into practice',
       heading: 'Reading about it only goes so far.',
-      body: 'A free 20-minute analysis tells you which of these actually apply to your body, and in what order.',
+      body: 'A free 20-minute intro call tells you which of these actually apply to your body, and in what order.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
   },
@@ -1060,17 +1182,17 @@ export const content = {
     seo: {
       title: 'Frequently Asked Questions | Ben Velazquez',
       description:
-        'Answers on programs, pricing, ELDOA, remote coaching, concussion recovery and how to start working with Ben Velazquez in NYC or virtually.',
+        'Answers on programs, pricing, ELDOA, remote coaching, concussion recovery and how to start with Ben Velazquez in NYC, Tampa, Puerto Rico or virtually.',
     },
     hero: {
       kicker: 'Questions',
       h1: 'Everything people ask before they start.',
-      lede: 'Programs, pricing, the method, remote work and how the free Performance Needs Analysis actually runs.',
+      lede: 'Programs, pricing, the method, remote work and how the free intro call actually runs.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
     answer: [
       'This page collects the questions asked most often about working with Ben Velazquez: what performance rehabilitation is, what ELDOA involves, how much the programs cost, whether the work can be done remotely, and how to start.',
-      'Every engagement begins with a free 20-minute virtual Performance Needs Analysis, available in English or Spanish.',
+      'Every engagement begins with a free 20-minute virtual intro call, available in English or Spanish.',
     ],
     groups: [
       {
@@ -1078,11 +1200,11 @@ export const content = {
         faqs: [
           {
             q: 'How do I start working with Ben Velazquez?',
-            a: '<p>Every engagement begins with a free 20-minute virtual Performance Needs Analysis. You leave with a personalised snapshot of the two or three things most limiting you and where to start, whether or not you go on to work together. <a href="/apply/">Apply here</a>.</p>',
+            a: '<p>Every engagement begins with a free 20-minute virtual intro call. You leave with a personalized snapshot of the two or three things most limiting you and where to start, whether or not you go on to work together. <a href="/apply/">Apply here</a>.</p>',
           },
           {
-            q: 'Is the Performance Needs Analysis really free?',
-            a: '<p>Yes. It is a genuine 20-minute assessment, and the takeaway plan is yours to keep regardless of whether you join the team.</p>',
+            q: 'Is the intro call really free?',
+            a: '<p>Yes. It is a genuine 20-minute assessment, and the takeaway plan is yours to keep regardless of whether you go on to work with Ben.</p>',
           },
           {
             q: 'Do I work directly with Ben?',
@@ -1090,7 +1212,7 @@ export const content = {
           },
           {
             q: 'Can the work be done remotely?',
-            a: '<p>Yes. Most executive work is virtual and travels with the client. In-person work is available in New York City, and is a required part of the Concierge track.</p>',
+            a: '<p>Yes. Most executive work is virtual and travels with the client. In-person work is available in New York City, Tampa and Puerto Rico, and is a required part of the Concierge track.</p>',
           },
           {
             q: 'What languages do you work in?',
@@ -1098,7 +1220,7 @@ export const content = {
           },
           {
             q: 'Who is this not for?',
-            a: '<p>Anyone looking for session volume rather than outcomes, or for a quick fix. Structural change is measured in months, which is why Core runs on a quarterly commitment.</p>',
+            a: '<p>Anyone looking for session volume rather than outcomes, or for a quick fix. Structural change is measured in months, which is why Core has a three-month minimum.</p>',
           },
         ],
       },
@@ -1109,7 +1231,7 @@ export const content = {
             q: 'What do the programs cost?',
             a: `<p>The Executive Reset is $${site.pricing.resetDisplay} one-time. Core Executive Performance is $${site.pricing.core.toLocaleString(
               'en-US',
-            )}/month on a quarterly commitment. Concierge Private Performance is $${site.pricing.concierge.toLocaleString(
+            )}/month, billed monthly with a three-month minimum. Concierge Private Performance is $${site.pricing.concierge.toLocaleString(
               'en-US',
             )}/month plus travel at cost, by application, capped at ${site.roster.conciergeSeats} positions, and requires a one-time Performance Day from $${site.pricing.performanceDay.toLocaleString(
               'en-US',
@@ -1123,7 +1245,7 @@ export const content = {
           },
           {
             q: 'Is there a minimum commitment?',
-            a: '<p>Core runs quarterly. Structural change takes months to show up in a reassessment, and a shorter cycle would not give the work a fair test.</p>',
+            a: '<p>Three months. Core is billed monthly with a three-month minimum, because structural change takes months to show up in a reassessment. After that, you choose whether to continue.</p>',
           },
           {
             q: 'How many sessions do I get?',
@@ -1174,11 +1296,11 @@ export const content = {
       { route: 'programs', label: 'Pricing', title: 'Programs and membership tiers' },
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
       { route: 'eldoa', label: 'The practice', title: 'What ELDOA is and how it works' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
     cta: {
       kicker: 'Still deciding?',
-      heading: 'The analysis answers more than a page can.',
+      heading: 'The intro call answers more than a page can.',
       body: 'Twenty minutes, virtual, free. You leave with a plan you can use either way.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
@@ -1187,26 +1309,26 @@ export const content = {
   /* ====================================================================== */
   apply: {
     seo: {
-      title: 'Apply — Free Performance Needs Analysis | Ben Velazquez',
+      title: 'Apply — Free Intro Call (20 min) | Ben Velazquez',
       description:
-        'Apply for a free 20-minute virtual Performance Needs Analysis. Leave with a personalised plan you keep, whether or not you join the Executive Team.',
+        'Apply for a free 20-minute virtual intro call. Leave with a personalized plan you keep, whether or not you join the Executive Roster.',
     },
     hero: {
       kicker: 'Free · By application',
-      h1: 'Try out for a place on the Executive Team.',
-      lede: 'Every place on the team starts the same way: a free 20-minute virtual Performance Needs Analysis. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you join the team.',
+      h1: 'Try out for a place on the Executive Roster.',
+      lede: 'Working with Ben starts the same way: a free 20-minute virtual intro call. I find what’s holding your body back — and you leave with a clear plan to fix it, whether or not you go on to work with Ben.',
       ctas: [],
     },
     answer: [
-      'The Performance Needs Analysis is a free, 20-minute virtual assessment of how you move, load and recover. You leave with a personalised snapshot of the two or three things most limiting you and where to start — yours to keep whether or not you go on to work together.',
+      'The intro call is a free, 20-minute virtual assessment of how you move, load and recover. You leave with a personalized snapshot of the two or three things most limiting you and where to start — yours to keep whether or not you go on to work together.',
       `If it is a fit, you are offered one of a limited number of roster positions. ${site.roster.openSpots} spots are open this month. Available in English or Spanish.`,
     ],
     steps: [
-      { n: '01', b: 'The analysis', t: 'A focused 20-minute virtual assessment of how you move, load, and recover.' },
+      { n: '01', b: 'The intro call', t: 'A focused 20-minute virtual assessment of how you move, load, and recover.' },
       {
         n: '02',
         b: 'Your takeaway',
-        t: 'A personalised snapshot: the two or three things most limiting you, and where to start. Yours to keep.',
+        t: 'A personalized snapshot: the two or three things most limiting you, and where to start. Yours to keep.',
       },
       { n: '03', b: 'The tryout', t: 'If it’s a fit, you’re offered one of a limited number of positions on the roster.' },
     ],
@@ -1218,33 +1340,42 @@ export const content = {
     form: {
       heading: 'Apply for your tryout',
       // Subject line on the email Formspree delivers.
-      subject: 'New application — Performance Needs Analysis',
+      subject: 'New application — intro call',
       name: 'Name',
       namePh: 'Your name',
       email: 'Email',
       emailPh: 'you@company.com',
       goal: 'What are you looking for?',
+      phone: 'Phone',
+      whatsapp: 'WhatsApp',
+      phonePh: '+1 555 123 4567',
+      optional: '(optional)',
+      assistant: 'Assistant’s email',
+      assistantPh: 'assistant@company.com',
       options: [
         'Executive performance',
         'Athletic performance & rehab',
         'Concussion recovery',
+        'Bespoke private engagement',
         'Not sure yet',
       ],
+      billing: 'Who should we bill?',
+      billingOptions: ['Me personally', 'My company'],
       message: 'Anything you’d like Ben to know',
       messagePh: 'A few words about your goals…',
       submit: 'Apply for my tryout',
       sending: 'Sending…',
-      ok: 'Thank you — your tryout request is in. If it’s a fit, we’ll reach out to book your Performance Needs Analysis.',
+      ok: 'Thank you — your tryout request is in. If it’s a fit, we’ll reach out to book your intro call.',
       err: `Something went wrong sending that. Please email ${site.email} directly and we’ll pick it up from there.`,
-      note: 'Your details are used only to arrange your analysis. No list, no sharing.',
+      note: 'Your details are used only to arrange your intro call. No list, no sharing.',
     },
     faqs: [
       {
         q: 'What happens after I apply?',
-        a: '<p>You will hear back with next steps. If it looks like a fit, we book the free 20-minute virtual analysis; if it is not, you will be told directly rather than left waiting.</p>',
+        a: '<p>You will hear back within three business days. If it looks like a fit, we book the free 20-minute virtual intro call; if it is not, you will be told directly rather than left waiting.</p>',
       },
       {
-        q: 'Is the analysis really free?',
+        q: 'Is the intro call really free?',
         a: '<p>Yes. It is a genuine assessment and the takeaway plan is yours to keep regardless of what you decide afterwards.</p>',
       },
       {
@@ -1252,12 +1383,12 @@ export const content = {
         a: '<p>No — just enough floor space to stand and move a little, and a camera that can see you. No equipment needed.</p>',
       },
       {
-        q: 'Can the analysis be done in Spanish?',
+        q: 'Can the intro call be done in Spanish?',
         a: '<p>Yes. Just note it in the form and the call will be conducted in Spanish.</p>',
       },
       {
         q: 'What if I’m not an executive?',
-        a: '<p>The same analysis is the entry point for athletes and for people recovering from concussion. Select the option that fits in the form.</p>',
+        a: '<p>The same intro call is the entry point for athletes and for people recovering from concussion. Select the option that fits in the form.</p>',
       },
     ],
     related: [
@@ -1273,30 +1404,31 @@ export const content = {
     seo: {
       title: 'Contact Ben Velazquez — NYC Performance Rehabilitation',
       description:
-        'Get in touch with Ben Velazquez — coaching, the concussion program, speaking and media. New York City, virtual worldwide, in English or Spanish.',
+        'Get in touch with Ben Velazquez — coaching, the concussion program, speaking and media. NYC, Tampa, Puerto Rico and virtual, in English or Spanish.',
     },
     hero: {
       kicker: 'Contact',
       h1: 'Get in touch.',
-      lede: 'For coaching enquiries, the concussion program, speaking, seminars or media — here is how to reach the team.',
+      lede: 'For coaching inquiries, the concussion program, speaking, seminars or media — here is how to reach Ben.',
       ctas: [APPLY_CTA],
     },
     answer: [
-      `The fastest route for coaching enquiries is the free Performance Needs Analysis application. For everything else — the concussion program, speaking, seminars, media or partnerships — email ${site.email}.`,
-      'Ben is based in New York City and works virtually worldwide, in English or Spanish.',
+      `The fastest route for coaching inquiries is the free intro call application. For everything else — the concussion program, speaking, seminars, media or partnerships — email ${site.email}.`,
+      'Ben is based in New York City, Tampa and Puerto Rico, and works virtually worldwide, in English or Spanish.',
     ],
     facts: [
-      { k: 'Coaching enquiries', v: '<a href="/apply/">Apply for a free analysis</a>' },
+      { k: 'Coaching inquiries', v: '<a href="/apply/">Apply for a free intro call</a>' },
       { k: 'Email', v: `<a href="mailto:${site.email}">${site.email}</a>` },
+      { k: 'WhatsApp (international)', v: `<a href="${site.whatsappUrl}" rel="noopener" target="_blank">${site.whatsapp}</a>` },
       { k: 'Concussion program', v: '<a href="/concussion-recovery/">Exercise-based recovery</a>' },
-      { k: 'Based in', v: 'New York City, NY' },
-      { k: 'Availability', v: 'Virtual worldwide · in person NYC' },
+      { k: 'Based in', v: 'New York City · Tampa · Puerto Rico' },
+      { k: 'Availability', v: 'Virtual worldwide · in person NYC, Tampa & Puerto Rico' },
       { k: 'Languages', v: 'English · Spanish' },
     ],
     faqs: [
       {
         q: 'What is the fastest way to reach Ben?',
-        a: '<p>For coaching, the <a href="/apply/">analysis application</a> — it goes straight into the intake queue. For anything else, email is the fastest route.</p>',
+        a: '<p>For coaching, the <a href="/apply/">intro call application</a> — it goes straight into the intake queue. For anything else, email is the fastest route.</p>',
       },
       {
         q: 'Do you take speaking or seminar bookings?',
@@ -1304,15 +1436,15 @@ export const content = {
       },
       {
         q: 'How do I ask about the concussion program?',
-        a: `<p>Email <a href="mailto:${site.email}">${site.email}</a> and note that your enquiry is about the concussion program.</p>`,
+        a: `<p>Email <a href="mailto:${site.email}">${site.email}</a> and note that your inquiry is about the concussion program.</p>`,
       },
       {
         q: 'Do you work with clients outside the United States?',
-        a: '<p>Yes. Virtual coaching is available worldwide, in English or Spanish.</p>',
+        a: `<p>Yes. Virtual coaching is available worldwide, in English or Spanish. International clients can also reach Ben on WhatsApp at <a href="${site.whatsappUrl}" rel="noopener" target="_blank">${site.whatsapp}</a>.</p>`,
       },
     ],
     related: [
-      { route: 'apply', label: 'Coaching', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Coaching', title: 'Book your free intro call' },
       { route: 'concussion', label: 'Concussion', title: 'Exercise-based concussion recovery' },
       { route: 'about', label: 'Background', title: 'About Ben Velazquez' },
       { route: 'faq', label: 'Questions', title: 'Frequently asked questions' },
@@ -1324,7 +1456,7 @@ export const content = {
     seo: {
       title: 'The Ben Velazquez Podcast — Performance & Longevity',
       description:
-        'Conversations on performance, recovery and longevity with the people who live at the top — hosted by NYC performance rehabilitation specialist Ben Velazquez.',
+        'Conversations on performance, recovery and longevity with people at the top, hosted by performance rehab specialist Ben Velazquez (NYC, Tampa, Puerto Rico).',
     },
     hero: {
       kicker: 'Podcast',
@@ -1332,9 +1464,10 @@ export const content = {
       lede: 'Conversations on performance, recovery, and longevity with the people who live at the top.',
       ctas: [{ href: site.links.podcast, label: 'Listen now' }, { route: 'insights', label: 'Read the insights', ghost: true }],
     },
+    note: 'Stay tuned — episodes are on the way.',
     answer: [
       'The Ben Velazquez Podcast features conversations on performance, recovery and longevity with athletes, practitioners and executives operating at the highest level.',
-      'It is hosted by Ben Velazquez, a New York City performance rehabilitation specialist with more than 20 years working with athletes across the NFL, NHL and MLB.',
+      'It is hosted by Ben Velazquez, a performance rehabilitation specialist in New York City, Tampa and Puerto Rico, with more than 20 years working with athletes across the NFL, NHL and MLB.',
     ],
     faqs: [
       {
@@ -1354,7 +1487,7 @@ export const content = {
       { route: 'insights', label: 'Reading', title: 'Weekly insights' },
       { route: 'about', label: 'Background', title: 'About Ben Velazquez' },
       { route: 'method', label: 'The method', title: 'Assess, decompress, build to last' },
-      { route: 'apply', label: 'Start here', title: 'Book your free needs analysis' },
+      { route: 'apply', label: 'Start here', title: 'Book your free intro call' },
     ],
   },
 
@@ -1391,14 +1524,12 @@ export const content = {
         logo: 'p2717',
         mark: '27:17',
         name: '27:17 Recovery',
-        tag: 'Back soon',
-        soldOut: true,
+        tag: 'Recovery',
         cat: 'Performance recovery cream · copper peptide, arnica, MSM · drug-test safe',
         quote:
           '“Recovery isn’t rest — it’s performance. 27:17 is the topical I trust to help the body rebuild between sessions, and it’s clean enough for drug-tested athletes. A staple in my recovery toolkit.”',
-        cta: 'Get notified when it’s back',
+        cta: 'Shop 27:17 Recovery',
         href: site.links.p2717,
-        ghost: true,
       },
       {
         logo: 'sp',
@@ -1452,13 +1583,13 @@ export const content = {
 <h2>What is collected</h2>
 <p>The only information collected is what you type into the application or contact form: your name, your email address, the option you select, and any message you write. Nothing else is requested and nothing else is stored.</p>
 <h2>What it is used for</h2>
-<p>Solely to respond to your enquiry and, where relevant, to arrange your Performance Needs Analysis. Your details are not sold, rented, or shared with third parties for marketing. You are not added to a mailing list by submitting the form.</p>
+<p>Solely to respond to your inquiry and, where relevant, to arrange your intro call. Your details are not sold, rented, or shared with third parties for marketing. You are not added to a mailing list by submitting the form.</p>
 <h2>Analytics and tracking</h2>
 <p>This site uses no advertising cookies, no third-party tracking pixels and no cross-site profiling. Aggregate, anonymous traffic statistics may be collected by the hosting platform for operational purposes; these do not identify you.</p>
 <h2>Third-party embeds</h2>
 <p>Videos on this site are loaded behind a click-to-play facade. YouTube receives no data from you unless you actively press play. Links to partner products are external sites with their own policies.</p>
 <h2>Data retention</h2>
-<p>Enquiry details are retained only as long as needed to handle your enquiry and any resulting engagement.</p>
+<p>Inquiry details are retained only as long as needed to handle your inquiry and any resulting engagement.</p>
 <h2>Your rights</h2>
 <p>You can ask what is held about you, ask for it to be corrected, or ask for it to be deleted, at any time. Email ${site.email} and it will be actioned.</p>
 <h2>Changes</h2>
@@ -1546,11 +1677,12 @@ export const credentialsCopy = {
   credsTag: 'Credentials',
   creds: [
     'Licensed Soma-Therapist (Performance Physical Therapy)',
+    'Posturologist, trained under Dr. Bernard Bricot',
     'Certified Strength & Conditioning Specialist (CSCS)',
     'ACSM Exercise Specialist',
     'ISSA Sports Performance Nutritionist',
     'Member — NSCA · ACSM · ISSA',
   ],
-  recogTag: 'Recognised in',
+  recogTag: 'Recognized in',
   recogDoc: 'Being: Mariano (FOX Sports)',
 };
