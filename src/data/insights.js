@@ -23,6 +23,18 @@ export const allInsights = [
     slug: { en: 'the-l5-s1-eldoa', es: 'el-eldoa-l5-s1' },
     date: '2026-09-01',
     updated: '2026-09-01',
+    photo: {
+      slug: 'insight-the-l5-s1-eldoa',
+      widths: [480, 956],
+      width: 956,
+      height: 637,
+      position: '55% 30%',
+      alt: {
+        en: 'An athlete seen from behind in a dark gym, back muscles and spine in sharp relief',
+        es: 'Una atleta vista de espaldas en un gimnasio oscuro, con los músculos de la espalda y la columna bien marcados',
+      },
+      // CC0 / public domain: https://stocksnap.io/photo/girl-woman-ZFIQC5CZRP
+    },
     tag: { en: 'ELDOA', es: 'ELDOA' },
     title: {
       en: 'The L5-S1 ELDOA: one minute, done properly',
@@ -126,6 +138,18 @@ export const allInsights = [
     slug: { en: 'treat-your-career-like-a-sport', es: 'trate-su-carrera-como-un-deporte' },
     date: '2026-07-07',
     updated: '2026-07-07',
+    photo: {
+      slug: 'insight-treat-your-career-like-a-sport',
+      widths: [480, 960],
+      width: 960,
+      height: 640,
+      position: '65% 35%',
+      alt: {
+        en: 'A man training on suspension straps in a sunlit gym',
+        es: 'Un hombre entrenando con cintas de suspensión en un gimnasio iluminado por el sol',
+      },
+      // CC0 / public domain: https://stocksnap.io/photo/man-workout-KZROPA98J8
+    },
     tag: { en: 'Longevity', es: 'Longevidad' },
     title: {
       en: 'Treat your career like a sport',
@@ -222,10 +246,22 @@ export const allInsights = [
     slug: { en: 'travel-recovery-routine', es: 'rutina-de-recuperacion-para-viajes' },
     date: '2026-06-30',
     updated: '2026-06-30',
+    photo: {
+      slug: 'insight-travel-recovery-routine',
+      widths: [480, 960],
+      width: 960,
+      height: 640,
+      position: '55% 30%',
+      alt: {
+        en: 'A lone traveller waiting in a bright airport terminal',
+        es: 'Un viajero solo esperando en una terminal de aeropuerto luminosa',
+      },
+      // CC0 / public domain: https://stocksnap.io/photo/airport-people-AW41W55XCB
+    },
     tag: { en: 'Travel', es: 'Viajes' },
     title: {
       en: 'The road doesn’t have to wreck your body',
-      es: 'El viaje no tiene por qué destrozarte el cuerpo',
+      es: 'El viaje no tiene por qué destrozarle el cuerpo',
     },
     summary: {
       en: 'A long flight is hours in the worst posture you own, followed by a bed that isn’t yours. You can’t skip the travel — but ten focused minutes on landing undoes most of the damage before it settles in.',
@@ -316,6 +352,18 @@ export const allInsights = [
     slug: { en: 'recovery-is-a-skill', es: 'la-recuperacion-es-una-habilidad' },
     date: '2026-06-23',
     updated: '2026-06-23',
+    photo: {
+      slug: 'insight-recovery-is-a-skill',
+      widths: [480, 958],
+      width: 958,
+      height: 639,
+      position: '50% 55%',
+      alt: {
+        en: 'A woman stretching on a window ledge in a brick-walled loft',
+        es: 'Una mujer estirando en el alféizar de una ventana, en un loft de ladrillo',
+      },
+      // CC0 / public domain: https://stocksnap.io/photo/woman-stretch-MVCPFTBOTT
+    },
     tag: { en: 'Recovery', es: 'Recuperación' },
     title: {
       en: 'Recovery isn’t rest. It’s a skill.',
@@ -412,6 +460,18 @@ export const allInsights = [
     slug: { en: 'your-chair-is-undoing-your-training', es: 'su-silla-deshace-su-entrenamiento' },
     date: '2026-06-16',
     updated: '2026-06-16',
+    photo: {
+      slug: 'insight-your-chair-is-undoing-your-training',
+      widths: [480, 960],
+      width: 960,
+      height: 640,
+      position: '60% 30%',
+      alt: {
+        en: 'A man in a blazer at his laptop, holding his head in frustration',
+        es: 'Un hombre de chaqueta frente a su portátil, con las manos en la cabeza',
+      },
+      // CC0 / public domain: https://stocksnap.io/photo/business-man-VISYYURYFA
+    },
     tag: { en: 'Posture', es: 'Postura' },
     title: {
       en: 'Your chair is undoing your training',

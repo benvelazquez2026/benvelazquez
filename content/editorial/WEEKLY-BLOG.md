@@ -96,6 +96,16 @@ field is bilingual (`en` / `es`) and every one is required:
 | `answer` | Two paragraphs, plain strings, answering the headline outright. |
 | `body` | 700–1,100 words of HTML: `<p>`, `<h2>`, `<h3>`, `<em>` and internal `<a>`. No `<h1>`. |
 | `faqs` | Exactly three `{ q, a }`, the answer wrapped in `<p>`. |
+| `photo` | Optional but expected. Copy the topic's `photo` object from `blog-queue.json` as is (drop `source`/`license`, keep them as a `// CC0 / public domain: <source>` comment). It becomes the article header, the card image and the right half of the share card. |
+
+**Photos.** The first twelve queued topics already have a CC0 photo encoded in
+`public/img/insight-q<n>-*.{avif,webp,jpg}`. For a topic without one, either
+leave `photo` out (the post still renders, with the text-only header and share
+card) or pick a CC0 / public-domain image — StockSnap via the Openverse API
+(`api.openverse.org/v1/images/?q=…&license=cc0,pdm&source=stocksnap`) —
+crop it to 3:2 and save it at 480 px and full width in all three formats,
+matching the existing files. Never use a watermarked, Unsplash+ or
+"free for personal use" image.
 
 Then link one or two existing insights or service pages inline near the end —
 the internal link cluster is part of why these rank. Use locale-correct paths

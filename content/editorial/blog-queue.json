@@ -132,7 +132,23 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 12
+      "queuePosition": 12,
+      "photo": {
+        "slug": "insight-q4",
+        "widths": [
+          480,
+          960
+        ],
+        "width": 960,
+        "height": 640,
+        "position": "40% 35%",
+        "alt": {
+          "en": "A woman stretching one arm overhead at the beach in morning light",
+          "es": "Una mujer estirando un brazo por encima de la cabeza en la playa, con luz de mañana"
+        },
+        "source": "https://stocksnap.io/photo/stretch-fitness-TRVYWK59ST",
+        "license": "CC0 / public domain"
+      }
     },
     {
       "n": 5,
@@ -1006,7 +1022,23 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 13
+      "queuePosition": 13,
+      "photo": {
+        "slug": "insight-q41",
+        "widths": [
+          480,
+          960
+        ],
+        "width": 960,
+        "height": 640,
+        "position": "50% 55%",
+        "alt": {
+          "en": "Two Muay Thai fighters sparring in shallow water at golden hour",
+          "es": "Dos luchadores de muay thai entrenando en aguas poco profundas al atardecer"
+        },
+        "source": "https://stocksnap.io/photo/boxing-asia-48EKYDFECS",
+        "license": "CC0 / public domain"
+      }
     },
     {
       "n": 42,
@@ -2351,7 +2383,23 @@
       "publishedSlug": null,
       "publishedDate": null,
       "queuePosition": 2,
-      "note": "The foundational post of the series — write this one first. Related to #51 (Structure dictates function); this is the mechanism underneath that principle, so cross-link rather than repeat."
+      "note": "The foundational post of the series — write this one first. Related to #51 (Structure dictates function); this is the mechanism underneath that principle, so cross-link rather than repeat.",
+      "photo": {
+        "slug": "insight-q101",
+        "widths": [
+          480,
+          946
+        ],
+        "width": 946,
+        "height": 631,
+        "position": "50% 45%",
+        "alt": {
+          "en": "Chalked hands gripping a barbell before a deadlift",
+          "es": "Manos con magnesio sujetando una barra antes de un peso muerto"
+        },
+        "source": "https://www.rawpixel.com/image/6031193/photo-image-public-domain-hands-person",
+        "license": "CC0 / public domain"
+      }
     },
     {
       "n": 102,
@@ -2382,7 +2430,23 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 3
+      "queuePosition": 3,
+      "photo": {
+        "slug": "insight-q102",
+        "widths": [
+          480,
+          960
+        ],
+        "width": 960,
+        "height": 640,
+        "position": "55% 40%",
+        "alt": {
+          "en": "A man in shadow with his head in his hands",
+          "es": "Un hombre en penumbra con la cabeza entre las manos"
+        },
+        "source": "https://stocksnap.io/photo/guy-man-6R7KCXBEEE",
+        "license": "CC0 / public domain"
+      }
     },
     {
       "n": 103,
@@ -2413,7 +2477,23 @@
       "status": "queued",
       "publishedSlug": null,
       "publishedDate": null,
-      "queuePosition": 4
+      "queuePosition": 4,
+      "photo": {
+        "slug": "insight-q103",
+        "widths": [
+          480,
+          957
+        ],
+        "width": 957,
+        "height": 638,
+        "position": "85% 35%",
+        "alt": {
+          "en": "A muscular athlete in profile against a dark background",
+          "es": "Una atleta musculosa de perfil sobre un fondo oscuro"
+        },
+        "source": "https://stocksnap.io/photo/girl-woman-373LUTBH99",
+        "license": "CC0 / public domain"
+      }
     },
     {
       "n": 104,
@@ -2445,7 +2525,23 @@
       "publishedSlug": null,
       "publishedDate": null,
       "queuePosition": 5,
-      "note": "The natural bridge topic to warm-up and progressive loading — good candidate to run near pre-season."
+      "note": "The natural bridge topic to warm-up and progressive loading — good candidate to run near pre-season.",
+      "photo": {
+        "slug": "insight-q104",
+        "widths": [
+          480,
+          960
+        ],
+        "width": 960,
+        "height": 640,
+        "position": "35% 50%",
+        "alt": {
+          "en": "A woman working battle ropes against a white brick wall",
+          "es": "Una mujer trabajando con cuerdas de batalla frente a una pared de ladrillo blanco"
+        },
+        "source": "https://stocksnap.io/photo/girl-woman-MRTPJW5I7U",
+        "license": "CC0 / public domain"
+      }
     },
     {
       "n": 105,
@@ -2476,7 +2572,23 @@
       "publishedSlug": null,
       "publishedDate": null,
       "queuePosition": 6,
-      "note": "Strongest ELDOA-adjacent post in the series. Cross-link /eldoa/ and the L5-S1 post."
+      "note": "Strongest ELDOA-adjacent post in the series. Cross-link /eldoa/ and the L5-S1 post.",
+      "photo": {
+        "slug": "insight-q105",
+        "widths": [
+          480,
+          960
+        ],
+        "width": 960,
+        "height": 640,
+        "position": "50% 40%",
+        "alt": {
+          "en": "A barbell across an athlete's shoulders, in black and white",
+          "es": "Una barra sobre los hombros de una atleta, en blanco y negro"
+        },
+        "source": "https://stocksnap.io/photo/girl-woman-EHS7NJY7KT",
+        "license": "CC0 / public domain"
+      }
     },
     {
       "n": 106,
@@ -2508,7 +2620,23 @@
       "publishedSlug": null,
       "publishedDate": null,
       "queuePosition": 7,
-      "note": "Pairs with #33 and the published chair post — take the mechanism angle, not the \"sitting is bad\" angle, which is already covered."
+      "note": "Pairs with #33 and the published chair post — take the mechanism angle, not the \"sitting is bad\" angle, which is already covered.",
+      "photo": {
+        "slug": "insight-q106",
+        "widths": [
+          480,
+          810
+        ],
+        "width": 810,
+        "height": 540,
+        "position": "55% 30%",
+        "alt": {
+          "en": "A shirtless fighter stretching against the cage in a dim gym",
+          "es": "Un luchador sin camisa estirando contra la jaula en un gimnasio en penumbra"
+        },
+        "source": "https://stocksnap.io/photo/people-man-GVR6LPVWEY",
+        "license": "CC0 / public domain"
+      }
     },
     {
       "n": 107,
@@ -2540,7 +2668,23 @@
       "publishedSlug": null,
       "publishedDate": null,
       "queuePosition": 8,
-      "note": "Related to the published \"Treat your career like a sport\" — link, do not restate."
+      "note": "Related to the published \"Treat your career like a sport\" — link, do not restate.",
+      "photo": {
+        "slug": "insight-q107",
+        "widths": [
+          480,
+          957
+        ],
+        "width": 957,
+        "height": 638,
+        "position": "55% 40%",
+        "alt": {
+          "en": "A woman pressing a weighted sled with her legs in a dark gym",
+          "es": "Una mujer empujando con las piernas una prensa en un gimnasio oscuro"
+        },
+        "source": "https://stocksnap.io/photo/girl-woman-37CB0NNMNC",
+        "license": "CC0 / public domain"
+      }
     },
     {
       "n": 108,
@@ -2572,7 +2716,23 @@
       "publishedSlug": null,
       "publishedDate": null,
       "queuePosition": 9,
-      "note": "Ties directly to the concussion service page — cross-link /concussion-recovery/."
+      "note": "Ties directly to the concussion service page — cross-link /concussion-recovery/.",
+      "photo": {
+        "slug": "insight-q108",
+        "widths": [
+          480,
+          960
+        ],
+        "width": 960,
+        "height": 640,
+        "position": "40% 50%",
+        "alt": {
+          "en": "A giraffe's head and long neck in black and white",
+          "es": "La cabeza y el largo cuello de una jirafa, en blanco y negro"
+        },
+        "source": "https://stocksnap.io/photo/giraffe-animals-8RG95RS0T5",
+        "license": "CC0 / public domain"
+      }
     },
     {
       "n": 109,
@@ -2604,7 +2764,23 @@
       "publishedSlug": null,
       "publishedDate": null,
       "queuePosition": 10,
-      "note": "Related to the published \"Recovery isn’t rest. It’s a skill.\" — this is the structural argument beneath it."
+      "note": "Related to the published \"Recovery isn’t rest. It’s a skill.\" — this is the structural argument beneath it.",
+      "photo": {
+        "slug": "insight-q109",
+        "widths": [
+          480,
+          960
+        ],
+        "width": 960,
+        "height": 640,
+        "position": "50% 45%",
+        "alt": {
+          "en": "A coach guiding an older man through a lunge stretch by the water",
+          "es": "Un entrenador guiando a un hombre mayor en un estiramiento de zancada junto al agua"
+        },
+        "source": "https://stocksnap.io/photo/stretching-exercises-XUK1TN40FB",
+        "license": "CC0 / public domain"
+      }
     },
     {
       "n": 110,
@@ -2636,7 +2812,23 @@
       "publishedSlug": null,
       "publishedDate": null,
       "queuePosition": 11,
-      "note": "Write this one last — it is the series closer and should reference the earlier nine."
+      "note": "Write this one last — it is the series closer and should reference the earlier nine.",
+      "photo": {
+        "slug": "insight-q110",
+        "widths": [
+          480,
+          812
+        ],
+        "width": 812,
+        "height": 541,
+        "position": "55% 55%",
+        "alt": {
+          "en": "A sprinter mid-stride against a blue sky",
+          "es": "Un velocista en plena zancada contra un cielo azul"
+        },
+        "source": "https://stocksnap.io/photo/man-running-APW0W8GBMM",
+        "license": "CC0 / public domain"
+      }
     }
   ],
   "references": {

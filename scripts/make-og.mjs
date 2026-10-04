@@ -66,7 +66,16 @@ const FOOT = {
   es: 'NFL · NHL · MLB · 20+ años · ELDOA y trabajo de fascia',
 };
 
-function cardHtml({ kicker, title, locale }) {
+/** An article's own photo, inlined, for the right-hand side of its card. */
+function photoLayer(photo) {
+  if (!photo) return '';
+  const file = join(OUT_IMG, `${photo.slug}-${photo.widths[photo.widths.length - 1]}.jpg`);
+  const data = readFileSync(file).toString('base64');
+  return `<div class="photo" style="background-image:url(data:image/jpeg;base64,${data});background-position:${photo.position || '50% 50%'}"></div>`;
+}
+
+function cardHtml({ kicker, title, locale, photo }) {
+  const size = photo ? (title.length > 60 ? 50 : title.length > 36 ? 60 : 70) : title.length > 74 ? 58 : title.length > 46 ? 70 : 82;
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{font-family:B;src:url(data:font/woff2;base64,${BRICOLAGE}) format('woff2');font-weight:200 800}
 @font-face{font-family:H;src:url(data:font/woff2;base64,${HANKEN}) format('woff2');font-weight:100 900}
@@ -88,14 +97,20 @@ body{width:1200px;height:630px;background:#14161A;font-family:H,sans-serif;color
   display:flex;align-items:center;gap:14px;margin-bottom:22px}
 .kicker::before{content:"";width:40px;height:2px;background:#1F9D76}
 h1{font-family:B;font-weight:800;letter-spacing:-.025em;line-height:1.03;
-  font-size:${title.length > 74 ? 58 : title.length > 46 ? 70 : 82}px}
+  font-size:${size}px}
+.photo{position:absolute;top:0;right:0;bottom:0;width:56%;background-size:cover}
+.photo::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,#14161A 0%,rgba(20,22,26,.72) 22%,rgba(20,22,26,.12) 58%,rgba(20,22,26,.25) 100%),
+  linear-gradient(180deg,rgba(20,22,26,.35) 0%,transparent 28%,transparent 70%,rgba(20,22,26,.8) 100%)}
+.has-photo .mid{max-width:640px}
+.has-photo .strap{display:none}
 .foot{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2;
   border-top:1px solid rgba(239,237,226,.16);padding-top:26px}
 .foot span{font-family:M;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:#B7B3A9}
 .dot{width:10px;height:10px;border-radius:50%;background:#1F9D76;display:inline-block;margin-right:12px;
   vertical-align:middle}
-</style></head><body>
-<div class="glow"></div>
+</style></head><body${photo ? ' class="has-photo"' : ''}>
+${photo ? photoLayer(photo) : '<div class="glow"></div>'}
 <div class="top"><div class="mark">${logoSvg()}<span>BEN VELAZQUEZ<i>.</i></span></div><div class="strap">${esc(STRAP[locale])}</div></div>
 <div class="mid"><div class="kicker">${esc(kicker)}</div><h1>${esc(title)}</h1></div>
 <div class="foot"><span><i class="dot"></i>${esc(FOOT[locale])}</span><span>benvelazquez.com</span></div>
@@ -155,6 +170,7 @@ for (const locale of site.locales) {
       kicker: post.tag[locale],
       title: ogTitle(post.title[locale]),
       locale,
+      photo: post.photo,
     });
   }
 }

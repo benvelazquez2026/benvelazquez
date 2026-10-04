@@ -313,7 +313,8 @@ function insightCards(items, locale, level = 3) {
   return `<div class="insight-list reveal">
 ${each(items, (post) => {
     const href = `${pathFor('insights', locale)}${post.slug[locale]}/`;
-    return `<article class="insight">
+    return `<article class="${post.photo ? 'insight has-photo' : 'insight'}">
+${post.photo ? insightThumb(post.photo, href) : ''}
 <div class="insight-meta">
 <time class="mono" datetime="${esc(post.date)}">${esc(formatDate(post.date, locale))}</time>
 <span class="insight-tag">${esc(post.tag[locale])}</span>
@@ -324,6 +325,21 @@ ${each(items, (post) => {
 </article>`;
   })}
 </div>`;
+}
+
+/**
+ * Card photo. Decorative (the title below is the real link), so it is kept
+ * out of the tab order and hidden from assistive tech.
+ */
+function insightThumb(photo, href) {
+  const set = (ext) => photo.widths.map((w) => `/img/${photo.slug}-${w}.${ext} ${w}w`).join(', ');
+  const sizes = '(min-width: 1200px) 380px, (min-width: 700px) 50vw, 100vw';
+  const style = photo.position ? ` style="--photo-pos:${esc(photo.position)}"` : '';
+  return `<a class="insight-photo" href="${esc(href)}" tabindex="-1" aria-hidden="true"${style}><picture>
+<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
+<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">
+<img src="/img/${photo.slug}-${photo.widths[0]}.jpg" srcset="${set('jpg')}" sizes="${sizes}" width="${photo.width}" height="${photo.height}" alt="" loading="lazy" decoding="async">
+</picture></a>`;
 }
 
 /* ------------------------------------------------------------------ */
@@ -660,8 +676,10 @@ export function buildInsightPost({ locale, post, page }) {
 
   const others = insights.filter((p) => p.slug[locale] !== post.slug[locale]).slice(0, 3);
 
+  const photo = post.photo && heroPhoto({ ...post.photo, alt: post.photo.alt[locale], narrow: true });
   const html = `<article>
-<section class="page-hero">
+<section class="${photo ? 'page-hero has-photo' : 'page-hero'}">
+${photo || ''}
 <div class="wrap">
 <span class="mono eyebrow">${esc(post.tag[locale])}</span>
 <h1 class="h1">${esc(post.title[locale])}</h1>
@@ -713,6 +731,7 @@ ${ctaBand({ ...page.cta, locale })}`;
         locale,
         section: post.tag[locale],
         body: plain(post.body[locale]),
+        image: `/img/og-insight-${post.slug[locale]}.jpg`,
       }),
     ],
   };

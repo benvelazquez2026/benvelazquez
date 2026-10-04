@@ -82,7 +82,7 @@ export const content = {
         {
           idx: 'C',
           heading: 'Recuperación de conmociones',
-          body: 'Soluciones de ejercicio para conmociones desde el inicio de la lesión. Un enfoque integral y en equipo, centrado no solo en el regreso, sino en mantenerte ahí.',
+          body: 'Soluciones de ejercicio para conmociones desde el inicio de la lesión. Un enfoque integral y en equipo, centrado no solo en el regreso, sino en mantenerle ahí.',
           route: 'concussion',
           link: 'El programa de conmociones →',
         },
@@ -485,7 +485,7 @@ export const content = {
     seo: {
       title: 'Recuperación de Conmociones con Ejercicio | Ben Velazquez',
       description:
-        'Soluciones de ejercicio para conmociones desde el inicio de la lesión con Ben Velazquez en NYC, Tampa y Puerto Rico. Un equipo enfocado en mantenerte ahí.',
+        'Soluciones de ejercicio para conmociones desde el inicio de la lesión con Ben Velazquez en NYC, Tampa y Puerto Rico. Un equipo enfocado en mantenerle ahí.',
     },
     hero: {
       photo: {
@@ -562,7 +562,7 @@ export const content = {
         a: `<p>Ben Velazquez dirige el programa personalmente. Es un experto reconocido en soluciones de ejercicio para conmociones y coordina un equipo multidisciplinar en torno a cada caso, trabajando junto a su médico y apoyándose en su red verificada de profesionales de fisioterapia y medicina cuando la recuperación lo requiere. Puede contactarlo en <a href="mailto:${site.email}">${site.email}</a>.</p>`,
       },
       {
-        q: '¿Qué significa «no solo el regreso, sino mantenerte ahí»?',
+        q: '¿Qué significa «no solo el regreso, sino mantenerle ahí»?',
         a: '<p>Regresar una vez es la mitad fácil. La mitad difícil es reducir la probabilidad de una nueva lesión y gestionar la carga posterior al regreso, que es donde un programa estructurado más importa.</p>',
       },
     ],

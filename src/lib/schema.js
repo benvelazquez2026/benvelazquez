@@ -265,7 +265,7 @@ export function serviceEntity({ url, name, description, serviceType, locale, off
 }
 
 /** Article entity for an insight post. */
-export function articleEntity({ url, headline, description, datePublished, dateModified, locale, section, body }) {
+export function articleEntity({ url, headline, description, datePublished, dateModified, locale, section, body, image }) {
   return {
     '@type': 'BlogPosting',
     '@id': `${url}#article`,
@@ -279,7 +279,7 @@ export function articleEntity({ url, headline, description, datePublished, dateM
     author: { '@id': ID.person },
     publisher: { '@id': ID.business },
     mainEntityOfPage: { '@id': `${url}#webpage` },
-    image: absolute('/img/og-default.jpg'),
+    image: absolute(image || '/img/og-default.jpg'),
     isAccessibleForFree: true,
   };
 }
