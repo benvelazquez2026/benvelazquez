@@ -62,11 +62,13 @@ export const site = {
     'https://www.instagram.com/benvelazqueznyc/',
     'https://www.linkedin.com/in/benvelazqueznyc/',
     'https://x.com/whatsgoodbenv',
+    'https://www.facebook.com/benvny/',
   ],
   socialLabels: {
     Instagram: 'https://www.instagram.com/benvelazqueznyc/',
     LinkedIn: 'https://www.linkedin.com/in/benvelazqueznyc/',
     X: 'https://x.com/whatsgoodbenv',
+    Facebook: 'https://www.facebook.com/benvny/',
   },
   twitterHandle: '@whatsgoodbenv',
 
