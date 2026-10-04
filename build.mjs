@@ -625,6 +625,11 @@ write(
   `# Legacy / convenience paths → canonical URLs. 301 keeps link equity.
 /index.html                    /                          301
 /home                          /                          301
+# Old Squarespace pages (www.benvelazquez.com/sitemap.xml, Oct 2026).
+/virtualconsultation           /apply/                    301
+/take-action                   /apply/                    301
+/partnerships                  /what-i-use/               301
+/cart                          /                          301
 /eldoa-nyc                     /eldoa/                    301
 /executive                     /executive-performance/    301
 /executives                    /executive-performance/    301
