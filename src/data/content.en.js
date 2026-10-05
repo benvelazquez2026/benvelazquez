@@ -1530,7 +1530,8 @@ export const content = {
         tag: 'Focus & energy',
         cat: 'Nicotine-free nootropic pouches · clean focus, no crash',
         quote:
-          '“I preach clean energy over stimulants that spike and crash. GTG is exactly that — sharp focus without nicotine, without the jitters. It’s what I keep on me for long days with clients.”',
+          '“I’m currently a first responder working 12-hour days. This stuff is great, man. Keeps me energized and focused. I really like your products — great taste in comparison to a lot of other products out there. Highly recommend.”',
+        by: 'Kal R. · First responder',
         cta: 'Shop GTG Energy',
         href: site.links.gtg,
       },

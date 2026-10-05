@@ -954,7 +954,7 @@ ${each(
 <p class="partner-cat">${esc(p.cat)}</p>
 <figure class="partner-quote">
 <blockquote><p>${esc(p.quote)}</p></blockquote>
-<figcaption>— ${esc(site.name)}</figcaption>
+<figcaption>— ${esc(p.by || site.name)}</figcaption>
 </figure>
 <a href="${esc(p.href)}" class="partner-cta ${p.ghost ? 'line' : 'fill'}" target="_blank" rel="noopener sponsored nofollow">${esc(
     p.cta,

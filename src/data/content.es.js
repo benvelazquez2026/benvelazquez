@@ -1538,7 +1538,8 @@ export const content = {
         tag: 'Enfoque y energía',
         cat: 'Bolsitas nootrópicas sin nicotina · enfoque limpio, sin bajón',
         quote:
-          '«Predico la energía limpia por encima de estimulantes que suben y bajan de golpe. GTG es justo eso: enfoque nítido, sin nicotina y sin nervios. Es lo que llevo encima en los días largos con clientes.»',
+          '«Soy primer respondedor y trabajo turnos de 12 horas. Esto es buenísimo. Me mantiene con energía y enfocado. Me gustan mucho estos productos, y saben mucho mejor que muchos otros que hay por ahí. Los recomiendo totalmente.»',
+        by: 'Kal R. · Primer respondedor',
         cta: 'Comprar GTG Energy',
         href: site.links.gtg,
       },
