@@ -88,15 +88,22 @@ ${sidePhoto(photo)}
 }
 
 /** Interior page hero, optionally over a background photo or video. */
-export function pageHero({ kicker, heading, lede, ctas = [], photo, video, locale = 'en' }) {
+export function pageHero({ kicker, heading, lede, ctas = [], photo, video, quote, locale = 'en' }) {
   const media = video ? heroVideo(video) : photo ? heroPhoto(photo) : '';
-  return `<section class="${media ? 'page-hero has-photo' : 'page-hero'}">
+  // An optional client quote set over the photo (desktop) or under the CTAs (phones).
+  const said = quote
+    ? `<figure class="hero-quote"><blockquote><p>“${esc(quote.text)}”</p></blockquote><figcaption><strong>${esc(
+        quote.name,
+      )}</strong>${quote.role ? ` · ${esc(quote.role)}` : ''}</figcaption></figure>`
+    : '';
+  return `<section class="${media ? `page-hero has-photo${quote ? ' has-quote' : ''}` : 'page-hero'}">
 ${media}
 <div class="wrap">
 <span class="mono eyebrow">${esc(kicker)}</span>
 <h1 class="h1">${heading}</h1>
 ${lede ? `<p class="lede">${lede}</p>` : ''}
 ${ctas.length ? `<div class="hero-cta">${each(ctas, (c) => ctaLink(c, locale))}</div>` : ''}
+${said}
 </div>
 </section>`;
 }

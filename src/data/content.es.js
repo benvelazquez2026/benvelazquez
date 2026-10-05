@@ -201,6 +201,20 @@ export const content = {
     hero: {
       kicker: 'Cupos abiertos · Plantilla limitada',
       h1: 'Entrene como los profesionales, con una agenda que no se detiene.',
+      photo: {
+        slug: 'hero-executive',
+        widths: [700, 1000, 1333],
+        width: 1333,
+        height: 1500,
+        position: '50% 38%',
+        narrow: true,
+        alt: 'Un piloto de combate saliendo de la cabina de un F-22 Raptor, con la cubierta levantada',
+      },
+      quote: {
+        text: 'Una carrera en aviones de combate de alto rendimiento le pasa una factura real al cuello y a la espalda. Los protocolos de ELDOA de Ben cambiaron eso para mí. Los uso antes y después de cada vuelo, y mantienen mi cuerpo rindiendo al nivel que exige el trabajo. Un verdadero antes y después.',
+        name: 'Josh «Cabo» Gunderson',
+        role: 'Piloto de combate',
+      },
       lede: 'Energía sostenida en semanas brutales. Libertad del dolor de espalda y cuello del escritorio y los asientos de avión. La misma rehabilitación de rendimiento que mantiene a los atletas profesionales en el campo, adaptada a cómo usted vive realmente.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
@@ -1524,7 +1538,8 @@ export const content = {
         tag: 'Enfoque y energía',
         cat: 'Bolsitas nootrópicas sin nicotina · enfoque limpio, sin bajón',
         quote:
-          '«Predico la energía limpia por encima de estimulantes que suben y bajan de golpe. GTG es justo eso: enfoque nítido, sin nicotina y sin nervios. Es lo que llevo encima en los días largos con clientes.»',
+          '«Soy primer respondedor y trabajo turnos de 12 horas. Esto es buenísimo. Me mantiene con energía y enfocado. Me gustan mucho estos productos, y saben mucho mejor que muchos otros que hay por ahí. Los recomiendo totalmente.»',
+        by: 'Kal R. · Primer respondedor',
         cta: 'Comprar GTG Energy',
         href: site.links.gtg,
       },

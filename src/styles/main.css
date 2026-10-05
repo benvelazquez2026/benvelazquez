@@ -641,6 +641,53 @@ p {
     width: 100%;
   }
 }
+/* Client quote in a hero: over the photo on desktop, after the CTAs on phones. */
+.hero-quote {
+  margin: 34px 0 0;
+  max-width: 46ch;
+  padding: 20px 22px;
+  border-left: 2px solid var(--signal);
+  background: rgba(20, 22, 26, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.hero-quote p {
+  color: var(--bone);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+.hero-quote figcaption {
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone-light);
+}
+.hero-quote strong {
+  color: var(--signal);
+  font-weight: 700;
+}
+@media (min-width: 1101px) {
+  .page-hero.has-quote {
+    padding-bottom: clamp(56px, 6vw, 84px);
+  }
+  /* Taller, so the quote sits over the jet's nose, clear of the pilot. */
+  .page-hero.has-quote > .wrap {
+    min-height: 700px;
+  }
+  .page-hero.has-quote .hero-quote {
+    position: absolute;
+    right: 28px;
+    bottom: 0;
+    width: min(28vw, 360px);
+    margin: 0;
+  }
+  .page-hero.has-quote .hero-quote p {
+    font-size: 0.92rem;
+  }
+}
 /* Interior heroes: the photo sits under the content, never in the flow. */
 .page-hero > .hero-photo {
   position: absolute;

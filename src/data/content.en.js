@@ -202,6 +202,20 @@ export const content = {
     hero: {
       kicker: 'Now open · Limited roster',
       h1: 'Train the way the pros do — around a schedule that doesn’t stop.',
+      photo: {
+        slug: 'hero-executive',
+        widths: [700, 1000, 1333],
+        width: 1333,
+        height: 1500,
+        position: '50% 38%',
+        narrow: true,
+        alt: 'A fighter pilot climbing out of the cockpit of an F-22 Raptor, canopy raised',
+      },
+      quote: {
+        text: 'A career in high-performance fighter jets takes a real toll on your neck and back. Ben’s ELDOA protocols changed that for me. I use them before and after every flight, and they keep my body performing at the level the job demands. A true game changer.',
+        name: 'Josh “Cabo” Gunderson',
+        role: 'Fighter pilot',
+      },
       lede: 'Sustained energy through brutal weeks. Freedom from the back and neck pain of desks and plane seats. The same performance rehabilitation that keeps professional athletes on the field, built for the way you actually live.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
@@ -1516,7 +1530,8 @@ export const content = {
         tag: 'Focus & energy',
         cat: 'Nicotine-free nootropic pouches · clean focus, no crash',
         quote:
-          '“I preach clean energy over stimulants that spike and crash. GTG is exactly that — sharp focus without nicotine, without the jitters. It’s what I keep on me for long days with clients.”',
+          '“I’m currently a first responder working 12-hour days. This stuff is great, man. Keeps me energized and focused. I really like your products — great taste in comparison to a lot of other products out there. Highly recommend.”',
+        by: 'Kal R. · First responder',
         cta: 'Shop GTG Energy',
         href: site.links.gtg,
       },
