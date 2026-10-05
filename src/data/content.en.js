@@ -213,7 +213,7 @@ export const content = {
       },
       quote: {
         text: 'A career in high-performance fighter jets takes a real toll on your neck and back. Ben’s ELDOA protocols changed that for me. I use them before and after every flight, and they keep my body performing at the level the job demands. A true game changer.',
-        name: 'Josh G.',
+        name: 'Josh “Cabo” Gunderson',
         role: 'Fighter pilot',
       },
       lede: 'Sustained energy through brutal weeks. Freedom from the back and neck pain of desks and plane seats. The same performance rehabilitation that keeps professional athletes on the field, built for the way you actually live.',

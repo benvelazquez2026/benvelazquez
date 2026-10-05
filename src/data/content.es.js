@@ -212,7 +212,7 @@ export const content = {
       },
       quote: {
         text: 'Una carrera en aviones de combate de alto rendimiento le pasa una factura real al cuello y a la espalda. Los protocolos de ELDOA de Ben cambiaron eso para mí. Los uso antes y después de cada vuelo, y mantienen mi cuerpo rindiendo al nivel que exige el trabajo. Un verdadero antes y después.',
-        name: 'Josh G.',
+        name: 'Josh «Cabo» Gunderson',
         role: 'Piloto de combate',
       },
       lede: 'Energía sostenida en semanas brutales. Libertad del dolor de espalda y cuello del escritorio y los asientos de avión. La misma rehabilitación de rendimiento que mantiene a los atletas profesionales en el campo, adaptada a cómo usted vive realmente.',
