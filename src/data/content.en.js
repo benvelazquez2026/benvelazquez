@@ -202,6 +202,20 @@ export const content = {
     hero: {
       kicker: 'Now open · Limited roster',
       h1: 'Train the way the pros do — around a schedule that doesn’t stop.',
+      photo: {
+        slug: 'hero-executive',
+        widths: [700, 1000, 1333],
+        width: 1333,
+        height: 1500,
+        position: '50% 38%',
+        narrow: true,
+        alt: 'A fighter pilot climbing out of the cockpit of an F-22 Raptor, canopy raised',
+      },
+      quote: {
+        text: 'A career in high-performance fighter jets takes a real toll on your neck and back. Ben’s ELDOA protocols changed that for me. I use them before and after every flight, and they keep my body performing at the level the job demands. A true game changer.',
+        name: 'Josh G.',
+        role: 'Fighter pilot',
+      },
       lede: 'Sustained energy through brutal weeks. Freedom from the back and neck pain of desks and plane seats. The same performance rehabilitation that keeps professional athletes on the field, built for the way you actually live.',
       ctas: [APPLY_CTA, PROGRAMS_CTA],
     },
