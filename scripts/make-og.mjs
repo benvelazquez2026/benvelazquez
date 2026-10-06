@@ -84,18 +84,18 @@ function cardHtml({ kicker, title, locale, photo }) {
 body{width:1200px;height:630px;background:#14161A;font-family:H,sans-serif;color:#EFEBE2;
   position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:64px 72px}
 .glow{position:absolute;right:-10%;top:-34%;width:62%;height:150%;
-  background:radial-gradient(closest-side,rgba(31,157,118,.28),transparent 70%)}
+  background:radial-gradient(closest-side,rgba(99,102,241,.28),transparent 70%)}
 .ticks{position:absolute;left:0;right:0;bottom:0;height:18px;
   background-image:repeating-linear-gradient(90deg,rgba(239,237,226,.16) 0 1px,transparent 1px 28px)}
 .top{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2}
 .mark{display:flex;align-items:center;gap:18px;font-family:B;font-weight:800;font-size:26px;letter-spacing:.02em}
 .mark svg{width:81px;height:56px;color:#EFEBE2}
-.mark i{color:#1F9D76;font-style:normal}
+.mark i{color:#6366F1;font-style:normal}
 .strap{font-family:M;font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:#8C8980}
 .mid{position:relative;z-index:2;max-width:940px}
-.kicker{font-family:M;font-size:16px;letter-spacing:.18em;text-transform:uppercase;color:#1F9D76;
+.kicker{font-family:M;font-size:16px;letter-spacing:.18em;text-transform:uppercase;color:#6366F1;
   display:flex;align-items:center;gap:14px;margin-bottom:22px}
-.kicker::before{content:"";width:40px;height:2px;background:#1F9D76}
+.kicker::before{content:"";width:40px;height:2px;background:#6366F1}
 h1{font-family:B;font-weight:800;letter-spacing:-.025em;line-height:1.03;
   font-size:${size}px}
 .photo{position:absolute;top:0;right:0;bottom:0;width:56%;background-size:cover}
@@ -107,7 +107,7 @@ h1{font-family:B;font-weight:800;letter-spacing:-.025em;line-height:1.03;
 .foot{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2;
   border-top:1px solid rgba(239,237,226,.16);padding-top:26px}
 .foot span{font-family:M;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:#B7B3A9}
-.dot{width:10px;height:10px;border-radius:50%;background:#1F9D76;display:inline-block;margin-right:12px;
+.dot{width:10px;height:10px;border-radius:50%;background:#6366F1;display:inline-block;margin-right:12px;
   vertical-align:middle}
 </style></head><body${photo ? ' class="has-photo"' : ''}>
 ${photo ? photoLayer(photo) : '<div class="glow"></div>'}
