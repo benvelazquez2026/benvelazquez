@@ -199,9 +199,9 @@ ${photo ? `${quotePhoto(photo, locale)}<div class="quote-body">${body}</div>` : 
  * Testimonial photo, served as AVIF/WebP/JPEG from public/img. Portrait
  * (4:5) by default; `ratio` (height / width) and `wide` for landscape shots.
  */
-function quotePhoto({ slug, widths, alt, ratio = 5 / 4, wide = false }, locale) {
+function quotePhoto({ slug, widths, alt, ratio = 5 / 4, wide = false }, locale, sizes = null) {
   const set = (ext) => widths.map((w) => `/img/results-${slug}-${w}.${ext} ${w}w`).join(', ');
-  const sizes = wide ? `(min-width: 701px) ${Math.min(640, widths[widths.length - 1])}px, 100vw` : '(min-width: 701px) 360px, 100vw';
+  sizes ||= wide ? `(min-width: 701px) ${Math.min(640, widths[widths.length - 1])}px, 100vw` : '(min-width: 701px) 360px, 100vw';
   const max = widths[widths.length - 1];
   return `<picture class="quote-photo">
 <source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">
@@ -216,9 +216,11 @@ function quotePhoto({ slug, widths, alt, ratio = 5 / 4, wide = false }, locale) 
 export function pullQuote(q, locale = 'en') {
   return `<section class="block pull-quote-band">
 <div class="wrap">
-<figure class="pull-quote reveal">
+<figure class="${cx('pull-quote', q.portrait && 'has-portrait', 'reveal')}">
+${q.portrait ? quotePhoto(q.portrait, locale, '(min-width: 701px) 280px, 220px') : ''}<div class="pull-quote-body">
 <blockquote><p>${q.text[locale]}</p></blockquote>
 <figcaption>${esc(q.name)}<span>${q.role[locale]}</span></figcaption>
+</div>
 </figure>
 </div>
 </section>`;
