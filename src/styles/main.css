@@ -1202,9 +1202,33 @@ p {
   color: var(--stone);
   letter-spacing: 0.08em;
 }
+/* With a portrait: photo left, quote right; photo stacks above on phones. */
+.pull-quote.has-portrait {
+  max-width: 72rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 44px;
+  align-items: center;
+}
+.pull-quote.has-portrait .quote-photo {
+  min-height: 0;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
 @media (max-width: 640px) {
   .pull-quote {
     padding-left: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .pull-quote.has-portrait {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .pull-quote.has-portrait .quote-photo {
+    width: 220px;
+    max-height: none;
   }
 }
 

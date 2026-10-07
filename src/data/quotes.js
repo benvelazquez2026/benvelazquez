@@ -11,9 +11,19 @@ export const quotes = [
     id: 'meringoff',
     name: 'Stephen Meringoff',
     featured: true,
+    // Shown beside the executive-page pull quote only (public/img/results-meringoff-*).
+    // Kept off `photo` so the home grid stays as it is.
+    portrait: {
+      slug: 'meringoff',
+      widths: [360, 720],
+      alt: {
+        en: 'Stephen Meringoff, smiling, in a casual portrait',
+        es: 'Stephen Meringoff, sonriendo, en un retrato informal',
+      },
+    },
     role: {
-      en: 'Executive client · Trained with Ben for 20+ years',
-      es: 'Cliente ejecutivo · Entrena con Ben desde hace más de 20 años',
+      en: 'NYC Real Estate Icon and Philanthropist · Trained with Ben for 20+ years',
+      es: 'Ícono inmobiliario de Nueva York y filántropo · Entrena con Ben desde hace más de 20 años',
     },
     text: {
       en: '“Ben has been my personal trainer for over 20 years. He has keen intuition and an encyclopedic knowledge of the human body. He is an absolute savant at working remotely, a skill that very few trainers have been able to develop. At 82 years of age, I feel 20 years younger than that, in no small part due to Ben.”',
