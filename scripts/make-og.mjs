@@ -119,6 +119,36 @@ ${photo ? photoLayer(photo) : '<div class="glow"></div>'}
 }
 
 /**
+ * The logo card: the BEN / V mark, large and centred, with the wordmark under
+ * it. Used for the home page and the fallback image, so a bare link to the
+ * site previews as the logo. Everything sits in the middle so apps that crop
+ * the preview to a square (WhatsApp, Slack) still show the whole mark.
+ */
+function logoCardHtml({ locale }) {
+  return `<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:B;src:url(data:font/woff2;base64,${BRICOLAGE}) format('woff2');font-weight:200 800}
+@font-face{font-family:M;src:url(data:font/woff2;base64,${MONO}) format('woff2')}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1200px;height:630px;background:#14161A;color:#EFEBE2;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px}
+.glow{position:absolute;left:50%;top:50%;width:900px;height:900px;transform:translate(-50%,-50%);
+  background:radial-gradient(closest-side,rgba(31,157,118,.22),transparent 70%)}
+.ticks{position:absolute;left:0;right:0;bottom:0;height:18px;
+  background-image:repeating-linear-gradient(90deg,rgba(239,237,226,.16) 0 1px,transparent 1px 28px)}
+svg{position:relative;width:${Math.round((300 * LOGO_WIDTH) / LOGO_HEIGHT)}px;height:300px;color:#EFEBE2}
+.word{position:relative;font-family:B;font-weight:800;font-size:46px;letter-spacing:.04em}
+.word i{color:#1F9D76;font-style:normal}
+.strap{position:relative;font-family:M;font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:#8C8980;margin-top:-18px}
+</style></head><body>
+<div class="glow"></div>
+${logoSvg()}
+<div class="word">BEN VELAZQUEZ<i>.</i></div>
+<div class="strap">${esc(STRAP[locale])}</div>
+<div class="ticks"></div>
+</body></html>`;
+}
+
+/**
  * The app icon / favicon: the logo, white on the brand ink, centred in a
  * square. Written to public/icons/icon.svg and rasterised from there.
  */
@@ -157,6 +187,10 @@ for (const locale of site.locales) {
   for (const route of routes) {
     const page = content[route.key];
     if (!page || !page.hero) continue;
+    if (route.key === 'home') {
+      targets.push({ file: `og-home-${locale}.jpg`, locale, logo: true });
+      continue;
+    }
     targets.push({
       file: `og-${route.key}-${locale}.jpg`,
       kicker: plain(page.hero.kicker),
@@ -176,12 +210,7 @@ for (const locale of site.locales) {
 }
 
 // The fallback image, used anywhere a page-specific one is missing.
-targets.unshift({
-  file: 'og-default.jpg',
-  kicker: 'NYC · Tampa · Puerto Rico · Performance Rehabilitation',
-  title: 'The coach the world’s best athletes fly in to see.',
-  locale: 'en',
-});
+targets.unshift({ file: 'og-default.jpg', locale: 'en', logo: true });
 
 mkdirSync(OUT_IMG, { recursive: true });
 mkdirSync(OUT_ICON, { recursive: true });
@@ -199,7 +228,7 @@ const page = await browser.newPage({ viewport: { width: 1200, height: 630 }, dev
 
 console.log(`→ Rendering ${targets.length} Open Graph images`);
 for (const target of targets) {
-  await page.setContent(cardHtml(target), { waitUntil: 'load' });
+  await page.setContent(target.logo ? logoCardHtml(target) : cardHtml(target), { waitUntil: 'load' });
   await page.evaluate(() => document.fonts.ready);
   const buf = await page.screenshot({ type: 'jpeg', quality: 84 });
   writeFileSync(join(OUT_IMG, target.file), buf);
