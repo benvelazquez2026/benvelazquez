@@ -132,12 +132,12 @@ function logoCardHtml({ locale }) {
 body{width:1200px;height:630px;background:#14161A;color:#EFEBE2;position:relative;overflow:hidden;
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px}
 .glow{position:absolute;left:50%;top:50%;width:900px;height:900px;transform:translate(-50%,-50%);
-  background:radial-gradient(closest-side,rgba(31,157,118,.22),transparent 70%)}
+  background:radial-gradient(closest-side,rgba(65,105,225,.24),transparent 70%)}
 .ticks{position:absolute;left:0;right:0;bottom:0;height:18px;
   background-image:repeating-linear-gradient(90deg,rgba(239,237,226,.16) 0 1px,transparent 1px 28px)}
 svg{position:relative;width:${Math.round((300 * LOGO_WIDTH) / LOGO_HEIGHT)}px;height:300px;color:#EFEBE2}
 .word{position:relative;font-family:B;font-weight:800;font-size:46px;letter-spacing:.04em}
-.word i{color:#1F9D76;font-style:normal}
+.word i{color:#4169E1;font-style:normal}
 .strap{position:relative;font-family:M;font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:#8C8980;margin-top:-18px}
 </style></head><body>
 <div class="glow"></div>
